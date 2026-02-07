@@ -1,0 +1,17 @@
+{
+    "title": "Qui Suis-Je ?",
+    "common": {
+        "loading": "Chargement...",
+        "score": "Score",
+        "submit": "Valider",
+        "giveUp": "Abandonner",
+        "next": "Joueur Suivant"
+    },
+    "game": {
+        "birthDate": "Né le {{date}}",
+        "clubs": "Clubs",
+        "enterGuess": "Entrez le nom du joueur...",
+        "win": "Bravo ! C'était {{name}}.",
+        "loss": "Perdu ! C'était {{name}}."
+    }
+}

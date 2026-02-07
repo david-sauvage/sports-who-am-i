@@ -1,0 +1,34 @@
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.item {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  padding: 0.5rem;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  align-items: center;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.clubInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.clubName {
+  font-weight: bold;
+}
+
+.clubYears {
+  font-size: 0.8em;
+  color: #666;
+}

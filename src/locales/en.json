@@ -1,0 +1,17 @@
+{
+    "title": "Who Am I?",
+    "common": {
+        "loading": "Loading...",
+        "score": "Score",
+        "submit": "Submit",
+        "giveUp": "Give Up",
+        "next": "Next Player"
+    },
+    "game": {
+        "birthDate": "Born on {{date}}",
+        "clubs": "Clubs",
+        "enterGuess": "Enter player name...",
+        "win": "Correct! It was {{name}}.",
+        "loss": "Game Over! It was {{name}}."
+    }
+}
