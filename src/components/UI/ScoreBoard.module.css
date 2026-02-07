@@ -1,7 +1,6 @@
 .boardContainer {
-    width: 100%;
+    flex: 1;
     max-width: 500px;
-    margin-bottom: 1.5rem;
     position: relative;
     border-radius: 8px;
     overflow: hidden;
@@ -11,10 +10,10 @@
 
 .board {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     color: white;
-    padding: 1rem 1rem 1.5rem 1rem;
+    padding: 0.75rem 1rem 1.25rem 1rem;
     /* Extra bottom padding for bar */
     z-index: 2;
     position: relative;
@@ -31,10 +30,6 @@
 
 .progressBar {
     height: 100%;
-    background: linear-gradient(90deg, #ef4444, #f59e0b, #22c55e);
-    /* Red to Green gradient reversed? No, Green (high) to Red (low) usually */
-    background: linear-gradient(90deg, #ef4444, #3b82f6);
-    /* Let's just use a solid color or simple gradient */
     background-color: #3b82f6;
     transition: width 0.5s linear;
 }
@@ -42,20 +37,19 @@
 .scoreGroup {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 0.5rem;
 }
 
-.divider {
-    width: 1px;
-    height: 24px;
-    background-color: rgba(255, 255, 255, 0.2);
-}
-
-.scoreItem,
-.timerItem {
+.scoreItem {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+}
+
+.scoreItem.right {
+    align-items: flex-end;
 }
 
 .label {

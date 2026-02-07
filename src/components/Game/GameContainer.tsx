@@ -92,7 +92,7 @@ export const GameContainer = () => {
         <div className={containerClasses}>
             <div className={styles.header}>
                 <button onClick={() => setView('settings')} className={styles.backButton}>⚙️</button>
-                <ScoreBoard score={score} totalScore={totalScore} timer={timer} />
+                <ScoreBoard score={score} totalScore={totalScore} />
             </div>
 
             <div className={styles.cardWrapper}>
