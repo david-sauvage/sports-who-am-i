@@ -11,13 +11,20 @@ interface PlayerCardProps {
 export const PlayerCard = ({ player, revealedClueCount }: PlayerCardProps) => {
     const { t } = useTranslation();
 
+    const sportEmojis: Record<string, string> = {
+        football: '⚽',
+        basketball: '🏀'
+    };
+
     // Format date based on locale? using native Intl for now or simple string
     const formattedDate = new Date(player.birthDate).toLocaleDateString();
 
     return (
         <div className={styles.card}>
             <div className={styles.header}>
-                <span className={styles.sportTag}>{player.sport}</span>
+                <span className={styles.sportTag}>
+                    {sportEmojis[player.sport] || '🏆'} {player.sport}
+                </span>
                 <h2>{t('game.birthDate', { date: formattedDate })}</h2>
             </div>
 

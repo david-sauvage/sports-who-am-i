@@ -4,18 +4,46 @@ import type { Player, GameStatus } from '../types';
 interface UseGameLogicProps {
     players: Player[];
     clueRevealInterval?: number; // ms
+    initialClueDelay?: number; // ms
     maxScore?: number;
 }
+
+// Basic Levenshtein distance for fuzzy matching
+const getLevenshteinDistance = (a: string, b: string): number => {
+    if (a.length === 0) return b.length;
+    if (b.length === 0) return a.length;
+
+    const matrix = Array.from({ length: a.length + 1 }, () =>
+        new Array(b.length + 1).fill(0)
+    );
+
+    for (let i = 0; i <= a.length; i++) matrix[i][0] = i;
+    for (let j = 0; j <= b.length; j++) matrix[0][j] = j;
+
+    for (let i = 1; i <= a.length; i++) {
+        for (let j = 1; j <= b.length; j++) {
+            const cost = a[i - 1] === b[j - 1] ? 0 : 1;
+            matrix[i][j] = Math.min(
+                matrix[i - 1][j] + 1,
+                matrix[i][j - 1] + 1,
+                matrix[i - 1][j - 1] + cost
+            );
+        }
+    }
+
+    return matrix[a.length][b.length];
+};
 
 export const useGameLogic = ({
     players,
     clueRevealInterval = 5000,
+    initialClueDelay = 3000,
     maxScore = 1000,
 }: UseGameLogicProps) => {
     const [status, setStatus] = useState<GameStatus>('idle');
     const [currentPlayerIndex, setCurrentPlayerIndex] = useState(0);
     const [score, setScore] = useState(maxScore);
-    const [revealedClueCount, setRevealedClueCount] = useState(0); // 0 = birthdate only? Or 0 clubs.
+    const [revealedClueCount, setRevealedClueCount] = useState(0);
     const [timer, setTimer] = useState(0);
 
     const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
@@ -48,9 +76,12 @@ export const useGameLogic = ({
             const normalizedGuess = guess.trim().toLowerCase();
             const normalizedName = currentPlayer.name.toLowerCase();
 
-            // Simple inclusion check or exact match? Name usually requires exact or close.
-            // Let's go with exact (case-insensitive) for now.
-            if (normalizedName === normalizedGuess) {
+            // Fuzzy match logic
+            const distance = getLevenshteinDistance(normalizedName, normalizedGuess);
+            // Allow 2 errors for 5+ chars, 0 for short words
+            const tolerance = normalizedName.length < 5 ? 0 : 2;
+
+            if (distance <= tolerance) {
                 setStatus('won');
                 stopTimer();
                 return true;
@@ -65,7 +96,6 @@ export const useGameLogic = ({
         stopTimer();
     }, [stopTimer]);
 
-    // Timer & Score Effect
     // Timer & Score Effect
     useEffect(() => {
         // Accumulator to track ms for 1-second timer updates
@@ -102,18 +132,22 @@ export const useGameLogic = ({
     useEffect(() => {
         if (status !== 'playing' || !currentPlayer) return;
 
-        // Check if we need to reveal a new clue based on time
-        // We can also just use the timer state.
-        // E.g. every 5 seconds.
-        const cluesToShow = Math.floor(timer / (clueRevealInterval / 1000));
+        // Logic:
+        // 1st clue at initialClueDelay
+        // next clues every clueRevealInterval
+
+        const timeElapsedMs = timer * 1000;
+        let cluesToShow = 0;
+
+        if (timeElapsedMs >= initialClueDelay) {
+            cluesToShow = 1 + Math.floor((timeElapsedMs - initialClueDelay) / clueRevealInterval);
+        }
 
         // Cap at max clubs
         if (cluesToShow > revealedClueCount && revealedClueCount < currentPlayer.clubs.length) {
             setRevealedClueCount(Math.min(cluesToShow, currentPlayer.clubs.length));
-            // user said "score reduces LINEARLY". So no extra penalty for clues.
-            // setScore((prev) => Math.max(0, prev - 50));
         }
-    }, [timer, clueRevealInterval, revealedClueCount, currentPlayer, status]);
+    }, [timer, clueRevealInterval, initialClueDelay, revealedClueCount, currentPlayer, status]);
 
     return {
         status,
