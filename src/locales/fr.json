@@ -13,5 +13,20 @@
         "enterGuess": "Entrez le nom du joueur...",
         "win": "Bravo ! C'était {{name}}.",
         "loss": "Perdu ! C'était {{name}}."
+    },
+    "settings": {
+        "title": "Paramètres de la partie",
+        "language": "Langue",
+        "sports": "Sports",
+        "categories": "Types de joueurs",
+        "questionCount": "Nombre de questions",
+        "football": "Football",
+        "basketball": "Basket",
+        "historical": "Historique",
+        "active": "Actuel",
+        "start": "Commencer la partie",
+        "gameOver": "Partie Terminée !",
+        "totalScore": "Score Total : {{score}}",
+        "playAgain": "Rejouer"
     }
 }

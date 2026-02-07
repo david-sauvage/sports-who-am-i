@@ -13,5 +13,20 @@
         "enterGuess": "Enter player name...",
         "win": "Correct! It was {{name}}.",
         "loss": "Game Over! It was {{name}}."
+    },
+    "settings": {
+        "title": "Game Settings",
+        "language": "Language",
+        "sports": "Sports",
+        "categories": "Player Types",
+        "questionCount": "Number of Questions",
+        "football": "Football",
+        "basketball": "Basketball",
+        "historical": "Historical",
+        "active": "Active",
+        "start": "Start Game",
+        "gameOver": "Game Over!",
+        "totalScore": "Total Score: {{score}}",
+        "playAgain": "Play Again"
     }
 }

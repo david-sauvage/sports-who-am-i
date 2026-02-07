@@ -1,0 +1,170 @@
+.container {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    color: #1a1a1a;
+}
+
+.title {
+    margin: 0;
+    font-size: 1.75rem;
+    text-align: center;
+    color: #2563eb;
+    margin-bottom: 0.5rem;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.section h3 {
+    margin: 0;
+    font-size: 1rem;
+    color: #4b5563;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.buttonGroup,
+.countGroup {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.buttonGroup button,
+.countGroup button {
+    flex: 1;
+    padding: 0.75rem;
+    border: 2px solid #e5e7eb;
+    background: transparent;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    color: #4b5563;
+}
+
+.buttonGroup button:hover,
+.countGroup button:hover {
+    border-color: #2563eb;
+    color: #2563eb;
+}
+
+.buttonGroup button.active,
+.countGroup button.active {
+    background: #2563eb;
+    border-color: #2563eb;
+    color: white;
+}
+
+.buttonGroup button.langButton {
+    font-size: 2rem;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sportLabel {
+    flex: 1;
+    cursor: pointer;
+}
+
+.hiddenCheckbox {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.emojiCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    border: 2px solid #e5e7eb;
+    border-radius: 12px;
+    transition: all 0.2s;
+    background: white;
+}
+
+.emojiCard .emoji {
+    font-size: 2.5rem;
+}
+
+.emojiCard .label {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #4b5563;
+}
+
+.hiddenCheckbox:checked+.emojiCard {
+    border-color: #2563eb;
+    background: #f0f7ff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px -1px rgba(37, 99, 235, 0.2);
+}
+
+.hiddenCheckbox:checked+.emojiCard .label {
+    color: #2563eb;
+}
+
+.checkboxLabel {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem;
+    border: 2px solid #e5e7eb;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-weight: 600;
+    color: #4b5563;
+}
+
+.checkboxLabel:has(input:checked) {
+    border-color: #2563eb;
+    background: #f0f7ff;
+    color: #2563eb;
+}
+
+.checkboxLabel input {
+    width: 1.25rem;
+    height: 1.25rem;
+    accent-color: #2563eb;
+}
+
+.startButton {
+    margin-top: 1rem;
+    padding: 1rem;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.125rem;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 4px 6px -1px rgba(37, 99, 235, 0.4);
+    transition: all 0.2s;
+}
+
+.startButton:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.4);
+}
+
+.startButton:active {
+    transform: translateY(0);
+}

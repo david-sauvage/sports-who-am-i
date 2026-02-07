@@ -7,12 +7,20 @@ export interface Club {
 export interface Player {
     id: string;
     name: string;
-    birthDate: string; // ISO string YYYY-MM-DD or localised date string? Let's use ISO for storing
+    birthDate: string;
     sport: 'football' | 'basketball';
+    category: 'historical' | 'active';
     clubs: Club[];
 }
 
-export type GameStatus = 'idle' | 'playing' | 'won' | 'lost';
+export interface GameSettings {
+    language: string;
+    sports: ('football' | 'basketball')[];
+    categories: ('historical' | 'active')[];
+    questionCount: number;
+}
+
+export type GameStatus = 'idle' | 'settings' | 'playing' | 'won' | 'lost' | 'ended';
 
 export interface GameState {
     status: GameStatus;

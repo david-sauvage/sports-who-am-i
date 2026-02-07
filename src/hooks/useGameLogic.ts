@@ -43,6 +43,7 @@ export const useGameLogic = ({
     const [status, setStatus] = useState<GameStatus>('idle');
     const [currentPlayerIndex, setCurrentPlayerIndex] = useState(0);
     const [score, setScore] = useState(maxScore);
+    const [totalScore, setTotalScore] = useState(0);
     const [revealedClueCount, setRevealedClueCount] = useState(0);
     const [timer, setTimer] = useState(0);
 
@@ -55,12 +56,26 @@ export const useGameLogic = ({
         setScore(maxScore);
         setRevealedClueCount(0);
         setTimer(0);
+        setCurrentPlayerIndex(0);
+        setTotalScore(0);
+    }, [maxScore]);
+
+    const startNextRound = useCallback(() => {
+        setStatus('playing');
+        setScore(maxScore);
+        setRevealedClueCount(0);
+        setTimer(0);
     }, [maxScore]);
 
     const nextPlayer = useCallback(() => {
-        setCurrentPlayerIndex((prev) => (prev + 1) % players.length);
-        startGame();
-    }, [players.length, startGame]);
+        const nextIndex = currentPlayerIndex + 1;
+        if (nextIndex >= players.length) {
+            setStatus('ended');
+            return;
+        }
+        setCurrentPlayerIndex(nextIndex);
+        startNextRound();
+    }, [currentPlayerIndex, players.length, startNextRound]);
 
     const stopTimer = useCallback(() => {
         if (timerRef.current) {
@@ -71,7 +86,7 @@ export const useGameLogic = ({
 
     const submitGuess = useCallback(
         (guess: string) => {
-            if (!currentPlayer) return false;
+            if (!currentPlayer || status !== 'playing') return false;
 
             const normalizedGuess = guess.trim().toLowerCase();
             const normalizedName = currentPlayer.name.toLowerCase();
@@ -83,12 +98,13 @@ export const useGameLogic = ({
 
             if (distance <= tolerance) {
                 setStatus('won');
+                setTotalScore(prev => prev + score);
                 stopTimer();
                 return true;
             }
             return false;
         },
-        [currentPlayer, stopTimer]
+        [currentPlayer, status, score, stopTimer]
     );
 
     const giveUp = useCallback(() => {
@@ -103,15 +119,6 @@ export const useGameLogic = ({
 
         if (status === 'playing') {
             timerRef.current = setInterval(() => {
-                // Update roughly every 100ms
-
-                // Accumulate time for seconds timer (10 ticks of 100ms = 1000ms)
-                secondAccumulator += 100;
-                if (secondAccumulator >= 1000) {
-                    setTimer((t) => t + 1);
-                    secondAccumulator -= 1000;
-                }
-
                 // Decay score continuously: 1 point per 100ms (10 points / sec)
                 setScore((prev) => {
                     const newScore = Math.max(0, prev - 1);
@@ -120,6 +127,12 @@ export const useGameLogic = ({
                     }
                     return newScore;
                 });
+
+                secondAccumulator += 100;
+                if (secondAccumulator >= 1000) {
+                    setTimer((t) => t + 1);
+                    secondAccumulator -= 1000;
+                }
             }, 100);
         } else {
             stopTimer();
@@ -131,10 +144,6 @@ export const useGameLogic = ({
     // Clue Reveal Effect
     useEffect(() => {
         if (status !== 'playing' || !currentPlayer) return;
-
-        // Logic:
-        // 1st clue at initialClueDelay
-        // next clues every clueRevealInterval
 
         const timeElapsedMs = timer * 1000;
         let cluesToShow = 0;
@@ -153,6 +162,7 @@ export const useGameLogic = ({
         status,
         currentPlayer,
         score,
+        totalScore,
         revealedClueCount,
         startGame,
         submitGuess,
