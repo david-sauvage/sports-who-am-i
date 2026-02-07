@@ -107,18 +107,8 @@ export const GameContainer = () => {
 
             <div className={styles.controls}>
                 {status === 'playing' ? (
-                    <>
-                        <AnswerInput onSubmit={submitGuess} />
-                        <button onClick={giveUp} className={styles.secondaryButton}>
-                            {t('common.giveUp')}
-                        </button>
-                    </>
-                ) : (
-                    <div className={styles.resultFeedback}>
-                        {status === 'won' && <h2>✨ {t('game.win', { name: currentPlayer?.name })} ✨</h2>}
-                        {status === 'lost' && <h2>{currentPlayer?.name}</h2>}
-                    </div>
-                )}
+                    <AnswerInput onSubmit={submitGuess} onGiveUp={giveUp} />
+                ) : null}
             </div>
         </div>
     );

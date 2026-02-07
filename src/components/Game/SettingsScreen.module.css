@@ -168,3 +168,28 @@
 .startButton:active {
     transform: translateY(0);
 }
+
+@media (max-width: 600px) {
+    .container {
+        padding: 1.5rem;
+        gap: 1rem;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .buttonGroup,
+    .countGroup {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    .emojiCard .emoji {
+        font-size: 2rem;
+    }
+
+    .emojiCard {
+        padding: 0.75rem;
+    }
+}

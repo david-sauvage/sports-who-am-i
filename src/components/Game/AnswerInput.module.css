@@ -1,8 +1,12 @@
 .form {
+    width: 100%;
+    max-width: 500px;
+}
+
+.inputWrapper {
     display: flex;
     gap: 0.5rem;
     width: 100%;
-    max-width: 500px;
 }
 
 .input {
@@ -12,6 +16,13 @@
     border-radius: 8px;
     font-size: 1rem;
     transition: all 0.2s;
+    min-width: 0;
+    /* Allow shrinking */
+}
+
+.buttonGroup {
+    display: flex;
+    gap: 0.5rem;
 }
 
 .input:focus {
@@ -39,15 +50,39 @@
     font-weight: 600;
     cursor: pointer;
     transition: background-color 0.2s;
+    white-space: nowrap;
+}
+
+.giveUpButton {
+    padding: 0.75rem 1rem;
+    background-color: #fee2e2;
+    color: #ef4444;
+    border: 1px solid #fecaca;
+    border-radius: 8px;
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.giveUpButton:hover:not(:disabled) {
+    background-color: #fecaca;
+    transform: scale(1.05);
 }
 
 .button:hover:not(:disabled) {
     background-color: #2563eb;
 }
 
-.button:disabled {
-    background-color: #cbd5e1;
+.button:disabled,
+.giveUpButton:disabled {
+    opacity: 0.5;
     cursor: not-allowed;
+    background-color: #f1f5f9;
+    border-color: #e2e8f0;
+    color: #94a3b8;
 }
 
 @keyframes shake {

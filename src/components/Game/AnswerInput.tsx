@@ -4,10 +4,11 @@ import styles from './AnswerInput.module.css';
 
 interface AnswerInputProps {
     onSubmit: (guess: string) => boolean;
+    onGiveUp?: () => void;
     disabled?: boolean;
 }
 
-export const AnswerInput = ({ onSubmit, disabled }: AnswerInputProps) => {
+export const AnswerInput = ({ onSubmit, onGiveUp, disabled }: AnswerInputProps) => {
     const { t } = useTranslation();
     const [guess, setGuess] = useState('');
     const [feedback, setFeedback] = useState<'none' | 'success' | 'error'>('none');
@@ -22,28 +23,43 @@ export const AnswerInput = ({ onSubmit, disabled }: AnswerInputProps) => {
             setGuess('');
         } else {
             setFeedback('error');
-            // Clear error after a moment or keep it?
             setTimeout(() => setFeedback('none'), 1000);
         }
     };
 
     return (
         <form onSubmit={handleSubmit} className={styles.form}>
-            <input
-                type="text"
-                value={guess}
-                onChange={(e) => setGuess(e.target.value)}
-                placeholder={t('game.enterGuess')}
-                className={`${styles.input} ${styles[feedback]}`}
-                disabled={disabled || feedback === 'success'}
-            />
-            <button
-                type="submit"
-                className={styles.button}
-                disabled={disabled || !guess.trim()}
-            >
-                {t('common.submit')}
-            </button>
+            <div className={styles.inputWrapper}>
+                <input
+                    type="text"
+                    value={guess}
+                    onChange={(e) => setGuess(e.target.value)}
+                    placeholder={t('game.enterGuess')}
+                    className={`${styles.input} ${styles[feedback]}`}
+                    disabled={disabled || feedback === 'success'}
+                />
+                <div className={styles.buttonGroup}>
+                    <button
+                        type="submit"
+                        className={styles.button}
+                        disabled={disabled || !guess.trim() || feedback === 'success'}
+                        title={t('common.submit')}
+                    >
+                        {t('common.submit')}
+                    </button>
+                    {onGiveUp && (
+                        <button
+                            type="button"
+                            onClick={onGiveUp}
+                            className={styles.giveUpButton}
+                            disabled={disabled || feedback === 'success'}
+                            title={t('common.giveUp')}
+                        >
+                            ❌
+                        </button>
+                    )}
+                </div>
+            </div>
         </form>
     );
 };

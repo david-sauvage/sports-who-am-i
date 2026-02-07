@@ -23,10 +23,11 @@ export const PlayerCard = ({ player, revealedClueCount, showName = false }: Play
     return (
         <div className={styles.card}>
             <div className={styles.header}>
-                <span className={styles.sportTag}>
-                    {sportEmojis[player.sport] || '🏆'} {player.sport}
-                </span>
-                <h2 className={styles.playerName}>
+                <div className={styles.sportTag}>
+                    <span className={styles.sportEmoji}>{sportEmojis[player.sport] || '🏆'}</span>
+                    <span className={styles.sportName}>{t(`sports.${player.sport}`)}</span>
+                </div>
+                <h2 className={`${styles.playerName} ${!showName ? styles.placeholder : ''}`}>
                     {showName ? player.name : '???'}
                 </h2>
                 <div className={styles.birthDate}>

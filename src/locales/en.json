@@ -12,7 +12,12 @@
         "clubs": "Clubs",
         "enterGuess": "Enter player name...",
         "win": "Correct! It was {{name}}.",
-        "loss": "Game Over! It was {{name}}."
+        "loss": "Game Over! It was {{name}}.",
+        "noMoreClues": "No more clues available."
+    },
+    "sports": {
+        "football": "Football",
+        "basketball": "Basketball"
     },
     "settings": {
         "title": "Game Settings",

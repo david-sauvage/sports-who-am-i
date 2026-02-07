@@ -1,22 +1,36 @@
 .list {
   list-style: none;
   padding: 0;
-  margin: 1rem 0;
+  margin: 0.5rem 0;
+  height: 350px;
+  overflow-y: auto;
+  border: 1px solid #f0f0f0;
+  border-radius: 8px;
+  background-color: #fafafa;
 }
 
 .item {
-  opacity: 0;
-  transform: translateY(10px);
-  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
-  padding: 0.5rem;
+  display: none;
+  padding: 0.75rem 1rem;
   border-bottom: 1px solid #eee;
-  display: flex;
   align-items: center;
 }
 
 .visible {
-  opacity: 1;
-  transform: translateY(0);
+  display: flex;
+  animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .clubInfo {
@@ -26,9 +40,32 @@
 
 .clubName {
   font-weight: bold;
+  font-size: 1.1rem;
 }
 
 .clubYears {
-  font-size: 0.8em;
+  font-size: 0.85em;
   color: #666;
+}
+
+.noMoreClues {
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #94a3b8;
+  font-style: italic;
+  list-style: none;
+  border-top: 1px dashed #e2e8f0;
+  animation: fadeIn 0.5s ease-out;
+}
+
+@media (max-width: 600px) {
+  .list {
+    height: 320px;
+    margin: 0.5rem 0;
+  }
+
+  .clubName {
+    font-size: 1rem;
+  }
 }

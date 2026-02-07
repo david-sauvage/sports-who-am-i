@@ -1,3 +1,5 @@
+import { useEffect, useRef } from 'react';
+import { useTranslation } from 'react-i18next';
 import type { Club } from '../../types';
 import styles from './ClubList.module.css';
 
@@ -7,8 +9,22 @@ interface ClubListProps {
 }
 
 export const ClubList = ({ clubs, revealedCount }: ClubListProps) => {
+    const { t } = useTranslation();
+    const listRef = useRef<HTMLUListElement>(null);
+
+    useEffect(() => {
+        if (listRef.current) {
+            listRef.current.scrollTo({
+                top: listRef.current.scrollHeight,
+                behavior: 'smooth'
+            });
+        }
+    }, [revealedCount]);
+
+    const allRevealed = revealedCount >= clubs.length;
+
     return (
-        <ul className={styles.list}>
+        <ul ref={listRef} className={styles.list}>
             {clubs.map((club, index) => (
                 <li
                     key={`${club.name}-${index}`}
@@ -20,6 +36,11 @@ export const ClubList = ({ clubs, revealedCount }: ClubListProps) => {
                     </div>
                 </li>
             ))}
+            {allRevealed && (
+                <li className={styles.noMoreClues}>
+                    {t('game.noMoreClues')}
+                </li>
+            )}
         </ul>
     );
 };

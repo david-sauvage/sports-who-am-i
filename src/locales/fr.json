@@ -12,7 +12,12 @@
         "clubs": "Clubs",
         "enterGuess": "Entrez le nom du joueur...",
         "win": "Bravo ! C'était {{name}}.",
-        "loss": "Perdu ! C'était {{name}}."
+        "loss": "Perdu ! C'était {{name}}.",
+        "noMoreClues": "Plus d'indices disponibles."
+    },
+    "sports": {
+        "football": "Football",
+        "basketball": "Basketball"
     },
     "settings": {
         "title": "Paramètres de la partie",
