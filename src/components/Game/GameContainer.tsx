@@ -43,18 +43,17 @@ export const GameContainer = () => {
         score,
         totalScore,
         revealedClueCount,
+        feedback,
         timer,
         startGame,
         submitGuess,
-        giveUp,
-        nextPlayer
+        giveUp
     } = useGameLogic({ players: filteredPlayers });
 
     const handleStartWithSettings = (settings: GameSettings) => {
         setGameSettings(settings);
         setView('game');
         // We use a small timeout to ensure the memo has updated the players before starting
-        // Actually startGame can be called in a useEffect or here if we are sure
         setTimeout(() => startGame(), 0);
     };
 
@@ -87,12 +86,10 @@ export const GameContainer = () => {
     // Handle Game View (Status playing, won, lost)
     if (!currentPlayer && status !== 'idle') return <div>{t('common.loading')}</div>;
 
-    // If game ended (e.g. no more players), we could add an end screen here
-    // But nextPlayer currently cycles. If we want a fixed number of questions:
-    // ... logic for game end ...
+    const containerClasses = `${styles.container} ${feedback ? styles[feedback] : ''}`;
 
     return (
-        <div className={styles.container}>
+        <div className={containerClasses}>
             <div className={styles.header}>
                 <button onClick={() => setView('settings')} className={styles.backButton}>⚙️</button>
                 <ScoreBoard score={score} totalScore={totalScore} timer={timer} />
@@ -103,34 +100,24 @@ export const GameContainer = () => {
                     <PlayerCard
                         player={currentPlayer}
                         revealedClueCount={revealedClueCount}
+                        showName={status === 'won' || status === 'lost'}
                     />
-                )}
-
-                {status !== 'playing' && currentPlayer && (
-                    <div className={styles.overlay}>
-                        <div className={styles.resultCard}>
-                            <h2>
-                                {status === 'won'
-                                    ? t('game.win', { name: currentPlayer.name })
-                                    : t('game.loss', { name: currentPlayer.name })
-                                }
-                            </h2>
-                            <button onClick={nextPlayer} className={styles.primaryButton}>
-                                {t('common.next')}
-                            </button>
-                        </div>
-                    </div>
                 )}
             </div>
 
             <div className={styles.controls}>
-                {status === 'playing' && (
+                {status === 'playing' ? (
                     <>
                         <AnswerInput onSubmit={submitGuess} />
                         <button onClick={giveUp} className={styles.secondaryButton}>
                             {t('common.giveUp')}
                         </button>
                     </>
+                ) : (
+                    <div className={styles.resultFeedback}>
+                        {status === 'won' && <h2>✨ {t('game.win', { name: currentPlayer?.name })} ✨</h2>}
+                        {status === 'lost' && <h2>{currentPlayer?.name}</h2>}
+                    </div>
                 )}
             </div>
         </div>

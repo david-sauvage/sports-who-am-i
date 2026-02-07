@@ -6,9 +6,10 @@ import styles from './PlayerCard.module.css';
 interface PlayerCardProps {
     player: Player;
     revealedClueCount: number;
+    showName?: boolean;
 }
 
-export const PlayerCard = ({ player, revealedClueCount }: PlayerCardProps) => {
+export const PlayerCard = ({ player, revealedClueCount, showName = false }: PlayerCardProps) => {
     const { t } = useTranslation();
 
     const sportEmojis: Record<string, string> = {
@@ -25,7 +26,12 @@ export const PlayerCard = ({ player, revealedClueCount }: PlayerCardProps) => {
                 <span className={styles.sportTag}>
                     {sportEmojis[player.sport] || '🏆'} {player.sport}
                 </span>
-                <h2>{t('game.birthDate', { date: formattedDate })}</h2>
+                <h2 className={styles.playerName}>
+                    {showName ? player.name : '???'}
+                </h2>
+                <div className={styles.birthDate}>
+                    {t('game.birthDate', { date: formattedDate })}
+                </div>
             </div>
 
             <div className={styles.clubsSection}>

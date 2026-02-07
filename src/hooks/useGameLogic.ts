@@ -46,6 +46,7 @@ export const useGameLogic = ({
     const [totalScore, setTotalScore] = useState(0);
     const [revealedClueCount, setRevealedClueCount] = useState(0);
     const [timer, setTimer] = useState(0);
+    const [feedback, setFeedback] = useState<'correct' | 'wrong' | null>(null);
 
     const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
@@ -58,6 +59,7 @@ export const useGameLogic = ({
         setTimer(0);
         setCurrentPlayerIndex(0);
         setTotalScore(0);
+        setFeedback(null);
     }, [maxScore]);
 
     const startNextRound = useCallback(() => {
@@ -65,6 +67,7 @@ export const useGameLogic = ({
         setScore(maxScore);
         setRevealedClueCount(0);
         setTimer(0);
+        setFeedback(null);
     }, [maxScore]);
 
     const nextPlayer = useCallback(() => {
@@ -98,19 +101,36 @@ export const useGameLogic = ({
 
             if (distance <= tolerance) {
                 setStatus('won');
+                setFeedback('correct');
                 setTotalScore(prev => prev + score);
                 stopTimer();
+
+                // Auto-advance after 1.5s
+                setTimeout(() => {
+                    nextPlayer();
+                }, 1500);
+
                 return true;
             }
+
+            // Wrong guess visual feedback
+            setFeedback('wrong');
+            setTimeout(() => setFeedback(null), 500);
+
             return false;
         },
-        [currentPlayer, status, score, stopTimer]
+        [currentPlayer, status, score, stopTimer, nextPlayer]
     );
 
     const giveUp = useCallback(() => {
         setStatus('lost');
         stopTimer();
-    }, [stopTimer]);
+
+        // Show answer for 2s then auto-advance
+        setTimeout(() => {
+            nextPlayer();
+        }, 2000);
+    }, [stopTimer, nextPlayer]);
 
     // Timer & Score Effect
     useEffect(() => {
@@ -164,6 +184,7 @@ export const useGameLogic = ({
         score,
         totalScore,
         revealedClueCount,
+        feedback,
         startGame,
         submitGuess,
         giveUp,
