@@ -60,6 +60,13 @@ const SettingsScreen: React.FC<SettingsScreenProps> = ({ onStart }) => {
                     >
                         🇬🇧
                     </button>
+                    <button
+                        className={`${styles.langButton} ${settings.language === 'es' ? styles.active : ''}`}
+                        onClick={() => handleLanguageChange('es')}
+                        title="Español"
+                    >
+                        🇪🇸
+                    </button>
                 </div>
             </div>
 

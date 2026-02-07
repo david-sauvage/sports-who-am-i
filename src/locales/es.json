@@ -1,0 +1,37 @@
+{
+    "title": "¿Quién soy?",
+    "common": {
+        "loading": "Cargando...",
+        "score": "Puntuación",
+        "submit": "Enviar",
+        "giveUp": "Rendirse",
+        "next": "Siguiente jugador"
+    },
+    "game": {
+        "birthDate": "Nacido el {{date}}",
+        "clubs": "Clubes",
+        "enterGuess": "Introduce el nombre del jugador...",
+        "win": "¡Correcto! Era {{name}}.",
+        "loss": "¡Perdiste! Era {{name}}.",
+        "noMoreClues": "No hay más pistas disponibles."
+    },
+    "sports": {
+        "football": "Fútbol",
+        "basketball": "Baloncesto"
+    },
+    "settings": {
+        "title": "Ajustes de la partida",
+        "language": "Idioma",
+        "sports": "Deportes",
+        "categories": "Tipos de jugador",
+        "questionCount": "Número de preguntas",
+        "football": "Fútbol",
+        "basketball": "Baloncesto",
+        "historical": "Históricos",
+        "active": "En activo",
+        "start": "Empezar juego",
+        "gameOver": "¡Juego terminado!",
+        "totalScore": "Puntuación total: {{score}}",
+        "playAgain": "Jugar de nuevo"
+    }
+}
