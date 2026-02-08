@@ -1,0 +1,7 @@
+{
+    "name": "sports-who-am-i",
+    "compatibility_date": "2024-02-08",
+    "assets": {
+        "directory": "./dist"
+    }
+}
