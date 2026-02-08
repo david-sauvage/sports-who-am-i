@@ -44,7 +44,6 @@ export const GameContainer = () => {
         totalScore,
         revealedClueCount,
         feedback,
-        timer,
         startGame,
         submitGuess,
         giveUp

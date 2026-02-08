@@ -9,6 +9,7 @@ const mockPlayers: Player[] = [
         name: 'Zinedine Zidane',
         birthDate: '1972-06-23',
         sport: 'football',
+        category: 'historical',
         clubs: [
             { name: 'AS Cannes', years: '1989-1992' },
             { name: 'Bordeaux', years: '1992-1996' },
@@ -21,6 +22,7 @@ const mockPlayers: Player[] = [
         name: 'Tony Parker',
         birthDate: '1982-05-17',
         sport: 'basketball',
+        category: 'historical',
         clubs: [
             { name: 'Paris Racing', years: '1999-2001' },
             { name: 'San Antonio Spurs', years: '2001-2018' }
@@ -165,5 +167,77 @@ describe('useGameLogic', () => {
         });
         expect(success).toBe(false);
         expect(result.current.status).toBe('playing');
+    });
+
+    it('handles give up', () => {
+        const { result } = renderHook(() => useGameLogic({ players: mockPlayers }));
+
+        act(() => {
+            result.current.startGame();
+        });
+
+        act(() => {
+            result.current.giveUp();
+        });
+
+        expect(result.current.status).toBe('lost');
+    });
+
+    it('handles score reaching zero', () => {
+        const { result } = renderHook(() => useGameLogic({ players: mockPlayers, maxScore: 10 }));
+
+        act(() => {
+            result.current.startGame();
+        });
+
+        act(() => {
+            vi.advanceTimersByTime(1000);
+        });
+
+        // 10 score - 10 per sec = 0
+        expect(result.current.score).toBe(0);
+        expect(result.current.status).toBe('lost');
+    });
+
+    it('auto-advances to next player after winning', () => {
+        const { result } = renderHook(() => useGameLogic({ players: mockPlayers }));
+
+        act(() => {
+            result.current.startGame();
+        });
+
+        act(() => {
+            result.current.submitGuess(mockPlayers[0].name);
+        });
+
+        expect(result.current.status).toBe('won');
+        expect(result.current.currentPlayer).toEqual(mockPlayers[0]);
+
+        // Advance 1.5s
+        act(() => {
+            vi.advanceTimersByTime(1500);
+        });
+
+        expect(result.current.currentPlayer).toEqual(mockPlayers[1]);
+        expect(result.current.status).toBe('playing');
+    });
+
+    it('ends game after last player', () => {
+        const { result } = renderHook(() => useGameLogic({ players: [mockPlayers[0]] }));
+
+        act(() => {
+            result.current.startGame();
+        });
+
+        act(() => {
+            result.current.submitGuess(mockPlayers[0].name);
+        });
+
+        // Advance 1.5s
+        act(() => {
+            vi.advanceTimersByTime(1500);
+        });
+
+        expect(result.current.status).toBe('ended');
     });
 });
