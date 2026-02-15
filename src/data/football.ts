@@ -405,5 +405,33 @@ export const footballPlayers: Player[] = [
     {
         id: 'f-100', name: 'Leonardo Bonucci', birthDate: '1987-05-01', sport: 'football', category: 'historical',
         clubs: [{ name: 'Inter Milan', years: '2005-2007' }, { name: 'Bari', years: '2009-2010' }, { name: 'Juventus', years: '2010-2017' }, { name: 'AC Milan', years: '2017-2018' }, { name: 'Juventus', years: '2018-2023' }, { name: 'Union Berlin', years: '2023-2024' }, { name: 'Fenerbahçe', years: '2024' }]
+    },
+    {
+        id: 'f-101', name: 'Rodri', birthDate: '1996-06-22', sport: 'football', category: 'active',
+        clubs: [{ name: 'Villarreal', years: '2015-2018' }, { name: 'Atlético Madrid', years: '2018-2019' }, { name: 'Man City', years: '2019-' }]
+    },
+    {
+        id: 'f-102', name: 'Vinícius Júnior', birthDate: '2000-07-12', sport: 'football', category: 'active',
+        clubs: [{ name: 'Flamengo', years: '2017-2018' }, { name: 'Real Madrid', years: '2018-' }]
+    },
+    {
+        id: 'f-103', name: 'Lamine Yamal', birthDate: '2007-07-13', sport: 'football', category: 'active',
+        clubs: [{ name: 'Barcelona', years: '2023-' }]
+    },
+    {
+        id: 'f-104', name: 'Jude Bellingham', birthDate: '2003-06-29', sport: 'football', category: 'active',
+        clubs: [{ name: 'Birmingham City', years: '2019-2020' }, { name: 'Borussia Dortmund', years: '2020-2023' }, { name: 'Real Madrid', years: '2023-' }]
+    },
+    {
+        id: 'f-105', name: 'Franz Beckenbauer', birthDate: '1945-09-11', sport: 'football', category: 'historical',
+        clubs: [{ name: 'Bayern Munich', years: '1964-1977' }, { name: 'New York Cosmos', years: '1977-1980' }, { name: 'Hamburger SV', years: '1980-1982' }, { name: 'New York Cosmos', years: '1983' }]
+    },
+    {
+        id: 'f-106', name: 'Lothar Matthäus', birthDate: '1961-03-21', sport: 'football', category: 'historical',
+        clubs: [{ name: 'Mönchengladbach', years: '1979-1984' }, { name: 'Bayern Munich', years: '1984-1988' }, { name: 'Inter Milan', years: '1988-1992' }, { name: 'Bayern Munich', years: '1992-2000' }, { name: 'MetroStars', years: '2000' }]
+    },
+    {
+        id: 'f-107', name: 'Eric Cantona', birthDate: '1966-05-24', sport: 'football', category: 'historical',
+        clubs: [{ name: 'Auxerre', years: '1983-1988' }, { name: 'Martigues', years: '1985-1986' }, { name: 'Marseille', years: '1988-1991' }, { name: 'Bordeaux', years: '1989' }, { name: 'Montpellier', years: '1989-1990' }, { name: 'Nîmes', years: '1991' }, { name: 'Leeds United', years: '1992' }, { name: 'Man Utd', years: '1992-1997' }]
     }
 ];

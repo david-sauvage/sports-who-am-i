@@ -406,5 +406,29 @@ export const basketballPlayers: Player[] = [
     {
         id: 'b-100', name: 'LaMelo Ball', birthDate: '2001-08-22', sport: 'basketball', category: 'active',
         clubs: [{ name: 'Illawarra Hawks', years: '2019-2020' }, { name: 'Charlotte Hornets', years: '2020-' }]
+    },
+    {
+        id: 'b-101', name: 'Julius Erving', birthDate: '1950-02-22', sport: 'basketball', category: 'historical',
+        clubs: [{ name: 'Virginia Squires', years: '1971-1973' }, { name: 'New York Nets', years: '1973-1976' }, { name: 'Philadelphia 76ers', years: '1976-1987' }]
+    },
+    {
+        id: 'b-102', name: 'Moses Malone', birthDate: '1955-03-23', sport: 'basketball', category: 'historical',
+        clubs: [{ name: 'Utah Stars', years: '1974-1975' }, { name: 'Spirits of St. Louis', years: '1975-1976' }, { name: 'Buffalo Braves', years: '1976' }, { name: 'Houston Rockets', years: '1976-1982' }, { name: 'Philadelphia 76ers', years: '1982-1986' }, { name: 'Washington Bullets', years: '1986-1988' }, { name: 'Atlanta Hawks', years: '1988-1991' }, { name: 'Milwaukee Bucks', years: '1991-1993' }, { name: 'Philadelphia 76ers', years: '1993-1994' }, { name: 'San Antonio Spurs', years: '1994-1995' }]
+    },
+    {
+        id: 'b-103', name: 'Jalen Brunson', birthDate: '1996-08-31', sport: 'basketball', category: 'active',
+        clubs: [{ name: 'Dallas Mavericks', years: '2018-2022' }, { name: 'New York Knicks', years: '2022-' }]
+    },
+    {
+        id: 'b-104', name: 'Tyrese Haliburton', birthDate: '2000-02-29', sport: 'basketball', category: 'active',
+        clubs: [{ name: 'Sacramento Kings', years: '2020-2022' }, { name: 'Indiana Pacers', years: '2022-' }]
+    },
+    {
+        id: 'b-105', name: 'Paolo Banchero', birthDate: '2002-11-12', sport: 'basketball', category: 'active',
+        clubs: [{ name: 'Orlando Magic', years: '2022-' }]
+    },
+    {
+        id: 'b-106', name: 'Chet Holmgren', birthDate: '2002-05-01', sport: 'basketball', category: 'active',
+        clubs: [{ name: 'OKC Thunder', years: '2022-' }]
     }
 ];
