@@ -32,6 +32,12 @@
         "start": "Start Game",
         "gameOver": "Game Over!",
         "totalScore": "Total Score: {{score}}",
-        "playAgain": "Play Again"
+        "playAgain": "Play Again",
+        "enterCode": "Enter Game Code",
+        "codePlaceholder": "e.g. V1|...",
+        "playCode": "Play Code",
+        "invalidCode": "Invalid Game Code",
+        "shareCodeMsg": "Share this code with friends to play the exact same game:",
+        "codeCopied": "Code copied!"
     }
 }

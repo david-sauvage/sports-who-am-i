@@ -32,6 +32,12 @@
         "start": "Commencer la partie",
         "gameOver": "Partie Terminée !",
         "totalScore": "Score Total : {{score}}",
-        "playAgain": "Rejouer"
+        "playAgain": "Rejouer",
+        "enterCode": "Saisir un code de partie",
+        "codePlaceholder": "ex: V1|...",
+        "playCode": "Jouer ce code",
+        "invalidCode": "Code invalide",
+        "shareCodeMsg": "Partage ce code pour défier tes amis sur la même partie :",
+        "codeCopied": "Code copié !"
     }
 }

@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import type { GameSettings } from '../../types';
+import { parseGameCode } from '../../utils/gameCode';
 import styles from './SettingsScreen.module.css';
 
 interface SettingsScreenProps {
-    onStart: (settings: GameSettings) => void;
+    onStart: (settings: GameSettings, seed?: string) => void;
 }
 
 const SettingsScreen: React.FC<SettingsScreenProps> = ({ onStart }) => {
@@ -15,6 +16,9 @@ const SettingsScreen: React.FC<SettingsScreenProps> = ({ onStart }) => {
         categories: ['active', 'historical'],
         questionCount: 10,
     });
+    const [gameCodeInput, setGameCodeInput] = useState('');
+    const [loadedSeed, setLoadedSeed] = useState<string | null>(null);
+    const [isValidCode, setIsValidCode] = useState<boolean | null>(null);
 
     const handleLanguageChange = (lang: string) => {
         i18n.changeLanguage(lang);
@@ -35,13 +39,53 @@ const SettingsScreen: React.FC<SettingsScreenProps> = ({ onStart }) => {
         if (newCategories.length > 0) setSettings({ ...settings, categories: newCategories });
     };
 
+    const handleCodeChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        const code = e.target.value;
+        setGameCodeInput(code);
+
+        if (code.trim().length === 0) {
+            setIsValidCode(null);
+            setLoadedSeed(null);
+            return;
+        }
+
+        const result = parseGameCode(code.trim());
+        if (result) {
+            setIsValidCode(true);
+            setLoadedSeed(result.seed);
+            setSettings(result.settings);
+
+            // Auto-switch language if different
+            if (result.settings.language !== i18n.language) {
+                i18n.changeLanguage(result.settings.language);
+            }
+        } else {
+            setIsValidCode(false);
+            setLoadedSeed(null);
+        }
+    };
+
     const handleStart = () => {
-        onStart(settings);
+        // If we have a loaded seed from a valid code, use it. Otherwise, new random game.
+        onStart(settings, loadedSeed || undefined);
     };
 
     return (
         <div className={styles.container}>
             <h1 className={styles.title}>{t('settings.title')}</h1>
+
+            <div className={styles.section}>
+                <h3>{t('settings.enterCode')}</h3>
+                <div className={styles.inputGroup}>
+                    <input
+                        type="text"
+                        value={gameCodeInput}
+                        onChange={handleCodeChange}
+                        placeholder={t('settings.codePlaceholder')}
+                        className={`${styles.codeInput} ${isValidCode === true ? styles.valid : ''} ${isValidCode === false ? styles.invalid : ''}`}
+                    />
+                </div>
+            </div>
 
             <div className={styles.section}>
                 <h3>{t('settings.language')}</h3>

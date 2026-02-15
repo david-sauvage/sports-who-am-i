@@ -7,35 +7,29 @@ import { ScoreBoard } from '../UI/ScoreBoard';
 import { AnswerInput } from './AnswerInput';
 import SettingsScreen from './SettingsScreen';
 import type { GameSettings } from '../../types';
+import { seededShuffle, generateSeed } from '../../utils/random';
+import { generateGameCode } from '../../utils/gameCode';
 import styles from './GameContainer.module.css';
-
-// Helper to shuffle array
-const shuffleArray = <T,>(array: T[]): T[] => {
-    const newArray = [...array];
-    for (let i = newArray.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [newArray[i], newArray[j]] = [newArray[j], newArray[i]];
-    }
-    return newArray;
-};
 
 export const GameContainer = () => {
     const { t } = useTranslation();
     const [view, setView] = useState<'settings' | 'game'>('settings');
     const [gameSettings, setGameSettings] = useState<GameSettings | null>(null);
+    const [gameSeed, setGameSeed] = useState<string>('');
+    const [showToast, setShowToast] = useState(false);
 
-    // Memoize filtered players based on settings
+    // Memoize filtered players based on settings and seed
     const filteredPlayers = useMemo(() => {
-        if (!gameSettings) return [];
+        if (!gameSettings || !gameSeed) return [];
 
         let filtered = players.filter(p =>
             gameSettings.sports.includes(p.sport) &&
             gameSettings.categories.includes(p.category)
         );
 
-        // Shuffle and slice
-        return shuffleArray(filtered).slice(0, gameSettings.questionCount);
-    }, [gameSettings]);
+        // Shuffle with seed and slice
+        return seededShuffle(filtered, gameSeed).slice(0, gameSettings.questionCount);
+    }, [gameSettings, gameSeed]);
 
     const {
         status,
@@ -49,11 +43,22 @@ export const GameContainer = () => {
         giveUp
     } = useGameLogic({ players: filteredPlayers });
 
-    const handleStartWithSettings = (settings: GameSettings) => {
+    const handleStartWithSettings = (settings: GameSettings, seed?: string) => {
         setGameSettings(settings);
+        setGameSeed(seed || generateSeed());
         setView('game');
         // We use a small timeout to ensure the memo has updated the players before starting
         setTimeout(() => startGame(), 0);
+    };
+
+    const handleCopyCode = async (code: string) => {
+        try {
+            await navigator.clipboard.writeText(code);
+            setShowToast(true);
+            setTimeout(() => setShowToast(false), 2000);
+        } catch (err) {
+            console.error('Failed to copy', err);
+        }
     };
 
     if (view === 'settings') {
@@ -66,6 +71,8 @@ export const GameContainer = () => {
 
     // End Game View
     if (status === 'ended') {
+        const gameCode = gameSettings && gameSeed ? generateGameCode(gameSettings, gameSeed) : '';
+
         return (
             <div className={styles.container}>
                 <div className={styles.endCard}>
@@ -74,6 +81,21 @@ export const GameContainer = () => {
                     <div className={styles.totalScoreLabel}>
                         {t('settings.totalScore', { score: totalScore })}
                     </div>
+
+                    {gameCode && (
+                        <div className={styles.shareSection}>
+                            <p>{t('settings.shareCodeMsg')}</p>
+                            <div className={styles.codeDisplay} onClick={() => handleCopyCode(gameCode)}>
+                                {gameCode}
+                                <span className={styles.copyIcon}>📋</span>
+                            </div>
+                        </div>
+                    )}
+
+                    <div className={`${styles.toast} ${showToast ? styles.show : ''}`}>
+                        {t('settings.codeCopied')}
+                    </div>
+
                     <button onClick={() => setView('settings')} className={styles.primaryButton}>
                         {t('settings.playAgain')}
                     </button>
