@@ -9,6 +9,14 @@ interface UseGameLogicProps {
 }
 
 // Basic Levenshtein distance for fuzzy matching
+const normalizeText = (text: string): string => {
+    return text
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '')
+        .toLowerCase()
+        .trim();
+};
+
 const getLevenshteinDistance = (a: string, b: string): number => {
     if (a.length === 0) return b.length;
     if (b.length === 0) return a.length;
@@ -91,20 +99,39 @@ export const useGameLogic = ({
         (guess: string) => {
             if (!currentPlayer || status !== 'playing') return false;
 
-            const normalizedGuess = guess.trim().toLowerCase();
-            const normalizedName = currentPlayer.name.toLowerCase();
+            const normalizedGuess = normalizeText(guess);
+            const normalizedName = normalizeText(currentPlayer.name);
+            const nameParts = normalizedName.split(/\s+/);
 
-            // Fuzzy match logic
-            const distance = getLevenshteinDistance(normalizedName, normalizedGuess);
-            // Allow 2 errors for 5+ chars, 0 for short words
-            const tolerance = normalizedName.length < 5 ? 0 : 2;
+            // 1. Try full name match
+            const fullDistance = getLevenshteinDistance(normalizedName, normalizedGuess);
+            const fullTolerance = normalizedName.length < 5 ? 0 : 2;
 
-            if (distance <= tolerance) {
+            if (fullDistance <= fullTolerance) {
                 setStatus('won');
                 setFeedback('correct');
                 setTotalScore(prev => prev + score);
                 stopTimer();
                 return true;
+            }
+
+            // 2. Try matching any part of the name (e.g. just the last name)
+            // If the name has multiple words, we skip the first word (likely the first name)
+            const partsToMatch = nameParts.length > 1 ? nameParts.slice(1) : nameParts;
+
+            for (const part of partsToMatch) {
+                if (part.length < 3) continue; // Skip very short parts like "de", "di", etc.
+
+                const partDistance = getLevenshteinDistance(part, normalizedGuess);
+                const partTolerance = part.length < 5 ? 0 : 1; // Stricter for parts
+
+                if (partDistance <= partTolerance) {
+                    setStatus('won');
+                    setFeedback('correct');
+                    setTotalScore(prev => prev + score);
+                    stopTimer();
+                    return true;
+                }
             }
 
             // Wrong guess visual feedback
@@ -167,6 +194,16 @@ export const useGameLogic = ({
             setRevealedClueCount(Math.min(cluesToShow, currentPlayer.clubs.length));
         }
     }, [timer, clueRevealInterval, initialClueDelay, revealedClueCount, currentPlayer, status]);
+
+    // Auto-advance Effect
+    useEffect(() => {
+        if (status === 'won' || status === 'lost') {
+            const timeout = setTimeout(() => {
+                nextPlayer();
+            }, 1500);
+            return () => clearTimeout(timeout);
+        }
+    }, [status, nextPlayer]);
 
     return {
         status,

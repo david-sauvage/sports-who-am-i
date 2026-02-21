@@ -240,4 +240,78 @@ describe('useGameLogic', () => {
 
         expect(result.current.status).toBe('ended');
     });
+
+    it('accepts just the last name', () => {
+        const { result } = renderHook(() => useGameLogic({ players: mockPlayers }));
+
+        act(() => {
+            result.current.startGame();
+        });
+
+        // Current player is "Zinedine Zidane"
+        let success = false;
+        act(() => {
+            success = result.current.submitGuess("Zidane");
+        });
+        expect(success).toBe(true);
+    });
+
+    it('is accent-insensitive', () => {
+        const pWithAccent: Player = {
+            id: '3',
+            name: 'Pelé',
+            birthDate: '1940-10-23',
+            sport: 'football',
+            category: 'historical',
+            clubs: [{ name: 'Santos', years: '1956-1974' }]
+        };
+        const { result } = renderHook(() => useGameLogic({ players: [pWithAccent] }));
+
+        act(() => {
+            result.current.startGame();
+        });
+
+        let success = false;
+        act(() => {
+            // Typing "pele" for "Pelé"
+            success = result.current.submitGuess("pele");
+        });
+        expect(success).toBe(true);
+    });
+
+    it('rejects irrelevant parts or just the first name', () => {
+        const { result } = renderHook(() => useGameLogic({ players: mockPlayers }));
+
+        act(() => {
+            result.current.startGame();
+        });
+
+        // Current player is "Zinedine Zidane"
+        let success = false;
+        act(() => {
+            // "Zinedine" is the first name, should be rejected as partial match
+            success = result.current.submitGuess("Zinedine");
+        });
+        expect(success).toBe(false);
+
+        act(() => {
+            // "Zin" is too short
+            success = result.current.submitGuess("Zin");
+        });
+        expect(success).toBe(false);
+    });
+
+    it('still accepts full name even if it includes the first name', () => {
+        const { result } = renderHook(() => useGameLogic({ players: mockPlayers }));
+
+        act(() => {
+            result.current.startGame();
+        });
+
+        let success = false;
+        act(() => {
+            success = result.current.submitGuess("Zinedine Zidane");
+        });
+        expect(success).toBe(true);
+    });
 });

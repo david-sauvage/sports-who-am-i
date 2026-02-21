@@ -50,6 +50,11 @@
     color: #1a1d27;
 }
 
+.sportEmoji {
+    margin-left: auto;
+    font-size: 1.5rem;
+}
+
 /* Clubs section */
 .clubsSection {
     display: flex;
