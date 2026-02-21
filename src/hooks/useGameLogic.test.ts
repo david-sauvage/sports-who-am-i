@@ -213,9 +213,9 @@ describe('useGameLogic', () => {
         expect(result.current.status).toBe('won');
         expect(result.current.currentPlayer).toEqual(mockPlayers[0]);
 
-        // Advance 1.5s
+        // Advance 2.5s
         act(() => {
-            vi.advanceTimersByTime(1500);
+            vi.advanceTimersByTime(2500);
         });
 
         expect(result.current.currentPlayer).toEqual(mockPlayers[1]);
@@ -233,9 +233,9 @@ describe('useGameLogic', () => {
             result.current.submitGuess(mockPlayers[0].name);
         });
 
-        // Advance 1.5s
+        // Advance 2.5s
         act(() => {
-            vi.advanceTimersByTime(1500);
+            vi.advanceTimersByTime(2500);
         });
 
         expect(result.current.status).toBe('ended');
