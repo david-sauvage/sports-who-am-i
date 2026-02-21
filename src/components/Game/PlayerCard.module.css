@@ -1,75 +1,262 @@
+/* ── Game mode card (during play) ───────────────────────────── */
 .card {
     background: white;
-    border-radius: 12px;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-    padding: 1rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    padding: 1.25rem;
     width: 100%;
-    margin: 0;
 }
 
-.header {
-    border-bottom: 2px solid #f0f0f0;
-    padding-bottom: 0.5rem;
-    margin-bottom: 0.5rem;
+/* Date row */
+.dateRow {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: #f8fafc;
+    border-radius: 14px;
+    padding: 1rem 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+.dateIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: #ede9fe;
+    border-radius: 10px;
+    flex-shrink: 0;
+    color: #7c3aed;
+}
+
+.dateIcon svg {
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.dateLabel {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #94a3b8;
+    margin-bottom: 0.15rem;
+}
+
+.dateValue {
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: #1a1d27;
+}
+
+/* Clubs section */
+.clubsSection {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.clubsSectionHeader {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    color: #94a3b8;
+    margin-bottom: 0.25rem;
+}
+
+.clubsIcon {
+    width: 0.9rem;
+    height: 0.9rem;
+}
+
+/* ── Result card (after won/lost) ───────────────────────────── */
+.resultCard {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    padding: 2rem 1.5rem 1.5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+/* Icon */
+.resultIconWrap {
+    margin-bottom: 0.25rem;
+}
+
+.resultIconSuccess,
+.resultIconFailure {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.resultIconSuccess {
+    background: #dcfce7;
+    color: #16a34a;
+}
+
+.resultIconFailure {
+    background: #fee2e2;
+    color: #dc2626;
+}
+
+.resultIconSuccess svg,
+.resultIconFailure svg {
+    width: 1.75rem;
+    height: 1.75rem;
+}
+
+/* Player name */
+.revealName {
+    margin: 0;
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: #1a1d27;
     text-align: center;
 }
 
-.sportTag {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    background-color: #2563eb;
-    color: white;
-    padding: 0.4rem 1rem;
-    border-radius: 9999px;
-    font-size: 0.9rem;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    font-weight: 700;
-    margin-bottom: 0.5rem;
-    box-shadow: 0 2px 4px rgba(37, 99, 235, 0.2);
-}
-
-.sportEmoji {
+/* Question score */
+.questionScore {
     font-size: 1.1rem;
+    font-weight: 700;
 }
 
-.sportName {
-    line-height: 1;
+.scorePositive {
+    color: #16a34a;
 }
 
-.playerName {
-    margin: 0.5rem 0 0 0;
-    font-size: 1.75rem;
-    color: #2563eb;
-    transition: all 0.3s ease;
-}
-
-.playerName.placeholder {
-    font-size: 1.2rem;
+.scoreZero {
     color: #94a3b8;
-    margin: 0.25rem 0;
 }
 
-@media (max-width: 600px) {
-    .card {
-        padding: 1rem;
+/* Birth date meta */
+.revealMeta {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.9rem;
+    color: #64748b;
+}
+
+.revealMetaIcon {
+    display: flex;
+    align-items: center;
+    color: #94a3b8;
+}
+
+.revealMetaIcon svg {
+    width: 0.9rem;
+    height: 0.9rem;
+}
+
+/* Clubs reveal list */
+.revealClubs {
+    width: 100%;
+    margin-top: 0.5rem;
+    border-top: 1px solid #f1f5f9;
+    padding-top: 1rem;
+}
+
+.revealClubsLabel {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #94a3b8;
+    margin-bottom: 0.6rem;
+}
+
+.revealClubsLabel svg {
+    width: 0.9rem;
+    height: 0.9rem;
+}
+
+.revealClubList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.revealClubItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f8fafc;
+    border-radius: 10px;
+    padding: 0.55rem 0.85rem;
+}
+
+.revealClubName {
+    font-weight: 600;
+    color: #1a1d27;
+    font-size: 0.95rem;
+}
+
+.revealClubYears {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #94a3b8;
+    background: #e2e8f0;
+    border-radius: 6px;
+    padding: 0.1rem 0.45rem;
+}
+
+/* Next button */
+.nextButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+    padding: 0.85rem;
+    margin-top: 0.5rem;
+    background: #1a1d27;
+    color: white;
+    border: none;
+    border-radius: 14px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-family: inherit;
+}
+
+.nextButton:hover {
+    background: #2d3348;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(26, 29, 39, 0.3);
+}
+
+.nextButton:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+
+/* ── Responsive ─────────────────────────────────────────────── */
+@media (max-width: 480px) {
+    .dateValue {
+        font-size: 1rem;
     }
 
-    .playerName {
+    .revealName {
         font-size: 1.4rem;
     }
-}
-
-.birthDate {
-    font-size: 0.9rem;
-    color: #64748b;
-    margin-top: 0.25rem;
-}
-
-.clubsSection h3 {
-    color: #64748b;
-    font-size: 0.875rem;
-    text-transform: uppercase;
-    margin-bottom: 0.5rem;
 }

@@ -1,231 +1,340 @@
+/* ── Container ──────────────────────────────────────────────── */
 .container {
-    background: white;
-    padding: 2.5rem;
-    border-radius: 16px;
-    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+    background: #ffffff;
+    padding: 2rem 1.75rem 1.75rem;
+    border-radius: 24px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.10);
     width: 100%;
-    max-width: 500px;
+    max-width: 420px;
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
-    color: #1a1a1a;
+    gap: 1.4rem;
+    color: #1a1d27;
+}
+
+/* ── Language bar ───────────────────────────────────────────── */
+.langBar {
+    display: flex;
+    justify-content: center;
+    gap: 0.6rem;
+}
+
+.langCircle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    width: 54px;
+    padding: 0.4rem 0.2rem;
+    border: 2px solid #e2e8f0;
+    border-radius: 50px;
+    background: #f8fafc;
+    cursor: pointer;
+    transition: all 0.18s ease;
+    font-family: inherit;
+}
+
+.langCircle:hover {
+    border-color: #94a3b8;
+    background: #f1f5f9;
+}
+
+.langActive {
+    border-color: #1a1d27 !important;
+    background: #1a1d27 !important;
+}
+
+.langActive .langCode {
+    color: #ffffff !important;
+}
+
+.langFlag {
+    font-size: 1.4rem;
+    line-height: 1;
+}
+
+.langCode {
+    font-size: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #64748b;
+    text-transform: uppercase;
+}
+
+/* ── Title block ────────────────────────────────────────────── */
+.titleBlock {
+    text-align: center;
 }
 
 .title {
-    margin: 0;
-    font-size: 1.75rem;
-    text-align: center;
-    color: #2563eb;
-    margin-bottom: 0.5rem;
+    margin: 0 0 0.2rem;
+    font-size: 2rem;
+    font-weight: 800;
+    color: #1a1d27;
+    line-height: 1.2;
 }
 
+.subtitle {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #94a3b8;
+}
+
+/* ── Sections ───────────────────────────────────────────────── */
 .section {
     display: flex;
     flex-direction: column;
-    gap: 0.75rem;
+    gap: 0.6rem;
 }
 
-.section h3 {
-    margin: 0;
-    font-size: 1rem;
-    color: #4b5563;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-}
-
-.buttonGroup,
-.countGroup {
-    display: flex;
-    gap: 0.75rem;
-}
-
-.buttonGroup button,
-.countGroup button {
-    flex: 1;
-    padding: 0.75rem;
-    border: 2px solid #e5e7eb;
-    background: transparent;
-    border-radius: 8px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.2s;
-    color: #4b5563;
-}
-
-.buttonGroup button:hover,
-.countGroup button:hover {
-    border-color: #2563eb;
-    color: #2563eb;
-}
-
-.buttonGroup button.active,
-.countGroup button.active {
-    background: #2563eb;
-    border-color: #2563eb;
-    color: white;
-}
-
-.buttonGroup button.langButton {
-    font-size: 2rem;
-    padding: 0.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.sportLabel {
-    flex: 1;
-    cursor: pointer;
-}
-
-.hiddenCheckbox {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
-}
-
-.emojiCard {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 1rem;
-    border: 2px solid #e5e7eb;
-    border-radius: 12px;
-    transition: all 0.2s;
-    background: white;
-}
-
-.emojiCard .emoji {
-    font-size: 2.5rem;
-}
-
-.emojiCard .label {
-    font-size: 0.875rem;
-    font-weight: 600;
-    color: #4b5563;
-}
-
-.hiddenCheckbox:checked+.emojiCard {
-    border-color: #2563eb;
-    background: #f0f7ff;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 6px -1px rgba(37, 99, 235, 0.2);
-}
-
-.hiddenCheckbox:checked+.emojiCard .label {
-    color: #2563eb;
-}
-
-.checkboxLabel {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    padding: 0.75rem;
-    border: 2px solid #e5e7eb;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: all 0.2s;
-    font-weight: 600;
-    color: #4b5563;
-}
-
-.checkboxLabel:has(input:checked) {
-    border-color: #2563eb;
-    background: #f0f7ff;
-    color: #2563eb;
-}
-
-.checkboxLabel input {
-    width: 1.25rem;
-    height: 1.25rem;
-    accent-color: #2563eb;
-}
-
-.startButton {
-    margin-top: 1rem;
-    padding: 1rem;
-    background: #2563eb;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    font-size: 1.125rem;
+.sectionLabel {
+    font-size: 0.7rem;
     font-weight: 700;
-    cursor: pointer;
-    box-shadow: 0 4px 6px -1px rgba(37, 99, 235, 0.4);
-    transition: all 0.2s;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #64748b;
 }
 
-.startButton:hover {
-    background: #1d4ed8;
-    transform: translateY(-2px);
-    box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.4);
-}
-
-.startButton:active {
-    transform: translateY(0);
-}
-
-@media (max-width: 600px) {
-    .container {
-        padding: 1.5rem;
-        gap: 1rem;
-    }
-
-    .title {
-        font-size: 1.5rem;
-    }
-
-    .buttonGroup,
-    .countGroup {
-        flex-wrap: wrap;
-        gap: 0.5rem;
-    }
-
-    .emojiCard .emoji {
-        font-size: 2rem;
-    }
-
-
-    .emojiCard {
-        padding: 0.75rem;
-    }
-}
-
-.inputGroup {
+/* ── Code input ─────────────────────────────────────────────── */
+.inputWrapper {
     display: flex;
-    gap: 0.75rem;
+    align-items: center;
+    gap: 0;
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
+    background: #f8fafc;
+    overflow: hidden;
+    transition: border-color 0.18s;
+}
+
+.inputWrapper:focus-within {
+    border-color: #94a3b8;
+}
+
+.inputIcon {
+    padding: 0 0.75rem;
+    font-size: 1.1rem;
+    color: #94a3b8;
+    font-weight: 700;
+    font-family: monospace;
+    user-select: none;
 }
 
 .codeInput {
     flex: 1;
-    padding: 0.75rem;
-    border: 2px solid #e5e7eb;
-    border-radius: 8px;
-    font-size: 1rem;
+    padding: 0.75rem 0.75rem 0.75rem 0;
+    border: none;
+    background: transparent;
+    font-size: 0.95rem;
     outline: none;
-    transition: all 0.2s;
     text-transform: uppercase;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.08em;
     font-family: monospace;
+    font-weight: 600;
+    color: #1a1d27;
+}
+
+.codeInput::placeholder {
+    color: #cbd5e1;
+    text-transform: none;
+    letter-spacing: 0;
+    font-weight: 400;
+}
+
+.inputWrapper:has(.valid) {
+    border-color: #22c55e;
+    background: #f0fdf4;
+}
+
+.inputWrapper:has(.invalid) {
+    border-color: #ef4444;
+    background: #fef2f2;
+}
+
+.valid {
+    color: #15803d;
+}
+
+.invalid {
+    color: #b91c1c;
+}
+
+/* ── Sport / Category cards ─────────────────────────────────── */
+.cardRow {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.sportCard,
+.categoryCard {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 0.5rem;
+    border: 2px solid #e2e8f0;
+    border-radius: 16px;
+    background: #f8fafc;
+    cursor: pointer;
+    transition: all 0.18s ease;
+    font-family: inherit;
+}
+
+.cardEmoji {
+    font-size: 2rem;
+    line-height: 1;
+}
+
+.cardIcon {
+    width: 1.75rem;
+    height: 1.75rem;
+}
+
+.cardLabel {
+    font-size: 0.875rem;
     font-weight: 700;
 }
 
-.codeInput:focus {
-    border-color: #2563eb;
+/* Inactive (deselected) */
+.sportInactive,
+.catInactive {
+    border-color: #e2e8f0;
+    background: #f8fafc;
+    opacity: 0.55;
 }
 
-.codeInput.valid {
-    border-color: #10b981;
-    background-color: #ecfdf5;
-    color: #047857;
+.sportInactive .cardLabel,
+.catInactive .cardLabel {
+    color: #94a3b8;
 }
 
-.codeInput.invalid {
-    border-color: #ef4444;
-    background-color: #fef2f2;
-    color: #b91c1c;
+/* Football selected */
+.sportFootball.sportActive {
+    border-color: #3b82f6;
+    background: #eff6ff;
+}
+
+.sportFootball.sportActive .cardLabel {
+    color: #2563eb;
+}
+
+/* Basketball selected */
+.sportBasketball.sportActive {
+    border-color: #f97316;
+    background: #fff7ed;
+}
+
+.sportBasketball.sportActive .cardLabel {
+    color: #ea580c;
+}
+
+/* Actuels selected */
+.catActive.catActiveSelected {
+    border-color: #22c55e;
+    background: #f0fdf4;
+}
+
+.catActive.catActiveSelected .cardLabel,
+.catActive.catActiveSelected .cardIcon {
+    color: #16a34a;
+}
+
+/* Légendes selected */
+.catHistorical.catHistoricalSelected {
+    border-color: #a855f7;
+    background: #faf5ff;
+}
+
+.catHistorical.catHistoricalSelected .cardLabel,
+.catHistorical.catHistoricalSelected .cardIcon {
+    color: #9333ea;
+}
+
+/* ── Question count pills ───────────────────────────────────── */
+.pillRow {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.pill {
+    flex: 1;
+    padding: 0.75rem 0;
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
+    background: #f8fafc;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #64748b;
+    cursor: pointer;
+    transition: all 0.18s ease;
+    font-family: inherit;
+}
+
+.pill:hover {
+    border-color: #94a3b8;
+    color: #1a1d27;
+}
+
+.pillActive {
+    background: #1a1d27 !important;
+    border-color: #1a1d27 !important;
+    color: #ffffff !important;
+}
+
+/* ── Start button ───────────────────────────────────────────── */
+.startButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    margin-top: 0.25rem;
+    padding: 1rem;
+    background: #1a1d27;
+    color: #ffffff;
+    border: none;
+    border-radius: 16px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-family: inherit;
+    letter-spacing: 0.01em;
+}
+
+.startButton:hover {
+    background: #2d3348;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(26, 29, 39, 0.35);
+}
+
+.startButton:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+.playIcon {
+    width: 1rem;
+    height: 1rem;
+    flex-shrink: 0;
+}
+
+/* ── Responsive ─────────────────────────────────────────────── */
+@media (max-width: 480px) {
+    .container {
+        padding: 1.5rem 1.25rem;
+        gap: 1.1rem;
+    }
+
+    .title {
+        font-size: 1.6rem;
+    }
+
+    .cardRow {
+        gap: 0.5rem;
+    }
+
+    .cardEmoji {
+        font-size: 1.6rem;
+    }
 }

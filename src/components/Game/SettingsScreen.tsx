@@ -55,7 +55,6 @@ const SettingsScreen: React.FC<SettingsScreenProps> = ({ onStart }) => {
             setLoadedSeed(result.seed);
             setSettings(result.settings);
 
-            // Auto-switch language if different
             if (result.settings.language !== i18n.language) {
                 i18n.changeLanguage(result.settings.language);
             }
@@ -66,17 +65,44 @@ const SettingsScreen: React.FC<SettingsScreenProps> = ({ onStart }) => {
     };
 
     const handleStart = () => {
-        // If we have a loaded seed from a valid code, use it. Otherwise, new random game.
         onStart(settings, loadedSeed || undefined);
     };
 
+    const languages = [
+        { code: 'fr', flag: '🇫🇷', label: 'FR' },
+        { code: 'en', flag: '🇬🇧', label: 'GB' },
+        { code: 'es', flag: '🇪🇸', label: 'ES' },
+    ];
+
     return (
         <div className={styles.container}>
-            <h1 className={styles.title}>{t('settings.title')}</h1>
+            {/* Language selector */}
+            <div className={styles.langBar}>
+                {languages.map(({ code, flag, label }) => (
+                    <button
+                        key={code}
+                        className={`${styles.langCircle} ${settings.language === code ? styles.langActive : ''}`}
+                        onClick={() => handleLanguageChange(code)}
+                        title={label}
+                        aria-pressed={settings.language === code}
+                    >
+                        <span className={styles.langFlag}>{flag}</span>
+                        <span className={styles.langCode}>{label}</span>
+                    </button>
+                ))}
+            </div>
 
+            {/* Title */}
+            <div className={styles.titleBlock}>
+                <h1 className={styles.title}>{t('settings.title')}</h1>
+                <p className={styles.subtitle}>{t('settings.subtitle')}</p>
+            </div>
+
+            {/* Game code */}
             <div className={styles.section}>
-                <h3>{t('settings.enterCode')}</h3>
-                <div className={styles.inputGroup}>
+                <span className={styles.sectionLabel}>{t('settings.enterCode')}</span>
+                <div className={styles.inputWrapper}>
+                    <span className={styles.inputIcon}>#</span>
                     <input
                         type="text"
                         value={gameCodeInput}
@@ -87,93 +113,70 @@ const SettingsScreen: React.FC<SettingsScreenProps> = ({ onStart }) => {
                 </div>
             </div>
 
+            {/* Sports */}
             <div className={styles.section}>
-                <h3>{t('settings.language')}</h3>
-                <div className={styles.buttonGroup}>
+                <span className={styles.sectionLabel}>{t('settings.sports')}</span>
+                <div className={styles.cardRow}>
                     <button
-                        className={`${styles.langButton} ${settings.language === 'fr' ? styles.active : ''}`}
-                        onClick={() => handleLanguageChange('fr')}
-                        title="Français"
+                        className={`${styles.sportCard} ${styles.sportFootball} ${settings.sports.includes('football') ? styles.sportActive : styles.sportInactive}`}
+                        onClick={() => toggleSport('football')}
+                        aria-pressed={settings.sports.includes('football')}
                     >
-                        🇫🇷
+                        <span className={styles.cardEmoji}>⚽</span>
+                        <span className={styles.cardLabel}>{t('settings.football')}</span>
                     </button>
                     <button
-                        className={`${styles.langButton} ${settings.language === 'en' ? styles.active : ''}`}
-                        onClick={() => handleLanguageChange('en')}
-                        title="English"
+                        className={`${styles.sportCard} ${styles.sportBasketball} ${settings.sports.includes('basketball') ? styles.sportActive : styles.sportInactive}`}
+                        onClick={() => toggleSport('basketball')}
+                        aria-pressed={settings.sports.includes('basketball')}
                     >
-                        🇬🇧
-                    </button>
-                    <button
-                        className={`${styles.langButton} ${settings.language === 'es' ? styles.active : ''}`}
-                        onClick={() => handleLanguageChange('es')}
-                        title="Español"
-                    >
-                        🇪🇸
+                        <span className={styles.cardEmoji}>🏀</span>
+                        <span className={styles.cardLabel}>{t('settings.basketball')}</span>
                     </button>
                 </div>
             </div>
 
+            {/* Categories */}
             <div className={styles.section}>
-                <h3>{t('settings.sports')}</h3>
-                <div className={styles.buttonGroup}>
-                    <label className={styles.sportLabel}>
-                        <input
-                            type="checkbox"
-                            className={styles.hiddenCheckbox}
-                            checked={settings.sports.includes('football')}
-                            onChange={() => toggleSport('football')}
-                        />
-                        <div className={styles.emojiCard}>
-                            <span className={styles.emoji}>⚽</span>
-                            <span className={styles.label}>{t('settings.football')}</span>
-                        </div>
-                    </label>
-                    <label className={styles.sportLabel}>
-                        <input
-                            type="checkbox"
-                            className={styles.hiddenCheckbox}
-                            checked={settings.sports.includes('basketball')}
-                            onChange={() => toggleSport('basketball')}
-                        />
-                        <div className={styles.emojiCard}>
-                            <span className={styles.emoji}>🏀</span>
-                            <span className={styles.label}>{t('settings.basketball')}</span>
-                        </div>
-                    </label>
+                <span className={styles.sectionLabel}>{t('settings.categories')}</span>
+                <div className={styles.cardRow}>
+                    <button
+                        className={`${styles.categoryCard} ${styles.catActive} ${settings.categories.includes('active') ? styles.catActiveSelected : styles.catInactive}`}
+                        onClick={() => toggleCategory('active')}
+                        aria-pressed={settings.categories.includes('active')}
+                    >
+                        <svg className={styles.cardIcon} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                            <circle cx="12" cy="7" r="4" />
+                            <path d="M16 11l2 2 4-4" />
+                        </svg>
+                        <span className={styles.cardLabel}>{t('settings.active')}</span>
+                    </button>
+                    <button
+                        className={`${styles.categoryCard} ${styles.catHistorical} ${settings.categories.includes('historical') ? styles.catHistoricalSelected : styles.catInactive}`}
+                        onClick={() => toggleCategory('historical')}
+                        aria-pressed={settings.categories.includes('historical')}
+                    >
+                        <svg className={styles.cardIcon} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                            <path d="M3 3v5h5" />
+                            <path d="M3.05 13A9 9 0 1 0 6 5.3L3 8" />
+                            <path d="M12 7v5l4 2" />
+                        </svg>
+                        <span className={styles.cardLabel}>{t('settings.historical')}</span>
+                    </button>
                 </div>
             </div>
 
+            {/* Question count */}
             <div className={styles.section}>
-                <h3>{t('settings.categories')}</h3>
-                <div className={styles.buttonGroup}>
-                    <label className={styles.checkboxLabel}>
-                        <input
-                            type="checkbox"
-                            checked={settings.categories.includes('historical')}
-                            onChange={() => toggleCategory('historical')}
-                        />
-                        <span>{t('settings.historical')}</span>
-                    </label>
-                    <label className={styles.checkboxLabel}>
-                        <input
-                            type="checkbox"
-                            checked={settings.categories.includes('active')}
-                            onChange={() => toggleCategory('active')}
-                        />
-                        <span>{t('settings.active')}</span>
-                    </label>
-                </div>
-            </div>
-
-            <div className={styles.section}>
-                <h3>{t('settings.questionCount')}</h3>
-                <div className={styles.countGroup}>
+                <span className={styles.sectionLabel}>{t('settings.questionCount')}</span>
+                <div className={styles.pillRow}>
                     {[5, 10, 20].map(count => (
                         <button
                             key={count}
-                            className={settings.questionCount === count ? styles.active : ''}
+                            className={`${styles.pill} ${settings.questionCount === count ? styles.pillActive : ''}`}
                             onClick={() => setSettings({ ...settings, questionCount: count })}
+                            aria-pressed={settings.questionCount === count}
                         >
                             {count}
                         </button>
@@ -181,7 +184,11 @@ const SettingsScreen: React.FC<SettingsScreenProps> = ({ onStart }) => {
                 </div>
             </div>
 
+            {/* Start button */}
             <button className={styles.startButton} onClick={handleStart}>
+                <svg className={styles.playIcon} viewBox="0 0 24 24" fill="currentColor">
+                    <polygon points="5,3 19,12 5,21" />
+                </svg>
                 {t('settings.start')}
             </button>
         </div>

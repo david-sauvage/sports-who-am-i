@@ -20,7 +20,8 @@
         "basketball": "Basketball"
     },
     "settings": {
-        "title": "Game Settings",
+        "title": "Who Am I?",
+        "subtitle": "Set up your game",
         "language": "Language",
         "sports": "Sports",
         "categories": "Player Types",

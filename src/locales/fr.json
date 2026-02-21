@@ -20,7 +20,8 @@
         "basketball": "Basketball"
     },
     "settings": {
-        "title": "Paramètres de la partie",
+        "title": "Qui suis je ?",
+        "subtitle": "Configurez votre partie",
         "language": "Langue",
         "sports": "Sports",
         "categories": "Types de joueurs",
@@ -29,7 +30,7 @@
         "basketball": "Basket",
         "historical": "Historique",
         "active": "Actuel",
-        "start": "Commencer la partie",
+        "start": "Commencer",
         "gameOver": "Partie Terminée !",
         "totalScore": "Score Total : {{score}}",
         "playAgain": "Rejouer",

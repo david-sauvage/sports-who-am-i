@@ -20,7 +20,8 @@
         "basketball": "Baloncesto"
     },
     "settings": {
-        "title": "Ajustes de la partida",
+        "title": "¿Quién soy?",
+        "subtitle": "Configura tu partida",
         "language": "Idioma",
         "sports": "Deportes",
         "categories": "Tipos de jugador",

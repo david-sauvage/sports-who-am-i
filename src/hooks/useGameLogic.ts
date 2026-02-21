@@ -104,12 +104,6 @@ export const useGameLogic = ({
                 setFeedback('correct');
                 setTotalScore(prev => prev + score);
                 stopTimer();
-
-                // Auto-advance after 1.5s
-                setTimeout(() => {
-                    nextPlayer();
-                }, 1500);
-
                 return true;
             }
 
@@ -119,18 +113,14 @@ export const useGameLogic = ({
 
             return false;
         },
-        [currentPlayer, status, score, stopTimer, nextPlayer]
+        [currentPlayer, status, score, stopTimer]
     );
 
     const giveUp = useCallback(() => {
+        if (status !== 'playing') return;
         setStatus('lost');
         stopTimer();
-
-        // Show answer for 2s then auto-advance
-        setTimeout(() => {
-            nextPlayer();
-        }, 2000);
-    }, [stopTimer, nextPlayer]);
+    }, [status, stopTimer]);
 
     // Timer & Score Effect
     useEffect(() => {
