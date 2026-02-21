@@ -40,5 +40,18 @@
         "invalidCode": "Invalid Game Code",
         "shareCodeMsg": "Share this code with friends to play the exact same game:",
         "codeCopied": "Code copied!"
+    },
+    "stats": {
+        "title": "Statistics",
+        "gamesPlayed": "Games Played",
+        "totalQuestions": "Total Questions",
+        "correctAnswers": "Correct Answers",
+        "incorrectAnswers": "Incorrect Answers",
+        "totalScore": "Lifetime Total Score",
+        "accuracy": "Accuracy",
+        "reset": "Reset",
+        "resetConfirm": "Reset all statistics?",
+        "bySport": "Success by Sport",
+        "byCategory": "Success by Type"
     }
 }

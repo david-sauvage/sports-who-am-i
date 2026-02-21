@@ -1,4 +1,4 @@
-import { useState, type FormEvent } from 'react';
+import { useState, useRef, useEffect, type FormEvent } from 'react';
 import { useTranslation } from 'react-i18next';
 import styles from './AnswerInput.module.css';
 
@@ -12,6 +12,11 @@ export const AnswerInput = ({ onSubmit, onGiveUp, disabled }: AnswerInputProps) 
     const { t } = useTranslation();
     const [guess, setGuess] = useState('');
     const [feedback, setFeedback] = useState<'none' | 'success' | 'error'>('none');
+    const inputRef = useRef<HTMLInputElement>(null);
+
+    useEffect(() => {
+        inputRef.current?.focus();
+    }, []);
 
     const handleSubmit = (e: FormEvent) => {
         e.preventDefault();
@@ -31,6 +36,7 @@ export const AnswerInput = ({ onSubmit, onGiveUp, disabled }: AnswerInputProps) 
         <form onSubmit={handleSubmit} className={styles.form}>
             <div className={styles.inputWrapper}>
                 <input
+                    ref={inputRef}
                     type="text"
                     value={guess}
                     onChange={(e) => setGuess(e.target.value)}

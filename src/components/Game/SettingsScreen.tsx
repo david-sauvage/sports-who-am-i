@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import type { GameSettings } from '../../types';
 import { parseGameCode } from '../../utils/gameCode';
 import styles from './SettingsScreen.module.css';
+import StatsModal from '../UI/StatsModal';
 
 interface SettingsScreenProps {
     onStart: (settings: GameSettings, seed?: string) => void;
@@ -19,6 +20,7 @@ const SettingsScreen: React.FC<SettingsScreenProps> = ({ onStart }) => {
     const [gameCodeInput, setGameCodeInput] = useState('');
     const [loadedSeed, setLoadedSeed] = useState<string | null>(null);
     const [isValidCode, setIsValidCode] = useState<boolean | null>(null);
+    const [showStats, setShowStats] = useState(false);
 
     const handleLanguageChange = (lang: string) => {
         i18n.changeLanguage(lang);
@@ -76,21 +78,37 @@ const SettingsScreen: React.FC<SettingsScreenProps> = ({ onStart }) => {
 
     return (
         <div className={styles.container}>
-            {/* Language selector */}
-            <div className={styles.langBar}>
-                {languages.map(({ code, flag, label }) => (
-                    <button
-                        key={code}
-                        className={`${styles.langCircle} ${settings.language === code ? styles.langActive : ''}`}
-                        onClick={() => handleLanguageChange(code)}
-                        title={label}
-                        aria-pressed={settings.language === code}
-                    >
-                        <span className={styles.langFlag}>{flag}</span>
-                        <span className={styles.langCode}>{label}</span>
-                    </button>
-                ))}
+            {/* Top Bar with Language and Stats */}
+            <div className={styles.topBar}>
+                <div className={styles.langBar}>
+                    {languages.map(({ code, flag, label }) => (
+                        <button
+                            key={code}
+                            className={`${styles.langCircle} ${settings.language === code ? styles.langActive : ''}`}
+                            onClick={() => handleLanguageChange(code)}
+                            title={label}
+                            aria-pressed={settings.language === code}
+                        >
+                            <span className={styles.langFlag}>{flag}</span>
+                            <span className={styles.langCode}>{label}</span>
+                        </button>
+                    ))}
+                </div>
+
+                <button
+                    className={styles.statsButton}
+                    onClick={() => setShowStats(true)}
+                    title={t('stats.title')}
+                >
+                    <svg className={styles.statsIcon} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                        <line x1="18" y1="20" x2="18" y2="10" />
+                        <line x1="12" y1="20" x2="12" y2="4" />
+                        <line x1="6" y1="20" x2="6" y2="14" />
+                    </svg>
+                </button>
             </div>
+
+            {showStats && <StatsModal onClose={() => setShowStats(false)} />}
 
             {/* Title */}
             <div className={styles.titleBlock}>

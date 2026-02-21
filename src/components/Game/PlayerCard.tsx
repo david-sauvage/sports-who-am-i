@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import type { Player } from '../../types';
 import { ClubList } from './ClubList';
@@ -15,9 +16,21 @@ interface PlayerCardProps {
 
 export const PlayerCard = ({ player, revealedClueCount, showName = false, won = false, questionScore, onNext, nextLabel }: PlayerCardProps) => {
     const { t } = useTranslation();
-
-
     const formattedDate = new Date(player.birthDate).toLocaleDateString();
+
+    useEffect(() => {
+        if (!showName || !onNext) return;
+
+        const handleKeyDown = (e: KeyboardEvent) => {
+            if (e.key === 'Enter') {
+                e.preventDefault();
+                onNext();
+            }
+        };
+
+        window.addEventListener('keydown', handleKeyDown);
+        return () => window.removeEventListener('keydown', handleKeyDown);
+    }, [showName, onNext]);
 
     if (showName) {
         // Result screen: show player identity + full club list with years

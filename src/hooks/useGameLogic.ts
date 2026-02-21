@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
 import type { Player, GameStatus } from '../types';
+import { recordAnswer, recordGameEnd } from '../utils/statistics';
 
 interface UseGameLogicProps {
     players: Player[];
@@ -82,6 +83,7 @@ export const useGameLogic = ({
         const nextIndex = currentPlayerIndex + 1;
         if (nextIndex >= players.length) {
             setStatus('ended');
+            recordGameEnd();
             return;
         }
         setCurrentPlayerIndex(nextIndex);
@@ -111,6 +113,7 @@ export const useGameLogic = ({
                 setStatus('won');
                 setFeedback('correct');
                 setTotalScore(prev => prev + score);
+                recordAnswer(true, currentPlayer.sport, currentPlayer.category, score);
                 stopTimer();
                 return true;
             }
@@ -129,6 +132,7 @@ export const useGameLogic = ({
                     setStatus('won');
                     setFeedback('correct');
                     setTotalScore(prev => prev + score);
+                    recordAnswer(true, currentPlayer.sport, currentPlayer.category, score);
                     stopTimer();
                     return true;
                 }
@@ -144,10 +148,11 @@ export const useGameLogic = ({
     );
 
     const giveUp = useCallback(() => {
-        if (status !== 'playing') return;
+        if (!currentPlayer || status !== 'playing') return;
         setStatus('lost');
+        recordAnswer(false, currentPlayer.sport, currentPlayer.category);
         stopTimer();
-    }, [status, stopTimer]);
+    }, [status, stopTimer, currentPlayer]);
 
     // Timer & Score Effect
     useEffect(() => {
@@ -159,8 +164,9 @@ export const useGameLogic = ({
                 // Decay score continuously: 1 point per 100ms (10 points / sec)
                 setScore((prev) => {
                     const newScore = Math.max(0, prev - 1);
-                    if (newScore === 0) {
+                    if (newScore === 0 && currentPlayer) {
                         setStatus('lost');
+                        recordAnswer(false, currentPlayer.sport, currentPlayer.category);
                     }
                     return newScore;
                 });

@@ -40,5 +40,18 @@
         "invalidCode": "Code invalide",
         "shareCodeMsg": "Partage ce code pour défier tes amis sur la même partie :",
         "codeCopied": "Code copié !"
+    },
+    "stats": {
+        "title": "Statistiques",
+        "gamesPlayed": "Parties jouées",
+        "totalQuestions": "Questions totales",
+        "correctAnswers": "Bonnes réponses",
+        "incorrectAnswers": "Mauvaises réponses",
+        "totalScore": "Score total historique",
+        "accuracy": "Précision",
+        "reset": "Réinitialiser",
+        "resetConfirm": "Remettre à zéro ?",
+        "bySport": "Réussite par Sport",
+        "byCategory": "Réussite par Genre"
     }
 }

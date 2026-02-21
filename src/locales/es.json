@@ -34,5 +34,18 @@
         "gameOver": "¡Juego terminado!",
         "totalScore": "Puntuación total: {{score}}",
         "playAgain": "Jugar de nuevo"
+    },
+    "stats": {
+        "title": "Estadísticas",
+        "gamesPlayed": "Partidas jugadas",
+        "totalQuestions": "Preguntas totales",
+        "correctAnswers": "Respuestas correctas",
+        "incorrectAnswers": "Respuestas incorrectas",
+        "totalScore": "Puntuación total histórica",
+        "accuracy": "Precisión",
+        "reset": "Restablecer",
+        "resetConfirm": "¿Restablecer estadísticas?",
+        "bySport": "Éxito por Deporte",
+        "byCategory": "Éxito por Tipo"
     }
 }
