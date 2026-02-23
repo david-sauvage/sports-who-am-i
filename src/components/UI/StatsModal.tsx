@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { getStatistics, resetStatistics } from '../../utils/statistics';
+import { useTrophies } from '../../context/TrophyContext';
 import type { CategoryStats } from '../../utils/statistics';
 import styles from './StatsModal.module.css';
 
@@ -10,6 +11,7 @@ interface StatsModalProps {
 
 const StatsModal: React.FC<StatsModalProps> = ({ onClose }) => {
     const { t } = useTranslation();
+    const { resetTrophyState } = useTrophies();
     const [stats, setStats] = useState(getStatistics());
     const [confirmReset, setConfirmReset] = useState(false);
 
@@ -20,6 +22,7 @@ const StatsModal: React.FC<StatsModalProps> = ({ onClose }) => {
     const handleReset = () => {
         if (confirmReset) {
             resetStatistics();
+            resetTrophyState();
             setStats(getStatistics());
             setConfirmReset(false);
         } else {

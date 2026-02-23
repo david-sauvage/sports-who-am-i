@@ -4,6 +4,7 @@ import type { GameSettings } from '../../types';
 import { parseGameCode } from '../../utils/gameCode';
 import styles from './SettingsScreen.module.css';
 import StatsModal from '../UI/StatsModal';
+import TrophyModal from '../UI/TrophyModal';
 
 interface SettingsScreenProps {
     onStart: (settings: GameSettings, seed?: string) => void;
@@ -21,6 +22,7 @@ const SettingsScreen: React.FC<SettingsScreenProps> = ({ onStart }) => {
     const [loadedSeed, setLoadedSeed] = useState<string | null>(null);
     const [isValidCode, setIsValidCode] = useState<boolean | null>(null);
     const [showStats, setShowStats] = useState(false);
+    const [showTrophies, setShowTrophies] = useState(false);
 
     const handleLanguageChange = (lang: string) => {
         i18n.changeLanguage(lang);
@@ -80,6 +82,18 @@ const SettingsScreen: React.FC<SettingsScreenProps> = ({ onStart }) => {
         <div className={styles.container}>
             {/* Top Bar with Language and Stats */}
             <div className={styles.topBar}>
+                <button
+                    className={styles.statsButton}
+                    onClick={() => setShowStats(true)}
+                    title={t('stats.title')}
+                >
+                    <svg className={styles.statsIcon} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                        <line x1="18" y1="20" x2="18" y2="10" />
+                        <line x1="12" y1="20" x2="12" y2="4" />
+                        <line x1="6" y1="20" x2="6" y2="14" />
+                    </svg>
+                </button>
+
                 <div className={styles.langBar}>
                     {languages.map(({ code, flag, label }) => (
                         <button
@@ -96,19 +110,23 @@ const SettingsScreen: React.FC<SettingsScreenProps> = ({ onStart }) => {
                 </div>
 
                 <button
-                    className={styles.statsButton}
-                    onClick={() => setShowStats(true)}
-                    title={t('stats.title')}
+                    className={styles.trophyButton}
+                    onClick={() => setShowTrophies(true)}
+                    title={t('trophies.title')}
                 >
                     <svg className={styles.statsIcon} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                        <line x1="18" y1="20" x2="18" y2="10" />
-                        <line x1="12" y1="20" x2="12" y2="4" />
-                        <line x1="6" y1="20" x2="6" y2="14" />
+                        <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" />
+                        <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18" />
+                        <path d="M4 22h16" />
+                        <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22" />
+                        <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22" />
+                        <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z" />
                     </svg>
                 </button>
             </div>
 
             {showStats && <StatsModal onClose={() => setShowStats(false)} />}
+            {showTrophies && <TrophyModal onClose={() => setShowTrophies(false)} />}
 
             {/* Title */}
             <div className={styles.titleBlock}>

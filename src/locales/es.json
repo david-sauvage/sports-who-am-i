@@ -5,7 +5,8 @@
         "score": "Puntuación",
         "submit": "Enviar",
         "giveUp": "Rendirse",
-        "next": "Siguiente jugador"
+        "next": "Siguiente jugador",
+        "completed": "¡Desbloqueado!"
     },
     "game": {
         "birthDate": "Nacido el {{date}}",
@@ -46,6 +47,31 @@
         "reset": "Restablecer",
         "resetConfirm": "¿Restablecer estadísticas?",
         "bySport": "Éxito por Deporte",
-        "byCategory": "Éxito por Tipo"
+        "byCategory": "Éxito por Tipo",
+        "trophies": "Trofeos"
+    },
+    "trophies": {
+        "title": "Trofeos",
+        "unlocked": "Logro desbloqueado",
+        "first_step": {
+            "name": "Primer paso",
+            "description": "Juega tu primera partida"
+        },
+        "veteran": {
+            "name": "Veterano",
+            "description": "Juega 10 partidas"
+        },
+        "legend": {
+            "name": "Leyenda",
+            "description": "Juega 50 partidas"
+        },
+        "football_fan": {
+            "name": "Fan del Fútbol",
+            "description": "Responde a 50 preguntas de fútbol"
+        },
+        "basketball_fan": {
+            "name": "Fan del Baloncesto",
+            "description": "Responde a 50 preguntas de baloncesto"
+        }
     }
 }

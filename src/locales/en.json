@@ -5,7 +5,8 @@
         "score": "Score",
         "submit": "Submit",
         "giveUp": "Give Up",
-        "next": "Next Player"
+        "next": "Next Player",
+        "completed": "Unlocked!"
     },
     "game": {
         "birthDate": "Born on {{date}}",
@@ -52,6 +53,31 @@
         "reset": "Reset",
         "resetConfirm": "Reset all statistics?",
         "bySport": "Success by Sport",
-        "byCategory": "Success by Type"
+        "byCategory": "Success by Type",
+        "trophies": "Trophies"
+    },
+    "trophies": {
+        "title": "Trophies",
+        "unlocked": "Achievement Unlocked",
+        "first_step": {
+            "name": "First Step",
+            "description": "Play your first game"
+        },
+        "veteran": {
+            "name": "Veteran",
+            "description": "Play 10 games"
+        },
+        "legend": {
+            "name": "Legend",
+            "description": "Play 50 games"
+        },
+        "football_fan": {
+            "name": "Football Fan",
+            "description": "Answer 50 football questions"
+        },
+        "basketball_fan": {
+            "name": "Basketball Fan",
+            "description": "Answer 50 basketball questions"
+        }
     }
 }

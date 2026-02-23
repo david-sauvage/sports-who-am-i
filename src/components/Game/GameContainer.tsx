@@ -1,4 +1,4 @@
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useGameLogic } from '../../hooks/useGameLogic';
 import { players } from '../../data/players';
@@ -9,10 +9,12 @@ import SettingsScreen from './SettingsScreen';
 import type { GameSettings } from '../../types';
 import { seededShuffle, generateSeed } from '../../utils/random';
 import { generateGameCode } from '../../utils/gameCode';
+import { useTrophies } from '../../context/TrophyContext';
 import styles from './GameContainer.module.css';
 
 export const GameContainer = () => {
     const { t } = useTranslation();
+    const { checkNewTrophies } = useTrophies();
     const [view, setView] = useState<'settings' | 'game'>('settings');
     const [gameSettings, setGameSettings] = useState<GameSettings | null>(null);
     const [gameSeed, setGameSeed] = useState<string>('');
@@ -43,6 +45,13 @@ export const GameContainer = () => {
         giveUp,
         nextPlayer,
     } = useGameLogic({ players: filteredPlayers });
+
+    // Check for trophies whenever the round or game status changes
+    useEffect(() => {
+        if (status === 'won' || status === 'lost' || status === 'ended') {
+            checkNewTrophies();
+        }
+    }, [status, checkNewTrophies]);
 
     const handleStartWithSettings = (settings: GameSettings, seed?: string) => {
         setGameSettings(settings);

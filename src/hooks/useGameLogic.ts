@@ -82,8 +82,8 @@ export const useGameLogic = ({
     const nextPlayer = useCallback(() => {
         const nextIndex = currentPlayerIndex + 1;
         if (nextIndex >= players.length) {
-            setStatus('ended');
             recordGameEnd();
+            setStatus('ended');
             return;
         }
         setCurrentPlayerIndex(nextIndex);

@@ -1,0 +1,98 @@
+.notificationWrapper {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2000;
+    pointer-events: none;
+}
+
+.notification {
+    background: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    border: 2px solid #107c10;
+    /* Xbox Green */
+    animation: xboxSlideIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+    min-width: 300px;
+}
+
+.notificationExit {
+    animation: xboxSlideOut 0.5s cubic-bezier(0.6, -0.28, 0.735, 0.045) forwards;
+}
+
+@keyframes xboxSlideIn {
+    from {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes xboxSlideOut {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+}
+
+.iconContainer {
+    background: #107c10;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+.textContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #107c10;
+    letter-spacing: 0.1em;
+}
+
+.name {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+@media (max-width: 480px) {
+    .notification {
+        min-width: 260px;
+        padding: 8px 16px;
+    }
+
+    .iconContainer {
+        width: 32px;
+        height: 32px;
+        font-size: 1.2rem;
+    }
+
+    .name {
+        font-size: 0.9rem;
+    }
+}

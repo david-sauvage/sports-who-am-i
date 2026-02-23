@@ -5,7 +5,8 @@
         "score": "Score",
         "submit": "Valider",
         "giveUp": "Abandonner",
-        "next": "Joueur Suivant"
+        "next": "Joueur Suivant",
+        "completed": "Débloqué !"
     },
     "game": {
         "birthDate": "Né le {{date}}",
@@ -52,6 +53,31 @@
         "reset": "Réinitialiser",
         "resetConfirm": "Remettre à zéro ?",
         "bySport": "Réussite par Sport",
-        "byCategory": "Réussite par Genre"
+        "byCategory": "Réussite par Genre",
+        "trophies": "Trophées"
+    },
+    "trophies": {
+        "title": "Trophées",
+        "unlocked": "Succès débloqué",
+        "first_step": {
+            "name": "Premier pas",
+            "description": "Jouez votre première partie"
+        },
+        "veteran": {
+            "name": "Vétéran",
+            "description": "Jouez 10 parties"
+        },
+        "legend": {
+            "name": "Légende",
+            "description": "Jouez 50 parties"
+        },
+        "football_fan": {
+            "name": "Fan de Foot",
+            "description": "Répondez à 50 questions de football"
+        },
+        "basketball_fan": {
+            "name": "Fan de Basket",
+            "description": "Répondez à 50 questions de basket"
+        }
     }
 }
