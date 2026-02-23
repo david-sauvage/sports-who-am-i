@@ -206,7 +206,7 @@ export const useGameLogic = ({
         if (status === 'won' || status === 'lost') {
             const timeout = setTimeout(() => {
                 nextPlayer();
-            }, 2500);
+            }, 4000);
             return () => clearTimeout(timeout);
         }
     }, [status, nextPlayer]);
