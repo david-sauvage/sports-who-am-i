@@ -109,7 +109,15 @@ const TrophyModal: React.FC<TrophyModalProps> = ({ onClose }) => {
                                 </div>
                                 <div className={styles.trophyInfo}>
                                     <span className={styles.trophyName}>{t(`trophies.${trophy.id}.name`)}</span>
-                                    <span className={styles.trophyDesc}>{t(`trophies.${trophy.id}.description`)}</span>
+                                    <span className={styles.trophyDesc}>
+                                        {trophy.isPlayerDiscovery
+                                            ? (unlocked
+                                                ? t(`trophies.${trophy.id}.description_unlocked`, t(`trophies.${trophy.id}.description`))
+                                                : t(`trophies.${trophy.id}.description_locked`, t(`trophies.${trophy.id}.description`))
+                                            )
+                                            : t(`trophies.${trophy.id}.description`)
+                                        }
+                                    </span>
 
                                     {!unlocked && (
                                         <div className={styles.progressContainer}>

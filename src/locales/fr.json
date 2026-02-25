@@ -95,11 +95,15 @@
         },
         "splash_brothers": {
             "name": "Splash Brothers",
-            "description": "Trouvez Stephen Curry et Klay Thompson"
+            "description": "Trouvez Stephen Curry et Klay Thompson",
+            "description_locked": "Trouvez un duo de shooteurs légendaires qui ont révolutionné le basket moderne par leur adresse à trois points.",
+            "description_unlocked": "Stephen Curry et Klay Thompson ont formé l'un des duos les plus prolifiques de l'histoire, menant les Warriors à 4 titres NBA avec une adresse extérieure sans précédent."
         },
         "eternal_rivals": {
             "name": "L'Éternelle Rivalité",
-            "description": "Trouvez Lionel Messi et Cristiano Ronaldo"
+            "description": "Trouvez Lionel Messi et Cristiano Ronaldo",
+            "description_locked": "Trouvez les deux plus grands rivaux de l'histoire du football moderne, collectionneurs de Ballons d'Or.",
+            "description_unlocked": "Lionel Messi et Cristiano Ronaldo ont dominé le football mondial pendant plus de 15 ans, se partageant 13 Ballons d'Or et battant tous les records de buts."
         }
     }
 }

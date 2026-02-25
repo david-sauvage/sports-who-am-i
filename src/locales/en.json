@@ -95,11 +95,15 @@
         },
         "splash_brothers": {
             "name": "Splash Brothers",
-            "description": "Find both Stephen Curry and Klay Thompson"
+            "description": "Find both Stephen Curry and Klay Thompson",
+            "description_locked": "Find a legendary shooting duo who revolutionized modern basketball with their three-point prowess.",
+            "description_unlocked": "Stephen Curry and Klay Thompson formed one of the most prolific duos in history, leading the Warriors to 4 NBA titles with unprecedented perimeter shooting."
         },
         "eternal_rivals": {
             "name": "Eternal Rivals",
-            "description": "Find both Lionel Messi and Cristiano Ronaldo"
+            "description": "Find both Lionel Messi and Cristiano Ronaldo",
+            "description_locked": "Find the two greatest rivals in modern football history, both multiple Ballon d'Or winners.",
+            "description_unlocked": "Lionel Messi and Cristiano Ronaldo dominated world football for over 15 years, sharing 13 Ballons d'Or and breaking every scoring record."
         }
     }
 }

@@ -89,11 +89,15 @@
         },
         "splash_brothers": {
             "name": "Splash Brothers",
-            "description": "Encuentra tanto a Stephen Curry como a Klay Thompson"
+            "description": "Encuentra tanto a Stephen Curry como a Klay Thompson",
+            "description_locked": "Encuentra a un legendario dúo de tiradores que revolucionó el baloncesto moderno con su puntería de tres puntos.",
+            "description_unlocked": "Stephen Curry y Klay Thompson formaron uno de los dúos más prolíficos de la historia, llevando a los Warriors a 4 títulos de la NBA con un tiro exterior sin precedentes."
         },
         "eternal_rivals": {
             "name": "Eterna Rivalidad",
-            "description": "Encuentra tanto a Lionel Messi como a Cristiano Ronaldo"
+            "description": "Encuentra tanto a Lionel Messi como a Cristiano Ronaldo",
+            "description_locked": "Encuentra a los dos mayores rivales de la historia del fútbol moderno, ambos múltiples ganadores del Balón de Oro.",
+            "description_unlocked": "Lionel Messi y Cristiano Ronaldo dominaron el fútbol mundial durante más de 15 años, repartiéndose 13 Balones de Oro y batiendo todos los récords de goles."
         }
     }
 }
