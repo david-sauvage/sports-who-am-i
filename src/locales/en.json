@@ -59,6 +59,20 @@
     "trophies": {
         "title": "Trophies",
         "unlocked": "Achievement Unlocked",
+        "filters": {
+            "status": {
+                "label": "Status",
+                "all": "All",
+                "unlocked": "Unlocked",
+                "locked": "Locked"
+            },
+            "sport": {
+                "label": "Sport",
+                "all": "All",
+                "football": "Football",
+                "basketball": "Basketball"
+            }
+        },
         "first_step": {
             "name": "First Step",
             "description": "Play your first game"
@@ -78,6 +92,14 @@
         "basketball_fan": {
             "name": "Basketball Fan",
             "description": "Answer 50 basketball questions"
+        },
+        "splash_brothers": {
+            "name": "Splash Brothers",
+            "description": "Find both Stephen Curry and Klay Thompson"
+        },
+        "eternal_rivals": {
+            "name": "Eternal Rivals",
+            "description": "Find both Lionel Messi and Cristiano Ronaldo"
         }
     }
 }

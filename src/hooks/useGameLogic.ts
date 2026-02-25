@@ -113,7 +113,7 @@ export const useGameLogic = ({
                 setStatus('won');
                 setFeedback('correct');
                 setTotalScore(prev => prev + score);
-                recordAnswer(true, currentPlayer.sport, currentPlayer.category, score);
+                recordAnswer(true, currentPlayer.sport, currentPlayer.category, score, currentPlayer.id);
                 stopTimer();
                 return true;
             }
@@ -132,7 +132,7 @@ export const useGameLogic = ({
                     setStatus('won');
                     setFeedback('correct');
                     setTotalScore(prev => prev + score);
-                    recordAnswer(true, currentPlayer.sport, currentPlayer.category, score);
+                    recordAnswer(true, currentPlayer.sport, currentPlayer.category, score, currentPlayer.id);
                     stopTimer();
                     return true;
                 }

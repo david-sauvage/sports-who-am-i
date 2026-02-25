@@ -14,6 +14,8 @@ const TrophyModal: React.FC<TrophyModalProps> = ({ onClose }) => {
     const { resetTrophyState } = useTrophies();
     const [stats, setStats] = React.useState(getStatistics());
     const [confirmReset, setConfirmReset] = React.useState(false);
+    const [statusFilter, setStatusFilter] = React.useState<'all' | 'unlocked' | 'locked'>('all');
+    const [sportFilter, setSportFilter] = React.useState<'all' | 'football' | 'basketball'>('all');
 
     const handleReset = () => {
         if (confirmReset) {
@@ -49,9 +51,51 @@ const TrophyModal: React.FC<TrophyModalProps> = ({ onClose }) => {
                         <button className={styles.closeButton} onClick={onClose}>&times;</button>
                     </div>
                 </header>
+                <div className={styles.filters}>
+                    <div className={styles.filterGroup}>
+                        <label>{t('trophies.filters.status.label')}</label>
+                        <div className={styles.segmentedControl}>
+                            {(['all', 'unlocked', 'locked'] as const).map((status) => (
+                                <button
+                                    key={status}
+                                    className={`${styles.controlButton} ${statusFilter === status ? styles.active : ''}`}
+                                    onClick={() => setStatusFilter(status)}
+                                >
+                                    {t(`trophies.filters.status.${status}`)}
+                                </button>
+                            ))}
+                        </div>
+                    </div>
+
+                    <div className={styles.filterGroup}>
+                        <label>{t('trophies.filters.sport.label')}</label>
+                        <div className={styles.segmentedControl}>
+                            {(['all', 'football', 'basketball'] as const).map((sport) => (
+                                <button
+                                    key={sport}
+                                    className={`${styles.controlButton} ${sportFilter === sport ? styles.active : ''}`}
+                                    onClick={() => setSportFilter(sport)}
+                                >
+                                    {t(`trophies.filters.sport.${sport}`)}
+                                </button>
+                            ))}
+                        </div>
+                    </div>
+                </div>
 
                 <div className={styles.content}>
-                    {TROPHIES.map((trophy) => {
+                    {TROPHIES.filter(trophy => {
+                        const { unlocked } = trophy.check(stats);
+
+                        // Status filter
+                        if (statusFilter === 'unlocked' && !unlocked) return false;
+                        if (statusFilter === 'locked' && unlocked) return false;
+
+                        // Sport filter
+                        if (sportFilter !== 'all' && trophy.sport !== sportFilter) return false;
+
+                        return true;
+                    }).map((trophy) => {
                         const { unlocked, progress, goal } = trophy.check(stats);
                         const progressPercent = Math.round((progress / goal) * 100);
 

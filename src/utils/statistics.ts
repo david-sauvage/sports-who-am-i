@@ -9,6 +9,7 @@ export interface UserStatistics {
     correctAnswers: number;
     incorrectAnswers: number;
     totalScore: number;
+    foundPlayerIds: string[];
     // Nesting: sport -> category -> stats
     detailed: Record<string, Record<string, CategoryStats>>;
 }
@@ -21,6 +22,7 @@ const INITIAL_STATS: UserStatistics = {
     correctAnswers: 0,
     incorrectAnswers: 0,
     totalScore: 0,
+    foundPlayerIds: [],
     detailed: {
         football: {
             active: { correct: 0, total: 0 },
@@ -52,6 +54,7 @@ export const getStatistics = (): UserStatistics => {
         return {
             ...INITIAL_STATS,
             ...parsed,
+            foundPlayerIds: parsed.foundPlayerIds || [],
             detailed: {
                 football: { ...INITIAL_STATS.detailed.football, ...(parsed.detailed?.football || {}) },
                 basketball: { ...INITIAL_STATS.detailed.basketball, ...(parsed.detailed?.basketball || {}) },
@@ -71,7 +74,7 @@ export const resetStatistics = () => {
     saveStatistics(INITIAL_STATS);
 };
 
-export const recordAnswer = (isCorrect: boolean, sport: string, category: string, score: number = 0) => {
+export const recordAnswer = (isCorrect: boolean, sport: string, category: string, score: number = 0, playerId?: string) => {
     const stats = getStatistics();
 
     stats.totalQuestions += 1;
@@ -92,6 +95,9 @@ export const recordAnswer = (isCorrect: boolean, sport: string, category: string
         stats.correctAnswers += 1;
         stats.totalScore += score;
         stats.detailed[sport][category].correct += 1;
+        if (playerId && !stats.foundPlayerIds.includes(playerId)) {
+            stats.foundPlayerIds.push(playerId);
+        }
     } else {
         stats.incorrectAnswers += 1;
     }
