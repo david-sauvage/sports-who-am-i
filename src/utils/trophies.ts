@@ -11,6 +11,21 @@ export interface Trophy {
     check: (stats: UserStatistics) => { unlocked: boolean; progress: number; goal: number };
 }
 
+/**
+ * Creates a check function for player discovery trophies.
+ * @param playerIds List of player IDs to find
+ * @param minRequired Minimum number of players from the list to unlock the trophy (defaults to all)
+ */
+export const createPlayerDiscoveryCheck = (playerIds: string[], minRequired?: number) => (stats: UserStatistics) => {
+    const foundCount = playerIds.filter(id => stats.foundPlayerIds?.includes(id)).length;
+    const threshold = minRequired ?? playerIds.length;
+    return {
+        unlocked: foundCount >= threshold,
+        progress: foundCount,
+        goal: playerIds.length,
+    };
+};
+
 export const TROPHIES: Trophy[] = [
     {
         id: 'first_step',
@@ -76,15 +91,7 @@ export const TROPHIES: Trophy[] = [
         category: 'silver',
         sport: 'basketball',
         isPlayerDiscovery: true,
-        check: (stats) => {
-            const required = ['b-13', 'b-60']; // Stephen Curry and Klay Thompson
-            const foundCount = required.filter(id => stats.foundPlayerIds?.includes(id)).length;
-            return {
-                unlocked: foundCount === required.length,
-                progress: foundCount,
-                goal: required.length,
-            };
-        },
+        check: createPlayerDiscoveryCheck(['b-13', 'b-60']), // Stephen Curry and Klay Thompson
     },
     {
         id: 'eternal_rivals',
@@ -92,14 +99,6 @@ export const TROPHIES: Trophy[] = [
         category: 'silver',
         sport: 'football',
         isPlayerDiscovery: true,
-        check: (stats) => {
-            const required = ['f-11', 'f-12']; // Lionel Messi and Cristiano Ronaldo
-            const foundCount = required.filter(id => stats.foundPlayerIds?.includes(id)).length;
-            return {
-                unlocked: foundCount === required.length,
-                progress: foundCount,
-                goal: required.length,
-            };
-        },
+        check: createPlayerDiscoveryCheck(['f-11', 'f-12']), // Lionel Messi and Cristiano Ronaldo
     },
 ];
