@@ -136,6 +136,22 @@ describe('useGameLogic', () => {
         expect(result.current.status).toBe('playing');
     });
 
+    it('reduces score on incorrect guess', () => {
+        const { result } = renderHook(() => useGameLogic({ players: mockPlayers, guessPenalty: 50 }));
+
+        act(() => {
+            result.current.startGame();
+        });
+
+        const initialScore = result.current.score; // 1000
+
+        act(() => {
+            result.current.submitGuess('Wrong Name');
+        });
+
+        expect(result.current.score).toBe(initialScore - 50);
+    });
+
     it('accepts close typos', () => {
         const { result } = renderHook(() => useGameLogic({ players: mockPlayers }));
 

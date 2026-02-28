@@ -7,6 +7,7 @@ interface UseGameLogicProps {
     clueRevealInterval?: number; // ms
     initialClueDelay?: number; // ms
     maxScore?: number;
+    guessPenalty?: number;
 }
 
 // Basic Levenshtein distance for fuzzy matching
@@ -48,6 +49,7 @@ export const useGameLogic = ({
     clueRevealInterval = 5000,
     initialClueDelay = 3000,
     maxScore = 1000,
+    guessPenalty = 100,
 }: UseGameLogicProps) => {
     const [status, setStatus] = useState<GameStatus>('idle');
     const [currentPlayerIndex, setCurrentPlayerIndex] = useState(0);
@@ -140,11 +142,12 @@ export const useGameLogic = ({
 
             // Wrong guess visual feedback
             setFeedback('wrong');
+            setScore(prev => Math.max(0, prev - guessPenalty));
             setTimeout(() => setFeedback(null), 500);
 
             return false;
         },
-        [currentPlayer, status, score, stopTimer]
+        [currentPlayer, status, score, stopTimer, guessPenalty]
     );
 
     const giveUp = useCallback(() => {
