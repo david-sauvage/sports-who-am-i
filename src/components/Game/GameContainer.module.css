@@ -110,11 +110,18 @@
     gap: 1.5rem;
     text-align: center;
     width: 100%;
-    max-width: 400px;
+    max-width: 450px;
 }
 
 .endIcon {
-    font-size: 5rem;
+    font-size: 3.5rem;
+    margin-bottom: -1rem;
+}
+
+.endCard h1 {
+    font-size: 1.75rem;
+    margin: 0;
+    color: #1e293b;
 }
 
 .totalScoreLabel {
@@ -122,8 +129,93 @@
     font-weight: 700;
     color: #2563eb;
     background: #f0f7ff;
-    padding: 1rem 2rem;
+    padding: 0.75rem 1.5rem;
     border-radius: 12px;
+    margin-bottom: 0.5rem;
+    border: 1px solid #bfdbfe;
+}
+
+.historySection {
+    width: 100%;
+    margin-top: 0.5rem;
+}
+
+.historyTitle {
+    font-size: 1.05rem;
+    color: #64748b;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.historyList {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    max-height: 250px;
+    overflow-y: auto;
+    padding-right: 0.5rem;
+}
+
+.historyList::-webkit-scrollbar {
+    width: 6px;
+}
+
+.historyList::-webkit-scrollbar-track {
+    background: #f1f5f9;
+    border-radius: 4px;
+}
+
+.historyList::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 4px;
+}
+
+.historyItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.6rem 0.8rem;
+    background: #ffffff;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.historyItem:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.historyPlayerInfo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.historyIcon {
+    font-size: 1rem;
+}
+
+.historyPlayerName {
+    font-weight: 600;
+    color: #1e293b;
+    font-size: 0.95rem;
+}
+
+.historyScore {
+    font-weight: 700;
+    font-size: 0.95rem;
+}
+
+.historyScorePos {
+    color: #16a34a;
+}
+
+.historyScoreZero {
+    color: #ef4444;
 }
 
 

@@ -44,6 +44,7 @@ export const GameContainer = () => {
         submitGuess,
         giveUp,
         nextPlayer,
+        history,
     } = useGameLogic({ players: filteredPlayers });
 
     // Check for trophies whenever the round or game status changes
@@ -91,6 +92,29 @@ export const GameContainer = () => {
                     <div className={styles.totalScoreLabel}>
                         {t('settings.totalScore', { score: totalScore })}
                     </div>
+
+                    {history.length > 0 && (
+                        <div className={styles.historySection}>
+                            <h3 className={styles.historyTitle}>{t('settings.historyTitle')}</h3>
+                            <div className={styles.historyList}>
+                                {history.map((item, index) => (
+                                    <div key={`${item.player.id}-${index}`} className={styles.historyItem}>
+                                        <div className={styles.historyPlayerInfo}>
+                                            <span className={styles.historyIcon}>
+                                                {item.won ? '✅' : '❌'}
+                                            </span>
+                                            <span className={styles.historyPlayerName}>
+                                                {item.player.name}
+                                            </span>
+                                        </div>
+                                        <div className={`${styles.historyScore} ${item.won ? styles.historyScorePos : styles.historyScoreZero}`}>
+                                            {item.won ? `+${item.score}` : '0'}
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    )}
 
                     {gameCode && (
                         <div className={styles.shareSection}>

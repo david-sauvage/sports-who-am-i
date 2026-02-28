@@ -40,7 +40,8 @@
         "playCode": "Jouer ce code",
         "invalidCode": "Code invalide",
         "shareCodeMsg": "Partage ce code pour défier tes amis sur la même partie :",
-        "codeCopied": "Code copié !"
+        "codeCopied": "Code copié !",
+        "historyTitle": "Détail des réponses"
     },
     "stats": {
         "title": "Statistiques",

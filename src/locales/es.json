@@ -34,7 +34,8 @@
         "start": "Empezar juego",
         "gameOver": "¡Juego terminado!",
         "totalScore": "Puntuación total: {{score}}",
-        "playAgain": "Jugar de nuevo"
+        "playAgain": "Jugar de nuevo",
+        "historyTitle": "Detalle de respuestas"
     },
     "stats": {
         "title": "Estadísticas",

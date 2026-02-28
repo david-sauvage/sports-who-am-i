@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
-import type { Player, GameStatus } from '../types';
+import type { Player, GameStatus, GameHistoryItem } from '../types';
 import { recordAnswer, recordGameEnd } from '../utils/statistics';
 
 interface UseGameLogicProps {
@@ -58,6 +58,7 @@ export const useGameLogic = ({
     const [revealedClueCount, setRevealedClueCount] = useState(0);
     const [timer, setTimer] = useState(0);
     const [feedback, setFeedback] = useState<'correct' | 'wrong' | null>(null);
+    const [history, setHistory] = useState<GameHistoryItem[]>([]);
 
     const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
@@ -71,6 +72,7 @@ export const useGameLogic = ({
         setCurrentPlayerIndex(0);
         setTotalScore(0);
         setFeedback(null);
+        setHistory([]);
     }, [maxScore]);
 
     const startNextRound = useCallback(() => {
@@ -115,6 +117,7 @@ export const useGameLogic = ({
                 setStatus('won');
                 setFeedback('correct');
                 setTotalScore(prev => prev + score);
+                setHistory(prev => [...prev, { player: currentPlayer, won: true, score }]);
                 recordAnswer(true, currentPlayer.sport, currentPlayer.category, score, currentPlayer.id);
                 stopTimer();
                 return true;
@@ -134,6 +137,7 @@ export const useGameLogic = ({
                     setStatus('won');
                     setFeedback('correct');
                     setTotalScore(prev => prev + score);
+                    setHistory(prev => [...prev, { player: currentPlayer, won: true, score }]);
                     recordAnswer(true, currentPlayer.sport, currentPlayer.category, score, currentPlayer.id);
                     stopTimer();
                     return true;
@@ -153,6 +157,7 @@ export const useGameLogic = ({
     const giveUp = useCallback(() => {
         if (!currentPlayer || status !== 'playing') return;
         setStatus('lost');
+        setHistory(prev => [...prev, { player: currentPlayer, won: false, score: 0 }]);
         recordAnswer(false, currentPlayer.sport, currentPlayer.category);
         stopTimer();
     }, [status, stopTimer, currentPlayer]);
@@ -169,6 +174,7 @@ export const useGameLogic = ({
                     const newScore = Math.max(0, prev - 1);
                     if (newScore === 0 && currentPlayer) {
                         setStatus('lost');
+                        setHistory(h => [...h, { player: currentPlayer, won: false, score: 0 }]);
                         recordAnswer(false, currentPlayer.sport, currentPlayer.category);
                     }
                     return newScore;
@@ -225,6 +231,7 @@ export const useGameLogic = ({
         submitGuess,
         giveUp,
         nextPlayer,
-        timer
+        timer,
+        history
     };
 };

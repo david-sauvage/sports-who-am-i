@@ -22,6 +22,12 @@ export interface GameSettings {
 
 export type GameStatus = 'idle' | 'settings' | 'playing' | 'won' | 'lost' | 'ended';
 
+export interface GameHistoryItem {
+    player: Player;
+    won: boolean;
+    score: number;
+}
+
 export interface GameState {
     status: GameStatus;
     currentPlayer: Player | null;
