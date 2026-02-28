@@ -63,10 +63,10 @@ export const TROPHIES: Trophy[] = [
         category: 'bronze',
         sport: 'football',
         check: (stats) => {
-            const footballTotal = Object.values(stats.detailed.football || {}).reduce((acc, curr) => acc + curr.total, 0);
+            const footballCorrect = Object.values(stats.detailed.football || {}).reduce((acc, curr) => acc + curr.correct, 0);
             return {
-                unlocked: footballTotal >= 50,
-                progress: Math.min(footballTotal, 50),
+                unlocked: footballCorrect >= 50,
+                progress: Math.min(footballCorrect, 50),
                 goal: 50,
             };
         },
@@ -77,10 +77,10 @@ export const TROPHIES: Trophy[] = [
         category: 'bronze',
         sport: 'basketball',
         check: (stats) => {
-            const basketballTotal = Object.values(stats.detailed.basketball || {}).reduce((acc, curr) => acc + curr.total, 0);
+            const basketballCorrect = Object.values(stats.detailed.basketball || {}).reduce((acc, curr) => acc + curr.correct, 0);
             return {
-                unlocked: basketballTotal >= 50,
-                progress: Math.min(basketballTotal, 50),
+                unlocked: basketballCorrect >= 50,
+                progress: Math.min(basketballCorrect, 50),
                 goal: 50,
             };
         },
