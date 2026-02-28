@@ -45,7 +45,10 @@ const StatsModal: React.FC<StatsModalProps> = ({ onClose }) => {
                 <div className={styles.progressBarBg}>
                     <div
                         className={`${styles.progressBarFill} ${isSubItem ? styles.subFill : ''}`}
-                        style={{ width: `${percent}%` }}
+                        style={{
+                            width: `${percent}%`,
+                            backgroundSize: percent > 0 ? `${10000 / percent}% 100%` : '100% 100%'
+                        }}
                     />
                 </div>
             </div>
@@ -96,9 +99,27 @@ const StatsModal: React.FC<StatsModalProps> = ({ onClose }) => {
 
                 <div className={styles.content}>
                     <div className={styles.mainStat}>
-                        <div className={styles.accuracyCircle}>
-                            <span className={styles.accuracyValue}>{accuracy}%</span>
-                            <span className={styles.accuracyLabel}>{t('stats.accuracy')}</span>
+                        <div className={styles.accuracyContainer}>
+                            <svg viewBox="0 0 120 120" className={styles.accuracySvg}>
+                                <defs>
+                                    <mask id="accuracyProgressMask">
+                                        <circle
+                                            cx="60" cy="60" r="54"
+                                            className={styles.accuracyMaskCircle}
+                                            style={{ strokeDashoffset: 339.292 * (1 - accuracy / 100) }}
+                                            transform="rotate(-90 60 60)"
+                                        />
+                                    </mask>
+                                </defs>
+                                <circle cx="60" cy="60" r="54" className={styles.accuracyBg} />
+                                <foreignObject x="0" y="0" width="120" height="120" mask="url(#accuracyProgressMask)">
+                                    <div className={styles.conicGradientBg} />
+                                </foreignObject>
+                            </svg>
+                            <div className={styles.accuracyContent}>
+                                <span className={styles.accuracyValue}>{accuracy}%</span>
+                                <span className={styles.accuracyLabel}>{t('stats.accuracy')}</span>
+                            </div>
                         </div>
                     </div>
 
