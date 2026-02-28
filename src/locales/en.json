@@ -41,7 +41,13 @@
         "invalidCode": "Invalid Game Code",
         "shareCodeMsg": "Share this code with friends to play the exact same game:",
         "codeCopied": "Code copied!",
-        "historyTitle": "Answers detail"
+        "historyTitle": "Answers detail",
+        "dailyChallenge": "Daily Challenge",
+        "dailyType_football": "Football",
+        "dailyType_basketball": "Basketball",
+        "dailyType_active": "Active players",
+        "dailyType_historical": "Historical players",
+        "dailyCompleted": "Already played!"
     },
     "stats": {
         "title": "Statistics",

@@ -35,7 +35,13 @@
         "gameOver": "¡Juego terminado!",
         "totalScore": "Puntuación total: {{score}}",
         "playAgain": "Jugar de nuevo",
-        "historyTitle": "Detalle de respuestas"
+        "historyTitle": "Detalle de respuestas",
+        "dailyChallenge": "Desafío diario",
+        "dailyType_football": "Fútbol",
+        "dailyType_basketball": "Baloncesto",
+        "dailyType_active": "Jugadores en activo",
+        "dailyType_historical": "Jugadores históricos",
+        "dailyCompleted": "¡Ya jugado!"
     },
     "stats": {
         "title": "Estadísticas",

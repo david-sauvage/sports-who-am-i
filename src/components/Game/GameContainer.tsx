@@ -9,6 +9,7 @@ import SettingsScreen from './SettingsScreen';
 import type { GameSettings } from '../../types';
 import { seededShuffle, generateSeed } from '../../utils/random';
 import { generateGameCode } from '../../utils/gameCode';
+import { saveDailyChallengeResult } from '../../utils/dailyChallenge';
 import { useTrophies } from '../../context/TrophyContext';
 import styles from './GameContainer.module.css';
 
@@ -19,6 +20,7 @@ export const GameContainer = () => {
     const [gameSettings, setGameSettings] = useState<GameSettings | null>(null);
     const [gameSeed, setGameSeed] = useState<string>('');
     const [showToast, setShowToast] = useState(false);
+    const [isDailyChallenge, setIsDailyChallenge] = useState(false);
 
     // Memoize filtered players based on settings and seed
     const filteredPlayers = useMemo(() => {
@@ -52,11 +54,17 @@ export const GameContainer = () => {
         if (status === 'won' || status === 'lost' || status === 'ended') {
             checkNewTrophies();
         }
-    }, [status, checkNewTrophies]);
+        // Save daily challenge result when the game ends
+        if (status === 'ended' && isDailyChallenge) {
+            saveDailyChallengeResult(totalScore);
+            setIsDailyChallenge(false);
+        }
+    }, [status, checkNewTrophies, isDailyChallenge, totalScore]);
 
-    const handleStartWithSettings = (settings: GameSettings, seed?: string) => {
+    const handleStartWithSettings = (settings: GameSettings, seed?: string, isDaily?: boolean) => {
         setGameSettings(settings);
         setGameSeed(seed || generateSeed());
+        setIsDailyChallenge(!!isDaily);
         setView('game');
         // We use a small timeout to ensure the memo has updated the players before starting
         setTimeout(() => startGame(), 0);

@@ -41,7 +41,13 @@
         "invalidCode": "Code invalide",
         "shareCodeMsg": "Partage ce code pour défier tes amis sur la même partie :",
         "codeCopied": "Code copié !",
-        "historyTitle": "Détail des réponses"
+        "historyTitle": "Détail des réponses",
+        "dailyChallenge": "Challenge du jour",
+        "dailyType_football": "Football",
+        "dailyType_basketball": "Basket",
+        "dailyType_active": "Joueurs actuels",
+        "dailyType_historical": "Joueurs historiques",
+        "dailyCompleted": "Déjà joué !"
     },
     "stats": {
         "title": "Statistiques",

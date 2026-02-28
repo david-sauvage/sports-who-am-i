@@ -12,7 +12,7 @@ const mulberry32 = (a: number) => {
 };
 
 // Hash a string into a number for the seed
-const xmur3 = (str: string) => {
+export const xmur3 = (str: string) => {
     let h = 1779033703 ^ str.length;
     for (let i = 0; i < str.length; i++) {
         h = Math.imul(h ^ str.charCodeAt(i), 3432918353);

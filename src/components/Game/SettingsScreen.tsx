@@ -2,12 +2,13 @@ import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import type { GameSettings } from '../../types';
 import { parseGameCode } from '../../utils/gameCode';
+import { getDailyChallengeSettings, getDailyChallengeSeed, getDailyChallengeInfo, isDailyChallengeCompleted, getDailyChallengeResult } from '../../utils/dailyChallenge';
 import styles from './SettingsScreen.module.css';
 import StatsModal from '../UI/StatsModal';
 import TrophyModal from '../UI/TrophyModal';
 
 interface SettingsScreenProps {
-    onStart: (settings: GameSettings, seed?: string) => void;
+    onStart: (settings: GameSettings, seed?: string, isDaily?: boolean) => void;
 }
 
 const SettingsScreen: React.FC<SettingsScreenProps> = ({ onStart }) => {
@@ -71,6 +72,21 @@ const SettingsScreen: React.FC<SettingsScreenProps> = ({ onStart }) => {
     const handleStart = () => {
         onStart(settings, loadedSeed || undefined);
     };
+
+    const dailyInfo = getDailyChallengeInfo();
+    const dailyCompleted = isDailyChallengeCompleted();
+    const dailyResult = getDailyChallengeResult();
+
+    const handleDailyChallenge = () => {
+        if (dailyCompleted) return;
+        const dailySettings = getDailyChallengeSettings(i18n.language);
+        const dailySeed = getDailyChallengeSeed();
+        onStart(dailySettings, dailySeed, true);
+    };
+
+    // Build the display label for the daily challenge type
+    const dailySportLabel = dailyInfo.sportKeys.map(k => t(k)).join(' · ');
+    const dailyCategoryLabel = dailyInfo.categoryKeys.map(k => t(k)).join(' · ');
 
     const languages = [
         { code: 'fr', flag: '🇫🇷', label: 'FR' },
@@ -219,6 +235,22 @@ const SettingsScreen: React.FC<SettingsScreenProps> = ({ onStart }) => {
                     ))}
                 </div>
             </div>
+
+            {/* Daily challenge button */}
+            <button
+                className={`${styles.dailyChallengeButton} ${dailyCompleted ? styles.dailyChallengeCompleted : ''}`}
+                onClick={handleDailyChallenge}
+                disabled={dailyCompleted}
+            >
+                <span className={styles.dailyChallengeEmoji}>{dailyInfo.sportEmojis}{dailyInfo.categoryEmojis}</span>
+                <span className={styles.dailyChallengeText}>
+                    <span className={styles.dailyChallengeTitle}>{t('settings.dailyChallenge')}</span>
+                    <span className={styles.dailyChallengeType}>{dailySportLabel} · {dailyCategoryLabel}</span>
+                </span>
+                {dailyCompleted && dailyResult && (
+                    <span className={styles.dailyChallengeScore}>🏆 {dailyResult.score}</span>
+                )}
+            </button>
 
             {/* Start button */}
             <button className={styles.startButton} onClick={handleStart}>
