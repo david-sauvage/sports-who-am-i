@@ -42,7 +42,8 @@ describe('GameContainer', () => {
             submitGuess: vi.fn(),
             giveUp: vi.fn(),
             nextPlayer: vi.fn(),
-            timer: 0
+            timer: 0,
+            history: []
         });
 
         render(<GameContainer />);
@@ -69,7 +70,8 @@ describe('GameContainer', () => {
             submitGuess: vi.fn(),
             giveUp: vi.fn(),
             nextPlayer: vi.fn(),
-            timer: 0
+            timer: 0,
+            history: []
         });
 
         render(<GameContainer />);
@@ -95,7 +97,8 @@ describe('GameContainer', () => {
             submitGuess: vi.fn(),
             giveUp: vi.fn(),
             nextPlayer: vi.fn(),
-            timer: 0
+            timer: 0,
+            history: []
         });
 
         render(<GameContainer />);
