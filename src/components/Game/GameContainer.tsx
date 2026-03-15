@@ -8,7 +8,7 @@ import { AnswerInput } from './AnswerInput';
 import SettingsScreen from './SettingsScreen';
 import type { GameSettings } from '../../types';
 import { seededShuffle, generateSeed } from '../../utils/random';
-import { generateGameCode } from '../../utils/gameCode';
+
 import { saveDailyChallengeResult } from '../../utils/dailyChallenge';
 import { useTrophies } from '../../context/TrophyContext';
 import styles from './GameContainer.module.css';
@@ -19,7 +19,7 @@ export const GameContainer = () => {
     const [view, setView] = useState<'settings' | 'game'>('settings');
     const [gameSettings, setGameSettings] = useState<GameSettings | null>(null);
     const [gameSeed, setGameSeed] = useState<string>('');
-    const [showToast, setShowToast] = useState(false);
+
     const [isDailyChallenge, setIsDailyChallenge] = useState(false);
 
     // Memoize filtered players based on settings and seed
@@ -70,15 +70,6 @@ export const GameContainer = () => {
         setTimeout(() => startGame(), 0);
     };
 
-    const handleCopyCode = async (code: string) => {
-        try {
-            await navigator.clipboard.writeText(code);
-            setShowToast(true);
-            setTimeout(() => setShowToast(false), 2000);
-        } catch (err) {
-            console.error('Failed to copy', err);
-        }
-    };
 
     if (view === 'settings') {
         return (
@@ -90,7 +81,6 @@ export const GameContainer = () => {
 
     // End Game View
     if (status === 'ended') {
-        const gameCode = gameSettings && gameSeed ? generateGameCode(gameSettings, gameSeed) : '';
 
         return (
             <div className={styles.container}>
@@ -124,19 +114,6 @@ export const GameContainer = () => {
                         </div>
                     )}
 
-                    {gameCode && (
-                        <div className={styles.shareSection}>
-                            <p>{t('settings.shareCodeMsg')}</p>
-                            <div className={styles.codeDisplay} onClick={() => handleCopyCode(gameCode)}>
-                                {gameCode}
-                                <span className={styles.copyIcon}>📋</span>
-                            </div>
-                        </div>
-                    )}
-
-                    <div className={`${styles.toast} ${showToast ? styles.show : ''}`}>
-                        {t('settings.codeCopied')}
-                    </div>
 
                     <button onClick={() => setView('settings')} className={styles.primaryButton}>
                         {t('settings.playAgain')}

@@ -20,6 +20,11 @@ vi.mock('../../hooks/useGameLogic', () => ({
     useGameLogic: vi.fn(),
 }));
 
+// Mock useTrophies
+vi.mock('../../context/TrophyContext', () => ({
+    useTrophies: vi.fn(() => ({ checkNewTrophies: vi.fn() })),
+}));
+
 // Mock scrollTo
 Element.prototype.scrollTo = vi.fn();
 

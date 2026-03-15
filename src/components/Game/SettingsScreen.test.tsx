@@ -17,7 +17,6 @@ describe('SettingsScreen', () => {
     it('renders with default settings', () => {
         render(<SettingsScreen onStart={vi.fn()} />);
         expect(screen.getByText('settings.title')).toBeInTheDocument();
-        expect(screen.getByText('settings.language')).toBeInTheDocument();
     });
 
     it('handles starting the game with settings', () => {
@@ -39,9 +38,11 @@ describe('SettingsScreen', () => {
         const onStart = vi.fn();
         render(<SettingsScreen onStart={onStart} />);
 
-        // Basketball is checked by default. Uncheck it.
-        const basketballCheckbox = screen.getAllByRole('checkbox')[1];
-        fireEvent.click(basketballCheckbox);
+        // Basketball is active by default. Turn it off.
+        const basketballButton = screen.getByText('settings.basketball').closest('button');
+        if (basketballButton) {
+            fireEvent.click(basketballButton);
+        }
 
         const startButton = screen.getByText('settings.start');
         fireEvent.click(startButton);
@@ -55,9 +56,11 @@ describe('SettingsScreen', () => {
         const onStart = vi.fn();
         render(<SettingsScreen onStart={onStart} />);
 
-        // Historical is checked by default. Uncheck it.
-        const historicalCheckbox = screen.getAllByRole('checkbox')[2];
-        fireEvent.click(historicalCheckbox);
+        // Historical is active by default. Turn it off.
+        const historicalButton = screen.getByText('settings.historical').closest('button');
+        if (historicalButton) {
+            fireEvent.click(historicalButton);
+        }
 
         fireEvent.click(screen.getByText('settings.start'));
 

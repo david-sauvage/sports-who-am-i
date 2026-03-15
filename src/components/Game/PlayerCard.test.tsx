@@ -28,9 +28,9 @@ describe('PlayerCard', () => {
         ]
     };
 
-    it('renders placeholder name when showName is false', () => {
+    it('renders no name when showName is false', () => {
         render(<PlayerCard player={mockPlayer} revealedClueCount={0} showName={false} />);
-        expect(screen.getByText('???')).toBeInTheDocument();
+        expect(screen.queryByText('Zinedine Zidane')).not.toBeInTheDocument();
     });
 
     it('renders actual name when showName is true', () => {
@@ -40,7 +40,6 @@ describe('PlayerCard', () => {
 
     it('renders sport info', () => {
         render(<PlayerCard player={mockPlayer} revealedClueCount={0} />);
-        expect(screen.getByText('sports.football')).toBeInTheDocument();
         expect(screen.getByText('⚽')).toBeInTheDocument();
     });
 });

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import type { GameSettings } from '../../types';
-import { parseGameCode } from '../../utils/gameCode';
+
 import { getDailyChallengeSettings, getDailyChallengeSeed, getDailyChallengeInfo, isDailyChallengeCompleted, getDailyChallengeResult } from '../../utils/dailyChallenge';
 import styles from './SettingsScreen.module.css';
 import StatsModal from '../UI/StatsModal';
@@ -19,9 +19,7 @@ const SettingsScreen: React.FC<SettingsScreenProps> = ({ onStart }) => {
         categories: ['active', 'historical'],
         questionCount: 10,
     });
-    const [gameCodeInput, setGameCodeInput] = useState('');
-    const [loadedSeed, setLoadedSeed] = useState<string | null>(null);
-    const [isValidCode, setIsValidCode] = useState<boolean | null>(null);
+
     const [showStats, setShowStats] = useState(false);
     const [showTrophies, setShowTrophies] = useState(false);
 
@@ -43,34 +41,8 @@ const SettingsScreen: React.FC<SettingsScreenProps> = ({ onStart }) => {
             : [...settings.categories, category];
         if (newCategories.length > 0) setSettings({ ...settings, categories: newCategories });
     };
-
-    const handleCodeChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        const code = e.target.value;
-        setGameCodeInput(code);
-
-        if (code.trim().length === 0) {
-            setIsValidCode(null);
-            setLoadedSeed(null);
-            return;
-        }
-
-        const result = parseGameCode(code.trim());
-        if (result) {
-            setIsValidCode(true);
-            setLoadedSeed(result.seed);
-            setSettings(result.settings);
-
-            if (result.settings.language !== i18n.language) {
-                i18n.changeLanguage(result.settings.language);
-            }
-        } else {
-            setIsValidCode(false);
-            setLoadedSeed(null);
-        }
-    };
-
     const handleStart = () => {
-        onStart(settings, loadedSeed || undefined);
+        onStart(settings);
     };
 
     const dailyInfo = getDailyChallengeInfo();
@@ -150,20 +122,6 @@ const SettingsScreen: React.FC<SettingsScreenProps> = ({ onStart }) => {
                 <p className={styles.subtitle}>{t('settings.subtitle')}</p>
             </div>
 
-            {/* Game code */}
-            <div className={styles.section}>
-                <span className={styles.sectionLabel}>{t('settings.enterCode')}</span>
-                <div className={styles.inputWrapper}>
-                    <span className={styles.inputIcon}>#</span>
-                    <input
-                        type="text"
-                        value={gameCodeInput}
-                        onChange={handleCodeChange}
-                        placeholder={t('settings.codePlaceholder')}
-                        className={`${styles.codeInput} ${isValidCode === true ? styles.valid : ''} ${isValidCode === false ? styles.invalid : ''}`}
-                    />
-                </div>
-            </div>
 
             {/* Sports */}
             <div className={styles.section}>
