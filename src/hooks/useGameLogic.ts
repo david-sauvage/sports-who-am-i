@@ -191,7 +191,7 @@ export const useGameLogic = ({
         }
 
         return () => stopTimer();
-    }, [status, stopTimer]);
+    }, [status, stopTimer, currentPlayer]);
 
     // Clue Reveal Effect
     useEffect(() => {
@@ -232,6 +232,7 @@ export const useGameLogic = ({
         giveUp,
         nextPlayer,
         timer,
-        history
+        history,
+        currentPlayerIndex
     };
 };

@@ -26,7 +26,7 @@ export const GameContainer = () => {
     const filteredPlayers = useMemo(() => {
         if (!gameSettings || !gameSeed) return [];
 
-        let filtered = players.filter(p =>
+        const filtered = players.filter(p =>
             gameSettings.sports.includes(p.sport) &&
             gameSettings.categories.includes(p.category)
         );
@@ -47,6 +47,7 @@ export const GameContainer = () => {
         giveUp,
         nextPlayer,
         history,
+        currentPlayerIndex,
     } = useGameLogic({ players: filteredPlayers });
 
     // Check for trophies whenever the round or game status changes
@@ -140,10 +141,17 @@ export const GameContainer = () => {
                     </svg>
                 </button>
 
-                <ScoreBoard score={score} totalScore={totalScore} />
+
+
+                <ScoreBoard 
+                    score={score} 
+                    totalScore={totalScore} 
+                    currentQuestion={currentPlayerIndex + 1}
+                    totalQuestions={gameSettings?.questionCount || 10}
+                />
             </div>
 
-            <div className={styles.cardWrapper}>
+            <div key={currentPlayer.id} className={styles.cardWrapper}>
                 {currentPlayer && (
                     <PlayerCard
                         player={currentPlayer}

@@ -4,7 +4,7 @@
         "loading": "Chargement...",
         "score": "Score",
         "submit": "Valider",
-        "giveUp": "Abandonner",
+        "giveUp": "Passer",
         "next": "Joueur Suivant",
         "completed": "Débloqué !"
     },
@@ -14,7 +14,8 @@
         "enterGuess": "Entrez le nom du joueur...",
         "win": "Bravo ! C'était {{name}}.",
         "loss": "Perdu ! C'était {{name}}.",
-        "noMoreClues": "Plus d'indices disponibles."
+        "noMoreClues": "Plus d'indices disponibles.",
+        "questionProgress": "Question {{current}} / {{total}}"
     },
     "sports": {
         "football": "Football",

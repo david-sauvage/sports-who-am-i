@@ -4,7 +4,7 @@
         "loading": "Cargando...",
         "score": "Puntuación",
         "submit": "Enviar",
-        "giveUp": "Rendirse",
+        "giveUp": "Pasar",
         "next": "Siguiente jugador",
         "completed": "¡Desbloqueado!"
     },
@@ -14,7 +14,8 @@
         "enterGuess": "Introduce el nombre del jugador...",
         "win": "¡Correcto! Era {{name}}.",
         "loss": "¡Perdiste! Era {{name}}.",
-        "noMoreClues": "No hay más pistas disponibles."
+        "noMoreClues": "No hay más pistas disponibles.",
+        "questionProgress": "Pregunta {{current}} / {{total}}"
     },
     "sports": {
         "football": "Fútbol",

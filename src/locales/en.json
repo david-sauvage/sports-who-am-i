@@ -4,7 +4,7 @@
         "loading": "Loading...",
         "score": "Score",
         "submit": "Submit",
-        "giveUp": "Give Up",
+        "giveUp": "Skip",
         "next": "Next Player",
         "completed": "Unlocked!"
     },
@@ -14,7 +14,8 @@
         "enterGuess": "Enter player name...",
         "win": "Correct! It was {{name}}.",
         "loss": "Game Over! It was {{name}}.",
-        "noMoreClues": "No more clues available."
+        "noMoreClues": "No more clues available.",
+        "questionProgress": "Question {{current}} / {{total}}"
     },
     "sports": {
         "football": "Football",

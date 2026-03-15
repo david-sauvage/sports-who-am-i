@@ -115,12 +115,33 @@
     white-space: nowrap;
 }
 
+.progressIndicator {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #64748b;
+    background: #f1f5f9;
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    margin: 0 auto;
+}
 
 .cardWrapper {
     position: relative;
     width: 100%;
     max-width: 500px;
     margin-bottom: 1rem;
+    animation: fadeSlideIn 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes fadeSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .endCard {
