@@ -7,7 +7,7 @@ import type { Player } from '../../types';
 // Mock react-i18next
 vi.mock('react-i18next', () => ({
     useTranslation: () => ({
-        t: (key: string, options?: any) => options ? `${key} ${JSON.stringify(options)}` : key,
+        t: (key: string, options?: unknown) => options ? `${key} ${JSON.stringify(options)}` : key,
         i18n: {
             language: 'en',
             changeLanguage: vi.fn(),
@@ -48,7 +48,8 @@ describe('GameContainer', () => {
             giveUp: vi.fn(),
             nextPlayer: vi.fn(),
             timer: 0,
-            history: []
+            history: [],
+            currentPlayerIndex: 0
         });
 
         render(<GameContainer />);
@@ -76,7 +77,8 @@ describe('GameContainer', () => {
             giveUp: vi.fn(),
             nextPlayer: vi.fn(),
             timer: 0,
-            history: []
+            history: [],
+            currentPlayerIndex: 0
         });
 
         render(<GameContainer />);
@@ -103,7 +105,8 @@ describe('GameContainer', () => {
             giveUp: vi.fn(),
             nextPlayer: vi.fn(),
             timer: 0,
-            history: []
+            history: [],
+            currentPlayerIndex: 0
         });
 
         render(<GameContainer />);

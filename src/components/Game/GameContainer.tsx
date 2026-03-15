@@ -58,6 +58,7 @@ export const GameContainer = () => {
         // Save daily challenge result when the game ends
         if (status === 'ended' && isDailyChallenge) {
             saveDailyChallengeResult(totalScore);
+            // eslint-disable-next-line react-hooks/set-state-in-effect
             setIsDailyChallenge(false);
         }
     }, [status, checkNewTrophies, isDailyChallenge, totalScore]);

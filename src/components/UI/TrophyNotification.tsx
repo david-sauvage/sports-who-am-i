@@ -10,6 +10,7 @@ const TrophyNotification: React.FC = () => {
 
     useEffect(() => {
         if (unlockedTrophy) {
+            // eslint-disable-next-line react-hooks/set-state-in-effect
             setIsExiting(false);
             const timer = setTimeout(() => {
                 setIsExiting(true);

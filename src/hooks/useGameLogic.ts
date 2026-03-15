@@ -206,6 +206,7 @@ export const useGameLogic = ({
 
         // Cap at max clubs
         if (cluesToShow > revealedClueCount && revealedClueCount < currentPlayer.clubs.length) {
+            // eslint-disable-next-line react-hooks/set-state-in-effect
             setRevealedClueCount(Math.min(cluesToShow, currentPlayer.clubs.length));
         }
     }, [timer, clueRevealInterval, initialClueDelay, revealedClueCount, currentPlayer, status]);
