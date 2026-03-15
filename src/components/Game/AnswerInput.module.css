@@ -100,3 +100,37 @@
         transform: translateX(5px);
     }
 }
+
+/* ── Mobile: stacked layout ──────────────────────────────────── */
+@media (max-width: 480px) {
+    .inputWrapper {
+        flex-wrap: wrap;
+    }
+
+    .input {
+        width: 100%;
+        flex: 1 1 100%;
+        font-size: 1rem;
+        padding: 0.85rem 1rem;
+        border-radius: 12px;
+    }
+
+    .buttonGroup {
+        flex: 1 1 100%;
+        gap: 0.5rem;
+    }
+
+    .button {
+        flex: 1;
+        min-height: 48px;
+        padding: 0.75rem 1rem;
+        border-radius: 12px;
+        font-size: 1rem;
+    }
+
+    .giveUpButton {
+        min-height: 48px;
+        min-width: 48px;
+        border-radius: 12px;
+    }
+}
