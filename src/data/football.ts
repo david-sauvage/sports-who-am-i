@@ -717,5 +717,72 @@ export const footballPlayers: Player[] = [
             { name: 'FC Sochaux-Montbéliard', years: '1999-2001' },
             { name: 'FC Martigues', years: '2001-2002' }
         ]
+    },
+    {
+        id: 'f-51',
+        name: 'Fernando Morientes',
+        birthDate: '1976-04-05',
+        sport: 'football',
+        category: 'historical',
+        clubs: [
+            { name: 'Albacete Balompié', years: '1993-1995' },
+            { name: 'Real Saragosse', years: '1995-1997' },
+            { name: 'Real Madrid', years: '1997-2005' },
+            { name: 'AS Monaco', years: '2003-2004' },
+            { name: 'Liverpool FC', years: '2005-2006' },
+            { name: 'Valence CF', years: '2006-2009' },
+            { name: 'Olympique de Marseille', years: '2009-2010' },
+            { name: 'Santa Ana', years: '2015-2015' }
+        ]
+    },
+    {
+        id: 'f-52',
+        name: 'Ludovic Giuly',
+        birthDate: '1976-07-10',
+        sport: 'football',
+        category: 'historical',
+        clubs: [
+            { name: 'Olympique Lyonnais', years: '1994-1998' },
+            { name: 'AS Monaco', years: '1998-2004' },
+            { name: 'FC Barcelone', years: '2004-2007' },
+            { name: 'AS Rome', years: '2007-2008' },
+            { name: 'Paris Saint-Germain', years: '2008-2011' },
+            { name: 'AS Monaco', years: '2011-2012' },
+            { name: 'FC Lorient', years: '2012-2013' },
+            { name: 'Monts d\'Or Azergues', years: '2013-2016' }
+        ]
+    },
+    {
+        id: 'f-53',
+        name: 'Dado Pršo',
+        birthDate: '1974-11-05',
+        sport: 'football',
+        category: 'historical',
+        clubs: [
+            { name: 'Hajduk Split', years: '1991-1992' },
+            { name: 'Pazinka Pazin', years: '1992-1993' },
+            { name: 'FC Rouen', years: '1993-1995' },
+            { name: 'Stade raphaëlois', years: '1995-1996' },
+            { name: 'AS Monaco', years: '1996-2004' },
+            { name: 'AC Ajaccio', years: '1997-1999' },
+            { name: 'Rangers FC', years: '2004-2007' }
+        ]
+    },
+    {
+        id: 'f-54',
+        name: 'Patrice Evra',
+        birthDate: '1981-05-15',
+        sport: 'football',
+        category: 'historical',
+        clubs: [
+            { name: 'Marsala Calcio', years: '1998-1999' },
+            { name: 'AC Monza', years: '1999-2000' },
+            { name: 'OGC Nice', years: '2000-2002' },
+            { name: 'AS Monaco', years: '2002-2006' },
+            { name: 'Manchester United', years: '2006-2014' },
+            { name: 'Juventus FC', years: '2014-2017' },
+            { name: 'Olympique de Marseille', years: '2017-2017' },
+            { name: 'West Ham United', years: '2018-2018' }
+        ]
     }
 ]

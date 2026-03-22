@@ -117,4 +117,12 @@ export const TROPHIES: Trophy[] = [
         isPlayerDiscovery: true,
         check: createPlayerDiscoveryCheck(['f-48', 'f-49', 'f-50']), // Lens 1998 champions
     },
+    {
+        id: 'periple_rouge',
+        icon: '🔴',
+        category: 'silver',
+        sport: 'football',
+        isPlayerDiscovery: true,
+        check: createPlayerDiscoveryCheck(['f-51', 'f-52', 'f-53', 'f-54']), // AS Monaco 2004
+    },
 ];

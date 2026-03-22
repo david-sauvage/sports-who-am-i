@@ -118,6 +118,12 @@
             "description": "Encuentra a Guillaume Warmuz, Jean-Guy Wallemme y Anto Drobnjak",
             "description_locked": "Encuentra a 3 jugadores clave del equipo campeón de Francia en 1998, el Racing Club de Lens.",
             "description_unlocked": "Has encontrado a tres leyendas del equipo campeón del RC Lens en 1998: Warmuz, Wallemme y Drobnjak."
+        },
+        "periple_rouge": {
+            "name": "El viaje rojo",
+            "description": "Encuentra a Fernando Morientes, Ludovic Giuly, Dado Pršo y Patrice Evra",
+            "description_locked": "Encuentra a 4 jugadores de la fantástica campaña del AS Mónaco en la Liga de Campeones 2004.",
+            "description_unlocked": "El AS Mónaco llegó a la final de la Liga de Campeones en 2004. Has encontrado a Morientes, Giuly, Pršo y Evra."
         }
     }
 }

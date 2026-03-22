@@ -124,6 +124,12 @@
             "description": "Trouvez Guillaume Warmuz, Jean-Guy Wallemme et Anto Drobnjak",
             "description_locked": "Trouvez 3 joueurs majeurs de l'équipe championne de France 1998 avec le Racing Club de Lens.",
             "description_unlocked": "Vous avez trouvé trois légendes du RC Lens champion de France en 1998 : Warmuz, Wallemme et Drobnjak."
+        },
+        "periple_rouge": {
+            "name": "Le périple rouge",
+            "description": "Trouvez Fernando Morientes, Ludovic Giuly, Dado Pršo et Patrice Evra",
+            "description_locked": "Trouvez 4 joueurs de l'épopée fantastique de l'AS Monaco en Ligue des Champions 2004.",
+            "description_unlocked": "L'AS Monaco de 2004 a atteint la finale de la Ligue des Champions. Vous avez trouvé Morientes, Giuly, Pršo et Evra."
         }
     }
 }

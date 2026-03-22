@@ -124,6 +124,12 @@
             "description": "Find Guillaume Warmuz, Jean-Guy Wallemme, and Anto Drobnjak",
             "description_locked": "Find 3 key players from the 1998 French Championship winning team, Racing Club de Lens.",
             "description_unlocked": "You found three legends from the 1998 RC Lens championship team: Warmuz, Wallemme, and Drobnjak."
+        },
+        "periple_rouge": {
+            "name": "The Red Journey",
+            "description": "Find Fernando Morientes, Ludovic Giuly, Dado Pršo, and Patrice Evra",
+            "description_locked": "Find 4 players from AS Monaco's fantastic 2004 Champions League run.",
+            "description_unlocked": "AS Monaco reached the Champions League final in 2004. You found Morientes, Giuly, Pršo, and Evra."
         }
     }
 }

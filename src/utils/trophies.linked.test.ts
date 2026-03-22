@@ -221,3 +221,51 @@ describe('Sang et Or Trophy', () => {
         expect(result.progress).toBe(3);
     });
 });
+
+describe('Le Périple Rouge Trophy', () => {
+    const peripleRougeTrophy = TROPHIES.find(t => t.id === 'periple_rouge');
+
+    const baseStats: UserStatistics = {
+        gamesPlayed: 0,
+        totalQuestions: 0,
+        correctAnswers: 0,
+        incorrectAnswers: 0,
+        totalScore: 0,
+        foundPlayerIds: [],
+        detailed: {
+            football: {
+                active: { correct: 0, total: 0 },
+                historical: { correct: 0, total: 0 },
+            },
+            basketball: {
+                active: { correct: 0, total: 0 },
+                historical: { correct: 0, total: 0 },
+            },
+        },
+    };
+
+    it('should be defined', () => {
+        expect(peripleRougeTrophy).toBeDefined();
+    });
+
+    it('should not be unlocked if no players are found', () => {
+        const result = peripleRougeTrophy!.check(baseStats);
+        expect(result.unlocked).toBe(false);
+        expect(result.progress).toBe(0);
+        expect(result.goal).toBe(4);
+    });
+
+    it('should show progress if 2 are found', () => {
+        const stats = { ...baseStats, foundPlayerIds: ['f-51', 'f-52'] };
+        const result = peripleRougeTrophy!.check(stats);
+        expect(result.unlocked).toBe(false);
+        expect(result.progress).toBe(2);
+    });
+
+    it('should be unlocked if 4 are found', () => {
+        const stats = { ...baseStats, foundPlayerIds: ['f-51', 'f-52', 'f-53', 'f-54'] };
+        const result = peripleRougeTrophy!.check(stats);
+        expect(result.unlocked).toBe(true);
+        expect(result.progress).toBe(4);
+    });
+});
