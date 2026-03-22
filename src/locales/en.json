@@ -130,6 +130,12 @@
             "description": "Find Fernando Morientes, Ludovic Giuly, Dado Pršo, and Patrice Evra",
             "description_locked": "Find 4 players from AS Monaco's fantastic 2004 Champions League run.",
             "description_unlocked": "AS Monaco reached the Champions League final in 2004. You found Morientes, Giuly, Pršo, and Evra."
+        },
+        "gones": {
+            "name": "Gones",
+            "description": "Find at least 3 players among Cris, Juninho, Lisandro López, Coupet, and Govou",
+            "description_locked": "Find 3 key players from Olympique Lyonnais history.",
+            "description_unlocked": "You found three legends from the great years of Olympique Lyonnais."
         }
     }
 }

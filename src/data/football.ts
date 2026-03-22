@@ -784,5 +784,83 @@ export const footballPlayers: Player[] = [
             { name: 'Olympique de Marseille', years: '2017-2017' },
             { name: 'West Ham United', years: '2018-2018' }
         ]
+    },
+    {
+        id: 'f-55',
+        name: 'Cris',
+        birthDate: '1977-06-03',
+        sport: 'football',
+        category: 'historical',
+        clubs: [
+            { name: 'SC Corinthians', years: '1995-1998' },
+            { name: 'Cruzeiro EC', years: '1999-2004' },
+            { name: 'Bayer Leverkusen', years: '2003-2003' },
+            { name: 'Olympique Lyonnais', years: '2004-2012' },
+            { name: 'Galatasaray SK', years: '2012-2013' },
+            { name: 'Grêmio FBPA', years: '2013-2013' },
+            { name: 'Vasco da Gama', years: '2013-2014' }
+        ]
+    },
+    {
+        id: 'f-56',
+        name: 'Juninho Pernambucano',
+        birthDate: '1975-01-30',
+        sport: 'football',
+        category: 'historical',
+        clubs: [
+            { name: 'Sport Recife', years: '1993-1994' },
+            { name: 'Vasco da Gama', years: '1995-2001' },
+            { name: 'Olympique Lyonnais', years: '2001-2009' },
+            { name: 'Al-Gharafa SC', years: '2009-2011' },
+            { name: 'Vasco da Gama', years: '2011-2012' },
+            { name: 'New York Red Bulls', years: '2013-2013' },
+            { name: 'Vasco da Gama', years: '2013-2014' }
+        ]
+    },
+    {
+        id: 'f-57',
+        name: 'Lisandro López',
+        birthDate: '1983-03-02',
+        sport: 'football',
+        category: 'historical',
+        clubs: [
+            { name: 'Racing Club', years: '2003-2005' },
+            { name: 'FC Porto', years: '2005-2009' },
+            { name: 'Olympique Lyonnais', years: '2009-2013' },
+            { name: 'Al-Gharafa SC', years: '2013-2015' },
+            { name: 'SC Internacional', years: '2015-2015' },
+            { name: 'Racing Club', years: '2016-2021' },
+            { name: 'Atlanta United', years: '2021-2021' },
+            { name: 'Racing Club', years: '2021-2021' },
+            { name: 'Sarmiento Junín', years: '2022-2023' }
+        ]
+    },
+    {
+        id: 'f-58',
+        name: 'Grégory Coupet',
+        birthDate: '1972-12-31',
+        sport: 'football',
+        category: 'historical',
+        clubs: [
+            { name: 'AS Saint-Étienne', years: '1993-1997' },
+            { name: 'Olympique Lyonnais', years: '1997-2008' },
+            { name: 'Atlético de Madrid', years: '2008-2009' },
+            { name: 'Paris Saint-Germain', years: '2009-2011' }
+        ]
+    },
+    {
+        id: 'f-59',
+        name: 'Sidney Govou',
+        birthDate: '1979-07-27',
+        sport: 'football',
+        category: 'historical',
+        clubs: [
+            { name: 'Olympique Lyonnais', years: '1999-2010' },
+            { name: 'Panathinaïkos', years: '2010-2011' },
+            { name: 'Évian Thonon Gaillard', years: '2011-2013' },
+            { name: 'Olympique Lyonnais B', years: '2013-2014' },
+            { name: 'FC Monts d\'Or Azergues', years: '2014-2015' },
+            { name: 'FC Miami City', years: '2015-2015' }
+        ]
     }
 ]

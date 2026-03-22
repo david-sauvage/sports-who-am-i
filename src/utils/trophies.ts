@@ -125,4 +125,12 @@ export const TROPHIES: Trophy[] = [
         isPlayerDiscovery: true,
         check: createPlayerDiscoveryCheck(['f-51', 'f-52', 'f-53', 'f-54']), // AS Monaco 2004
     },
+    {
+        id: 'gones',
+        icon: '🦁',
+        category: 'silver',
+        sport: 'football',
+        isPlayerDiscovery: true,
+        check: createPlayerDiscoveryCheck(['f-55', 'f-56', 'f-57', 'f-58', 'f-59'], 3), // Olympique Lyonnais
+    },
 ];

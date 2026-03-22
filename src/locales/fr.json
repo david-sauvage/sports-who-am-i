@@ -130,6 +130,12 @@
             "description": "Trouvez Fernando Morientes, Ludovic Giuly, Dado Pršo et Patrice Evra",
             "description_locked": "Trouvez 4 joueurs de l'épopée fantastique de l'AS Monaco en Ligue des Champions 2004.",
             "description_unlocked": "L'AS Monaco de 2004 a atteint la finale de la Ligue des Champions. Vous avez trouvé Morientes, Giuly, Pršo et Evra."
+        },
+        "gones": {
+            "name": "Gones",
+            "description": "Trouvez au moins 3 joueurs parmi Cris, Juninho, Lisandro López, Coupet et Govou",
+            "description_locked": "Trouvez 3 joueurs majeurs de l'histoire de l'Olympique Lyonnais.",
+            "description_unlocked": "Vous avez trouvé trois légendes des belles années de l'Olympique Lyonnais."
         }
     }
 }

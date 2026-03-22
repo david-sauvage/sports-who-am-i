@@ -269,3 +269,59 @@ describe('Le Périple Rouge Trophy', () => {
         expect(result.progress).toBe(4);
     });
 });
+
+describe('Gones Trophy', () => {
+    const gonesTrophy = TROPHIES.find(t => t.id === 'gones');
+
+    const baseStats: UserStatistics = {
+        gamesPlayed: 0,
+        totalQuestions: 0,
+        correctAnswers: 0,
+        incorrectAnswers: 0,
+        totalScore: 0,
+        foundPlayerIds: [],
+        detailed: {
+            football: {
+                active: { correct: 0, total: 0 },
+                historical: { correct: 0, total: 0 },
+            },
+            basketball: {
+                active: { correct: 0, total: 0 },
+                historical: { correct: 0, total: 0 },
+            },
+        },
+    };
+
+    it('should be defined', () => {
+        expect(gonesTrophy).toBeDefined();
+    });
+
+    it('should not be unlocked if no players are found', () => {
+        const result = gonesTrophy!.check(baseStats);
+        expect(result.unlocked).toBe(false);
+        expect(result.progress).toBe(0);
+        expect(result.goal).toBe(3);
+    });
+
+    it('should show progress if 2 are found', () => {
+        const stats = { ...baseStats, foundPlayerIds: ['f-55', 'f-57'] };
+        const result = gonesTrophy!.check(stats);
+        expect(result.unlocked).toBe(false);
+        expect(result.progress).toBe(2);
+    });
+
+    it('should be unlocked if 3 are found', () => {
+        const stats = { ...baseStats, foundPlayerIds: ['f-56', 'f-58', 'f-59'] };
+        const result = gonesTrophy!.check(stats);
+        expect(result.unlocked).toBe(true);
+        expect(result.progress).toBe(3);
+    });
+
+    it('should have progress 5 but goal 3 when 5 players are found', () => {
+        const stats = { ...baseStats, foundPlayerIds: ['f-55', 'f-56', 'f-57', 'f-58', 'f-59'] };
+        const result = gonesTrophy!.check(stats);
+        expect(result.unlocked).toBe(true);
+        expect(result.progress).toBe(5);
+        expect(result.goal).toBe(3);
+    });
+});

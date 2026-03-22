@@ -1,129 +1,135 @@
-{
-    "title": "¿Quién soy?",
-    "common": {
-        "loading": "Cargando...",
-        "score": "Puntuación",
-        "submit": "Enviar",
-        "giveUp": "Pasar",
-        "next": "Siguiente jugador",
-        "completed": "¡Desbloqueado!"
-    },
-    "game": {
-        "birthDate": "Nacido el {{date}}",
-        "clubs": "Clubes",
-        "enterGuess": "Introduce el nombre del jugador...",
-        "win": "¡Correcto! Era {{name}}.",
-        "loss": "¡Perdiste! Era {{name}}.",
-        "noMoreClues": "No hay más pistas disponibles.",
-        "questionProgress": "Pregunta {{current}} / {{total}}"
-    },
-    "sports": {
-        "football": "Fútbol",
-        "basketball": "Baloncesto"
-    },
-    "settings": {
+    {
         "title": "¿Quién soy?",
-        "subtitle": "Configura tu partida",
-        "language": "Idioma",
-        "sports": "Deportes",
-        "categories": "Tipos de jugador",
-        "questionCount": "Número de preguntas",
-        "football": "Fútbol",
-        "basketball": "Baloncesto",
-        "historical": "Históricos",
-        "active": "En activo",
-        "start": "Empezar juego",
-        "gameOver": "¡Juego terminado!",
-        "totalScore": "Puntuación total: {{score}}",
-        "playAgain": "Jugar de nuevo",
-        "historyTitle": "Detalle de respuestas",
-        "dailyChallenge": "Desafío diario",
-        "dailyType_football": "Fútbol",
-        "dailyType_basketball": "Baloncesto",
-        "dailyType_active": "Jugadores en activo",
-        "dailyType_historical": "Jugadores históricos",
-        "dailyCompleted": "¡Ya jugado!"
-    },
-    "stats": {
-        "title": "Estadísticas",
-        "gamesPlayed": "Partidas jugadas",
-        "totalQuestions": "Preguntas totales",
-        "correctAnswers": "Respuestas correctas",
-        "incorrectAnswers": "Respuestas incorrectas",
-        "totalScore": "Puntuación total histórica",
-        "accuracy": "Precisión",
-        "reset": "Restablecer",
-        "resetConfirm": "¿Restablecer estadísticas?",
-        "bySport": "Éxito por Deporte",
-        "byCategory": "Éxito por Tipo",
-        "trophies": "Trofeos"
-    },
-    "trophies": {
-        "title": "Trofeos",
-        "unlocked": "Logro desbloqueado",
-        "filters": {
-            "status": {
-                "label": "Estado",
-                "all": "Todos",
-                "unlocked": "Desbloqueados",
-                "locked": "Bloqueados"
+        "common": {
+            "loading": "Cargando...",
+            "score": "Puntuación",
+            "submit": "Enviar",
+            "giveUp": "Pasar",
+            "next": "Siguiente jugador",
+            "completed": "¡Desbloqueado!"
+        },
+        "game": {
+            "birthDate": "Nacido el {{date}}",
+            "clubs": "Clubes",
+            "enterGuess": "Introduce el nombre del jugador...",
+            "win": "¡Correcto! Era {{name}}.",
+            "loss": "¡Perdiste! Era {{name}}.",
+            "noMoreClues": "No hay más pistas disponibles.",
+            "questionProgress": "Pregunta {{current}} / {{total}}"
+        },
+        "sports": {
+            "football": "Fútbol",
+            "basketball": "Baloncesto"
+        },
+        "settings": {
+            "title": "¿Quién soy?",
+            "subtitle": "Configura tu partida",
+            "language": "Idioma",
+            "sports": "Deportes",
+            "categories": "Tipos de jugador",
+            "questionCount": "Número de preguntas",
+            "football": "Fútbol",
+            "basketball": "Baloncesto",
+            "historical": "Históricos",
+            "active": "En activo",
+            "start": "Empezar juego",
+            "gameOver": "¡Juego terminado!",
+            "totalScore": "Puntuación total: {{score}}",
+            "playAgain": "Jugar de nuevo",
+            "historyTitle": "Detalle de respuestas",
+            "dailyChallenge": "Desafío diario",
+            "dailyType_football": "Fútbol",
+            "dailyType_basketball": "Baloncesto",
+            "dailyType_active": "Jugadores en activo",
+            "dailyType_historical": "Jugadores históricos",
+            "dailyCompleted": "¡Ya jugado!"
+        },
+        "stats": {
+            "title": "Estadísticas",
+            "gamesPlayed": "Partidas jugadas",
+            "totalQuestions": "Preguntas totales",
+            "correctAnswers": "Respuestas correctas",
+            "incorrectAnswers": "Respuestas incorrectas",
+            "totalScore": "Puntuación total histórica",
+            "accuracy": "Precisión",
+            "reset": "Restablecer",
+            "resetConfirm": "¿Restablecer estadísticas?",
+            "bySport": "Éxito por Deporte",
+            "byCategory": "Éxito por Tipo",
+            "trophies": "Trofeos"
+        },
+        "trophies": {
+            "title": "Trofeos",
+            "unlocked": "Logro desbloqueado",
+            "filters": {
+                "status": {
+                    "label": "Estado",
+                    "all": "Todos",
+                    "unlocked": "Desbloqueados",
+                    "locked": "Bloqueados"
+                },
+                "sport": {
+                    "label": "Deporte",
+                    "all": "Todos",
+                    "football": "Fútbol",
+                    "basketball": "Baloncesto"
+                }
             },
-            "sport": {
-                "label": "Deporte",
-                "all": "Todos",
-                "football": "Fútbol",
-                "basketball": "Baloncesto"
+            "first_step": {
+                "name": "Primer paso",
+                "description": "Juega tu primera partida"
+            },
+            "veteran": {
+                "name": "Veterano",
+                "description": "Juega 10 partidas"
+            },
+            "legend": {
+                "name": "Leyenda",
+                "description": "Juega 50 partidas"
+            },
+            "football_fan": {
+                "name": "Fan del Fútbol",
+                "description": "Responde a 50 preguntas de fútbol"
+            },
+            "basketball_fan": {
+                "name": "Fan del Baloncesto",
+                "description": "Responde a 50 preguntas de baloncesto"
+            },
+            "splash_brothers": {
+                "name": "Splash Brothers",
+                "description": "Encuentra tanto a Stephen Curry como a Klay Thompson",
+                "description_locked": "Encuentra a un legendario dúo de tiradores que revolucionó el baloncesto moderno con su puntería de tres puntos.",
+                "description_unlocked": "Stephen Curry y Klay Thompson formaron uno de los dúos más prolíficos de la historia, llevando a los Warriors a 4 títulos de la NBA con un tiro exterior sin precedentes."
+            },
+            "eternal_rivals": {
+                "name": "Eterna Rivalidad",
+                "description": "Encuentra tanto a Lionel Messi como a Cristiano Ronaldo",
+                "description_locked": "Encuentra a los dos mayores rivales de la historia del fútbol moderno, ambos múltiples ganadores del Balón de Oro.",
+                "description_unlocked": "Lionel Messi y Cristiano Ronaldo dominaron el fútbol mundial durante más de 15 años, repartiéndose 13 Balones de Oro y batiendo todos los récords de goles."
+            },
+            "golden_balls": {
+                "name": "Balones de Oro",
+                "description": "Encuentra 10 ganadores del Balón de Oro",
+                "description_locked": "Encuentra 10 jugadores que hayan ganado el premio individual más prestigioso del fútbol.",
+                "description_unlocked": "El Balón de Oro premia al mejor jugador de fútbol del año. Has encontrado a 10 de estas leyendas."
+            },
+            "sang_et_or": {
+                "name": "Sangre y oro",
+                "description": "Encuentra a Guillaume Warmuz, Jean-Guy Wallemme y Anto Drobnjak",
+                "description_locked": "Encuentra a 3 jugadores clave del equipo campeón de Francia en 1998, el Racing Club de Lens.",
+                "description_unlocked": "Has encontrado a tres leyendas del equipo campeón del RC Lens en 1998: Warmuz, Wallemme y Drobnjak."
+            },
+            "periple_rouge": {
+                "name": "El viaje rojo",
+                "description": "Encuentra a Fernando Morientes, Ludovic Giuly, Dado Pršo y Patrice Evra",
+                "description_locked": "Encuentra a 4 jugadores de la fantástica campaña del AS Mónaco en la Liga de Campeones 2004.",
+                "description_unlocked": "El AS Mónaco llegó a la final de la Liga de Campeones en 2004. Has encontrado a Morientes, Giuly, Pršo y Evra."
+            },
+            "gones": {
+                "name": "Gones",
+                "description": "Encuentra al menos a 3 jugadores entre Cris, Juninho, Lisandro López, Coupet y Govou",
+                "description_locked": "Encuentra a 3 jugadores clave en la historia del Olympique Lyonnais.",
+                "description_unlocked": "Has encontrado a tres leyendas de los grandes años del Olympique Lyonnais."
             }
-        },
-        "first_step": {
-            "name": "Primer paso",
-            "description": "Juega tu primera partida"
-        },
-        "veteran": {
-            "name": "Veterano",
-            "description": "Juega 10 partidas"
-        },
-        "legend": {
-            "name": "Leyenda",
-            "description": "Juega 50 partidas"
-        },
-        "football_fan": {
-            "name": "Fan del Fútbol",
-            "description": "Responde a 50 preguntas de fútbol"
-        },
-        "basketball_fan": {
-            "name": "Fan del Baloncesto",
-            "description": "Responde a 50 preguntas de baloncesto"
-        },
-        "splash_brothers": {
-            "name": "Splash Brothers",
-            "description": "Encuentra tanto a Stephen Curry como a Klay Thompson",
-            "description_locked": "Encuentra a un legendario dúo de tiradores que revolucionó el baloncesto moderno con su puntería de tres puntos.",
-            "description_unlocked": "Stephen Curry y Klay Thompson formaron uno de los dúos más prolíficos de la historia, llevando a los Warriors a 4 títulos de la NBA con un tiro exterior sin precedentes."
-        },
-        "eternal_rivals": {
-            "name": "Eterna Rivalidad",
-            "description": "Encuentra tanto a Lionel Messi como a Cristiano Ronaldo",
-            "description_locked": "Encuentra a los dos mayores rivales de la historia del fútbol moderno, ambos múltiples ganadores del Balón de Oro.",
-            "description_unlocked": "Lionel Messi y Cristiano Ronaldo dominaron el fútbol mundial durante más de 15 años, repartiéndose 13 Balones de Oro y batiendo todos los récords de goles."
-        },
-        "golden_balls": {
-            "name": "Balones de Oro",
-            "description": "Encuentra 10 ganadores del Balón de Oro",
-            "description_locked": "Encuentra 10 jugadores que hayan ganado el premio individual más prestigioso del fútbol.",
-            "description_unlocked": "El Balón de Oro premia al mejor jugador de fútbol del año. Has encontrado a 10 de estas leyendas."
-        },
-        "sang_et_or": {
-            "name": "Sangre y oro",
-            "description": "Encuentra a Guillaume Warmuz, Jean-Guy Wallemme y Anto Drobnjak",
-            "description_locked": "Encuentra a 3 jugadores clave del equipo campeón de Francia en 1998, el Racing Club de Lens.",
-            "description_unlocked": "Has encontrado a tres leyendas del equipo campeón del RC Lens en 1998: Warmuz, Wallemme y Drobnjak."
-        },
-        "periple_rouge": {
-            "name": "El viaje rojo",
-            "description": "Encuentra a Fernando Morientes, Ludovic Giuly, Dado Pršo y Patrice Evra",
-            "description_locked": "Encuentra a 4 jugadores de la fantástica campaña del AS Mónaco en la Liga de Campeones 2004.",
-            "description_unlocked": "El AS Mónaco llegó a la final de la Liga de Campeones en 2004. Has encontrado a Morientes, Giuly, Pršo y Evra."
         }
     }
-}
