@@ -98,21 +98,21 @@ describe('Eternal Rivals Trophy', () => {
     });
 
     it('should show progress if only Messi is found', () => {
-        const stats = { ...baseStats, foundPlayerIds: ['f-11'] };
+        const stats = { ...baseStats, foundPlayerIds: ['f-1'] };
         const result = eternalRivalsTrophy!.check(stats);
         expect(result.unlocked).toBe(false);
         expect(result.progress).toBe(1);
     });
 
     it('should show progress if only Ronaldo is found', () => {
-        const stats = { ...baseStats, foundPlayerIds: ['f-12'] };
+        const stats = { ...baseStats, foundPlayerIds: ['f-2'] };
         const result = eternalRivalsTrophy!.check(stats);
         expect(result.unlocked).toBe(false);
         expect(result.progress).toBe(1);
     });
 
     it('should be unlocked if both Messi and Ronaldo are found', () => {
-        const stats = { ...baseStats, foundPlayerIds: ['f-11', 'f-12'] };
+        const stats = { ...baseStats, foundPlayerIds: ['f-1', 'f-2'] };
         const result = eternalRivalsTrophy!.check(stats);
         expect(result.unlocked).toBe(true);
         expect(result.progress).toBe(2);
@@ -171,5 +171,53 @@ describe('Golden Balls Trophy', () => {
         const result = goldenBallsTrophy!.check(stats);
         expect(result.unlocked).toBe(false);
         expect(result.progress).toBe(2);
+    });
+});
+
+describe('Sang et Or Trophy', () => {
+    const sangEtOrTrophy = TROPHIES.find(t => t.id === 'sang_et_or');
+
+    const baseStats: UserStatistics = {
+        gamesPlayed: 0,
+        totalQuestions: 0,
+        correctAnswers: 0,
+        incorrectAnswers: 0,
+        totalScore: 0,
+        foundPlayerIds: [],
+        detailed: {
+            football: {
+                active: { correct: 0, total: 0 },
+                historical: { correct: 0, total: 0 },
+            },
+            basketball: {
+                active: { correct: 0, total: 0 },
+                historical: { correct: 0, total: 0 },
+            },
+        },
+    };
+
+    it('should be defined', () => {
+        expect(sangEtOrTrophy).toBeDefined();
+    });
+
+    it('should not be unlocked if no players are found', () => {
+        const result = sangEtOrTrophy!.check(baseStats);
+        expect(result.unlocked).toBe(false);
+        expect(result.progress).toBe(0);
+        expect(result.goal).toBe(3);
+    });
+
+    it('should show progress if 1 is found', () => {
+        const stats = { ...baseStats, foundPlayerIds: ['f-48'] };
+        const result = sangEtOrTrophy!.check(stats);
+        expect(result.unlocked).toBe(false);
+        expect(result.progress).toBe(1);
+    });
+
+    it('should be unlocked if 3 are found', () => {
+        const stats = { ...baseStats, foundPlayerIds: ['f-48', 'f-49', 'f-50'] };
+        const result = sangEtOrTrophy!.check(stats);
+        expect(result.unlocked).toBe(true);
+        expect(result.progress).toBe(3);
     });
 });

@@ -112,6 +112,12 @@
             "description": "Encuentra 10 ganadores del Balón de Oro",
             "description_locked": "Encuentra 10 jugadores que hayan ganado el premio individual más prestigioso del fútbol.",
             "description_unlocked": "El Balón de Oro premia al mejor jugador de fútbol del año. Has encontrado a 10 de estas leyendas."
+        },
+        "sang_et_or": {
+            "name": "Sangre y oro",
+            "description": "Encuentra a Guillaume Warmuz, Jean-Guy Wallemme y Anto Drobnjak",
+            "description_locked": "Encuentra a 3 jugadores clave del equipo campeón de Francia en 1998, el Racing Club de Lens.",
+            "description_unlocked": "Has encontrado a tres leyendas del equipo campeón del RC Lens en 1998: Warmuz, Wallemme y Drobnjak."
         }
     }
 }

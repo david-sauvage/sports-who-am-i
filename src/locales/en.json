@@ -118,6 +118,12 @@
             "description": "Find 10 Ballon d'Or winners",
             "description_locked": "Find 10 players who have won the most prestigious individual award in football.",
             "description_unlocked": "The Ballon d'Or rewards the best football player of the year. You have found 10 of these legends."
+        },
+        "sang_et_or": {
+            "name": "Blood and Gold",
+            "description": "Find Guillaume Warmuz, Jean-Guy Wallemme, and Anto Drobnjak",
+            "description_locked": "Find 3 key players from the 1998 French Championship winning team, Racing Club de Lens.",
+            "description_unlocked": "You found three legends from the 1998 RC Lens championship team: Warmuz, Wallemme, and Drobnjak."
         }
     }
 }

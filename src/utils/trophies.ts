@@ -109,4 +109,12 @@ export const TROPHIES: Trophy[] = [
         isPlayerDiscovery: true,
         check: createPlayerDiscoveryCheck(Array.from({ length: 47 }, (_, i) => `f-${i + 1}`), 10), // Ballon d'Or winners
     },
+    {
+        id: 'sang_et_or',
+        icon: '⛏️',
+        category: 'silver',
+        sport: 'football',
+        isPlayerDiscovery: true,
+        check: createPlayerDiscoveryCheck(['f-48', 'f-49', 'f-50']), // Lens 1998 champions
+    },
 ];

@@ -671,5 +671,51 @@ export const footballPlayers: Player[] = [
             { name: 'Blackpool FC', years: '1947-1961' },
             { name: 'Stoke City', years: '1961-1965' }
         ]
+    },
+    {
+        id: 'f-48',
+        name: 'Guillaume Warmuz',
+        birthDate: '1970-05-22',
+        sport: 'football',
+        category: 'historical',
+        clubs: [
+            { name: 'Olympique de Marseille', years: '1989-1990' },
+            { name: 'Louhans-Cuiseaux FC', years: '1990-1992' },
+            { name: 'RC Lens', years: '1992-2003' },
+            { name: 'Arsenal FC', years: '2003-2003' },
+            { name: 'Borussia Dortmund', years: '2003-2005' },
+            { name: 'AS Monaco', years: '2005-2007' }
+        ]
+    },
+    {
+        id: 'f-49',
+        name: 'Jean-Guy Wallemme',
+        birthDate: '1967-08-10',
+        sport: 'football',
+        category: 'historical',
+        clubs: [
+            { name: 'RC Lens', years: '1986-1998' },
+            { name: 'Coventry City', years: '1998-1998' },
+            { name: 'FC Sochaux-Montbéliard', years: '1999-1999' },
+            { name: 'AS Saint-Étienne', years: '1999-2001' },
+            { name: 'RC Lens', years: '2001-2002' }
+        ]
+    },
+    {
+        id: 'f-50',
+        name: 'Anto Drobnjak',
+        birthDate: '1968-09-21',
+        sport: 'football',
+        category: 'historical',
+        clubs: [
+            { name: 'Jedinstvo Bijelo Polje', years: '1986-1990' },
+            { name: 'Budućnost Podgorica', years: '1990-1992' },
+            { name: 'Étoile rouge de Belgrade', years: '1992-1994' },
+            { name: 'SC Bastia', years: '1994-1997' },
+            { name: 'RC Lens', years: '1997-1998' },
+            { name: 'Gamba Osaka', years: '1998-1999' },
+            { name: 'FC Sochaux-Montbéliard', years: '1999-2001' },
+            { name: 'FC Martigues', years: '2001-2002' }
+        ]
     }
 ]

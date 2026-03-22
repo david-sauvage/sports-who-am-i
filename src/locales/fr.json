@@ -118,6 +118,12 @@
             "description": "Trouvez 10 vainqueurs du Ballon d'Or",
             "description_locked": "Trouvez 10 joueurs ayant remporté la plus prestigieuse récompense individuelle du football.",
             "description_unlocked": "Le Ballon d'Or récompense le meilleur joueur de football de l'année. Vous avez trouvé 10 de ces légendes."
+        },
+        "sang_et_or": {
+            "name": "Sang et Or",
+            "description": "Trouvez Guillaume Warmuz, Jean-Guy Wallemme et Anto Drobnjak",
+            "description_locked": "Trouvez 3 joueurs majeurs de l'équipe championne de France 1998 avec le Racing Club de Lens.",
+            "description_unlocked": "Vous avez trouvé trois légendes du RC Lens champion de France en 1998 : Warmuz, Wallemme et Drobnjak."
         }
     }
 }
