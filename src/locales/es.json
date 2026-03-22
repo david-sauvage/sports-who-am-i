@@ -130,6 +130,12 @@
                 "description": "Encuentra al menos a 3 jugadores entre Cris, Juninho, Lisandro López, Coupet y Govou",
                 "description_locked": "Encuentra a 3 jugadores clave en la historia del Olympique Lyonnais.",
                 "description_unlocked": "Has encontrado a tres leyendas de los grandes años del Olympique Lyonnais."
+            },
+            "miracle_istanbul": {
+                "name": "El milagro de Estambul",
+                "description": "Encuentra a Steven Gerrard, Vladimír Šmicer y Xabi Alonso",
+                "description_locked": "Encuentra a los 3 goleadores de la mítica remontada en la final de la Liga de Campeones 2005.",
+                "description_unlocked": "Has encontrado a los tres héroes que marcaron para el Liverpool en la final de la Champions de 2005."
             }
         }
     }

@@ -862,5 +862,44 @@ export const footballPlayers: Player[] = [
             { name: 'FC Monts d\'Or Azergues', years: '2014-2015' },
             { name: 'FC Miami City', years: '2015-2015' }
         ]
+    },
+    {
+        id: 'f-60',
+        name: 'Steven Gerrard',
+        birthDate: '1980-05-30',
+        sport: 'football',
+        category: 'historical',
+        clubs: [
+            { name: 'Liverpool FC', years: '1998-2015' },
+            { name: 'LA Galaxy', years: '2015-2016' }
+        ]
+    },
+    {
+        id: 'f-61',
+        name: 'Vladimír Šmicer',
+        birthDate: '1973-05-24',
+        sport: 'football',
+        category: 'historical',
+        clubs: [
+            { name: 'Slavia Prague', years: '1992-1996' },
+            { name: 'RC Lens', years: '1996-1999' },
+            { name: 'Liverpool FC', years: '1999-2005' },
+            { name: 'Girondins de Bordeaux', years: '2005-2007' },
+            { name: 'Slavia Prague', years: '2007-2009' }
+        ]
+    },
+    {
+        id: 'f-62',
+        name: 'Xabi Alonso',
+        birthDate: '1981-11-25',
+        sport: 'football',
+        category: 'historical',
+        clubs: [
+            { name: 'Real Sociedad', years: '1999-2004' },
+            { name: 'SD Eibar', years: '2000-2001' },
+            { name: 'Liverpool FC', years: '2004-2009' },
+            { name: 'Real Madrid', years: '2009-2014' },
+            { name: 'Bayern Munich', years: '2014-2017' }
+        ]
     }
 ]

@@ -136,6 +136,12 @@
             "description": "Find at least 3 players among Cris, Juninho, Lisandro López, Coupet, and Govou",
             "description_locked": "Find 3 key players from Olympique Lyonnais history.",
             "description_unlocked": "You found three legends from the great years of Olympique Lyonnais."
+        },
+        "miracle_istanbul": {
+            "name": "The Miracle of Istanbul",
+            "description": "Find Steven Gerrard, Vladimír Šmicer, and Xabi Alonso",
+            "description_locked": "Find the 3 Reds goalscorers from the legendary 2005 Champions League final.",
+            "description_unlocked": "You found the three heroes of Liverpool FC's crazy comeback against AC Milan in 2005."
         }
     }
 }

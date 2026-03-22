@@ -133,4 +133,12 @@ export const TROPHIES: Trophy[] = [
         isPlayerDiscovery: true,
         check: createPlayerDiscoveryCheck(['f-55', 'f-56', 'f-57', 'f-58', 'f-59'], 3), // Olympique Lyonnais
     },
+    {
+        id: 'miracle_istanbul',
+        icon: '🇹🇷',
+        category: 'silver',
+        sport: 'football',
+        isPlayerDiscovery: true,
+        check: createPlayerDiscoveryCheck(['f-60', 'f-61', 'f-62']), // Liverpool 2005
+    },
 ];
