@@ -169,7 +169,7 @@ export const useGameLogic = ({
 
         if (status === 'playing') {
             timerRef.current = setInterval(() => {
-                // Decay score continuously: 1 point per 100ms (10 points / sec)
+                // Decay score continuously: 1 point per 60ms (approx 16.6 points / sec)
                 setScore((prev) => {
                     const newScore = Math.max(0, prev - 1);
                     if (newScore === 0 && currentPlayer) {
@@ -180,12 +180,12 @@ export const useGameLogic = ({
                     return newScore;
                 });
 
-                secondAccumulator += 100;
+                secondAccumulator += 60;
                 if (secondAccumulator >= 1000) {
                     setTimer((t) => t + 1);
                     secondAccumulator -= 1000;
                 }
-            }, 100);
+            }, 60);
         } else {
             stopTimer();
         }
