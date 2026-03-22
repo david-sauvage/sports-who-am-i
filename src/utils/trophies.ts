@@ -22,7 +22,7 @@ export const createPlayerDiscoveryCheck = (playerIds: string[], minRequired?: nu
     return {
         unlocked: foundCount >= threshold,
         progress: foundCount,
-        goal: playerIds.length,
+        goal: threshold,
     };
 };
 
@@ -99,6 +99,14 @@ export const TROPHIES: Trophy[] = [
         category: 'silver',
         sport: 'football',
         isPlayerDiscovery: true,
-        check: createPlayerDiscoveryCheck(['f-11', 'f-12']), // Lionel Messi and Cristiano Ronaldo
+        check: createPlayerDiscoveryCheck(['f-1', 'f-2']), // Lionel Messi and Cristiano Ronaldo
+    },
+    {
+        id: 'golden_balls',
+        icon: '🥇',
+        category: 'silver',
+        sport: 'football',
+        isPlayerDiscovery: true,
+        check: createPlayerDiscoveryCheck(Array.from({ length: 47 }, (_, i) => `f-${i + 1}`), 10), // Ballon d'Or winners
     },
 ];

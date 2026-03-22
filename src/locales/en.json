@@ -112,6 +112,12 @@
             "description": "Find both Lionel Messi and Cristiano Ronaldo",
             "description_locked": "Find the two greatest rivals in modern football history, both multiple Ballon d'Or winners.",
             "description_unlocked": "Lionel Messi and Cristiano Ronaldo dominated world football for over 15 years, sharing 13 Ballons d'Or and breaking every scoring record."
+        },
+        "golden_balls": {
+            "name": "Golden Balls",
+            "description": "Find 10 Ballon d'Or winners",
+            "description_locked": "Find 10 players who have won the most prestigious individual award in football.",
+            "description_unlocked": "The Ballon d'Or rewards the best football player of the year. You have found 10 of these legends."
         }
     }
 }

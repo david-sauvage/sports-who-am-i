@@ -112,6 +112,12 @@
             "description": "Trouvez Lionel Messi et Cristiano Ronaldo",
             "description_locked": "Trouvez les deux plus grands rivaux de l'histoire du football moderne, collectionneurs de Ballons d'Or.",
             "description_unlocked": "Lionel Messi et Cristiano Ronaldo ont dominé le football mondial pendant plus de 15 ans, se partageant 13 Ballons d'Or et battant tous les records de buts."
+        },
+        "golden_balls": {
+            "name": "Ballons d'Or",
+            "description": "Trouvez 10 vainqueurs du Ballon d'Or",
+            "description_locked": "Trouvez 10 joueurs ayant remporté la plus prestigieuse récompense individuelle du football.",
+            "description_unlocked": "Le Ballon d'Or récompense le meilleur joueur de football de l'année. Vous avez trouvé 10 de ces légendes."
         }
     }
 }

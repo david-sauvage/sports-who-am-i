@@ -106,6 +106,12 @@
             "description": "Encuentra tanto a Lionel Messi como a Cristiano Ronaldo",
             "description_locked": "Encuentra a los dos mayores rivales de la historia del fútbol moderno, ambos múltiples ganadores del Balón de Oro.",
             "description_unlocked": "Lionel Messi y Cristiano Ronaldo dominaron el fútbol mundial durante más de 15 años, repartiéndose 13 Balones de Oro y batiendo todos los récords de goles."
+        },
+        "golden_balls": {
+            "name": "Balones de Oro",
+            "description": "Encuentra 10 ganadores del Balón de Oro",
+            "description_locked": "Encuentra 10 jugadores que hayan ganado el premio individual más prestigioso del fútbol.",
+            "description_unlocked": "El Balón de Oro premia al mejor jugador de fútbol del año. Has encontrado a 10 de estas leyendas."
         }
     }
 }
