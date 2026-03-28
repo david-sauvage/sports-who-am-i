@@ -172,6 +172,12 @@
             "description": "Trouvez Mbappé, Griezmann, Kanté, Lloris et Varane",
             "description_locked": "Trouvez 5 figures emblématiques de l'équipe de France championne du monde en 2018.",
             "description_unlocked": "Vous avez trouvé 5 héros de l'épopée triomphale de la France lors de la Coupe du Monde 2018 en Russie."
+        },
+        "amunt_valencia": {
+            "name": "Amunt Valencia",
+            "description": "Trouvez Gaizka Mendieta, Santiago Cañizares et Claudio López",
+            "description_locked": "Trouvez 3 figures emblématiques du grand Valence CF des années 2000.",
+            "description_unlocked": "Vous avez trouvé Mendieta, Cañizares et le Piojo López, trois légendes ayant porté le Valence CF au sommet de l'Europe."
         }
     }
 }

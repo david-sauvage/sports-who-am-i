@@ -596,3 +596,45 @@ describe('Seconde Etoile Trophy', () => {
         expect(result.progress).toBe(5);
     });
 });
+
+describe('Amunt Valencia Trophy', () => {
+    const amuntValenciaTrophy = TROPHIES.find(t => t.id === 'amunt_valencia');
+
+    const baseStats: UserStatistics = {
+        gamesPlayed: 0,
+        totalQuestions: 0,
+        correctAnswers: 0,
+        incorrectAnswers: 0,
+        totalScore: 0,
+        foundPlayerIds: [],
+        detailed: {
+            football: { active: { correct: 0, total: 0 }, historical: { correct: 0, total: 0 } },
+            basketball: { active: { correct: 0, total: 0 }, historical: { correct: 0, total: 0 } },
+        },
+    };
+
+    it('should be defined', () => {
+        expect(amuntValenciaTrophy).toBeDefined();
+    });
+
+    it('should not be unlocked if no players are found', () => {
+        const result = amuntValenciaTrophy!.check(baseStats);
+        expect(result.unlocked).toBe(false);
+        expect(result.progress).toBe(0);
+        expect(result.goal).toBe(3);
+    });
+
+    it('should show progress if 2 are found', () => {
+        const stats = { ...baseStats, foundPlayerIds: ['f-78', 'f-79'] };
+        const result = amuntValenciaTrophy!.check(stats);
+        expect(result.unlocked).toBe(false);
+        expect(result.progress).toBe(2);
+    });
+
+    it('should be unlocked if all 3 are found', () => {
+        const stats = { ...baseStats, foundPlayerIds: ['f-78', 'f-79', 'f-80'] };
+        const result = amuntValenciaTrophy!.check(stats);
+        expect(result.unlocked).toBe(true);
+        expect(result.progress).toBe(3);
+    });
+});

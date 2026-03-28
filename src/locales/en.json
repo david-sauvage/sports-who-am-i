@@ -172,6 +172,12 @@
             "description": "Find Mbappé, Griezmann, Kanté, Lloris, and Varane",
             "description_locked": "Find 5 iconic figures from the 2018 French World Cup winning team.",
             "description_unlocked": "You found 5 heroes of France's triumphant 2018 World Cup campaign in Russia."
+        },
+        "amunt_valencia": {
+            "name": "Amunt Valencia",
+            "description": "Find Gaizka Mendieta, Santiago Cañizares, and Claudio López",
+            "description_locked": "Find 3 iconic figures from the great Valencia CF team of the early 2000s.",
+            "description_unlocked": "You found Mendieta, Cañizares, and Piojo López, three legends who took Valencia CF to the top of Europe."
         }
     }
 }

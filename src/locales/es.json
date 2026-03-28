@@ -166,6 +166,12 @@
                 "description": "Encuentra a Mbappé, Griezmann, Kanté, Lloris y Varane",
                 "description_locked": "Encuentra a 5 figuras emblemáticas de la selección francesa campeona del mundo en 2018.",
                 "description_unlocked": "Has encontrado a 5 héroes de la triunfal campaña de Francia en el Mundial de Rusia 2018."
+            },
+            "amunt_valencia": {
+                "name": "Amunt Valencia",
+                "description": "Encuentra a Gaizka Mendieta, Santiago Cañizares y Claudio López",
+                "description_locked": "Encuentra a 3 figuras icónicas del gran Valencia CF de principios de los 2000.",
+                "description_unlocked": "Has encontrado a Mendieta, Cañizares y el Piojo López, tres leyendas que llevaron al Valencia CF a la cima de Europa."
             }
         }
     }

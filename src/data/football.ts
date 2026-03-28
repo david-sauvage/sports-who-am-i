@@ -1131,5 +1131,51 @@ export const footballPlayers: Player[] = [
             { name: 'Côme 1907', years: '2024-2024' }
         ]
     },
+    {
+        id: 'f-78',
+        name: 'Gaizka Mendieta',
+        birthDate: '1974-03-27',
+        sport: 'football',
+        category: 'historical',
+        clubs: [
+            { name: 'CD Castellón', years: '1991-1992' },
+            { name: 'Valence CF', years: '1992-2001' },
+            { name: 'Lazio Rome', years: '2001-2004' },
+            { name: 'FC Barcelone', years: '2002-2003' },
+            { name: 'Middlesbrough FC', years: '2003-2008' }
+        ]
+    },
+    {
+        id: 'f-79',
+        name: 'Santiago Cañizares',
+        birthDate: '1969-12-18',
+        sport: 'football',
+        category: 'historical',
+        clubs: [
+            { name: 'Real Madrid', years: '1988-1998' },
+            { name: 'Real Madrid B', years: '1989-1990' },
+            { name: 'Elche CF', years: '1990-1991' },
+            { name: 'CP Mérida', years: '1991-1992' },
+            { name: 'Celta Vigo', years: '1992-1994' },
+            { name: 'Valence CF', years: '1998-2008' }
+        ]
+    },
+    {
+        id: 'f-80',
+        name: 'Claudio López',
+        birthDate: '1974-07-17',
+        sport: 'football',
+        category: 'historical',
+        clubs: [
+            { name: 'Estudiantes de La Plata', years: '1990-1992' },
+            { name: 'Racing Club', years: '1992-1996' },
+            { name: 'Valence CF', years: '1996-2000' },
+            { name: 'Lazio Rome', years: '2000-2004' },
+            { name: 'Club América', years: '2004-2006' },
+            { name: 'Racing Club', years: '2007-2007' },
+            { name: 'Kansas City Wizards', years: '2008-2009' },
+            { name: 'Colorado Rapids', years: '2010-2010' }
+        ]
+    }
 
 ]

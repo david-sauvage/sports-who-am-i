@@ -181,4 +181,12 @@ export const TROPHIES: Trophy[] = [
         isPlayerDiscovery: true,
         check: createPlayerDiscoveryCheck(['f-73', 'f-74', 'f-75', 'f-76', 'f-77']), // France 2018
     },
+    {
+        id: 'amunt_valencia',
+        icon: '🦇',
+        category: 'silver',
+        sport: 'football',
+        isPlayerDiscovery: true,
+        check: createPlayerDiscoveryCheck(['f-78', 'f-79', 'f-80']), // Valencia CF early 2000s
+    },
 ];
