@@ -189,4 +189,12 @@ export const TROPHIES: Trophy[] = [
         isPlayerDiscovery: true,
         check: createPlayerDiscoveryCheck(['f-78', 'f-79', 'f-80']), // Valencia CF early 2000s
     },
+    {
+        id: 'hala_madrid',
+        icon: '👑',
+        category: 'gold',
+        sport: 'football',
+        isPlayerDiscovery: true,
+        check: createPlayerDiscoveryCheck(['f-2', 'f-4', 'f-16', 'f-45', 'f-81', 'f-82', 'f-83', 'f-84'], 5), // Real Madrid legends
+    },
 ];

@@ -172,6 +172,12 @@
                 "description": "Encuentra a Gaizka Mendieta, Santiago Cañizares y Claudio López",
                 "description_locked": "Encuentra a 3 figuras icónicas del gran Valencia CF de principios de los 2000.",
                 "description_unlocked": "Has encontrado a Mendieta, Cañizares y el Piojo López, tres leyendas que llevaron al Valencia CF a la cima de Europa."
+            },
+            "hala_madrid": {
+                "name": "Hala Madrid",
+                "description": "Encuentra 5 jugadores entre Butragueño, Ramos, Casillas, Raúl, Di Stéfano, Zidane, C. Ronaldo y Modrić",
+                "description_locked": "Encuentra 5 leyendas del Real Madrid.",
+                "description_unlocked": "Has encontrado a 5 leyendas absolutas que han escrito la historia del Real Madrid."
             }
         }
     }

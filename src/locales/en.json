@@ -178,6 +178,12 @@
             "description": "Find Gaizka Mendieta, Santiago Cañizares, and Claudio López",
             "description_locked": "Find 3 iconic figures from the great Valencia CF team of the early 2000s.",
             "description_unlocked": "You found Mendieta, Cañizares, and Piojo López, three legends who took Valencia CF to the top of Europe."
+        },
+        "hala_madrid": {
+            "name": "Hala Madrid",
+            "description": "Find 5 players among Butragueño, Ramos, Casillas, Raúl, Di Stéfano, Zidane, C. Ronaldo, and Modrić",
+            "description_locked": "Find 5 legends of Real Madrid.",
+            "description_unlocked": "You found 5 absolute legends who have written the history and fame of Real Madrid."
         }
     }
 }

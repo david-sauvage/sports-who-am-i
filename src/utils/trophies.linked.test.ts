@@ -638,3 +638,53 @@ describe('Amunt Valencia Trophy', () => {
         expect(result.progress).toBe(3);
     });
 });
+
+describe('Hala Madrid Trophy', () => {
+    const halaMadridTrophy = TROPHIES.find(t => t.id === 'hala_madrid');
+
+    const baseStats: UserStatistics = {
+        gamesPlayed: 0,
+        totalQuestions: 0,
+        correctAnswers: 0,
+        incorrectAnswers: 0,
+        totalScore: 0,
+        foundPlayerIds: [],
+        detailed: {
+            football: { active: { correct: 0, total: 0 }, historical: { correct: 0, total: 0 } },
+            basketball: { active: { correct: 0, total: 0 }, historical: { correct: 0, total: 0 } },
+        },
+    };
+
+    it('should be defined', () => {
+        expect(halaMadridTrophy).toBeDefined();
+    });
+
+    it('should not be unlocked if no players are found', () => {
+        const result = halaMadridTrophy!.check(baseStats);
+        expect(result.unlocked).toBe(false);
+        expect(result.progress).toBe(0);
+        expect(result.goal).toBe(5);
+    });
+
+    it('should show progress if 3 are found', () => {
+        const stats = { ...baseStats, foundPlayerIds: ['f-2', 'f-16', 'f-45'] };
+        const result = halaMadridTrophy!.check(stats);
+        expect(result.unlocked).toBe(false);
+        expect(result.progress).toBe(3);
+    });
+
+    it('should be unlocked if 5 are found', () => {
+        const stats = { ...baseStats, foundPlayerIds: ['f-2', 'f-16', 'f-45', 'f-81', 'f-82'] };
+        const result = halaMadridTrophy!.check(stats);
+        expect(result.unlocked).toBe(true);
+        expect(result.progress).toBe(5);
+    });
+
+    it('should show progress 8 but goal 5 when all 8 players are found', () => {
+        const stats = { ...baseStats, foundPlayerIds: ['f-2', 'f-4', 'f-16', 'f-45', 'f-81', 'f-82', 'f-83', 'f-84'] };
+        const result = halaMadridTrophy!.check(stats);
+        expect(result.unlocked).toBe(true);
+        expect(result.progress).toBe(8);
+        expect(result.goal).toBe(5);
+    });
+});

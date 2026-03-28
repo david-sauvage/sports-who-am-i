@@ -1176,6 +1176,57 @@ export const footballPlayers: Player[] = [
             { name: 'Kansas City Wizards', years: '2008-2009' },
             { name: 'Colorado Rapids', years: '2010-2010' }
         ]
-    }
+    },
+    {
+        id: 'f-81',
+        name: 'Raúl González',
+        birthDate: '1977-06-27',
+        sport: 'football',
+        category: 'historical',
+        clubs: [
+            { name: 'Atlético de Madrid', years: '1990-1992' },
+            { name: 'Real Madrid', years: '1992-2010' },
+            { name: 'Schalke 04', years: '2010-2012' },
+            { name: 'Al-Sadd SC', years: '2012-2014' },
+            { name: 'New York Cosmos', years: '2014-2015' }
+        ]
+    },
+    {
+        id: 'f-82',
+        name: 'Iker Casillas',
+        birthDate: '1981-05-20',
+        sport: 'football',
+        category: 'historical',
+        clubs: [
+            { name: 'Real Madrid', years: '1999-2015' },
+            { name: 'FC Porto', years: '2015-2020' }
+        ]
+    },
+    {
+        id: 'f-83',
+        name: 'Sergio Ramos',
+        birthDate: '1986-03-30',
+        sport: 'football',
+        category: 'active',
+        clubs: [
+            { name: 'Séville FC', years: '2003-2005' },
+            { name: 'Real Madrid', years: '2005-2021' },
+            { name: 'Paris Saint-Germain', years: '2021-2023' },
+            { name: 'Séville FC', years: '2023-2024' },
+            { name: 'San Diego FC', years: '2025-2026' }
+        ]
+    },
+    {
+        id: 'f-84',
+        name: 'Emilio Butragueño',
+        birthDate: '1963-07-22',
+        sport: 'football',
+        category: 'historical',
+        clubs: [
+            { name: 'Real Madrid Castilla', years: '1982-1984' },
+            { name: 'Real Madrid', years: '1984-1995' },
+            { name: 'Atlético Celaya', years: '1995-1998' }
+        ]
+    },
 
 ]
