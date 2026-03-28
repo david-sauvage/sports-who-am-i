@@ -1029,4 +1029,40 @@ export const footballPlayers: Player[] = [
             { name: 'Paris Saint-Germain', years: '2013-2013' }
         ]
     },
+    {
+        id: 'f-71',
+        name: 'Laurent Blanc',
+        birthDate: '1965-11-19',
+        sport: 'football',
+        category: 'historical',
+        clubs: [
+            { name: 'Montpellier HSC', years: '1983-1991' },
+            { name: 'SSC Naples', years: '1991-1992' },
+            { name: 'Nîmes Olympique', years: '1992-1993' },
+            { name: 'AS Saint-Étienne', years: '1993-1995' },
+            { name: 'AJ Auxerre', years: '1995-1996' },
+            { name: 'FC Barcelone', years: '1996-1997' },
+            { name: 'Olympique de Marseille', years: '1997-1999' },
+            { name: 'Inter Milan', years: '1999-2001' },
+            { name: 'Manchester United', years: '2001-2003' }
+        ]
+    },
+    {
+        id: 'f-72',
+        name: 'Youri Djorkaeff',
+        birthDate: '1968-03-09',
+        sport: 'football',
+        category: 'historical',
+        clubs: [
+            { name: 'Grenoble Foot 38', years: '1984-1989' },
+            { name: 'RC Strasbourg', years: '1989-1990' },
+            { name: 'AS Monaco', years: '1990-1995' },
+            { name: 'Paris Saint-Germain', years: '1995-1996' },
+            { name: 'Inter Milan', years: '1996-1999' },
+            { name: 'FC Kaiserslautern', years: '1999-2002' },
+            { name: 'Bolton Wanderers', years: '2002-2004' },
+            { name: 'Blackburn Rovers', years: '2004-2004' },
+            { name: 'New York Red Bulls', years: '2005-2006' }
+        ]
+    },
 ]

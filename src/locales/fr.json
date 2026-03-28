@@ -160,6 +160,12 @@
             "description": "Trouvez Zinédine Zidane, David Beckham, Ronaldo et Luís Figo",
             "description_locked": "Trouvez 4 légendes de la première ère des Galactiques du Real Madrid au début des années 2000.",
             "description_unlocked": "Vous avez trouvé Zidane, Beckham, Ronaldo et Figo, les têtes d'affiche de l'ère des Galactiques du Real Madrid."
+        },
+        "mourir_tranquille": {
+            "name": "On peut mourir tranquille",
+            "description": "Trouvez Barthez, Blanc, Zidane, Deschamps et Djorkaeff",
+            "description_locked": "Trouvez 5 légendes de l'Équipe de France de la Coupe du Monde 1998.",
+            "description_unlocked": "Vous avez trouvé 5 des plus grands héros de l'Équipe de France championne du monde 1998."
         }
     }
 }

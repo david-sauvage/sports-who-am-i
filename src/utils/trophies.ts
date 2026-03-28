@@ -165,4 +165,12 @@ export const TROPHIES: Trophy[] = [
         isPlayerDiscovery: true,
         check: createPlayerDiscoveryCheck(['f-12', 'f-14', 'f-16', 'f-70']), // Real Madrid early 2000s
     },
+    {
+        id: 'mourir_tranquille',
+        icon: '🐓',
+        category: 'platinum',
+        sport: 'football',
+        isPlayerDiscovery: true,
+        check: createPlayerDiscoveryCheck(['f-16', 'f-63', 'f-66', 'f-71', 'f-72']), // France 1998
+    },
 ];

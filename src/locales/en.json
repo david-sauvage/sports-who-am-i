@@ -160,6 +160,12 @@
             "description": "Find Zinedine Zidane, David Beckham, Ronaldo, and Luís Figo",
             "description_locked": "Find 4 legends from Real Madrid's first Galácticos era in the early 2000s.",
             "description_unlocked": "You found Zidane, Beckham, Ronaldo, and Figo, the poster boys of Real Madrid's Galácticos era."
+        },
+        "mourir_tranquille": {
+            "name": "On peut mourir tranquille",
+            "description": "Find Barthez, Blanc, Zidane, Deschamps, and Djorkaeff",
+            "description_locked": "Find 5 legends from the 1998 French World Cup winning team.",
+            "description_unlocked": "You found 5 of the greatest heroes of the 1998 World Cup winning French national team."
         }
     }
 }

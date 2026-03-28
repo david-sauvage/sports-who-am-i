@@ -477,3 +477,80 @@ describe('Fergie Time Trophy', () => {
         expect(result.progress).toBe(2);
     });
 });
+
+describe('Galactiques Trophy', () => {
+    const galactiquesTrophy = TROPHIES.find(t => t.id === 'galactiques');
+
+    const baseStats: UserStatistics = {
+        gamesPlayed: 0,
+        totalQuestions: 0,
+        correctAnswers: 0,
+        incorrectAnswers: 0,
+        totalScore: 0,
+        foundPlayerIds: [],
+        detailed: {
+            football: { active: { correct: 0, total: 0 }, historical: { correct: 0, total: 0 } },
+            basketball: { active: { correct: 0, total: 0 }, historical: { correct: 0, total: 0 } },
+        },
+    };
+
+    it('should be defined', () => {
+        expect(galactiquesTrophy).toBeDefined();
+    });
+
+    it('should not be unlocked if no players are found', () => {
+        const result = galactiquesTrophy!.check(baseStats);
+        expect(result.unlocked).toBe(false);
+        expect(result.progress).toBe(0);
+        expect(result.goal).toBe(4);
+    });
+
+    it('should be unlocked if 4 are found', () => {
+        const stats = { ...baseStats, foundPlayerIds: ['f-12', 'f-14', 'f-16', 'f-70'] };
+        const result = galactiquesTrophy!.check(stats);
+        expect(result.unlocked).toBe(true);
+        expect(result.progress).toBe(4);
+    });
+});
+
+describe('Mourir Tranquille Trophy', () => {
+    const mourirTranquilleTrophy = TROPHIES.find(t => t.id === 'mourir_tranquille');
+
+    const baseStats: UserStatistics = {
+        gamesPlayed: 0,
+        totalQuestions: 0,
+        correctAnswers: 0,
+        incorrectAnswers: 0,
+        totalScore: 0,
+        foundPlayerIds: [],
+        detailed: {
+            football: { active: { correct: 0, total: 0 }, historical: { correct: 0, total: 0 } },
+            basketball: { active: { correct: 0, total: 0 }, historical: { correct: 0, total: 0 } },
+        },
+    };
+
+    it('should be defined', () => {
+        expect(mourirTranquilleTrophy).toBeDefined();
+    });
+
+    it('should not be unlocked if no players are found', () => {
+        const result = mourirTranquilleTrophy!.check(baseStats);
+        expect(result.unlocked).toBe(false);
+        expect(result.progress).toBe(0);
+        expect(result.goal).toBe(5);
+    });
+
+    it('should show progress if 2 are found', () => {
+        const stats = { ...baseStats, foundPlayerIds: ['f-16', 'f-63'] };
+        const result = mourirTranquilleTrophy!.check(stats);
+        expect(result.unlocked).toBe(false);
+        expect(result.progress).toBe(2);
+    });
+
+    it('should be unlocked if all 5 are found', () => {
+        const stats = { ...baseStats, foundPlayerIds: ['f-16', 'f-63', 'f-66', 'f-71', 'f-72'] };
+        const result = mourirTranquilleTrophy!.check(stats);
+        expect(result.unlocked).toBe(true);
+        expect(result.progress).toBe(5);
+    });
+});
