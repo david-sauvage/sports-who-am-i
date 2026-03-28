@@ -981,5 +981,36 @@ export const footballPlayers: Player[] = [
             { name: 'Olympique de Marseille', years: '1992-1994' },
             { name: 'Bayer Leverkusen', years: '1994-1996' }
         ]
+    },
+    {
+        id: 'f-68',
+        name: 'Ole Gunnar Solskjær',
+        birthDate: '1973-02-26',
+        sport: 'football',
+        category: 'historical',
+        clubs: [
+            { name: 'Clausenengen FK', years: '1990-1994' },
+            { name: 'Molde FK', years: '1994-1996' },
+            { name: 'Manchester United', years: '1996-2007' }
+        ]
+    },
+    {
+        id: 'f-69',
+        name: 'Teddy Sheringham',
+        birthDate: '1966-04-02',
+        sport: 'football',
+        category: 'historical',
+        clubs: [
+            { name: 'Millwall FC', years: '1983-1991' },
+            { name: 'Aldershot FC', years: '1985-1985' },
+            { name: 'Djurgårdens IF', years: '1985-1985' },
+            { name: 'Nottingham Forest', years: '1991-1992' },
+            { name: 'Tottenham Hotspur', years: '1992-1997' },
+            { name: 'Manchester United', years: '1997-2001' },
+            { name: 'Tottenham Hotspur', years: '2001-2003' },
+            { name: 'Portsmouth FC', years: '2003-2004' },
+            { name: 'West Ham United', years: '2004-2007' },
+            { name: 'Colchester United', years: '2007-2008' }
+        ]
     }
 ]

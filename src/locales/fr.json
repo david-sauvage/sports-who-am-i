@@ -148,6 +148,12 @@
             "description": "Trouvez au moins 3 joueurs de l'Olympique de Marseille de 1993",
             "description_locked": "Trouvez au moins 3 joueurs majeurs de l'équipe vainqueur de la Ligue des Champions 1993 avec l'Olympique de Marseille.",
             "description_unlocked": "Vous avez trouvé trois légendes de l'Olympique de Marseille, premier club français à avoir remporté la Ligue des Champions."
+        },
+        "fergie_time": {
+            "name": "Fergie Time",
+            "description": "Trouvez Ole Gunnar Solskjær et Teddy Sheringham",
+            "description_locked": "Trouvez les 2 buteurs héroïques de Manchester United lors de la finale de Ligue des Champions 1999.",
+            "description_unlocked": "Vous avez trouvé Solskjær et Sheringham, les deux buteurs qui ont renversé la finale de la Ligue des Champions 1999 dans le temps additionnel."
         }
     }
 }

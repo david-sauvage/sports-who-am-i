@@ -148,6 +148,12 @@
             "description": "Find at least 3 players from the 1993 Olympique de Marseille",
             "description_locked": "Find at least 3 key players from Olympique de Marseille's 1993 Champions League winning team.",
             "description_unlocked": "You found three legends of Olympique de Marseille, the first French club to win the Champions League."
+        },
+        "fergie_time": {
+            "name": "Fergie Time",
+            "description": "Find Ole Gunnar Solskjær and Teddy Sheringham",
+            "description_locked": "Find the 2 heroic goalscorers for Manchester United in the 1999 Champions League final.",
+            "description_unlocked": "You found Solskjær and Sheringham, the two goalscorers who turned around the 1999 Champions League final in stoppage time."
         }
     }
 }

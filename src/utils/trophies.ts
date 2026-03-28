@@ -149,4 +149,12 @@ export const TROPHIES: Trophy[] = [
         isPlayerDiscovery: true,
         check: createPlayerDiscoveryCheck(['f-63', 'f-64', 'f-65', 'f-66', 'f-67'], 3),
     },
+    {
+        id: 'fergie_time',
+        icon: '⏱️',
+        category: 'silver',
+        sport: 'football',
+        isPlayerDiscovery: true,
+        check: createPlayerDiscoveryCheck(['f-68', 'f-69']), // Manchester United 1999
+    },
 ];

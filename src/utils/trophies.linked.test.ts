@@ -429,3 +429,51 @@ describe('A jamais les premiers Trophy', () => {
         expect(result.goal).toBe(3);
     });
 });
+
+describe('Fergie Time Trophy', () => {
+    const fergieTimeTrophy = TROPHIES.find(t => t.id === 'fergie_time');
+
+    const baseStats: UserStatistics = {
+        gamesPlayed: 0,
+        totalQuestions: 0,
+        correctAnswers: 0,
+        incorrectAnswers: 0,
+        totalScore: 0,
+        foundPlayerIds: [],
+        detailed: {
+            football: {
+                active: { correct: 0, total: 0 },
+                historical: { correct: 0, total: 0 },
+            },
+            basketball: {
+                active: { correct: 0, total: 0 },
+                historical: { correct: 0, total: 0 },
+            },
+        },
+    };
+
+    it('should be defined', () => {
+        expect(fergieTimeTrophy).toBeDefined();
+    });
+
+    it('should not be unlocked if no players are found', () => {
+        const result = fergieTimeTrophy!.check(baseStats);
+        expect(result.unlocked).toBe(false);
+        expect(result.progress).toBe(0);
+        expect(result.goal).toBe(2);
+    });
+
+    it('should show progress if 1 is found', () => {
+        const stats = { ...baseStats, foundPlayerIds: ['f-68'] };
+        const result = fergieTimeTrophy!.check(stats);
+        expect(result.unlocked).toBe(false);
+        expect(result.progress).toBe(1);
+    });
+
+    it('should be unlocked if 2 are found', () => {
+        const stats = { ...baseStats, foundPlayerIds: ['f-68', 'f-69'] };
+        const result = fergieTimeTrophy!.check(stats);
+        expect(result.unlocked).toBe(true);
+        expect(result.progress).toBe(2);
+    });
+});

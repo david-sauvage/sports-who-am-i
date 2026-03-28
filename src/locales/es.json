@@ -142,6 +142,12 @@
                 "description": "Encuentra al menos 3 jugadores del Olympique de Marsella de 1993",
                 "description_locked": "Encuentra al menos 3 jugadores clave del equipo ganador de la Liga de Campeones en 1993 con el Olympique de Marsella.",
                 "description_unlocked": "Has encontrado a tres leyendas del Olympique de Marsella, primer club francés en haber ganado la Liga de Campeones."
+            },
+            "fergie_time": {
+                "name": "Fergie Time",
+                "description": "Encuentra a Ole Gunnar Solskjær y Teddy Sheringham",
+                "description_locked": "Encuentra a los 2 heroicos goleadores del Manchester United en la final de la Liga de Campeones de 1999.",
+                "description_unlocked": "Has encontrado a Solskjær y Sheringham, los dos goleadores que dieron la vuelta a la final de la Liga de Campeones de 1999 en el tiempo de descuento."
             }
         }
     }
