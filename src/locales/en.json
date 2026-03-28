@@ -214,6 +214,12 @@
             "description": "Find Iniesta, Villa, and Casillas",
             "description_locked": "Find 3 2010 World Cup champions to honor the memory of Dani Jarque.",
             "description_unlocked": "Dani Jarque siempre con nosotros. An eternal tribute by Andrés Iniesta during the 2010 final."
+        },
+        "class_of_92": {
+            "name": "Class of '92",
+            "description": "Find Beckham, Giggs, and Scholes",
+            "description_locked": "Find 3 legendary members of Manchester United's golden generation.",
+            "description_unlocked": "The golden generation! You found Beckham, Giggs, and Scholes, pillars of the Class of '92."
         }
     }
 }

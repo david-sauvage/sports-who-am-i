@@ -1434,5 +1434,26 @@ export const footballPlayers: Player[] = [
             { name: 'Real Saragosse', years: '2006-2007' },
             { name: 'FC Barcelone', years: '2008-2022' }
         ]
+    },
+    {
+        id: 'f-99',
+        name: 'Ryan Giggs',
+        birthDate: '1973-11-29',
+        sport: 'football',
+        category: 'historical',
+        clubs: [
+            { name: 'Manchester United', years: '1990-2014' }
+        ]
+    },
+    {
+        id: 'f-100',
+        name: 'Paul Scholes',
+        birthDate: '1974-11-16',
+        sport: 'football',
+        category: 'historical',
+        clubs: [
+            { name: 'Manchester United', years: '1993-2011' },
+            { name: 'Manchester United', years: '2012-2013' }
+        ]
     }
 ];

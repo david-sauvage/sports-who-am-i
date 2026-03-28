@@ -906,3 +906,45 @@ describe('Siempre con nosotros Trophy', () => {
         expect(result.progress).toBe(3);
     });
 });
+
+describe('Class of 92 Trophy', () => {
+    const classOf92Trophy = TROPHIES.find(t => t.id === 'class_of_92');
+
+    const baseStats: UserStatistics = {
+        gamesPlayed: 0,
+        totalQuestions: 0,
+        correctAnswers: 0,
+        incorrectAnswers: 0,
+        totalScore: 0,
+        foundPlayerIds: [],
+        detailed: {
+            football: { active: { correct: 0, total: 0 }, historical: { correct: 0, total: 0 } },
+            basketball: { active: { correct: 0, total: 0 }, historical: { correct: 0, total: 0 } },
+        },
+    };
+
+    it('should be defined', () => {
+        expect(classOf92Trophy).toBeDefined();
+    });
+
+    it('should not be unlocked if no players are found', () => {
+        const result = classOf92Trophy!.check(baseStats);
+        expect(result.unlocked).toBe(false);
+        expect(result.progress).toBe(0);
+        expect(result.goal).toBe(3);
+    });
+
+    it('should show progress if 2 are found', () => {
+        const stats = { ...baseStats, foundPlayerIds: ['f-70', 'f-99'] };
+        const result = classOf92Trophy!.check(stats);
+        expect(result.unlocked).toBe(false);
+        expect(result.progress).toBe(2);
+    });
+
+    it('should be unlocked if 3 are found (Beckham, Giggs, Scholes)', () => {
+        const stats = { ...baseStats, foundPlayerIds: ['f-70', 'f-99', 'f-100'] };
+        const result = classOf92Trophy!.check(stats);
+        expect(result.unlocked).toBe(true);
+        expect(result.progress).toBe(3);
+    });
+});

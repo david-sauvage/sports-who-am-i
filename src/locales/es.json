@@ -208,6 +208,12 @@
                 "description": "Encuentra a Iniesta, Villa y Casillas",
                 "description_locked": "Encuentra a 3 campeones del mundo de 2010 para honrar la memoria de Dani Jarque.",
                 "description_unlocked": "Dani Jarque siempre con nosotros. Un homenaje eterno de Andrés Iniesta en la final de 2010."
+            },
+            "class_of_92": {
+                "name": "Class of '92",
+                "description": "Encuentra a Beckham, Giggs y Scholes",
+                "description_locked": "Encuentra a 3 miembros legendarios de la generación dorada del Manchester United.",
+                "description_unlocked": "¡La generación dorada! Has encontrado a Beckham, Giggs y Scholes, pilares de la Class of '92."
             }
         }
     }
