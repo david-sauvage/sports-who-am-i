@@ -1352,5 +1352,47 @@ export const footballPlayers: Player[] = [
             { name: 'Newell\'s Old Boys', years: '1993-1994' },
             { name: 'Boca Juniors', years: '1995-1997' }
         ]
+    },
+    {
+        id: 'f-93',
+        name: 'Yoann Gourcuff',
+        birthDate: '1986-07-11',
+        sport: 'football',
+        category: 'historical',
+        clubs: [
+            { name: 'FC Lorient', years: '2001-2001' },
+            { name: 'Stade Rennais', years: '2001-2006' },
+            { name: 'AC Milan', years: '2006-2008' },
+            { name: 'Girondins de Bordeaux', years: '2008-2010' },
+            { name: 'Olympique Lyonnais', years: '2010-2015' },
+            { name: 'Stade Rennais', years: '2015-2018' },
+            { name: 'Dijon FCO', years: '2018-2019' }
+        ]
+    },
+    {
+        id: 'f-94',
+        name: 'Marouane Chamakh',
+        birthDate: '1984-01-10',
+        sport: 'football',
+        category: 'historical',
+        clubs: [
+            { name: 'Girondins de Bordeaux', years: '2002-2010' },
+            { name: 'Arsenal FC', years: '2010-2013' },
+            { name: 'West Ham United', years: '2013-2013' },
+            { name: 'Crystal Palace', years: '2013-2016' },
+            { name: 'Cardiff City', years: '2016-2017' }
+        ]
+    },
+    {
+        id: 'f-95',
+        name: 'Ulrich Ramé',
+        birthDate: '1972-09-19',
+        sport: 'football',
+        category: 'historical',
+        clubs: [
+            { name: 'Angers SCO', years: '1991-1997' },
+            { name: 'Girondins de Bordeaux', years: '1997-2011' },
+            { name: 'CS Sedan Ardennes', years: '2011-2013' }
+        ]
     }
 ];

@@ -202,6 +202,12 @@
             "description": "Find Peter Shilton and Diego Maradona",
             "description_locked": "Find the 2 protagonists of the legendary action from the 1986 World Cup quarter-final.",
             "description_unlocked": "A little with the head of Maradona and a little with the hand of God. You brought Shilton and Maradona together!"
+        },
+        "scapulaire": {
+            "name": "Scapulaire",
+            "description": "Find Gourcuff, Chamakh, and Ramé",
+            "description_locked": "Find 3 key players of the 2009 French champions Girondins de Bordeaux.",
+            "description_unlocked": "Navy and White! You brought together the heroes of Bordeaux's 2009 title."
         }
     }
 }

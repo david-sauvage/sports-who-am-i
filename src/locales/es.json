@@ -196,6 +196,12 @@
                 "description": "Encuentra a Peter Shilton y Diego Maradona",
                 "description_locked": "Encuentra a los 2 protagonistas de la acción legendaria de los cuartos de final del Mundial 1986.",
                 "description_unlocked": "Un poco con la cabeza de Maradona y otro poco con la mano de Dios. ¡Has reunido a Shilton y Maradona!"
+            },
+            "scapulaire": {
+                "name": "Scapulaire",
+                "description": "Encuentra a Gourcuff, Chamakh y Ramé",
+                "description_locked": "Encuentra a 3 pilares del Girondins de Bordeaux campeón de Francia 2009.",
+                "description_unlocked": "¡Marine et Blanc! Has reunido a los héroes del título de Burdeos en 2009."
             }
         }
     }

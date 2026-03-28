@@ -221,4 +221,12 @@ export const TROPHIES: Trophy[] = [
         isPlayerDiscovery: true,
         check: createPlayerDiscoveryCheck(['f-91', 'f-92']), // Shilton & Maradona
     },
+    {
+        id: 'scapulaire',
+        icon: '🍷',
+        category: 'silver',
+        sport: 'football',
+        isPlayerDiscovery: true,
+        check: createPlayerDiscoveryCheck(['f-93', 'f-94', 'f-95']), // Bordeaux 2009
+    },
 ];

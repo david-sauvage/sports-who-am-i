@@ -202,6 +202,12 @@
             "description": "Trouvez Peter Shilton et Diego Maradona",
             "description_locked": "Trouvez les 2 protagonistes de l'action légendaire du quart de finale de la Coupe du Monde 1986.",
             "description_unlocked": "Un peu avec la tête de Maradona et un peu avec la main de Dieu. Vous avez réuni Shilton et Maradona !"
+        },
+        "scapulaire": {
+            "name": "Scapulaire",
+            "description": "Trouvez Gourcuff, Chamakh et Ramé",
+            "description_locked": "Trouvez 3 piliers des Girondins de Bordeaux champions de France 2009.",
+            "description_unlocked": "Marine et Blanc ! Vous avez réuni les héros du titre bordelais de 2009."
         }
     }
 }
