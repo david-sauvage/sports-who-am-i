@@ -178,6 +178,12 @@
                 "description": "Encuentra 5 jugadores entre Butragueño, Ramos, Casillas, Raúl, Di Stéfano, Zidane, C. Ronaldo y Modrić",
                 "description_locked": "Encuentra 5 leyendas del Real Madrid.",
                 "description_unlocked": "Has encontrado a 5 leyendas absolutas que han escrito la historia del Real Madrid."
+            },
+            "visca_barca": {
+                "name": "Visca Barça",
+                "description": "Encuentra 5 jugadores entre Guardiola, Eto'o, Puyol, Xavi, Iniesta, Messi, Rivaldo, Ronaldinho y Cruyff",
+                "description_locked": "Encuentra 5 leyendas del FC Barcelona.",
+                "description_unlocked": "¡Més que un club! Has encontrado 5 leyendas que llevaron gloria y orgullo al Barça."
             }
         }
     }

@@ -197,4 +197,12 @@ export const TROPHIES: Trophy[] = [
         isPlayerDiscovery: true,
         check: createPlayerDiscoveryCheck(['f-2', 'f-4', 'f-16', 'f-45', 'f-81', 'f-82', 'f-83', 'f-84'], 5), // Real Madrid legends
     },
+    {
+        id: 'visca_barca',
+        icon: '🔵🔴',
+        category: 'gold',
+        sport: 'football',
+        isPlayerDiscovery: true,
+        check: createPlayerDiscoveryCheck(['f-1', 'f-7', 'f-15', 'f-33', 'f-85', 'f-86', 'f-87', 'f-88', 'f-89'], 5), // FC Barcelona legends
+    },
 ];

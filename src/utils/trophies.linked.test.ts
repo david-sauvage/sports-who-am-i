@@ -688,3 +688,53 @@ describe('Hala Madrid Trophy', () => {
         expect(result.goal).toBe(5);
     });
 });
+
+describe('Visca Barça Trophy', () => {
+    const viscaBarcaTrophy = TROPHIES.find(t => t.id === 'visca_barca');
+
+    const baseStats: UserStatistics = {
+        gamesPlayed: 0,
+        totalQuestions: 0,
+        correctAnswers: 0,
+        incorrectAnswers: 0,
+        totalScore: 0,
+        foundPlayerIds: [],
+        detailed: {
+            football: { active: { correct: 0, total: 0 }, historical: { correct: 0, total: 0 } },
+            basketball: { active: { correct: 0, total: 0 }, historical: { correct: 0, total: 0 } },
+        },
+    };
+
+    it('should be defined', () => {
+        expect(viscaBarcaTrophy).toBeDefined();
+    });
+
+    it('should not be unlocked if no players are found', () => {
+        const result = viscaBarcaTrophy!.check(baseStats);
+        expect(result.unlocked).toBe(false);
+        expect(result.progress).toBe(0);
+        expect(result.goal).toBe(5);
+    });
+
+    it('should show progress if 3 are found', () => {
+        const stats = { ...baseStats, foundPlayerIds: ['f-1', 'f-89', 'f-85'] };
+        const result = viscaBarcaTrophy!.check(stats);
+        expect(result.unlocked).toBe(false);
+        expect(result.progress).toBe(3);
+    });
+
+    it('should be unlocked if 5 are found', () => {
+        const stats = { ...baseStats, foundPlayerIds: ['f-1', 'f-7', 'f-85', 'f-86', 'f-87'] };
+        const result = viscaBarcaTrophy!.check(stats);
+        expect(result.unlocked).toBe(true);
+        expect(result.progress).toBe(5);
+    });
+
+    it('should show progress 9 but goal 5 when all 9 players are found', () => {
+        const stats = { ...baseStats, foundPlayerIds: ['f-1', 'f-7', 'f-15', 'f-33', 'f-85', 'f-86', 'f-87', 'f-88', 'f-89'] };
+        const result = viscaBarcaTrophy!.check(stats);
+        expect(result.unlocked).toBe(true);
+        expect(result.progress).toBe(9);
+        expect(result.goal).toBe(5);
+    });
+});

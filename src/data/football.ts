@@ -1228,5 +1228,75 @@ export const footballPlayers: Player[] = [
             { name: 'Atlético Celaya', years: '1995-1998' }
         ]
     },
+    {
+        id: 'f-85',
+        name: 'Andrés Iniesta',
+        birthDate: '1984-05-11',
+        sport: 'football',
+        category: 'historical',
+        clubs: [
+            { name: 'FC Barcelone', years: '2002-2018' },
+            { name: 'Vissel Kobe', years: '2018-2023' },
+            { name: 'Emirates Club', years: '2023-2024' }
+        ]
+    },
+    {
+        id: 'f-86',
+        name: 'Xavi Hernández',
+        birthDate: '1980-01-25',
+        sport: 'football',
+        category: 'historical',
+        clubs: [
+            { name: 'FC Barcelone', years: '1998-2015' },
+            { name: 'Al-Sadd SC', years: '2015-2019' }
+        ]
+    },
+    {
+        id: 'f-87',
+        name: 'Carles Puyol',
+        birthDate: '1978-04-13',
+        sport: 'football',
+        category: 'historical',
+        clubs: [
+            { name: 'FC Barcelone', years: '1999-2014' }
+        ]
+    },
+    {
+        id: 'f-88',
+        name: 'Samuel Eto\'o',
+        birthDate: '1981-03-10',
+        sport: 'football',
+        category: 'historical',
+        clubs: [
+            { name: 'Real Madrid', years: '1997-2000' },
+            { name: 'CD Leganés', years: '1997-1998' },
+            { name: 'RCD Espanyol', years: '1999-1999' },
+            { name: 'RCD Majorque', years: '2000-2004' },
+            { name: 'FC Barcelone', years: '2004-2009' },
+            { name: 'Inter Milan', years: '2009-2011' },
+            { name: 'Anzhi Makhachkala', years: '2011-2013' },
+            { name: 'Chelsea FC', years: '2013-2014' },
+            { name: 'Everton FC', years: '2014-2015' },
+            { name: 'Sampdoria Gênes', years: '2015-2015' },
+            { name: 'Antalyaspor', years: '2015-2018' },
+            { name: 'Konyaspor', years: '2018-2018' },
+            { name: 'Qatar SC', years: '2018-2019' }
+        ]
+    },
+    {
+        id: 'f-89',
+        name: 'Pep Guardiola',
+        birthDate: '1971-01-18',
+        sport: 'football',
+        category: 'historical',
+        clubs: [
+            { name: 'FC Barcelone', years: '1990-2001' },
+            { name: 'Brescia Calcio', years: '2001-2002' },
+            { name: 'AS Rome', years: '2002-2003' },
+            { name: 'Brescia Calcio', years: '2003-2003' },
+            { name: 'Al-Ahli SC', years: '2003-2005' },
+            { name: 'Dorados de Sinaloa', years: '2005-2006' }
+        ]
+    }
 
 ]
