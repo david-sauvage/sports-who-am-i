@@ -154,6 +154,12 @@
             "description": "Trouvez Ole Gunnar Solskjær et Teddy Sheringham",
             "description_locked": "Trouvez les 2 buteurs héroïques de Manchester United lors de la finale de Ligue des Champions 1999.",
             "description_unlocked": "Vous avez trouvé Solskjær et Sheringham, les deux buteurs qui ont renversé la finale de la Ligue des Champions 1999 dans le temps additionnel."
+        },
+        "galactiques": {
+            "name": "Les Galactiques",
+            "description": "Trouvez Zinédine Zidane, David Beckham, Ronaldo et Luís Figo",
+            "description_locked": "Trouvez 4 légendes de la première ère des Galactiques du Real Madrid au début des années 2000.",
+            "description_unlocked": "Vous avez trouvé Zidane, Beckham, Ronaldo et Figo, les têtes d'affiche de l'ère des Galactiques du Real Madrid."
         }
     }
 }

@@ -154,6 +154,12 @@
             "description": "Find Ole Gunnar Solskjær and Teddy Sheringham",
             "description_locked": "Find the 2 heroic goalscorers for Manchester United in the 1999 Champions League final.",
             "description_unlocked": "You found Solskjær and Sheringham, the two goalscorers who turned around the 1999 Champions League final in stoppage time."
+        },
+        "galactiques": {
+            "name": "The Galácticos",
+            "description": "Find Zinedine Zidane, David Beckham, Ronaldo, and Luís Figo",
+            "description_locked": "Find 4 legends from Real Madrid's first Galácticos era in the early 2000s.",
+            "description_unlocked": "You found Zidane, Beckham, Ronaldo, and Figo, the poster boys of Real Madrid's Galácticos era."
         }
     }
 }

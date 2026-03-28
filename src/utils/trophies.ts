@@ -157,4 +157,12 @@ export const TROPHIES: Trophy[] = [
         isPlayerDiscovery: true,
         check: createPlayerDiscoveryCheck(['f-68', 'f-69']), // Manchester United 1999
     },
+    {
+        id: 'galactiques',
+        icon: '✨',
+        category: 'gold',
+        sport: 'football',
+        isPlayerDiscovery: true,
+        check: createPlayerDiscoveryCheck(['f-12', 'f-14', 'f-16', 'f-70']), // Real Madrid early 2000s
+    },
 ];

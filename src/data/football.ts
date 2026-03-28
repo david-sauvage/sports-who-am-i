@@ -1012,5 +1012,21 @@ export const footballPlayers: Player[] = [
             { name: 'West Ham United', years: '2004-2007' },
             { name: 'Colchester United', years: '2007-2008' }
         ]
-    }
+    },
+    {
+        id: 'f-70',
+        name: 'David Beckham',
+        birthDate: '1975-05-02',
+        sport: 'football',
+        category: 'historical',
+        clubs: [
+            { name: 'Manchester United', years: '1992-2003' },
+            { name: 'Preston North End', years: '1995-1995' },
+            { name: 'Real Madrid', years: '2003-2007' },
+            { name: 'LA Galaxy', years: '2007-2012' },
+            { name: 'AC Milan', years: '2009-2009' },
+            { name: 'AC Milan', years: '2010-2010' },
+            { name: 'Paris Saint-Germain', years: '2013-2013' }
+        ]
+    },
 ]
