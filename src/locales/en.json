@@ -196,6 +196,12 @@
             "description": "Find Zinedine Zidane and Marco Materazzi",
             "description_locked": "Find the 2 protagonists of the most infamous action of the 2006 World Cup final.",
             "description_unlocked": "An unforgettable headbutt! You brought Zidane and Materazzi together."
+        },
+        "main_de_dieu": {
+            "name": "Hand of God",
+            "description": "Find Peter Shilton and Diego Maradona",
+            "description_locked": "Find the 2 protagonists of the legendary action from the 1986 World Cup quarter-final.",
+            "description_unlocked": "A little with the head of Maradona and a little with the hand of God. You brought Shilton and Maradona together!"
         }
     }
 }

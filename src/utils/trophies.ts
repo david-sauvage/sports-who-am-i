@@ -213,4 +213,12 @@ export const TROPHIES: Trophy[] = [
         isPlayerDiscovery: true,
         check: createPlayerDiscoveryCheck(['f-16', 'f-90']), // Zidane & Materazzi
     },
+    {
+        id: 'main_de_dieu',
+        icon: '🤚',
+        category: 'silver',
+        sport: 'football',
+        isPlayerDiscovery: true,
+        check: createPlayerDiscoveryCheck(['f-91', 'f-92']), // Shilton & Maradona
+    },
 ];

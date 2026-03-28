@@ -1316,6 +1316,41 @@ export const footballPlayers: Player[] = [
             { name: 'Inter Milan', years: '2001-2011' },
             { name: 'Chennaiyin FC', years: '2014-2015' }
         ]
+    },
+    {
+        id: 'f-91',
+        name: 'Peter Shilton',
+        birthDate: '1949-09-18',
+        sport: 'football',
+        category: 'historical',
+        clubs: [
+            { name: 'Leicester City', years: '1966-1974' },
+            { name: 'Stoke City', years: '1974-1977' },
+            { name: 'Nottingham Forest', years: '1977-1982' },
+            { name: 'Southampton FC', years: '1982-1987' },
+            { name: 'Derby County', years: '1987-1992' },
+            { name: 'Plymouth Argyle', years: '1992-1995' },
+            { name: 'Wimbledon FC', years: '1995-1995' },
+            { name: 'Bolton Wanderers', years: '1995-1995' },
+            { name: 'Coventry City', years: '1995-1996' },
+            { name: 'West Ham United', years: '1996-1996' },
+            { name: 'Leyton Orient', years: '1996-1997' }
+        ]
+    },
+    {
+        id: 'f-92',
+        name: 'Diego Maradona',
+        birthDate: '1960-10-30',
+        sport: 'football',
+        category: 'historical',
+        clubs: [
+            { name: 'Argentinos Juniors', years: '1976-1981' },
+            { name: 'Boca Juniors', years: '1981-1982' },
+            { name: 'FC Barcelone', years: '1982-1984' },
+            { name: 'SSC Naples', years: '1984-1991' },
+            { name: 'Séville FC', years: '1992-1993' },
+            { name: 'Newell\'s Old Boys', years: '1993-1994' },
+            { name: 'Boca Juniors', years: '1995-1997' }
+        ]
     }
-
-]
+];

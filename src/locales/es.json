@@ -190,6 +190,12 @@
                 "description": "Encuentra a Zinedine Zidane y Marco Materazzi",
                 "description_locked": "Encuentra a los 2 protagonistas de la acción más infame de la final del Mundial 2006.",
                 "description_unlocked": "¡Un cabezazo inolvidable! Has reunido a Zidane y Materazzi."
+            },
+            "main_de_dieu": {
+                "name": "La mano de Dios",
+                "description": "Encuentra a Peter Shilton y Diego Maradona",
+                "description_locked": "Encuentra a los 2 protagonistas de la acción legendaria de los cuartos de final del Mundial 1986.",
+                "description_unlocked": "Un poco con la cabeza de Maradona y otro poco con la mano de Dios. ¡Has reunido a Shilton y Maradona!"
             }
         }
     }
