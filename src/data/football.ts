@@ -1394,5 +1394,45 @@ export const footballPlayers: Player[] = [
             { name: 'Girondins de Bordeaux', years: '1997-2011' },
             { name: 'CS Sedan Ardennes', years: '2011-2013' }
         ]
+    },
+    {
+        id: 'f-96',
+        name: 'David Villa',
+        birthDate: '1981-12-03',
+        sport: 'football',
+        category: 'historical',
+        clubs: [
+            { name: 'Sporting Gijón', years: '2001-2003' },
+            { name: 'Real Saragosse', years: '2003-2005' },
+            { name: 'Valence CF', years: '2005-2010' },
+            { name: 'FC Barcelone', years: '2010-2013' },
+            { name: 'Atlético de Madrid', years: '2013-2014' },
+            { name: 'Melbourne City', years: '2014-2014' },
+            { name: 'New York City FC', years: '2015-2018' },
+            { name: 'Vissel Kobe', years: '2019-2020' }
+        ]
+    },
+    {
+        id: 'f-97',
+        name: 'Sergio Busquets',
+        birthDate: '1988-07-16',
+        sport: 'football',
+        category: 'active',
+        clubs: [
+            { name: 'FC Barcelone', years: '2008-2023' },
+            { name: 'Inter Miami CF', years: '2023-2026' }
+        ]
+    },
+    {
+        id: 'f-98',
+        name: 'Gerard Piqué',
+        birthDate: '1987-02-02',
+        sport: 'football',
+        category: 'historical',
+        clubs: [
+            { name: 'Manchester United', years: '2004-2008' },
+            { name: 'Real Saragosse', years: '2006-2007' },
+            { name: 'FC Barcelone', years: '2008-2022' }
+        ]
     }
 ];

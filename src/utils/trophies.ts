@@ -229,4 +229,12 @@ export const TROPHIES: Trophy[] = [
         isPlayerDiscovery: true,
         check: createPlayerDiscoveryCheck(['f-93', 'f-94', 'f-95']), // Bordeaux 2009
     },
+    {
+        id: 'siempre_con_nosotros',
+        icon: '👕',
+        category: 'platinum',
+        sport: 'football',
+        isPlayerDiscovery: true,
+        check: createPlayerDiscoveryCheck(['f-85', 'f-96', 'f-82']), // Iniesta, Villa, Casillas (World Cup 2010 tribute)
+    },
 ];

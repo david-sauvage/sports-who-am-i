@@ -202,6 +202,12 @@
                 "description": "Encuentra a Gourcuff, Chamakh y Ramé",
                 "description_locked": "Encuentra a 3 pilares del Girondins de Bordeaux campeón de Francia 2009.",
                 "description_unlocked": "¡Marine et Blanc! Has reunido a los héroes del título de Burdeos en 2009."
+            },
+            "siempre_con_nosotros": {
+                "name": "Siempre con nosotros",
+                "description": "Encuentra a Iniesta, Villa y Casillas",
+                "description_locked": "Encuentra a 3 campeones del mundo de 2010 para honrar la memoria de Dani Jarque.",
+                "description_unlocked": "Dani Jarque siempre con nosotros. Un homenaje eterno de Andrés Iniesta en la final de 2010."
             }
         }
     }

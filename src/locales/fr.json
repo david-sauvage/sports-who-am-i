@@ -208,6 +208,12 @@
             "description": "Trouvez Gourcuff, Chamakh et Ramé",
             "description_locked": "Trouvez 3 piliers des Girondins de Bordeaux champions de France 2009.",
             "description_unlocked": "Marine et Blanc ! Vous avez réuni les héros du titre bordelais de 2009."
+        },
+        "siempre_con_nosotros": {
+            "name": "Siempre con nosotros",
+            "description": "Trouvez Iniesta, Villa et Casillas",
+            "description_locked": "Trouvez 3 champions du monde 2010 pour honorer la mémoire de Dani Jarque.",
+            "description_unlocked": "Dani Jarque siempre con nosotros. Un hommage éternel d'Andrés Iniesta lors de la finale 2010."
         }
     }
 }

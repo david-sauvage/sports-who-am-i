@@ -208,6 +208,12 @@
             "description": "Find Gourcuff, Chamakh, and Ramé",
             "description_locked": "Find 3 key players of the 2009 French champions Girondins de Bordeaux.",
             "description_unlocked": "Navy and White! You brought together the heroes of Bordeaux's 2009 title."
+        },
+        "siempre_con_nosotros": {
+            "name": "Siempre con nosotros",
+            "description": "Find Iniesta, Villa, and Casillas",
+            "description_locked": "Find 3 2010 World Cup champions to honor the memory of Dani Jarque.",
+            "description_unlocked": "Dani Jarque siempre con nosotros. An eternal tribute by Andrés Iniesta during the 2010 final."
         }
     }
 }
