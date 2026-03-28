@@ -166,6 +166,12 @@
             "description": "Trouvez Barthez, Blanc, Zidane, Deschamps et Djorkaeff",
             "description_locked": "Trouvez 5 légendes de l'Équipe de France de la Coupe du Monde 1998.",
             "description_unlocked": "Vous avez trouvé 5 des plus grands héros de l'Équipe de France championne du monde 1998."
+        },
+        "seconde_etoile": {
+            "name": "La Deuxième Étoile",
+            "description": "Trouvez Mbappé, Griezmann, Kanté, Lloris et Varane",
+            "description_locked": "Trouvez 5 figures emblématiques de l'équipe de France championne du monde en 2018.",
+            "description_unlocked": "Vous avez trouvé 5 héros de l'épopée triomphale de la France lors de la Coupe du Monde 2018 en Russie."
         }
     }
 }

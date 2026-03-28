@@ -554,3 +554,45 @@ describe('Mourir Tranquille Trophy', () => {
         expect(result.progress).toBe(5);
     });
 });
+
+describe('Seconde Etoile Trophy', () => {
+    const secondeEtoileTrophy = TROPHIES.find(t => t.id === 'seconde_etoile');
+
+    const baseStats: UserStatistics = {
+        gamesPlayed: 0,
+        totalQuestions: 0,
+        correctAnswers: 0,
+        incorrectAnswers: 0,
+        totalScore: 0,
+        foundPlayerIds: [],
+        detailed: {
+            football: { active: { correct: 0, total: 0 }, historical: { correct: 0, total: 0 } },
+            basketball: { active: { correct: 0, total: 0 }, historical: { correct: 0, total: 0 } },
+        },
+    };
+
+    it('should be defined', () => {
+        expect(secondeEtoileTrophy).toBeDefined();
+    });
+
+    it('should not be unlocked if no players are found', () => {
+        const result = secondeEtoileTrophy!.check(baseStats);
+        expect(result.unlocked).toBe(false);
+        expect(result.progress).toBe(0);
+        expect(result.goal).toBe(5);
+    });
+
+    it('should show progress if 3 are found', () => {
+        const stats = { ...baseStats, foundPlayerIds: ['f-73', 'f-74', 'f-75'] };
+        const result = secondeEtoileTrophy!.check(stats);
+        expect(result.unlocked).toBe(false);
+        expect(result.progress).toBe(3);
+    });
+
+    it('should be unlocked if all 5 are found', () => {
+        const stats = { ...baseStats, foundPlayerIds: ['f-73', 'f-74', 'f-75', 'f-76', 'f-77'] };
+        const result = secondeEtoileTrophy!.check(stats);
+        expect(result.unlocked).toBe(true);
+        expect(result.progress).toBe(5);
+    });
+});

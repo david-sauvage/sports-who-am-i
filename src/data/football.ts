@@ -1065,4 +1065,71 @@ export const footballPlayers: Player[] = [
             { name: 'New York Red Bulls', years: '2005-2006' }
         ]
     },
+    {
+        id: 'f-73',
+        name: 'Kylian Mbappé',
+        birthDate: '1998-12-20',
+        sport: 'football',
+        category: 'active',
+        clubs: [
+            { name: 'AS Monaco', years: '2015-2017' },
+            { name: 'Paris Saint-Germain', years: '2017-2024' },
+            { name: 'Real Madrid', years: '2024-2026' }
+        ]
+    },
+    {
+        id: 'f-74',
+        name: 'Antoine Griezmann',
+        birthDate: '1991-03-21',
+        sport: 'football',
+        category: 'active',
+        clubs: [
+            { name: 'Real Sociedad', years: '2009-2014' },
+            { name: 'Atlético de Madrid', years: '2014-2019' },
+            { name: 'FC Barcelone', years: '2019-2021' },
+            { name: 'Atlético de Madrid', years: '2021-2026' }
+        ]
+    },
+    {
+        id: 'f-75',
+        name: 'N\'Golo Kanté',
+        birthDate: '1991-03-29',
+        sport: 'football',
+        category: 'active',
+        clubs: [
+            { name: 'US Boulogne', years: '2012-2013' },
+            { name: 'SM Caen', years: '2013-2015' },
+            { name: 'Leicester City', years: '2015-2016' },
+            { name: 'Chelsea FC', years: '2016-2023' },
+            { name: 'Al-Ittihad Club', years: '2023-2025' },
+            { name: 'Fenerbahçe SK', years: '2025-2026' }
+        ]
+    },
+    {
+        id: 'f-76',
+        name: 'Hugo Lloris',
+        birthDate: '1986-12-26',
+        sport: 'football',
+        category: 'active',
+        clubs: [
+            { name: 'OGC Nice', years: '2005-2008' },
+            { name: 'Olympique Lyonnais', years: '2008-2012' },
+            { name: 'Tottenham Hotspur', years: '2012-2023' },
+            { name: 'Los Angeles FC', years: '2024-2026' }
+        ]
+    },
+    {
+        id: 'f-77',
+        name: 'Raphaël Varane',
+        birthDate: '1993-04-25',
+        sport: 'football',
+        category: 'historical',
+        clubs: [
+            { name: 'RC Lens', years: '2010-2011' },
+            { name: 'Real Madrid', years: '2011-2021' },
+            { name: 'Manchester United', years: '2021-2024' },
+            { name: 'Côme 1907', years: '2024-2024' }
+        ]
+    },
+
 ]

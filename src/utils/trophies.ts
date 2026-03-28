@@ -173,4 +173,12 @@ export const TROPHIES: Trophy[] = [
         isPlayerDiscovery: true,
         check: createPlayerDiscoveryCheck(['f-16', 'f-63', 'f-66', 'f-71', 'f-72']), // France 1998
     },
+    {
+        id: 'seconde_etoile',
+        icon: '⭐⭐',
+        category: 'platinum',
+        sport: 'football',
+        isPlayerDiscovery: true,
+        check: createPlayerDiscoveryCheck(['f-73', 'f-74', 'f-75', 'f-76', 'f-77']), // France 2018
+    },
 ];

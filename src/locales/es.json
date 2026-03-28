@@ -160,6 +160,12 @@
                 "description": "Encuentra a Barthez, Blanc, Zidane, Deschamps y Djorkaeff",
                 "description_locked": "Encuentra a 5 leyendas de la selección francesa campeona del mundo en 1998.",
                 "description_unlocked": "Has encontrado a 5 de los mayores héroes de la selección francesa campeona del mundo en 1998."
+            },
+            "seconde_etoile": {
+                "name": "La Segunda Estrella",
+                "description": "Encuentra a Mbappé, Griezmann, Kanté, Lloris y Varane",
+                "description_locked": "Encuentra a 5 figuras emblemáticas de la selección francesa campeona del mundo en 2018.",
+                "description_unlocked": "Has encontrado a 5 héroes de la triunfal campaña de Francia en el Mundial de Rusia 2018."
             }
         }
     }
