@@ -738,3 +738,45 @@ describe('Visca Barça Trophy', () => {
         expect(result.goal).toBe(5);
     });
 });
+
+describe('9 Juillet Trophy', () => {
+    const neufJuilletTrophy = TROPHIES.find(t => t.id === '9_juillet');
+
+    const baseStats: UserStatistics = {
+        gamesPlayed: 0,
+        totalQuestions: 0,
+        correctAnswers: 0,
+        incorrectAnswers: 0,
+        totalScore: 0,
+        foundPlayerIds: [],
+        detailed: {
+            football: { active: { correct: 0, total: 0 }, historical: { correct: 0, total: 0 } },
+            basketball: { active: { correct: 0, total: 0 }, historical: { correct: 0, total: 0 } },
+        },
+    };
+
+    it('should be defined', () => {
+        expect(neufJuilletTrophy).toBeDefined();
+    });
+
+    it('should not be unlocked if no players are found', () => {
+        const result = neufJuilletTrophy!.check(baseStats);
+        expect(result.unlocked).toBe(false);
+        expect(result.progress).toBe(0);
+        expect(result.goal).toBe(2);
+    });
+
+    it('should show progress if 1 is found', () => {
+        const stats = { ...baseStats, foundPlayerIds: ['f-16'] };
+        const result = neufJuilletTrophy!.check(stats);
+        expect(result.unlocked).toBe(false);
+        expect(result.progress).toBe(1);
+    });
+
+    it('should be unlocked if 2 are found', () => {
+        const stats = { ...baseStats, foundPlayerIds: ['f-16', 'f-90'] };
+        const result = neufJuilletTrophy!.check(stats);
+        expect(result.unlocked).toBe(true);
+        expect(result.progress).toBe(2);
+    });
+});

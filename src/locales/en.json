@@ -190,6 +190,12 @@
             "description": "Find 5 players among Guardiola, Eto'o, Puyol, Xavi, Iniesta, Messi, Rivaldo, Ronaldinho, and Cruyff",
             "description_locked": "Find 5 legends of FC Barcelona.",
             "description_unlocked": "Més que un club! You found 5 legends who brought glory and pride to Barça."
+        },
+        "9_juillet": {
+            "name": "July 9th",
+            "description": "Find Zinedine Zidane and Marco Materazzi",
+            "description_locked": "Find the 2 protagonists of the most infamous action of the 2006 World Cup final.",
+            "description_unlocked": "An unforgettable headbutt! You brought Zidane and Materazzi together."
         }
     }
 }

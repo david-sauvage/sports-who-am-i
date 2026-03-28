@@ -1297,6 +1297,25 @@ export const footballPlayers: Player[] = [
             { name: 'Al-Ahli SC', years: '2003-2005' },
             { name: 'Dorados de Sinaloa', years: '2005-2006' }
         ]
+    },
+    {
+        id: 'f-90',
+        name: 'Marco Materazzi',
+        birthDate: '1973-08-19',
+        sport: 'football',
+        category: 'historical',
+        clubs: [
+            { name: 'FC Messine', years: '1990-1991' },
+            { name: 'Tor di Quinto', years: '1991-1992' },
+            { name: 'Marsala Calcio', years: '1993-1994' },
+            { name: 'AS Trapani', years: '1994-1995' },
+            { name: 'AC Pérouse', years: '1995-1998' },
+            { name: 'Carpi FC', years: '1996-1997' },
+            { name: 'Everton FC', years: '1998-1999' },
+            { name: 'AC Pérouse', years: '1999-2001' },
+            { name: 'Inter Milan', years: '2001-2011' },
+            { name: 'Chennaiyin FC', years: '2014-2015' }
+        ]
     }
 
 ]

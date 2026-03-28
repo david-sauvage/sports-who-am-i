@@ -205,4 +205,12 @@ export const TROPHIES: Trophy[] = [
         isPlayerDiscovery: true,
         check: createPlayerDiscoveryCheck(['f-1', 'f-7', 'f-15', 'f-33', 'f-85', 'f-86', 'f-87', 'f-88', 'f-89'], 5), // FC Barcelona legends
     },
+    {
+        id: '9_juillet',
+        icon: '💥',
+        category: 'silver',
+        sport: 'football',
+        isPlayerDiscovery: true,
+        check: createPlayerDiscoveryCheck(['f-16', 'f-90']), // Zidane & Materazzi
+    },
 ];
