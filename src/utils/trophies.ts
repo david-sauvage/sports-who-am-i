@@ -141,4 +141,12 @@ export const TROPHIES: Trophy[] = [
         isPlayerDiscovery: true,
         check: createPlayerDiscoveryCheck(['f-60', 'f-61', 'f-62']), // Liverpool 2005
     },
+    {
+        id: 'a_jamais_les_premiers',
+        icon: '⭐',
+        category: 'silver',
+        sport: 'football',
+        isPlayerDiscovery: true,
+        check: createPlayerDiscoveryCheck(['f-63', 'f-64', 'f-65', 'f-66', 'f-67'], 3),
+    },
 ];

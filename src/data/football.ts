@@ -901,5 +901,85 @@ export const footballPlayers: Player[] = [
             { name: 'Real Madrid', years: '2009-2014' },
             { name: 'Bayern Munich', years: '2014-2017' }
         ]
+    },
+    {
+        id: 'f-63',
+        name: 'Fabien Barthez',
+        birthDate: '1971-06-28',
+        sport: 'football',
+        category: 'historical',
+        clubs: [
+            { name: 'Toulouse FC', years: '1990-1992' },
+            { name: 'Olympique de Marseille', years: '1992-1995' },
+            { name: 'AS Monaco', years: '1995-2000' },
+            { name: 'Manchester United', years: '2000-2004' },
+            { name: 'Olympique de Marseille', years: '2004-2006' },
+            { name: 'FC Nantes', years: '2006-2007' }
+        ]
+    },
+    {
+        id: 'f-64',
+        name: 'Basile Boli',
+        birthDate: '1967-01-02',
+        sport: 'football',
+        category: 'historical',
+        clubs: [
+            { name: 'AJ Auxerre', years: '1982-1990' },
+            { name: 'Olympique de Marseille', years: '1990-1994' },
+            { name: 'Glasgow Rangers', years: '1994-1995' },
+            { name: 'AS Monaco', years: '1995-1996' },
+            { name: 'Urawa Red Diamonds', years: '1996-1997' }
+        ]
+    },
+    {
+        id: 'f-65',
+        name: 'Abedi Pelé',
+        birthDate: '1964-11-05',
+        sport: 'football',
+        category: 'historical',
+        clubs: [
+            { name: 'Real Tamale United', years: '1978-1982' },
+            { name: 'Al-Sadd SC', years: '1982-1983' },
+            { name: 'FC Zurich', years: '1983-1984' },
+            { name: 'AS Dragons FC de l\'Ouémé', years: '1984-1984' },
+            { name: 'Chamois Niortais', years: '1986-1987' },
+            { name: 'FC Mulhouse', years: '1987-1987' },
+            { name: 'Olympique de Marseille', years: '1987-1993' },
+            { name: 'Lille OSC', years: '1988-1990' },
+            { name: 'Olympique Lyonnais', years: '1993-1994' },
+            { name: 'Torino FC', years: '1994-1996' },
+            { name: 'TSV 1860 Munich', years: '1996-1998' },
+            { name: 'Al-Aïn FC', years: '1998-2000' }
+        ]
+    },
+    {
+        id: 'f-66',
+        name: 'Didier Deschamps',
+        birthDate: '1968-10-15',
+        sport: 'football',
+        category: 'historical',
+        clubs: [
+            { name: 'FC Nantes', years: '1985-1989' },
+            { name: 'Olympique de Marseille', years: '1989-1994' },
+            { name: 'Girondins de Bordeaux', years: '1990-1991' },
+            { name: 'Juventus FC', years: '1994-1999' },
+            { name: 'Chelsea FC', years: '1999-2000' },
+            { name: 'Valence CF', years: '2000-2001' }
+        ]
+    },
+    {
+        id: 'f-67',
+        name: 'Rudi Völler',
+        birthDate: '1960-04-13',
+        sport: 'football',
+        category: 'historical',
+        clubs: [
+            { name: 'Kickers Offenbach', years: '1977-1980' },
+            { name: 'TSV 1860 Munich', years: '1980-1982' },
+            { name: 'Werder Brême', years: '1982-1987' },
+            { name: 'AS Rome', years: '1987-1992' },
+            { name: 'Olympique de Marseille', years: '1992-1994' },
+            { name: 'Bayer Leverkusen', years: '1994-1996' }
+        ]
     }
 ]

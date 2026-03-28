@@ -136,6 +136,12 @@
                 "description": "Encuentra a Steven Gerrard, Vladimír Šmicer y Xabi Alonso",
                 "description_locked": "Encuentra a los 3 goleadores de la mítica remontada en la final de la Liga de Campeones 2005.",
                 "description_unlocked": "Has encontrado a los tres héroes que marcaron para el Liverpool en la final de la Champions de 2005."
+            },
+            "a_jamais_les_premiers": {
+                "name": "Para siempre los primeros",
+                "description": "Encuentra al menos 3 jugadores del Olympique de Marsella de 1993",
+                "description_locked": "Encuentra al menos 3 jugadores clave del equipo ganador de la Liga de Campeones en 1993 con el Olympique de Marsella.",
+                "description_unlocked": "Has encontrado a tres leyendas del Olympique de Marsella, primer club francés en haber ganado la Liga de Campeones."
             }
         }
     }

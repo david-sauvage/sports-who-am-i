@@ -142,6 +142,12 @@
             "description": "Trouvez Steven Gerrard, Vladimír Šmicer et Xabi Alonso",
             "description_locked": "Trouvez les 3 buteurs des Reds lors de la mythique finale de Ligue des Champions 2005.",
             "description_unlocked": "Vous avez trouvé les trois héros de la folle remontée du Liverpool FC face à l'AC Milan en 2005."
+        },
+        "a_jamais_les_premiers": {
+            "name": "À jamais les premiers",
+            "description": "Trouvez au moins 3 joueurs de l'Olympique de Marseille de 1993",
+            "description_locked": "Trouvez au moins 3 joueurs majeurs de l'équipe vainqueur de la Ligue des Champions 1993 avec l'Olympique de Marseille.",
+            "description_unlocked": "Vous avez trouvé trois légendes de l'Olympique de Marseille, premier club français à avoir remporté la Ligue des Champions."
         }
     }
 }
