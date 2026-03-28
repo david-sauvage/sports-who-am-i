@@ -220,6 +220,12 @@
             "description": "Trouvez Beckham, Giggs et Scholes",
             "description_locked": "Trouvez 3 membres légendaires de la génération dorée de Manchester United.",
             "description_unlocked": "La génération dorée ! Vous avez trouvé Beckham, Giggs et Scholes, piliers de la Class of '92."
+        },
+        "aranycsapat": {
+            "name": "Aranycsapat",
+            "description": "Trouvez Hidegkuti, Grosics et Puskás",
+            "description_locked": "Trouvez 3 membres du Onze d'or hongrois des années 50.",
+            "description_unlocked": "Le Onze d'or ! Vous avez trouvé Hidegkuti, Grosics et Puskás, les piliers de l'Aranycsapat hongroise."
         }
     }
 }

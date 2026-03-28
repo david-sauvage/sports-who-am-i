@@ -948,3 +948,45 @@ describe('Class of 92 Trophy', () => {
         expect(result.progress).toBe(3);
     });
 });
+
+describe('Aranycsapat Trophy', () => {
+    const aranycsapatTrophy = TROPHIES.find(t => t.id === 'aranycsapat');
+
+    const baseStats: UserStatistics = {
+        gamesPlayed: 0,
+        totalQuestions: 0,
+        correctAnswers: 0,
+        incorrectAnswers: 0,
+        totalScore: 0,
+        foundPlayerIds: [],
+        detailed: {
+            football: { active: { correct: 0, total: 0 }, historical: { correct: 0, total: 0 } },
+            basketball: { active: { correct: 0, total: 0 }, historical: { correct: 0, total: 0 } },
+        },
+    };
+
+    it('should be defined', () => {
+        expect(aranycsapatTrophy).toBeDefined();
+    });
+
+    it('should not be unlocked if no players are found', () => {
+        const result = aranycsapatTrophy!.check(baseStats);
+        expect(result.unlocked).toBe(false);
+        expect(result.progress).toBe(0);
+        expect(result.goal).toBe(3);
+    });
+
+    it('should show progress if 2 are found', () => {
+        const stats = { ...baseStats, foundPlayerIds: ['f-101', 'f-102'] };
+        const result = aranycsapatTrophy!.check(stats);
+        expect(result.unlocked).toBe(false);
+        expect(result.progress).toBe(2);
+    });
+
+    it('should be unlocked if 3 are found (Hidegkuti, Grosics, Puskás)', () => {
+        const stats = { ...baseStats, foundPlayerIds: ['f-101', 'f-102', 'f-103'] };
+        const result = aranycsapatTrophy!.check(stats);
+        expect(result.unlocked).toBe(true);
+        expect(result.progress).toBe(3);
+    });
+});

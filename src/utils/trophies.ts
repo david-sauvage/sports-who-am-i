@@ -245,4 +245,12 @@ export const TROPHIES: Trophy[] = [
         isPlayerDiscovery: true,
         check: createPlayerDiscoveryCheck(['f-70', 'f-99', 'f-100']), // Manchester United academy legends
     },
+    {
+        id: 'aranycsapat',
+        icon: '🇭🇺',
+        category: 'gold',
+        sport: 'football',
+        isPlayerDiscovery: true,
+        check: createPlayerDiscoveryCheck(['f-101', 'f-102', 'f-103']), // Mighty Magyars
+    },
 ];

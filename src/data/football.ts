@@ -1455,5 +1455,41 @@ export const footballPlayers: Player[] = [
             { name: 'Manchester United', years: '1993-2011' },
             { name: 'Manchester United', years: '2012-2013' }
         ]
-    }
+    },
+    {
+        id: 'f-101',
+        name: 'Nándor Hidegkuti',
+        birthDate: '1922-03-03',
+        sport: 'football',
+        category: 'historical',
+        clubs: [
+            { name: 'Elektromos FC', years: '1940-1943' },
+            { name: 'Herminamezei AC', years: '1943-1945' },
+            { name: 'MTK Budapest', years: '1945-1958' }
+        ]
+    },
+    {
+        id: 'f-102',
+        name: 'Gyula Grosics',
+        birthDate: '1926-02-04',
+        sport: 'football',
+        category: 'historical',
+        clubs: [
+            { name: 'Dorogi AC', years: '1945-1947' },
+            { name: 'MATEOSZ MSE', years: '1947-1950' },
+            { name: 'Budapest Honvéd', years: '1950-1957' },
+            { name: 'Tatabánya SC', years: '1957-1962' }
+        ]
+    },
+    {
+        id: 'f-103',
+        name: 'Ferenc Puskás',
+        birthDate: '1927-04-01',
+        sport: 'football',
+        category: 'historical',
+        clubs: [
+            { name: 'Budapest Honvéd', years: '1943-1956' },
+            { name: 'Real Madrid', years: '1958-1966' }
+        ]
+    },
 ];

@@ -220,6 +220,12 @@
             "description": "Find Beckham, Giggs, and Scholes",
             "description_locked": "Find 3 legendary members of Manchester United's golden generation.",
             "description_unlocked": "The golden generation! You found Beckham, Giggs, and Scholes, pillars of the Class of '92."
+        },
+        "aranycsapat": {
+            "name": "Aranycsapat",
+            "description": "Find Hidegkuti, Grosics, and Puskás",
+            "description_locked": "Find 3 members of the legendary Hungarian Golden Team of the 1950s.",
+            "description_unlocked": "The Golden Team! You found Hidegkuti, Grosics, and Puskás, pillars of the Hungarian Aranycsapat."
         }
     }
 }
