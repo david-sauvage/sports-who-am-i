@@ -226,6 +226,12 @@
             "description": "Trouvez Hidegkuti, Grosics et Puskás",
             "description_locked": "Trouvez 3 membres du Onze d'or hongrois des années 50.",
             "description_unlocked": "Le Onze d'or ! Vous avez trouvé Hidegkuti, Grosics et Puskás, les piliers de l'Aranycsapat hongroise."
+        },
+        "dogues": {
+            "name": "Dogues",
+            "description": "Trouvez Eden Hazard, Gervinho et Moussa Sow",
+            "description_locked": "Trouvez 3 membres de l'équipe du LOSC championne de France 2011.",
+            "description_unlocked": "Vous avez trouvé trois artisans majeurs du titre de champion de France 2011 avec le LOSC."
         }
     }
 }

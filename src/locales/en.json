@@ -226,6 +226,12 @@
             "description": "Find Hidegkuti, Grosics, and Puskás",
             "description_locked": "Find 3 members of the legendary Hungarian Golden Team of the 1950s.",
             "description_unlocked": "The Golden Team! You found Hidegkuti, Grosics, and Puskás, pillars of the Hungarian Aranycsapat."
+        },
+        "dogues": {
+            "name": "Dogues",
+            "description": "Find Eden Hazard, Gervinho, and Moussa Sow",
+            "description_locked": "Find 3 members of the LOSC team that won the 2011 French championship.",
+            "description_unlocked": "You found three key architects of LOSC's 2011 French championship title."
         }
     }
 }

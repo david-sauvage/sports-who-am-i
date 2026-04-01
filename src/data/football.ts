@@ -1492,4 +1492,49 @@ export const footballPlayers: Player[] = [
             { name: 'Real Madrid', years: '1958-1966' }
         ]
     },
+    {
+        id: 'f-106',
+        name: 'Rio Mavuba',
+        birthDate: '1984-03-08',
+        sport: 'football',
+        category: 'historical',
+        clubs: [
+            { name: 'Girondins de Bordeaux', years: '2003-2007' },
+            { name: 'Villarreal CF', years: '2007-2008' },
+            { name: 'Lille OSC', years: '2008-2017' },
+            { name: 'Sparta Prague', years: '2017-2018' },
+            { name: 'FCE Mérignac-Arlac', years: '2018-2019' }
+        ]
+    },
+    {
+        id: 'f-107',
+        name: 'Eden Hazard',
+        birthDate: '1991-01-07',
+        sport: 'football',
+        category: 'historical',
+        clubs: [
+            { name: 'Lille OSC', years: '2007-2012' },
+            { name: 'Chelsea FC', years: '2012-2019' },
+            { name: 'Real Madrid', years: '2019-2023' }
+        ]
+    },
+    {
+        id: 'f-108',
+        name: 'Moussa Sow',
+        birthDate: '1986-01-19',
+        sport: 'football',
+        category: 'historical',
+        clubs: [
+            { name: 'Stade Rennais', years: '2004-2010' },
+            { name: 'CS Sedan Ardennes', years: '2007-2008' },
+            { name: 'Lille OSC', years: '2010-2012' },
+            { name: 'Fenerbahçe SK', years: '2012-2015' },
+            { name: 'Al-Ahli Dubaï', years: '2015-2017' },
+            { name: 'Fenerbahçe SK', years: '2016-2017' },
+            { name: 'Bursaspor', years: '2018-2018' },
+            { name: 'Shabab Al-Ahli', years: '2018-2019' },
+            { name: 'Gaziantep FK', years: '2019-2019' },
+            { name: 'Ümraniyespor', years: '2020-2021' }
+        ]
+    }
 ];

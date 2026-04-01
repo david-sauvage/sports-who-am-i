@@ -253,4 +253,12 @@ export const TROPHIES: Trophy[] = [
         isPlayerDiscovery: true,
         check: createPlayerDiscoveryCheck(['f-101', 'f-102', 'f-103']), // Mighty Magyars
     },
+    {
+        id: 'dogues',
+        icon: '🐶',
+        category: 'silver',
+        sport: 'football',
+        isPlayerDiscovery: true,
+        check: createPlayerDiscoveryCheck(['f-106', 'f-107', 'f-108']), // LOSC 2011
+    },
 ];
