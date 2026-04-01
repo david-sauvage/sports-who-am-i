@@ -232,6 +232,12 @@
                 "description": "Encuentra a Johan Cruyff y Johan Neeskens",
                 "description_locked": "Encuentra a 2 iconos del gran Ajax y de la selección de los Países Bajos de los años 70.",
                 "description_unlocked": "Has encontrado a Cruyff y Neeskens, los dos genios inseparables del Fútbol Total."
+            },
+            "carre_magique": {
+                "name": "Cuadrado Mágico",
+                "description": "Encuentra a Platini, Giresse, Tigana y Fernandez",
+                "description_locked": "Encuentra a los 4 miembros del legendario centro del campo de la selección francesa de los años 80.",
+                "description_unlocked": "Has reunido al mítico Cuadrado Mágico de la selección francesa, histórico de la Eurocopa de 1984."
             }
         }
     }

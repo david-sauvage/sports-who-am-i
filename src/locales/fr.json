@@ -238,6 +238,12 @@
             "description": "Trouvez Johan Cruyff et Johan Neeskens",
             "description_locked": "Trouvez 2 icônes du grand Ajax Amsterdam et des Pays-Bas des années 70.",
             "description_unlocked": "Vous avez trouvé Cruyff et Neeskens, les deux génies indissociables du Football Total."
+        },
+        "carre_magique": {
+            "name": "Carré Magique",
+            "description": "Trouvez Platini, Giresse, Tigana et Fernandez",
+            "description_locked": "Trouvez les 4 membres du légendaire milieu de terrain de l'équipe de France des années 80.",
+            "description_unlocked": "Vous avez reconstitué le légendaire Carré Magique de l'équipe de France, victorieux de l'Euro 1984."
         }
     }
 }

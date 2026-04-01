@@ -269,4 +269,12 @@ export const TROPHIES: Trophy[] = [
         isPlayerDiscovery: true,
         check: createPlayerDiscoveryCheck(['f-33', 'f-109']), // Cruyff & Neeskens
     },
+    {
+        id: 'carre_magique',
+        icon: '🪄',
+        category: 'silver',
+        sport: 'football',
+        isPlayerDiscovery: true,
+        check: createPlayerDiscoveryCheck(['f-26', 'f-110', 'f-111', 'f-112']), // Carré magique (Platini, Giresse, Tigana, Fernandez)
+    },
 ];

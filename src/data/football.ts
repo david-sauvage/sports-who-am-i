@@ -1554,5 +1554,41 @@ export const footballPlayers: Player[] = [
             { name: 'FC Zoug', years: '1990-1991' }
         ]
     },
+    {
+        id: 'f-110',
+        name: 'Alain Giresse',
+        birthDate: '1952-08-02',
+        sport: 'football',
+        category: 'historical',
+        clubs: [
+            { name: 'Girondins de Bordeaux', years: '1970-1986' },
+            { name: 'Olympique de Marseille', years: '1986-1988' }
+        ]
+    },
+    {
+        id: 'f-111',
+        name: 'Jean Tigana',
+        birthDate: '1955-06-23',
+        sport: 'football',
+        category: 'historical',
+        clubs: [
+            { name: 'CA Toulon', years: '1975-1978' },
+            { name: 'Olympique Lyonnais', years: '1978-1981' },
+            { name: 'Girondins de Bordeaux', years: '1981-1989' },
+            { name: 'Olympique de Marseille', years: '1989-1991' }
+        ]
+    },
+    {
+        id: 'f-112',
+        name: 'Luis Fernandez',
+        birthDate: '1959-10-02',
+        sport: 'football',
+        category: 'historical',
+        clubs: [
+            { name: 'Paris Saint-Germain', years: '1978-1986' },
+            { name: 'Racing Club de Paris', years: '1986-1989' },
+            { name: 'AS Cannes', years: '1989-1993' }
+        ]
+    }
 
 ];
