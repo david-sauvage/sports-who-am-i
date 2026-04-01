@@ -1536,5 +1536,23 @@ export const footballPlayers: Player[] = [
             { name: 'Gaziantep FK', years: '2019-2019' },
             { name: 'Ümraniyespor', years: '2020-2021' }
         ]
-    }
+    },
+    {
+        id: 'f-109',
+        name: 'Johan Neeskens',
+        birthDate: '1951-09-15',
+        sport: 'football',
+        category: 'historical',
+        clubs: [
+            { name: 'RCH Heemstede', years: '1968-1970' },
+            { name: 'Ajax Amsterdam', years: '1970-1974' },
+            { name: 'FC Barcelone', years: '1974-1979' },
+            { name: 'New York Cosmos', years: '1979-1984' },
+            { name: 'FC Groningue', years: '1984-1985' },
+            { name: 'South Florida Sun', years: '1985-1986' },
+            { name: 'FC Baar', years: '1987-1990' },
+            { name: 'FC Zoug', years: '1990-1991' }
+        ]
+    },
+
 ];

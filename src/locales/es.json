@@ -226,6 +226,12 @@
                 "description": "Encuentra a Eden Hazard, Gervinho y Moussa Sow",
                 "description_locked": "Encuentra a 3 miembros del equipo del LOSC que ganó el campeonato de Francia en 2011.",
                 "description_unlocked": "Has encontrado a tres artífices clave del título de campeón de Francia del LOSC en 2011."
+            },
+            "football_total": {
+                "name": "Fútbol Total",
+                "description": "Encuentra a Johan Cruyff y Johan Neeskens",
+                "description_locked": "Encuentra a 2 iconos del gran Ajax y de la selección de los Países Bajos de los años 70.",
+                "description_unlocked": "Has encontrado a Cruyff y Neeskens, los dos genios inseparables del Fútbol Total."
             }
         }
     }

@@ -232,6 +232,12 @@
             "description": "Find Eden Hazard, Gervinho, and Moussa Sow",
             "description_locked": "Find 3 members of the LOSC team that won the 2011 French championship.",
             "description_unlocked": "You found three key architects of LOSC's 2011 French championship title."
+        },
+        "football_total": {
+            "name": "Total Football",
+            "description": "Find Johan Cruyff and Johan Neeskens",
+            "description_locked": "Find 2 playing icons of the great 1970s Ajax and Netherlands teams.",
+            "description_unlocked": "You found Cruyff and Neeskens, the two inseparable geniuses of Total Football."
         }
     }
 }

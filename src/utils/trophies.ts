@@ -261,4 +261,12 @@ export const TROPHIES: Trophy[] = [
         isPlayerDiscovery: true,
         check: createPlayerDiscoveryCheck(['f-106', 'f-107', 'f-108']), // LOSC 2011
     },
+    {
+        id: 'football_total',
+        icon: '🌀',
+        category: 'silver',
+        sport: 'football',
+        isPlayerDiscovery: true,
+        check: createPlayerDiscoveryCheck(['f-33', 'f-109']), // Cruyff & Neeskens
+    },
 ];
