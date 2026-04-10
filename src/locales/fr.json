@@ -104,145 +104,145 @@
         "splash_brothers": {
             "name": "Splash Brothers",
             "description": "Trouvez Stephen Curry et Klay Thompson",
-            "description_locked": "Trouvez un duo de shooteurs légendaires qui ont révolutionné le basket moderne par leur adresse à trois points.",
+            "description_locked": "Deux archers dont les flèches tombent toujours dans le filet. Ensemble, ils ont changé la façon de jouer au basket.",
             "description_unlocked": "Stephen Curry et Klay Thompson ont formé l'un des duos les plus prolifiques de l'histoire, menant les Warriors à 4 titres NBA avec une adresse extérieure sans précédent."
         },
         "eternal_rivals": {
             "name": "L'Éternelle Rivalité",
             "description": "Trouvez Lionel Messi et Cristiano Ronaldo",
-            "description_locked": "Trouvez les deux plus grands rivaux de l'histoire du football moderne, collectionneurs de Ballons d'Or.",
+            "description_locked": "Deux rois qui se sont partagé un trône pendant plus d'une décennie. Leur rivalité a défini une époque.",
             "description_unlocked": "Lionel Messi et Cristiano Ronaldo ont dominé le football mondial pendant plus de 15 ans, se partageant 13 Ballons d'Or et battant tous les records de buts."
         },
         "golden_balls": {
             "name": "Ballons d'Or",
             "description": "Trouvez 10 vainqueurs du Ballon d'Or",
-            "description_locked": "Trouvez 10 joueurs ayant remporté la plus prestigieuse récompense individuelle du football.",
+            "description_locked": "Rassemblez dix élus ayant touché la sphère dorée, le Graal suprême du football individuel.",
             "description_unlocked": "Le Ballon d'Or récompense le meilleur joueur de football de l'année. Vous avez trouvé 10 de ces légendes."
         },
         "sang_et_or": {
             "name": "Sang et Or",
             "description": "Trouvez Guillaume Warmuz, Jean-Guy Wallemme et Anto Drobnjak",
-            "description_locked": "Trouvez 3 joueurs majeurs de l'équipe championne de France 1998 avec le Racing Club de Lens.",
+            "description_locked": "Trois guerriers d'un printemps inattendu dans le Nord, où le sang et l'or ont triomphé.",
             "description_unlocked": "Vous avez trouvé trois légendes du RC Lens champion de France en 1998 : Warmuz, Wallemme et Drobnjak."
         },
         "periple_rouge": {
             "name": "Le périple rouge",
             "description": "Trouvez Fernando Morientes, Ludovic Giuly, Dado Pršo et Patrice Evra",
-            "description_locked": "Trouvez 4 joueurs de l'épopée fantastique de l'AS Monaco en Ligue des Champions 2004.",
+            "description_locked": "Quatre compagnons d'une odyssée princière qui a ébloui l'Europe jusqu'aux portes de la gloire finale.",
             "description_unlocked": "L'AS Monaco de 2004 a atteint la finale de la Ligue des Champions. Vous avez trouvé Morientes, Giuly, Pršo et Evra."
         },
         "gones": {
             "name": "Gones",
             "description": "Trouvez au moins 3 joueurs parmi Cris, Juninho, Lisandro López, Coupet et Govou",
-            "description_locked": "Trouvez 3 joueurs majeurs de l'histoire de l'Olympique Lyonnais.",
+            "description_locked": "Trouvez trois bâtisseurs d'une dynastie qui a régné sept fois de suite sur le football français.",
             "description_unlocked": "Vous avez trouvé trois légendes des belles années de l'Olympique Lyonnais."
         },
         "miracle_istanbul": {
             "name": "Le miracle d'Istanbul",
             "description": "Trouvez Steven Gerrard, Vladimír Šmicer et Xabi Alonso",
-            "description_locked": "Trouvez les 3 buteurs des Reds lors de la mythique finale de Ligue des Champions 2005.",
+            "description_locked": "Trois buts en six minutes pour renverser l'impossible. Trouvez les auteurs de cette résurrection.",
             "description_unlocked": "Vous avez trouvé les trois héros de la folle remontée du Liverpool FC face à l'AC Milan en 2005."
         },
         "a_jamais_les_premiers": {
             "name": "À jamais les premiers",
             "description": "Trouvez au moins 3 joueurs de l'Olympique de Marseille de 1993",
-            "description_locked": "Trouvez au moins 3 joueurs majeurs de l'équipe vainqueur de la Ligue des Champions 1993 avec l'Olympique de Marseille.",
+            "description_locked": "Trouvez trois pionniers d'un club portuaire qui a le premier planté son drapeau au sommet de l'Europe.",
             "description_unlocked": "Vous avez trouvé trois légendes de l'Olympique de Marseille, premier club français à avoir remporté la Ligue des Champions."
         },
         "fergie_time": {
             "name": "Fergie Time",
             "description": "Trouvez Ole Gunnar Solskjær et Teddy Sheringham",
-            "description_locked": "Trouvez les 2 buteurs héroïques de Manchester United lors de la finale de Ligue des Champions 1999.",
+            "description_locked": "Deux fantômes surgirent dans les dernières secondes pour transformer une défaite certaine en triomphe éternel.",
             "description_unlocked": "Vous avez trouvé Solskjær et Sheringham, les deux buteurs qui ont renversé la finale de la Ligue des Champions 1999 dans le temps additionnel."
         },
         "galactiques": {
             "name": "Les Galactiques",
             "description": "Trouvez Zinédine Zidane, David Beckham, Ronaldo et Luís Figo",
-            "description_locked": "Trouvez 4 légendes de la première ère des Galactiques du Real Madrid au début des années 2000.",
+            "description_locked": "Quatre étoiles réunies dans la capitale espagnole, un casting venu d'un autre monde.",
             "description_unlocked": "Vous avez trouvé Zidane, Beckham, Ronaldo et Figo, les têtes d'affiche de l'ère des Galactiques du Real Madrid."
         },
         "mourir_tranquille": {
             "name": "On peut mourir tranquille",
             "description": "Trouvez Barthez, Blanc, Zidane, Deschamps et Djorkaeff",
-            "description_locked": "Trouvez 5 légendes de l'Équipe de France de la Coupe du Monde 1998.",
+            "description_locked": "Cinq héros d'une nuit de juillet où tout un pays a crié d'une seule voix sur les Champs-Élysées.",
             "description_unlocked": "Vous avez trouvé 5 des plus grands héros de l'Équipe de France championne du monde 1998."
         },
         "seconde_etoile": {
             "name": "La Deuxième Étoile",
             "description": "Trouvez Mbappé, Griezmann, Kanté, Lloris et Varane",
-            "description_locked": "Trouvez 5 figures emblématiques de l'équipe de France championne du monde en 2018.",
+            "description_locked": "Cinq artisans d'un été moscovite où une deuxième étoile est venue illuminer le maillot bleu.",
             "description_unlocked": "Vous avez trouvé 5 héros de l'épopée triomphale de la France lors de la Coupe du Monde 2018 en Russie."
         },
         "amunt_valencia": {
             "name": "Amunt Valencia",
             "description": "Trouvez Gaizka Mendieta, Santiago Cañizares et Claudio López",
-            "description_locked": "Trouvez 3 figures emblématiques du grand Valence CF des années 2000.",
+            "description_locked": "Trois héritiers d'une chauve-souris qui a volé jusqu'aux deux plus grandes finales d'Europe.",
             "description_unlocked": "Vous avez trouvé Mendieta, Cañizares et le Piojo López, trois légendes ayant porté le Valence CF au sommet de l'Europe."
         },
         "hala_madrid": {
             "name": "Hala Madrid",
             "description": "Trouvez 5 joueurs parmi Butragueño, Ramos, Casillas, Raúl, Di Stéfano, Zidane, C. Ronaldo et Modrić",
-            "description_locked": "Trouvez 5 légendes du Real Madrid.",
+            "description_locked": "Cinq légendes d'un royaume blanc qui collectionne les couronnes européennes depuis des décennies.",
             "description_unlocked": "Vous avez trouvé 5 légendes absolues qui ont écrit l'histoire et la renommée du Real Madrid."
         },
         "visca_barca": {
             "name": "Visca Barça",
             "description": "Trouvez 5 joueurs parmi Guardiola, Eto'o, Puyol, Xavi, Iniesta, Messi, Rivaldo, Ronaldinho et Cruyff",
-            "description_locked": "Trouvez 5 légendes du FC Barcelone.",
+            "description_locked": "Cinq légendes d'un club qui se dit bien plus qu'un club, cathédrale du jeu à la catalane.",
             "description_unlocked": "Més que un club ! Vous avez trouvé 5 légendes qui ont fait la gloire et la fierté du Barça."
         },
         "9_juillet": {
             "name": "9 Juillet",
             "description": "Trouvez Zinédine Zidane et Marco Materazzi",
-            "description_locked": "Trouvez les 2 protagonistes de l'action la plus tristement célèbre de la finale de la Coupe du Monde 2006.",
+            "description_locked": "Deux hommes, un geste de rage, et l'adieu le plus amer de l'histoire du football. Nuit d'été à Berlin.",
             "description_unlocked": "Coup de boule inoubliable ! Vous avez réuni Zidane et Materazzi."
         },
         "main_de_dieu": {
             "name": "La main de Dieu",
             "description": "Trouvez Peter Shilton et Diego Maradona",
-            "description_locked": "Trouvez les 2 protagonistes de l'action légendaire du quart de finale de la Coupe du Monde 1986.",
+            "description_locked": "Un gardien trompé et un génie argentin. La main du divin et le but du siècle, nés dans le même match.",
             "description_unlocked": "Un peu avec la tête de Maradona et un peu avec la main de Dieu. Vous avez réuni Shilton et Maradona !"
         },
         "scapulaire": {
             "name": "Scapulaire",
             "description": "Trouvez Gourcuff, Chamakh et Ramé",
-            "description_locked": "Trouvez 3 piliers des Girondins de Bordeaux champions de France 2009.",
+            "description_locked": "Trois artisans d'un sacre au bord de la Garonne, quand le vent d'Aquitaine a soufflé sur le championnat.",
             "description_unlocked": "Marine et Blanc ! Vous avez réuni les héros du titre bordelais de 2009."
         },
         "siempre_con_nosotros": {
             "name": "Siempre con nosotros",
             "description": "Trouvez Iniesta, Villa et Casillas",
-            "description_locked": "Trouvez 3 champions du monde 2010 pour honorer la mémoire de Dani Jarque.",
+            "description_locked": "Trois champions dont le sacre porte la mémoire d'un ami parti trop tôt. Un maillot soulevé, un message éternel.",
             "description_unlocked": "Dani Jarque siempre con nosotros. Un hommage éternel d'Andrés Iniesta lors de la finale 2010."
         },
         "class_of_92": {
             "name": "Class of '92",
             "description": "Trouvez Beckham, Giggs et Scholes",
-            "description_locked": "Trouvez 3 membres légendaires de la génération dorée de Manchester United.",
+            "description_locked": "Trouvez trois diamants taillés dans le même berceau, forgés par un sorcier écossais au tempérament de feu.",
             "description_unlocked": "La génération dorée ! Vous avez trouvé Beckham, Giggs et Scholes, piliers de la Class of '92."
         },
         "aranycsapat": {
             "name": "Aranycsapat",
             "description": "Trouvez Hidegkuti, Grosics et Puskás",
-            "description_locked": "Trouvez 3 membres du Onze d'or hongrois des années 50.",
+            "description_locked": "Trois fantômes d'une équipe invincible venue de la Puszta, qui a humilié les inventeurs du football.",
             "description_unlocked": "Le Onze d'or ! Vous avez trouvé Hidegkuti, Grosics et Puskás, les piliers de l'Aranycsapat hongroise."
         },
         "dogues": {
             "name": "Dogues",
             "description": "Trouvez Eden Hazard, Gervinho et Moussa Sow",
-            "description_locked": "Trouvez 3 membres de l'équipe du LOSC championne de France 2011.",
+            "description_locked": "Trois acteurs d'un doublé historique dans le Nord, quand les dogues ont mordu pour décrocher la couronne.",
             "description_unlocked": "Vous avez trouvé trois artisans majeurs du titre de champion de France 2011 avec le LOSC."
         },
         "football_total": {
             "name": "Football Total",
             "description": "Trouvez Johan Cruyff et Johan Neeskens",
-            "description_locked": "Trouvez 2 icônes du grand Ajax Amsterdam et des Pays-Bas des années 70.",
+            "description_locked": "Deux visionnaires bataves qui ont inventé un football où chaque joueur pouvait tout faire sur le terrain.",
             "description_unlocked": "Vous avez trouvé Cruyff et Neeskens, les deux génies indissociables du Football Total."
         },
         "carre_magique": {
             "name": "Carré Magique",
             "description": "Trouvez Platini, Giresse, Tigana et Fernandez",
-            "description_locked": "Trouvez les 4 membres du légendaire milieu de terrain de l'équipe de France des années 80.",
+            "description_locked": "Quatre magiciens au centre du jeu, dont l'alchimie a dessiné un carré parfait dans le football français.",
             "description_unlocked": "Vous avez reconstitué le légendaire Carré Magique de l'équipe de France, victorieux de l'Euro 1984."
         }
     }
