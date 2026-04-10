@@ -129,7 +129,7 @@ export const footballPlayers: Player[] = [
     },
     {
         id: 'f-10',
-        name: 'Andriy Shevchenko',
+        name: 'Andriy Chevtchenko',
         birthDate: '1976-09-29',
         sport: 'football',
         category: 'historical',
@@ -1589,6 +1589,695 @@ export const footballPlayers: Player[] = [
             { name: 'Racing Club de Paris', years: '1986-1989' },
             { name: 'AS Cannes', years: '1989-1993' }
         ]
+    },
+    {
+        id: 'f-113',
+        name: 'Lamine Yamal', birthDate: '2007-07-13', sport: 'football', category: 'active',
+        clubs: [
+            { name: 'FC Barcelone', years: '2023-' }
+        ]
+    },
+    {
+        id: 'f-114', name: 'Vitinha', birthDate: '2000-02-13', sport: 'football', category: 'active',
+        clubs: [
+            { name: 'FC Porto', years: '2020-2022' },
+            { name: 'Wolverhampton Wanderers', years: '2020-2021' },
+            { name: 'Paris Saint-Germain', years: '2022-' }
+        ]
+    },
+    {
+        id: 'f-115', name: 'Mohamed Salah', birthDate: '1992-06-15', sport: 'football', category: 'active',
+        clubs: [
+            { name: 'Al Mokawloon Al Arab', years: '2010-2012' },
+            { name: 'FC Bâle', years: '2012-2014' },
+            { name: 'Chelsea FC', years: '2014-2016' },
+            { name: 'Fiorentina', years: '2015' },
+            { name: 'AS Rome', years: '2015-2017' },
+            { name: 'Liverpool FC', years: '2017-' }
+        ]
+    },
+    {
+        id: 'f-116', name: 'Raphinha', birthDate: '1996-12-14', sport: 'football', category: 'active',
+        clubs: [
+            { name: 'Vitória Guimarães', years: '2016-2018' },
+            { name: 'Sporting CP', years: '2018-2019' },
+            { name: 'Stade Rennais', years: '2019-2020' },
+            { name: 'Leeds United', years: '2020-2022' },
+            { name: 'FC Barcelone', years: '2022-' }
+        ]
+    },
+    {
+        id: 'f-117', name: 'Achraf Hakimi', birthDate: '1998-11-04', sport: 'football', category: 'active',
+        clubs: [
+            { name: 'Real Madrid', years: '2017-2020' },
+            { name: 'Borussia Dortmund', years: '2018-2020' },
+            { name: 'Inter Milan', years: '2020-2021' },
+            { name: 'Paris Saint-Germain', years: '2021-' }
+        ]
+    },
+    {
+        id: 'f-118', name: 'Cole Palmer', birthDate: '2002-05-06', sport: 'football', category: 'active',
+        clubs: [
+            { name: 'Manchester City', years: '2020-2023' },
+            { name: 'Chelsea FC', years: '2023-' }
+        ]
+    },
+    {
+        id: 'f-119', name: 'Gianluigi Donnarumma', birthDate: '1999-02-25', sport: 'football', category: 'active',
+        clubs: [
+            { name: 'AC Milan', years: '2015-2021' },
+            { name: 'Paris Saint-Germain', years: '2021-' }
+        ]
+    },
+    {
+        id: 'f-120', name: 'Nuno Mendes', birthDate: '2002-06-19', sport: 'football', category: 'active',
+        clubs: [
+            { name: 'Sporting CP', years: '2020-2022' },
+            { name: 'Paris Saint-Germain', years: '2021-' }
+        ]
+    },
+    {
+        id: 'f-121', name: 'Pedri', birthDate: '2002-11-25', sport: 'football', category: 'active',
+        clubs: [
+            { name: 'Las Palmas', years: '2019-2020' },
+            { name: 'FC Barcelone', years: '2020-' }
+        ]
+    },
+    {
+        id: 'f-122', name: 'Khvicha Kvaratskhelia', birthDate: '2001-02-12', sport: 'football', category: 'active',
+        clubs: [
+            { name: 'Dinamo Tbilissi', years: '2017-2018' },
+            { name: 'FC Roustavi', years: '2018-2019' },
+            { name: 'Lokomotiv Moscou', years: '2019' },
+            { name: 'Rubin Kazan', years: '2019-2022' },
+            { name: 'Dinamo Batoumi', years: '2022' },
+            { name: 'SSC Naples', years: '2022-2025' },
+            { name: 'Paris Saint-Germain', years: '2025-' }
+        ]
+    },
+    {
+        id: 'f-123', name: 'Harry Kane', birthDate: '1993-07-28', sport: 'football', category: 'active',
+        clubs: [
+            { name: 'Tottenham Hotspur', years: '2011-2023' },
+            { name: 'Leyton Orient', years: '2011' },
+            { name: 'Millwall FC', years: '2012' },
+            { name: 'Norwich City', years: '2012-2013' },
+            { name: 'Leicester City', years: '2013' },
+            { name: 'Bayern Munich', years: '2023-' }
+        ]
+    },
+    {
+        id: 'f-124', name: 'Désiré Doué', birthDate: '2005-06-03', sport: 'football', category: 'active',
+        clubs: [
+            { name: 'Stade Rennais', years: '2022-2024' },
+            { name: 'Paris Saint-Germain', years: '2024-' }
+        ]
+    },
+    {
+        id: 'f-125', name: 'Viktor Gyökeres', birthDate: '1998-06-04', sport: 'football', category: 'active',
+        clubs: [
+            { name: 'IF Brommapojkarna', years: '2015-2017' },
+            { name: 'Brighton & Hove Albion', years: '2018-2021' },
+            { name: 'FC Sankt Pauli', years: '2019-2020' },
+            { name: 'Swansea City', years: '2020-2021' },
+            { name: 'Coventry City', years: '2021-2023' },
+            { name: 'Sporting CP', years: '2023-2025' },
+            { name: 'Arsenal FC', years: '2025-' }
+        ]
+    },
+    {
+        id: 'f-126', name: 'Vinícius Júnior', birthDate: '2000-07-12', sport: 'football', category: 'active',
+        clubs: [
+            { name: 'CR Flamengo', years: '2017-2018' },
+            { name: 'Real Madrid', years: '2018-' }
+        ]
+    },
+    {
+        id: 'f-127', name: 'Robert Lewandowski', birthDate: '1988-08-21', sport: 'football', category: 'active',
+        clubs: [
+            { name: 'Znicz Pruszków', years: '2006-2008' },
+            { name: 'Lech Poznań', years: '2008-2010' },
+            { name: 'Borussia Dortmund', years: '2010-2014' },
+            { name: 'Bayern Munich', years: '2014-2022' },
+            { name: 'FC Barcelone', years: '2022-' }
+        ]
+    },
+    {
+        id: 'f-128', name: 'Scott McTominay', birthDate: '1996-12-08', sport: 'football', category: 'active',
+        clubs: [
+            { name: 'Manchester United', years: '2017-2024' },
+            { name: 'SSC Naples', years: '2024-' }
+        ]
+    },
+    {
+        id: 'f-129', name: 'João Neves', birthDate: '2004-09-27', sport: 'football', category: 'active',
+        clubs: [
+            { name: 'Benfica Lisbonne', years: '2022-2024' },
+            { name: 'Paris Saint-Germain', years: '2024-' }
+        ]
+    },
+    {
+        id: 'f-130', name: 'Lautaro Martínez', birthDate: '1997-08-22', sport: 'football', category: 'active',
+        clubs: [
+            { name: 'Racing Club', years: '2015-2018' },
+            { name: 'Inter Milan', years: '2018-' }
+        ]
+    },
+    {
+        id: 'f-131', name: 'Serhou Guirassy', birthDate: '1996-03-12', sport: 'football', category: 'active',
+        clubs: [
+            { name: 'Stade Lavallois', years: '2013-2015' },
+            { name: 'Lille OSC', years: '2015-2016' },
+            { name: 'AJ Auxerre', years: '2016' },
+            { name: 'FC Cologne', years: '2016-2019' },
+            { name: 'Amiens SC', years: '2019-2020' },
+            { name: 'Stade Rennais', years: '2020-2023' },
+            { name: 'VfB Stuttgart', years: '2022-2024' },
+            { name: 'Borussia Dortmund', years: '2024-' }
+        ]
+    },
+    {
+        id: 'f-132', name: 'Alexis Mac Allister', birthDate: '1998-12-24', sport: 'football', category: 'active',
+        clubs: [
+            { name: 'Argentinos Juniors', years: '2016-2019' },
+            { name: 'Brighton & Hove Albion', years: '2019-2023' },
+            { name: 'Argentinos Juniors', years: '2019' },
+            { name: 'Boca Juniors', years: '2019-2020' },
+            { name: 'Liverpool FC', years: '2023-' }
+        ]
+    },
+    {
+        id: 'f-133', name: 'Jude Bellingham', birthDate: '2003-06-29', sport: 'football', category: 'active',
+        clubs: [
+            { name: 'Birmingham City', years: '2019-2020' },
+            { name: 'Borussia Dortmund', years: '2020-2023' },
+            { name: 'Real Madrid', years: '2023-' }
+        ]
+    },
+    {
+        id: 'f-134', name: 'Fabián Ruiz', birthDate: '1996-04-03', sport: 'football', category: 'active',
+        clubs: [
+            { name: 'Real Betis', years: '2014-2018' },
+            { name: 'Elche CF', years: '2017' },
+            { name: 'SSC Naples', years: '2018-2022' },
+            { name: 'Paris Saint-Germain', years: '2022-' }
+        ]
+    },
+    {
+        id: 'f-135', name: 'Denzel Dumfries', birthDate: '1996-04-18', sport: 'football', category: 'active',
+        clubs: [
+            { name: 'Sparta Rotterdam', years: '2014-2017' },
+            { name: 'SC Heerenveen', years: '2017-2018' },
+            { name: 'PSV Eindhoven', years: '2018-2021' },
+            { name: 'Inter Milan', years: '2021-' }
+        ]
+    },
+    {
+        id: 'f-136', name: 'Erling Haaland', birthDate: '2000-07-21', sport: 'football', category: 'active',
+        clubs: [
+            { name: 'Bryne FK', years: '2016' },
+            { name: 'Molde FK', years: '2017-2018' },
+            { name: 'RB Salzbourg', years: '2019-2020' },
+            { name: 'Borussia Dortmund', years: '2020-2022' },
+            { name: 'Manchester City', years: '2022-' }
+        ]
+    },
+    {
+        id: 'f-137', name: 'Declan Rice', birthDate: '1999-01-14', sport: 'football', category: 'active',
+        clubs: [
+            { name: 'West Ham United', years: '2017-2023' },
+            { name: 'Arsenal FC', years: '2023-' }
+        ]
+    },
+    {
+        id: 'f-138', name: 'Virgil van Dijk', birthDate: '1991-07-08', sport: 'football', category: 'active',
+        clubs: [
+            { name: 'FC Groningue', years: '2011-2013' },
+            { name: 'Celtic FC', years: '2013-2015' },
+            { name: 'Southampton FC', years: '2015-2018' },
+            { name: 'Liverpool FC', years: '2018-' }
+        ]
+    },
+    {
+        id: 'f-139', name: 'Florian Wirtz', birthDate: '2003-05-03', sport: 'football', category: 'active',
+        clubs: [
+            { name: 'Bayer Leverkusen', years: '2020-2025' },
+            { name: 'Liverpool FC', years: '2025-' }
+        ]
+    },
+    {
+        id: 'f-140', name: 'Michael Olise', birthDate: '2001-12-12', sport: 'football', category: 'active',
+        clubs: [
+            { name: 'Reading FC', years: '2019-2021' },
+            { name: 'Crystal Palace', years: '2021-2024' },
+            { name: 'Bayern Munich', years: '2024-' }
+        ]
+    },
+    {
+        id: 'f-141', name: 'Phil Foden', birthDate: '2000-05-28', sport: 'football', category: 'active',
+        clubs: [
+            { name: 'Manchester City', years: '2017-' }
+        ]
+    },
+    {
+        id: 'f-142', name: 'Dani Olmo', birthDate: '1998-05-07', sport: 'football', category: 'active',
+        clubs: [
+            { name: 'Dinamo Zagreb', years: '2014-2020' },
+            { name: 'RB Leipzig', years: '2020-2024' },
+            { name: 'FC Barcelone', years: '2024-' }
+        ]
+    },
+    {
+        id: 'f-143', name: 'Nico Williams', birthDate: '2002-07-12', sport: 'football', category: 'active',
+        clubs: [
+            { name: 'Athletic Bilbao', years: '2021-' }
+        ]
+    },
+    {
+        id: 'f-144', name: 'Granit Xhaka', birthDate: '1992-09-27', sport: 'football', category: 'active',
+        clubs: [
+            { name: 'FC Bâle', years: '2010-2012' },
+            { name: 'Borussia Mönchengladbach', years: '2012-2016' },
+            { name: 'Arsenal FC', years: '2016-2023' },
+            { name: 'Bayer Leverkusen', years: '2023-2025' },
+            { name: 'Sunderland AFC', years: '2025-' }
+        ]
+    },
+    {
+        id: 'f-145', name: 'Martin Ødegaard', birthDate: '1998-12-17', sport: 'football', category: 'active',
+        clubs: [
+            { name: 'Strømsgodset IF', years: '2014' },
+            { name: 'Real Madrid', years: '2015-2021' },
+            { name: 'SC Heerenveen', years: '2017-2018' },
+            { name: 'Vitesse Arnhem', years: '2018-2019' },
+            { name: 'Real Sociedad', years: '2019-2020' },
+            { name: 'Arsenal FC', years: '2021-' }
+        ]
+    },
+    {
+        id: 'f-146', name: 'Hakan Çalhanoğlu', birthDate: '1994-02-08', sport: 'football', category: 'active',
+        clubs: [
+            { name: 'Karlsruher SC', years: '2011-2013' },
+            { name: 'Hambourg SV', years: '2013-2014' },
+            { name: 'Bayer Leverkusen', years: '2014-2017' },
+            { name: 'AC Milan', years: '2017-2021' },
+            { name: 'Inter Milan', years: '2021-' }
+        ]
+    },
+    {
+        id: 'f-147', name: 'Bukayo Saka', birthDate: '2001-09-05', sport: 'football', category: 'active',
+        clubs: [
+            { name: 'Arsenal FC', years: '2018-' }
+        ]
+    },
+    {
+        id: 'f-148', name: 'William Saliba', birthDate: '2001-03-24', sport: 'football', category: 'active',
+        clubs: [
+            { name: 'AS Saint-Étienne', years: '2018-2019' },
+            { name: 'Arsenal FC', years: '2019-' },
+            { name: 'AS Saint-Étienne', years: '2019-2020' },
+            { name: 'OGC Nice', years: '2021' },
+            { name: 'Olympique de Marseille', years: '2021-2022' },
+            { name: 'Arsenal FC', years: '2022-' }
+        ]
+    },
+    {
+        id: 'f-149', name: 'Mats Hummels', birthDate: '1988-12-16', sport: 'football', category: 'active',
+        clubs: [
+            { name: 'Bayern Munich', years: '2007-2009' },
+            { name: 'Borussia Dortmund', years: '2008-2016' },
+            { name: 'Bayern Munich', years: '2016-2019' },
+            { name: 'Borussia Dortmund', years: '2019-2024' },
+            { name: 'AS Rome', years: '2024-' }
+        ]
+    },
+    {
+        id: 'f-150', name: 'Kevin De Bruyne', birthDate: '1991-06-28', sport: 'football', category: 'active',
+        clubs: [
+            { name: 'KRC Genk', years: '2008-2012' },
+            { name: 'Chelsea FC', years: '2012-2014' },
+            { name: 'Werder Brême', years: '2012-2013' },
+            { name: 'VfL Wolfsburg', years: '2014-2015' },
+            { name: 'Manchester City', years: '2015-' }
+        ]
+    },
+    {
+        id: 'f-151', name: 'Julián Álvarez', birthDate: '2000-01-31', sport: 'football', category: 'active',
+        clubs: [
+            { name: 'River Plate', years: '2018-2022' },
+            { name: 'Manchester City', years: '2022-2024' },
+            { name: 'Atlético de Madrid', years: '2024-' }
+        ]
+    },
+    {
+        id: 'f-152', name: 'Victor Osimhen', birthDate: '1998-12-29', sport: 'football', category: 'active',
+        clubs: [
+            { name: 'VfL Wolfsburg', years: '2017-2019' },
+            { name: 'Charleroi SC', years: '2018-2019' },
+            { name: 'Lille OSC', years: '2019-2020' },
+            { name: 'SSC Naples', years: '2020-' },
+            { name: 'Galatasaray SK', years: '2024-' }
+        ]
+    },
+    {
+        id: 'f-153', name: 'Bernardo Silva', birthDate: '1994-08-10', sport: 'football', category: 'active',
+        clubs: [
+            { name: 'Benfica Lisbonne', years: '2013-2015' },
+            { name: 'AS Monaco', years: '2014-2017' },
+            { name: 'Manchester City', years: '2017-' }
+        ]
+    },
+    {
+        id: 'f-154', name: 'İlkay Gündoğan', birthDate: '1990-10-24', sport: 'football', category: 'active',
+        clubs: [
+            { name: 'FC Nuremberg', years: '2009-2011' },
+            { name: 'Borussia Dortmund', years: '2011-2016' },
+            { name: 'Manchester City', years: '2016-2023' },
+            { name: 'FC Barcelone', years: '2023-2024' },
+            { name: 'Manchester City', years: '2024-25' },
+            { name: 'Galatasaray SK', years: '2025-' }
+        ]
+    },
+    {
+        id: 'f-155', name: 'Sadio Mané', birthDate: '1992-04-10', sport: 'football', category: 'active',
+        clubs: [
+            { name: 'FC Metz', years: '2011-2012' },
+            { name: 'Red Bull Salzbourg', years: '2012-2014' },
+            { name: 'Southampton FC', years: '2014-2016' },
+            { name: 'Liverpool FC', years: '2016-2022' },
+            { name: 'Bayern Munich', years: '2022-2023' },
+            { name: 'Al-Nassr FC', years: '2023-' }
+        ]
+    },
+    {
+        id: 'f-156', name: 'Thibaut Courtois', birthDate: '1992-05-11', sport: 'football', category: 'active',
+        clubs: [
+            { name: 'KRC Genk', years: '2009-2011' },
+            { name: 'Atlético de Madrid', years: '2011-2014' }, // Prêt de Chelsea
+            { name: 'Chelsea FC', years: '2014-2018' },
+            { name: 'Real Madrid', years: '2018-' }
+        ]
+    },
+    {
+        id: 'f-157', name: 'Riyad Mahrez', birthDate: '1991-02-21', sport: 'football', category: 'active',
+        clubs: [
+            { name: 'Quimper Kerfeunteun FC', years: '2009-2010' },
+            { name: 'Le Havre AC', years: '2010-2014' },
+            { name: 'Leicester City', years: '2014-2018' },
+            { name: 'Manchester City', years: '2018-2023' },
+            { name: 'Al-Ahli FC', years: '2023-' }
+        ]
+    },
+    {
+        id: 'f-158', name: 'Fabinho', birthDate: '1993-10-23', sport: 'football', category: 'active',
+        clubs: [
+            { name: 'Rio Ave FC', years: '2012-2015' },
+            { name: 'Real Madrid', years: '2012-2013' },
+            { name: 'AS Monaco', years: '2013-2018' },
+            { name: 'Liverpool FC', years: '2018-2023' },
+            { name: 'Al-Ittihad Club', years: '2023-' }
+        ]
+    },
+    {
+        id: 'f-159', name: 'Trent Alexander-Arnold', birthDate: '1998-10-07', sport: 'football', category: 'active',
+        clubs: [
+            { name: 'Liverpool FC', years: '2016-2025' },
+            { name: 'Real Madrid', years: '2025-' }
+        ]
+    },
+    {
+        id: 'f-160', name: 'Joshua Kimmich', birthDate: '1995-02-08', sport: 'football', category: 'active',
+        clubs: [
+            { name: 'RB Leipzig', years: '2013-2015' },
+            { name: 'Bayern Munich', years: '2015-' }
+        ]
+    },
+    {
+        id: 'f-161', name: 'Hidetoshi Nakata', birthDate: '1977-01-22', sport: 'football', category: 'historical',
+        clubs: [
+            { name: 'Bellmare Hiratsuka', years: '1995-1998' },
+            { name: 'AC Pérouse', years: '1998-2000' },
+            { name: 'AS Rome', years: '2000-2001' },
+            { name: 'Parme AC', years: '2001-2004' },
+            { name: 'Bologne FC', years: '2004' },
+            { name: 'ACF Fiorentina', years: '2004-2006' },
+            { name: 'Bolton Wanderers', years: '2005-2006' }
+        ]
+    },
+    {
+        id: 'f-162', name: 'Samir Nasri', birthDate: '1987-06-26', sport: 'football', category: 'historical',
+        clubs: [
+            { name: 'Olympique de Marseille', years: '2004-2008' },
+            { name: 'Arsenal FC', years: '2008-2011' },
+            { name: 'Manchester City', years: '2011-2017' },
+            { name: 'Séville FC', years: '2016-2017' },
+            { name: 'Antalyaspor', years: '2017-2018' },
+            { name: 'West Ham United', years: '2018-2019' },
+            { name: 'RSC Anderlecht', years: '2019-2020' }
+        ]
+    },
+    {
+        id: 'f-163', name: 'David Trezeguet', birthDate: '1977-10-15', sport: 'football', category: 'historical',
+        clubs: [
+            { name: 'CA Platense', years: '1994-1995' },
+            { name: 'AS Monaco', years: '1995-2000' },
+            { name: 'Juventus FC', years: '2000-2010' },
+            { name: 'Hércules Alicante', years: '2010-2011' },
+            { name: 'Baniyas SC', years: '2011' },
+            { name: 'CA River Plate', years: '2012-2014' },
+            { name: 'Newell\'s Old Boys', years: '2013-2014' },
+            { name: 'FC Pune City', years: '2014' }
+        ]
+    },
+    {
+        id: 'f-164', name: 'Sylvain Wiltord', birthDate: '1974-05-10', sport: 'football', category: 'historical',
+        clubs: [
+            { name: 'Stade Rennais', years: '1993-1997' },
+            { name: 'Girondins de Bordeaux', years: '1997-2000' },
+            { name: 'Arsenal FC', years: '2000-2004' },
+            { name: 'Olympique Lyonnais', years: '2004-2007' },
+            { name: 'Stade Rennais', years: '2007-2009' },
+            { name: 'Olympique de Marseille', years: '2009' },
+            { name: 'FC Metz', years: '2010' },
+            { name: 'FC Nantes', years: '2011-2012' }
+        ]
+    },
+    {
+        id: 'f-165', name: 'Éric Cantona', birthDate: '1966-05-24', sport: 'football', category: 'historical',
+        clubs: [
+            { name: 'AJ Auxerre', years: '1983-1988' },
+            { name: 'FC Martigues', years: '1985-1986' },
+            { name: 'Olympique de Marseille', years: '1988-1989' },
+            { name: 'Girondins de Bordeaux', years: '1989' },
+            { name: 'Montpellier HSC', years: '1989-1990' },
+            { name: 'Olympique de Marseille', years: '1990-1991' },
+            { name: 'Nîmes Olympique', years: '1991-1992' },
+            { name: 'Leeds United', years: '1992' },
+            { name: 'Manchester United', years: '1992-1997' }
+        ]
+    },
+    {
+        id: 'f-166', name: 'Romelu Lukaku', birthDate: '1993-05-13', sport: 'football', category: 'active',
+        clubs: [
+            { name: 'RSC Anderlecht', years: '2009-2011' },
+            { name: 'Chelsea FC', years: '2011-2014' },
+            { name: 'West Bromwich Albion', years: '2012-2013' },
+            { name: 'Everton FC', years: '2013-2017' },
+            { name: 'Manchester United', years: '2017-2019' },
+            { name: 'Inter Milan', years: '2019-2021' },
+            { name: 'Chelsea FC', years: '2021-2024' },
+            { name: 'Inter Milan', years: '2022-2023' },
+            { name: 'AS Rome', years: '2023-2024' },
+            { name: 'SSC Naples', years: '2024-' }
+        ]
+    },
+    {
+        id: 'f-167', name: 'Neymar Jr', birthDate: '1992-02-05', sport: 'football', category: 'active',
+        clubs: [
+            { name: 'Santos FC', years: '2009-2013' },
+            { name: 'FC Barcelone', years: '2013-2017' },
+            { name: 'Paris Saint-Germain', years: '2017-2023' },
+            { name: 'Al-Hilal FC', years: '2023-2025' },
+            { name: 'Santos FC', years: '2025-' }
+        ]
+    },
+    {
+        id: 'f-168', name: 'Edin Džeko', birthDate: '1986-03-17', sport: 'football', category: 'active',
+        clubs: [
+            { name: 'FK Željezničar Sarajevo', years: '2003-2005' },
+            { name: 'FK Teplice', years: '2005-2007' },
+            { name: 'Ústí nad Labem', years: '2005' },
+            { name: 'VfL Wolfsburg', years: '2007-2011' },
+            { name: 'Manchester City', years: '2011-2016' },
+            { name: 'AS Rome', years: '2015-2021' },
+            { name: 'Inter Milan', years: '2021-2023' },
+            { name: 'Fenerbahçe SK', years: '2023-2025' },
+            { name: 'ACF Fiorentina', years: '2025-2026' },
+            { name: 'FC Schalke 04', years: '2026-' }
+        ]
+    },
+    {
+        id: 'f-169', name: 'Miroslav Klose', birthDate: '1978-06-09', sport: 'football', category: 'historical',
+        clubs: [
+            { name: 'FC 08 Homburg', years: '1998-1999' },
+            { name: 'FC Kaiserslautern', years: '1999-2004' },
+            { name: 'Werder Brême', years: '2004-2007' },
+            { name: 'Bayern Munich', years: '2007-2011' },
+            { name: 'Lazio Rome', years: '2011-2016' }
+        ]
+    },
+    {
+        id: 'f-170', name: 'Luis Suárez', birthDate: '1987-01-24', sport: 'football', category: 'active',
+        clubs: [
+            { name: 'Nacional', years: '2005-2006' },
+            { name: 'FC Groningue', years: '2006-2007' },
+            { name: 'Ajax Amsterdam', years: '2007-2011' },
+            { name: 'Liverpool FC', years: '2011-2014' },
+            { name: 'FC Barcelone', years: '2014-2020' },
+            { name: 'Atlético de Madrid', years: '2020-2022' },
+            { name: 'Nacional', years: '2022' },
+            { name: 'Grêmio Porto Alegre', years: '2023' },
+            { name: 'Inter Miami', years: '2024-' }
+        ]
+    },
+    {
+        id: 'f-171', name: 'Zlatan Ibrahimović', birthDate: '1981-10-03', sport: 'football', category: 'historical',
+        clubs: [
+            { name: 'Malmö FF', years: '1999-2001' },
+            { name: 'Ajax Amsterdam', years: '2001-2004' },
+            { name: 'Juventus FC', years: '2004-2006' },
+            { name: 'Inter Milan', years: '2006-2009' },
+            { name: 'FC Barcelone', years: '2009-2010' },
+            { name: 'AC Milan', years: '2010-2012' },
+            { name: 'Paris Saint-Germain', years: '2012-2016' },
+            { name: 'Manchester United', years: '2016-2018' },
+            { name: 'LA Galaxy', years: '2018-2019' },
+            { name: 'AC Milan', years: '2020-2023' }
+        ]
+    },
+    {
+        id: 'f-172', name: 'Edinson Cavani', birthDate: '1987-02-14', sport: 'football', category: 'active',
+        clubs: [
+            { name: 'Danubio FC', years: '2005-2007' },
+            { name: 'Palerme FC', years: '2007-2010' },
+            { name: 'SSC Naples', years: '2010-2013' },
+            { name: 'Paris Saint-Germain', years: '2013-2020' },
+            { name: 'Manchester United', years: '2020-2022' },
+            { name: 'Valence CF', years: '2022-2023' },
+            { name: 'Boca Juniors', years: '2023-' }
+        ]
+    },
+    {
+        id: 'f-173', name: 'Olivier Giroud', birthDate: '1986-09-30', sport: 'football', category: 'active',
+        clubs: [
+            { name: 'Grenoble Foot 38', years: '2005-2008' },
+            { name: 'Istres FC', years: '2007-2008' },
+            { name: 'Tours FC', years: '2008-2010' },
+            { name: 'Montpellier HSC', years: '2010-2012' },
+            { name: 'Arsenal FC', years: '2012-2018' },
+            { name: 'Chelsea FC', years: '2018-2021' },
+            { name: 'AC Milan', years: '2021-2024' },
+            { name: 'Los Angeles FC', years: '2024-2025' },
+            { name: 'Lille OSC', years: '2025-' }
+        ]
+    },
+    {
+        id: 'f-174', name: 'Gabriel Batistuta', birthDate: '1969-02-01', sport: 'football', category: 'historical',
+        clubs: [
+            { name: 'Newell\'s Old Boys', years: '1988-1989' },
+            { name: 'River Plate', years: '1989-1990' },
+            { name: 'Boca Juniors', years: '1990-1991' },
+            { name: 'ACF Fiorentina', years: '1991-2000' },
+            { name: 'AS Rome', years: '2000-2003' },
+            { name: 'Inter Milan', years: '2003' },
+            { name: 'Al-Arabi SC', years: '2003-2005' }
+        ]
+    },
+    {
+        id: 'f-175', name: 'Dimitar Berbatov', birthDate: '1981-01-30', sport: 'football', category: 'historical',
+        clubs: [
+            { name: 'CSKA Sofia', years: '1998-2001' },
+            { name: 'Bayer Leverkusen', years: '2001-2006' },
+            { name: 'Tottenham Hotspur', years: '2006-2008' },
+            { name: 'Manchester United', years: '2008-2012' },
+            { name: 'Fulham FC', years: '2012-2014' },
+            { name: 'AS Monaco', years: '2014-2015' },
+            { name: 'PAOK Salonique', years: '2015-2016' },
+            { name: 'Kerala Blasters', years: '2017-2018' }
+        ]
+    },
+    {
+        id: 'f-176', name: 'Alexis Sánchez', birthDate: '1988-12-19', sport: 'football', category: 'active',
+        clubs: [
+            { name: 'Cobreloa', years: '2005-2006' },
+            { name: 'Udinese Calcio', years: '2006-2011' },
+            { name: 'Colo-Colo', years: '2006-2007' },
+            { name: 'River Plate', years: '2007-2008' },
+            { name: 'FC Barcelone', years: '2011-2014' },
+            { name: 'Arsenal FC', years: '2014-2018' },
+            { name: 'Manchester United', years: '2018-2020' },
+            { name: 'Inter Milan', years: '2019-2022' },
+            { name: 'Olympique de Marseille', years: '2022-2023' },
+            { name: 'Inter Milan', years: '2023-2024' },
+            { name: 'Udinese Calcio', years: '2024-2025' },
+            { name: 'Séville FC', years: '2025-' }
+        ]
+    },
+    {
+        id: 'f-177', name: 'Radamel Falcao', birthDate: '1986-02-10', sport: 'football', category: 'active',
+        clubs: [
+            { name: 'River Plate', years: '2004-2009' },
+            { name: 'FC Porto', years: '2009-2011' },
+            { name: 'Atlético de Madrid', years: '2011-2013' },
+            { name: 'AS Monaco', years: '2013-2019' },
+            { name: 'Manchester United', years: '2014-2015' },
+            { name: 'Chelsea FC', years: '2015-2016' },
+            { name: 'Galatasaray SK', years: '2019-2021' },
+            { name: 'Rayo Vallecano', years: '2021-2024' },
+            { name: 'Millonarios FC', years: '2024-' }
+        ]
+    },
+    {
+        id: 'f-178', name: 'Davor Šuker', birthDate: '1968-01-01', sport: 'football', category: 'historical',
+        clubs: [
+            { name: 'NK Osijek', years: '1984-1989' },
+            { name: 'Dinamo Zagreb', years: '1989-1991' },
+            { name: 'Séville FC', years: '1991-1996' },
+            { name: 'Real Madrid', years: '1996-1999' },
+            { name: 'Arsenal FC', years: '1999-2000' },
+            { name: 'West Ham United', years: '2000-2001' },
+            { name: 'TSV 1860 Munich', years: '2001-2003' }
+        ]
+    },
+    {
+        id: 'f-179', name: 'Alexander Frei', birthDate: '1979-07-15', sport: 'football', category: 'historical',
+        clubs: [
+            { name: 'FC Bâle', years: '1997-1998' },
+            { name: 'FC Thoune', years: '1998-1999' },
+            { name: 'FC Lucerne', years: '1999-2000' },
+            { name: 'Servette FC', years: '2000-2003' },
+            { name: 'Stade Rennais', years: '2003-2006' },
+            { name: 'Borussia Dortmund', years: '2006-2009' },
+            { name: 'FC Bâle', years: '2009-2013' }
+        ]
+    },
+    {
+        id: 'f-180', name: 'Hakan Şükür', birthDate: '1971-09-01', sport: 'football', category: 'historical',
+        clubs: [
+            { name: 'Sakaryaspor', years: '1987-1990' },
+            { name: 'Bursaspor', years: '1990-1992' },
+            { name: 'Galatasaray SK', years: '1992-1995' },
+            { name: 'Torino FC', years: '1995' },
+            { name: 'Galatasaray SK', years: '1995-2000' },
+            { name: 'Inter Milan', years: '2000-2001' },
+            { name: 'Parme AC', years: '2002' },
+            { name: 'Blackburn Rovers', years: '2002-2003' },
+            { name: 'Galatasaray SK', years: '2003-2008' }
+        ]
     }
 
-];
+
+
+
+
+]
