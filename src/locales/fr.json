@@ -101,6 +101,12 @@
             "name": "Fan de Basket",
             "description": "Répondez à 50 questions de basket"
         },
+        "mvp": {
+            "name": "MVP",
+            "description": "Trouvez 10 vainqueurs du trophée de MVP",
+            "description_locked": "Rassemblez dix élus ayant touché le trophée Michael Jordan, le Graal suprême du basketball individuel.",
+            "description_unlocked": "Le trophée MVP récompense le meilleur joueur de l'année. Vous avez trouvé 10 de ces légendes."
+        },
         "splash_brothers": {
             "name": "Splash Brothers",
             "description": "Trouvez Stephen Curry et Klay Thompson",

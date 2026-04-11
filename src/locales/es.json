@@ -95,6 +95,12 @@
                 "name": "Fan del Baloncesto",
                 "description": "Responde a 50 preguntas de baloncesto"
             },
+            "mvp": {
+                "name": "MVP",
+                "description": "Encuentra 10 ganadores del trofeo MVP",
+                "description_locked": "Reúne a diez elegidos que hayan tocado el trofeo Michael Jordan, el Santo Grial supremo del baloncesto individual.",
+                "description_unlocked": "El trofeo MVP premia al mejor jugador del año. Has encontrado a 10 de estas leyendas."
+            },
             "splash_brothers": {
                 "name": "Splash Brothers",
                 "description": "Encuentra tanto a Stephen Curry como a Klay Thompson",

@@ -101,6 +101,12 @@
             "name": "Basketball Fan",
             "description": "Answer 50 basketball questions"
         },
+        "mvp": {
+            "name": "MVP",
+            "description": "Find 10 MVP trophy winners",
+            "description_locked": "Gather ten chosen ones who have touched the Michael Jordan trophy, the supreme Grail of individual basketball.",
+            "description_unlocked": "The MVP trophy rewards the best player of the year. You have found 10 of these legends."
+        },
         "splash_brothers": {
             "name": "Splash Brothers",
             "description": "Find both Stephen Curry and Klay Thompson",

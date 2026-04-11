@@ -86,12 +86,12 @@ export const TROPHIES: Trophy[] = [
         },
     },
     {
-        id: 'splash_brothers',
-        icon: '💦',
+        id: 'mvp',
+        icon: '🏅',
         category: 'silver',
         sport: 'basketball',
         isPlayerDiscovery: true,
-        check: createPlayerDiscoveryCheck(['b-13', 'b-60']), // Stephen Curry and Klay Thompson
+        check: createPlayerDiscoveryCheck(Array.from({ length: 37 }, (_, i) => `b-${i + 1}`), 10), // MVP
     },
     {
         id: 'eternal_rivals',

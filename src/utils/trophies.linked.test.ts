@@ -174,6 +174,61 @@ describe('Golden Balls Trophy', () => {
     });
 });
 
+describe('MVP Trophy', () => {
+    const mvpTrophy = TROPHIES.find(t => t.id === 'mvp');
+
+    const baseStats: UserStatistics = {
+        gamesPlayed: 0,
+        totalQuestions: 0,
+        correctAnswers: 0,
+        incorrectAnswers: 0,
+        totalScore: 0,
+        foundPlayerIds: [],
+        detailed: {
+            football: {
+                active: { correct: 0, total: 0 },
+                historical: { correct: 0, total: 0 },
+            },
+            basketball: {
+                active: { correct: 0, total: 0 },
+                historical: { correct: 0, total: 0 },
+            },
+        },
+    };
+
+    it('should be defined', () => {
+        expect(mvpTrophy).toBeDefined();
+    });
+
+    it('should not be unlocked if no players are found', () => {
+        const result = mvpTrophy!.check(baseStats);
+        expect(result.unlocked).toBe(false);
+        expect(result.progress).toBe(0);
+        expect(result.goal).toBe(10);
+    });
+
+    it('should show progress if 4 are found', () => {
+        const stats = { ...baseStats, foundPlayerIds: ['b-1', 'b-2', 'b-3', 'b-4'] };
+        const result = mvpTrophy!.check(stats);
+        expect(result.unlocked).toBe(false);
+        expect(result.progress).toBe(4);
+    });
+
+    it('should be unlocked if 10 are found', () => {
+        const stats = { ...baseStats, foundPlayerIds: Array.from({ length: 10 }, (_, i) => `b-${i + 1}`) };
+        const result = mvpTrophy!.check(stats);
+        expect(result.unlocked).toBe(true);
+        expect(result.progress).toBe(10);
+    });
+
+    it('should compute properly even if players from other boundaries or sports are found', () => {
+        const stats = { ...baseStats, foundPlayerIds: ['b-1', 'b-2', 'b-38', 'f-1'] };
+        const result = mvpTrophy!.check(stats);
+        expect(result.unlocked).toBe(false);
+        expect(result.progress).toBe(2);
+    });
+});
+
 describe('Sang et Or Trophy', () => {
     const sangEtOrTrophy = TROPHIES.find(t => t.id === 'sang_et_or');
 
