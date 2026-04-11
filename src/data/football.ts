@@ -2274,10 +2274,347 @@ export const footballPlayers: Player[] = [
             { name: 'Blackburn Rovers', years: '2002-2003' },
             { name: 'Galatasaray SK', years: '2003-2008' }
         ]
+    },
+    {
+        id: 'f-181',
+        name: 'Toni Kroos',
+        birthDate: '1990-01-04',
+        sport: 'football',
+        category: 'historical',
+        clubs: [
+            { name: 'Bayern Munich', years: '2007-2009' },
+            { name: 'Bayer Leverkusen', years: '2009-2010' },
+            { name: 'Bayern Munich', years: '2010-2014' },
+            { name: 'Real Madrid', years: '2014-2024' }
+        ]
+    },
+    {
+        id: 'f-182',
+        name: 'Seydou Keita',
+        birthDate: '1980-01-16',
+        sport: 'football',
+        category: 'historical',
+        clubs: [
+            { name: 'Olympique de Marseille', years: '1999-2000' },
+            { name: 'FC Lorient', years: '2000-2002' },
+            { name: 'RC Lens', years: '2002-2007' },
+            { name: 'Séville FC', years: '2007-2008' },
+            { name: 'FC Barcelone', years: '2008-2012' },
+            { name: 'Dalian Aerbin', years: '2012-2013' },
+            { name: 'Valence CF', years: '2014' },
+            { name: 'AS Rome', years: '2014-2016' },
+            { name: 'El Jaish SC', years: '2016-2017' }
+        ]
+    },
+    {
+        id: 'f-183',
+        name: 'Pelé',
+        birthDate: '1940-10-23',
+        sport: 'football',
+        category: 'historical',
+        clubs: [
+            { name: 'Santos FC', years: '1956-1974' },
+            { name: 'New York Cosmos', years: '1975-1977' }
+        ]
+    },
+    {
+        id: 'f-184',
+        name: 'Garrincha',
+        birthDate: '1933-10-28',
+        sport: 'football',
+        category: 'historical',
+        clubs: [
+            { name: 'Botafogo FR', years: '1953-1965' },
+            { name: 'SC Corinthians', years: '1966' },
+            { name: 'Atlético Junior', years: '1968' },
+            { name: 'CR Flamengo', years: '1968-1969' },
+            { name: 'Olaria AC', years: '1972' }
+        ]
+    },
+    {
+        id: 'f-185',
+        name: 'Zico',
+        birthDate: '1953-03-03',
+        sport: 'football',
+        category: 'historical',
+        clubs: [
+            { name: 'CR Flamengo', years: '1971-1983' },
+            { name: 'Udinese Calcio', years: '1983-1985' },
+            { name: 'CR Flamengo', years: '1985-1989' },
+            { name: 'Kashima Antlers', years: '1991-1994' }
+        ]
+    },
+    {
+        id: 'f-186',
+        name: 'Pablo Aimar',
+        birthDate: '1979-11-03',
+        sport: 'football',
+        category: 'historical',
+        clubs: [
+            { name: 'River Plate', years: '1996-2001' },
+            { name: 'Valence CF', years: '2001-2006' },
+            { name: 'Real Saragosse', years: '2006-2008' },
+            { name: 'Benfica Lisbonne', years: '2008-2013' },
+            { name: 'Johor Darul Ta\'zim', years: '2013-2014' },
+            { name: 'River Plate', years: '2015' },
+            { name: 'Estudiantes de Río Cuarto', years: '2018' }
+        ]
+    },
+    {
+        id: 'f-187',
+        name: 'Javier Saviola',
+        birthDate: '1981-12-11',
+        sport: 'football',
+        category: 'historical',
+        clubs: [
+            { name: 'River Plate', years: '1998-2001' },
+            { name: 'FC Barcelone', years: '2001-2004' },
+            { name: 'AS Monaco', years: '2004-2005' },
+            { name: 'Séville FC', years: '2005-2006' },
+            { name: 'FC Barcelone', years: '2006-2007' },
+            { name: 'Real Madrid', years: '2007-2009' },
+            { name: 'Benfica Lisbonne', years: '2009-2012' },
+            { name: 'Málaga CF', years: '2012-2013' },
+            { name: 'Olympiakos', years: '2013-2014' },
+            { name: 'Hellas Vérone', years: '2014-2015' },
+            { name: 'River Plate', years: '2015-2016' }
+        ]
+    },
+    {
+        id: 'f-188',
+        name: 'Romário',
+        birthDate: '1966-01-29',
+        sport: 'football',
+        category: 'historical',
+        clubs: [
+            { name: 'Vasco da Gama', years: '1985-1988' },
+            { name: 'PSV Eindhoven', years: '1988-1993' },
+            { name: 'FC Barcelone', years: '1993-1995' },
+            { name: 'Flamengo', years: '1995-1996' },
+            { name: 'Valence CF', years: '1996-1997' },
+            { name: 'Flamengo', years: '1997-1999' },
+            { name: 'Vasco da Gama', years: '1999-2002' },
+            { name: 'Fluminense', years: '2002-2004' },
+            { name: 'Al-Sadd', years: '2003' },
+            { name: 'Vasco da Gama', years: '2005-2006' },
+            { name: 'Miami FC', years: '2006-2007' },
+            { name: 'Adelaide United', years: '2006' },
+            { name: 'Vasco da Gama', years: '2007' },
+            { name: 'Fluminense', years: '2007-2008' },
+            { name: 'América-RJ', years: '2009' },
+            { name: 'América-RJ', years: '2024' },
+        ]
+    },
+    {
+        id: 'f-189',
+        name: 'Bebeto',
+        birthDate: '1962-02-16',
+        sport: 'football',
+        category: 'historical',
+        clubs: [
+            { name: 'Vitória SC', years: '1982' },
+            { name: 'CR Flamengo', years: '1983-1989' },
+            { name: 'CR Vasco da Gama', years: '1989-1992' },
+            { name: 'Deportivo La Corogne', years: '1992-1996' },
+            { name: 'CR Flamengo', years: '1996' },
+            { name: 'Séville FC', years: '1997' },
+            { name: 'Vitória SC', years: '1997' },
+            { name: 'Cruzeiro EC', years: '1997' },
+            { name: 'Botafogo FR', years: '1998-1999' },
+            { name: 'Toros Neza', years: '1999' },
+            { name: 'Kashima Antlers', years: '2000' },
+            { name: 'Vitória SC', years: '2000' },
+            { name: 'CR Vasco da Gama', years: '2001' },
+            { name: 'Al-Ittihad', years: '2002' }
+        ]
+    },
+    {
+        id: 'f-190',
+        name: 'Adriano',
+        birthDate: '1982-02-17',
+        sport: 'football',
+        category: 'active',
+        clubs: [
+            { name: 'Flamengo', years: '2000-2001' },
+            { name: 'Inter Milan', years: '2001-2002' },
+            { name: 'Fiorentina', years: '2002' },
+            { name: 'Parme AC', years: '2002-2004' },
+            { name: 'Inter Milan', years: '2004-2009' },
+            { name: 'São Paulo FC', years: '2008-2009' },
+            { name: 'Flamengo', years: '2009-2010' },
+            { name: 'AS Rome', years: '2010-2011' },
+            { name: 'Corinthians', years: '2011-2012' },
+            { name: 'Flamengo', years: '2012-2014' },
+            { name: 'Atlético Paranaense', years: '2014' },
+            { name: 'Miami United FC', years: '2016' }
+        ]
+    },
+    {
+        id: 'f-191',
+        name: 'Thomas Müller',
+        birthDate: '1989-09-13',
+        sport: 'football',
+        category: 'active',
+        clubs: [
+            { name: 'Bayern Munich', years: '2008-2025' },
+            { name: 'Vancouver Whitecaps', years: '2025-' }
+        ]
+    },
+    {
+        id: 'f-192',
+        name: 'Franck Ribéry',
+        birthDate: '1983-04-07',
+        sport: 'football',
+        category: 'historical',
+        clubs: [
+            { name: 'US Boulogne', years: '2000-2002' },
+            { name: 'Olympique d\'Alès', years: '2002-2003' },
+            { name: 'Stade Brestois', years: '2003-2004' },
+            { name: 'FC Metz', years: '2004-2005' },
+            { name: 'Galatasaray SK', years: '2005' },
+            { name: 'Olympique de Marseille', years: '2005-2007' },
+            { name: 'Bayern Munich', years: '2007-2019' },
+            { name: 'ACF Fiorentina', years: '2019-2021' },
+            { name: 'US Salernitana', years: '2021-2022' }
+        ]
+    },
+    {
+        id: 'f-193',
+        name: 'Arjen Robben',
+        birthDate: '1984-01-23',
+        sport: 'football',
+        category: 'historical',
+        clubs: [
+            { name: 'FC Groningue', years: '2000-2002' },
+            { name: 'PSV Eindhoven', years: '2002-2004' },
+            { name: 'Chelsea FC', years: '2004-2007' },
+            { name: 'Real Madrid', years: '2007-2009' },
+            { name: 'Bayern Munich', years: '2009-2019' },
+            { name: 'FC Groningue', years: '2020-2021' }
+        ]
+    },
+    {
+        id: 'f-194',
+        name: 'Diego Godín',
+        birthDate: '1986-02-16',
+        sport: 'football',
+        category: 'historical',
+        clubs: [
+            { name: 'CA Cerro', years: '2003-2006' },
+            { name: 'Club Nacional', years: '2006-2007' },
+            { name: 'Villarreal CF', years: '2007-2010' },
+            { name: 'Atlético de Madrid', years: '2010-2019' },
+            { name: 'Inter Milan', years: '2019-2020' },
+            { name: 'Cagliari Calcio', years: '2020-2022' },
+            { name: 'Atlético Mineiro', years: '2022' },
+            { name: 'Vélez Sarsfield', years: '2022-2023' },
+            { name: 'Porongos', years: '2024' }
+        ]
+    },
+    {
+        id: 'f-195',
+        name: 'Ángel Di María',
+        birthDate: '1988-02-14',
+        sport: 'football',
+        category: 'active',
+        clubs: [
+            { name: 'Rosario Central', years: '2005-2007' },
+            { name: 'Benfica Lisbonne', years: '2007-2010' },
+            { name: 'Real Madrid', years: '2010-2014' },
+            { name: 'Manchester United', years: '2014-2015' },
+            { name: 'Paris Saint-Germain', years: '2015-2022' },
+            { name: 'Juventus FC', years: '2022-2023' },
+            { name: 'Benfica Lisbonne', years: '2023-2025' },
+            { name: 'Rosario Central', years: '2025-' }
+        ]
+    },
+    {
+        id: 'f-196',
+        name: 'Miralem Pjanić',
+        birthDate: '1990-04-02',
+        sport: 'football',
+        category: 'historical',
+        clubs: [
+            { name: 'FC Metz', years: '2007-2008' },
+            { name: 'Olympique Lyonnais', years: '2008-2011' },
+            { name: 'AS Rome', years: '2011-2016' },
+            { name: 'Juventus FC', years: '2016-2020' },
+            { name: 'FC Barcelone', years: '2020-2022' },
+            { name: 'Beşiktaş JK', years: '2021-2022' },
+            { name: 'Sharjah FC', years: '2022-2024' },
+            { name: 'CSKA Moscou', years: '2024-2025' }
+        ]
+    },
+    {
+        id: 'f-197',
+        name: 'Carlos Tévez',
+        birthDate: '1984-02-05',
+        sport: 'football',
+        category: 'historical',
+        clubs: [
+            { name: 'Boca Juniors', years: '2001-2004' },
+            { name: 'SC Corinthians', years: '2005-2006' },
+            { name: 'West Ham United', years: '2006-2007' },
+            { name: 'Manchester United', years: '2007-2009' },
+            { name: 'Manchester City', years: '2009-2013' },
+            { name: 'Juventus FC', years: '2013-2015' },
+            { name: 'Boca Juniors', years: '2015-2016' },
+            { name: 'Shanghai Shenhua', years: '2017' },
+            { name: 'Boca Juniors', years: '2018-2021' }
+        ]
+    },
+    {
+        id: 'f-198',
+        name: 'Isco',
+        birthDate: '1992-04-21',
+        sport: 'football',
+        category: 'active',
+        clubs: [
+            { name: 'Valence CF', years: '2010-2011' },
+            { name: 'Málaga CF', years: '2011-2013' },
+            { name: 'Real Madrid', years: '2013-2022' },
+            { name: 'Séville FC', years: '2022' },
+            { name: 'Real Betis', years: '2023-' }
+        ]
+    },
+    {
+        id: 'f-199',
+        name: 'Pedro',
+        birthDate: '1987-07-28',
+        sport: 'football',
+        category: 'active',
+        clubs: [
+            { name: 'FC Barcelone', years: '2008-2015' },
+            { name: 'Chelsea FC', years: '2015-2020' },
+            { name: 'AS Rome', years: '2020-2021' },
+            { name: 'SS Lazio', years: '2021-' }
+        ]
+    },
+    {
+        id: 'f-200',
+        name: 'Frank Lampard',
+        birthDate: '1978-06-20',
+        sport: 'football',
+        category: 'historical',
+        clubs: [
+            { name: 'West Ham United', years: '1995-2001' },
+            { name: 'Swansea City', years: '1995-1996' },
+            { name: 'Chelsea FC', years: '2001-2014' },
+            { name: 'Manchester City', years: '2014-2015' },
+            { name: 'New York City FC', years: '2015-2016' }
+        ]
+    },
+    {
+        id: 'f-201',
+        name: 'John Terry',
+        birthDate: '1980-12-07',
+        sport: 'football',
+        category: 'historical',
+        clubs: [
+            { name: 'Chelsea FC', years: '1998-2017' },
+            { name: 'Nottingham Forest', years: '2000' },
+            { name: 'Aston Villa', years: '2017-2018' }
+        ]
     }
-
-
-
-
 
 ]
