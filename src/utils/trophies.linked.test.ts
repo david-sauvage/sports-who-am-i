@@ -229,6 +229,61 @@ describe('MVP Trophy', () => {
     });
 });
 
+describe('DPOY Trophy', () => {
+    const dpoyTrophy = TROPHIES.find(t => t.id === 'dpoy');
+
+    const baseStats: UserStatistics = {
+        gamesPlayed: 0,
+        totalQuestions: 0,
+        correctAnswers: 0,
+        incorrectAnswers: 0,
+        totalScore: 0,
+        foundPlayerIds: [],
+        detailed: {
+            football: {
+                active: { correct: 0, total: 0 },
+                historical: { correct: 0, total: 0 },
+            },
+            basketball: {
+                active: { correct: 0, total: 0 },
+                historical: { correct: 0, total: 0 },
+            },
+        },
+    };
+
+    it('should be defined', () => {
+        expect(dpoyTrophy).toBeDefined();
+    });
+
+    it('should not be unlocked if no players are found', () => {
+        const result = dpoyTrophy!.check(baseStats);
+        expect(result.unlocked).toBe(false);
+        expect(result.progress).toBe(0);
+        expect(result.goal).toBe(10);
+    });
+
+    it('should show progress if 4 DPOY players are found (mixed default and specific IDs)', () => {
+        const stats = { ...baseStats, foundPlayerIds: ['b-38', 'b-39', 'b-16', 'b-24'] }; // 2 from b-38..58, 2 from explicit ones
+        const result = dpoyTrophy!.check(stats);
+        expect(result.unlocked).toBe(false);
+        expect(result.progress).toBe(4);
+    });
+
+    it('should be unlocked if 10 are found', () => {
+        const stats = { ...baseStats, foundPlayerIds: ['b-38', 'b-39', 'b-40', 'b-41', 'b-42', 'b-43', 'b-44', 'b-45', 'b-16', 'b-24'] };
+        const result = dpoyTrophy!.check(stats);
+        expect(result.unlocked).toBe(true);
+        expect(result.progress).toBe(10);
+    });
+
+    it('should compute properly even if players from other categories or sports are found', () => {
+        const stats = { ...baseStats, foundPlayerIds: ['b-38', 'b-24', 'b-1', 'f-1'] };
+        const result = dpoyTrophy!.check(stats);
+        expect(result.unlocked).toBe(false);
+        expect(result.progress).toBe(2);
+    });
+});
+
 describe('Sang et Or Trophy', () => {
     const sangEtOrTrophy = TROPHIES.find(t => t.id === 'sang_et_or');
 

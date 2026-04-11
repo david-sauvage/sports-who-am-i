@@ -101,6 +101,12 @@
                 "description_locked": "Reúne a diez elegidos que hayan tocado el trofeo Michael Jordan, el Santo Grial supremo del baloncesto individual.",
                 "description_unlocked": "El trofeo MVP premia al mejor jugador del año. Has encontrado a 10 de estas leyendas."
             },
+            "dpoy": {
+                "name": "DPOY",
+                "description": "Encuentra 10 ganadores del premio al Defensor del Año",
+                "description_locked": "Reúne a diez muros infranqueables, expertos en robos y maestros del tapón decisivo.",
+                "description_unlocked": "El trofeo Hakeem Olajuwon premia al mejor defensor del año. Has encontrado a 10 de estas leyendas."
+            },
             "splash_brothers": {
                 "name": "Splash Brothers",
                 "description": "Encuentra tanto a Stephen Curry como a Klay Thompson",

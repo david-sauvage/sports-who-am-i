@@ -107,6 +107,12 @@
             "description_locked": "Gather ten chosen ones who have touched the Michael Jordan trophy, the supreme Grail of individual basketball.",
             "description_unlocked": "The MVP trophy rewards the best player of the year. You have found 10 of these legends."
         },
+        "dpoy": {
+            "name": "DPOY",
+            "description": "Find 10 Defensive Player of the Year winners",
+            "description_locked": "Gather ten impassable walls, experts in steals and masters of the clutch block.",
+            "description_unlocked": "The Hakeem Olajuwon trophy rewards the best defensive player of the year. You have found 10 of these legends."
+        },
         "splash_brothers": {
             "name": "Splash Brothers",
             "description": "Find both Stephen Curry and Klay Thompson",

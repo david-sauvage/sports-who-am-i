@@ -94,6 +94,14 @@ export const TROPHIES: Trophy[] = [
         check: createPlayerDiscoveryCheck(Array.from({ length: 37 }, (_, i) => `b-${i + 1}`), 10), // MVP
     },
     {
+        id: 'dpoy',
+        icon: '🛡️',
+        category: 'silver',
+        sport: 'basketball',
+        isPlayerDiscovery: true,
+        check: createPlayerDiscoveryCheck([...Array.from({ length: 21 }, (_, i) => `b-${38 + i}`), 'b-34', 'b-24', 'b-19', 'b-18', 'b-16'], 10), // DPOY
+    },
+    {
         id: 'eternal_rivals',
         icon: '🐐',
         category: 'silver',

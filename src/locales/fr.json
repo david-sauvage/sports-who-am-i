@@ -107,6 +107,12 @@
             "description_locked": "Rassemblez dix élus ayant touché le trophée Michael Jordan, le Graal suprême du basketball individuel.",
             "description_unlocked": "Le trophée MVP récompense le meilleur joueur de l'année. Vous avez trouvé 10 de ces légendes."
         },
+        "dpoy": {
+            "name": "DPOY",
+            "description": "Trouvez 10 vainqueurs du trophée de Défenseur de l'année",
+            "description_locked": "Rassemblez dix murs infranchissables, experts de l'interception et maîtres du contre décisif.",
+            "description_unlocked": "Le trophée Hakeem Olajuwon récompense le meilleur défenseur de l'année. Vous avez trouvé 10 de ces légendes."
+        },
         "splash_brothers": {
             "name": "Splash Brothers",
             "description": "Trouvez Stephen Curry et Klay Thompson",
