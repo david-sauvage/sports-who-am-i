@@ -66,7 +66,7 @@ export const footballPlayers: Player[] = [
             { name: 'Real Madrid', years: '2009-2013' },
             { name: 'AC Milan', years: '2013-2014' },
             { name: 'Orlando City SC', years: '2014-2017' },
-            { name: 'São Paulo FC', years: '2014-2014' }
+            { name: 'São Paulo FC', years: '2014' }
         ]
     },
     {
@@ -96,7 +96,7 @@ export const footballPlayers: Player[] = [
             { name: 'Paris Saint-Germain', years: '2001-2003' },
             { name: 'FC Barcelone', years: '2003-2008' },
             { name: 'AC Milan', years: '2008-2011' },
-            { name: 'CR Flamengo', years: '2011-2012' },
+            { name: 'Flamengo', years: '2011-2012' },
             { name: 'Atlético Mineiro', years: '2012-2014' },
             { name: 'Querétaro FC', years: '2014-2015' },
             { name: 'Fluminense FC', years: '2015-2015' }
@@ -150,7 +150,7 @@ export const footballPlayers: Player[] = [
         clubs: [
             { name: 'Dukla Prague', years: '1991-1992' },
             { name: 'Sparta Prague', years: '1992-1996' },
-            { name: 'Lazio Rome', years: '1996-2001' },
+            { name: 'SS Lazio', years: '1996-2001' },
             { name: 'Juventus FC', years: '2001-2009' }
         ]
     },
@@ -260,9 +260,9 @@ export const footballPlayers: Player[] = [
             { name: 'AS Monaco', years: '1988-1992' },
             { name: 'Paris Saint-Germain', years: '1992-1995' },
             { name: 'AC Milan', years: '1995-2000' },
-            { name: 'Chelsea FC', years: '2000-2000' },
-            { name: 'Manchester City', years: '2000-2000' },
-            { name: 'Olympique de Marseille', years: '1999-2001' },
+            { name: 'Chelsea FC', years: '2000' },
+            { name: 'Manchester City', years: '2000' },
+            { name: 'Olympique de Marseille', years: '2000-2001' },
             { name: 'Al-Jazira Club', years: '2001-2003' }
         ]
     },
@@ -275,7 +275,7 @@ export const footballPlayers: Player[] = [
         clubs: [
             { name: 'CSKA Sofia', years: '1984-1990' },
             { name: 'FC Barcelone', years: '1990-1995' },
-            { name: 'Parme AC', years: '1995-1996' },
+            { name: 'Parma AC', years: '1995-1996' },
             { name: 'FC Barcelone', years: '1996-1998' },
             { name: 'CSKA Sofia', years: '1998-1998' },
             { name: 'Al-Nassr FC', years: '1998-1998' },
@@ -630,7 +630,7 @@ export const footballPlayers: Player[] = [
             { name: 'Deportivo La Corogne', years: '1953-1954' },
             { name: 'FC Barcelone', years: '1954-1961' },
             { name: 'Inter Milan', years: '1961-1970' },
-            { name: 'Sampdoria Gênes', years: '1970-1973' }
+            { name: 'UC Sampdoria', years: '1970-1973' }
         ]
     },
     {
@@ -1037,7 +1037,7 @@ export const footballPlayers: Player[] = [
         category: 'historical',
         clubs: [
             { name: 'Montpellier HSC', years: '1983-1991' },
-            { name: 'SSC Naples', years: '1991-1992' },
+            { name: 'SSC Napoli', years: '1991-1992' },
             { name: 'Nîmes Olympique', years: '1992-1993' },
             { name: 'AS Saint-Étienne', years: '1993-1995' },
             { name: 'AJ Auxerre', years: '1995-1996' },
@@ -1140,7 +1140,7 @@ export const footballPlayers: Player[] = [
         clubs: [
             { name: 'CD Castellón', years: '1991-1992' },
             { name: 'Valence CF', years: '1992-2001' },
-            { name: 'Lazio Rome', years: '2001-2004' },
+            { name: 'SS Lazio', years: '2001-2004' },
             { name: 'FC Barcelone', years: '2002-2003' },
             { name: 'Middlesbrough FC', years: '2003-2008' }
         ]
@@ -1170,7 +1170,7 @@ export const footballPlayers: Player[] = [
             { name: 'Estudiantes de La Plata', years: '1990-1992' },
             { name: 'Racing Club', years: '1992-1996' },
             { name: 'Valence CF', years: '1996-2000' },
-            { name: 'Lazio Rome', years: '2000-2004' },
+            { name: 'SS Lazio', years: '2000-2004' },
             { name: 'Club América', years: '2004-2006' },
             { name: 'Racing Club', years: '2007-2007' },
             { name: 'Kansas City Wizards', years: '2008-2009' },
@@ -1277,7 +1277,7 @@ export const footballPlayers: Player[] = [
             { name: 'Anzhi Makhachkala', years: '2011-2013' },
             { name: 'Chelsea FC', years: '2013-2014' },
             { name: 'Everton FC', years: '2014-2015' },
-            { name: 'Sampdoria Gênes', years: '2015-2015' },
+            { name: 'UC Sampdoria', years: '2015-2015' },
             { name: 'Antalyaspor', years: '2015-2018' },
             { name: 'Konyaspor', years: '2018-2018' },
             { name: 'Qatar SC', years: '2018-2019' }
@@ -1347,7 +1347,7 @@ export const footballPlayers: Player[] = [
             { name: 'Argentinos Juniors', years: '1976-1981' },
             { name: 'Boca Juniors', years: '1981-1982' },
             { name: 'FC Barcelone', years: '1982-1984' },
-            { name: 'SSC Naples', years: '1984-1991' },
+            { name: 'SSC Napoli', years: '1984-1991' },
             { name: 'Séville FC', years: '1992-1993' },
             { name: 'Newell\'s Old Boys', years: '1993-1994' },
             { name: 'Boca Juniors', years: '1995-1997' }
@@ -1490,6 +1490,30 @@ export const footballPlayers: Player[] = [
         clubs: [
             { name: 'Budapest Honvéd', years: '1943-1956' },
             { name: 'Real Madrid', years: '1958-1966' }
+        ]
+    },
+    {
+        id: 'f-104',
+        name: 'John Terry',
+        birthDate: '1980-12-07',
+        sport: 'football',
+        category: 'historical',
+        clubs: [
+            { name: 'Chelsea FC', years: '1998-2017' },
+            { name: 'Nottingham Forest', years: '2000' },
+            { name: 'Aston Villa', years: '2017-2018' }
+        ]
+    },
+    {
+        id: 'f-105',
+        name: 'Philipp Lahm',
+        birthDate: '1983-11-11',
+        sport: 'football',
+        category: 'historical',
+        clubs: [
+            { name: 'Bayern Munich', years: '2002-2003' },
+            { name: 'VfB Stuttgart', years: '2003-2005' },
+            { name: 'Bayern Munich', years: '2005-2017' }
         ]
     },
     {
@@ -1671,7 +1695,7 @@ export const footballPlayers: Player[] = [
             { name: 'Lokomotiv Moscou', years: '2019' },
             { name: 'Rubin Kazan', years: '2019-2022' },
             { name: 'Dinamo Batoumi', years: '2022' },
-            { name: 'SSC Naples', years: '2022-2025' },
+            { name: 'SSC Napoli', years: '2022-2025' },
             { name: 'Paris Saint-Germain', years: '2025-' }
         ]
     },
@@ -1708,7 +1732,7 @@ export const footballPlayers: Player[] = [
     {
         id: 'f-126', name: 'Vinícius Júnior', birthDate: '2000-07-12', sport: 'football', category: 'active',
         clubs: [
-            { name: 'CR Flamengo', years: '2017-2018' },
+            { name: 'Flamengo', years: '2017-2018' },
             { name: 'Real Madrid', years: '2018-' }
         ]
     },
@@ -1726,7 +1750,7 @@ export const footballPlayers: Player[] = [
         id: 'f-128', name: 'Scott McTominay', birthDate: '1996-12-08', sport: 'football', category: 'active',
         clubs: [
             { name: 'Manchester United', years: '2017-2024' },
-            { name: 'SSC Naples', years: '2024-' }
+            { name: 'SSC Napoli', years: '2024-' }
         ]
     },
     {
@@ -1779,7 +1803,7 @@ export const footballPlayers: Player[] = [
         clubs: [
             { name: 'Real Betis', years: '2014-2018' },
             { name: 'Elche CF', years: '2017' },
-            { name: 'SSC Naples', years: '2018-2022' },
+            { name: 'SSC Napoli', years: '2018-2022' },
             { name: 'Paris Saint-Germain', years: '2022-' }
         ]
     },
@@ -1897,8 +1921,7 @@ export const footballPlayers: Player[] = [
             { name: 'Arsenal FC', years: '2019-' },
             { name: 'AS Saint-Étienne', years: '2019-2020' },
             { name: 'OGC Nice', years: '2021' },
-            { name: 'Olympique de Marseille', years: '2021-2022' },
-            { name: 'Arsenal FC', years: '2022-' }
+            { name: 'Olympique de Marseille', years: '2021-2022' }
         ]
     },
     {
@@ -1935,7 +1958,7 @@ export const footballPlayers: Player[] = [
             { name: 'VfL Wolfsburg', years: '2017-2019' },
             { name: 'Charleroi SC', years: '2018-2019' },
             { name: 'Lille OSC', years: '2019-2020' },
-            { name: 'SSC Naples', years: '2020-' },
+            { name: 'SSC Napoli', years: '2020-2024' },
             { name: 'Galatasaray SK', years: '2024-' }
         ]
     },
@@ -1954,7 +1977,7 @@ export const footballPlayers: Player[] = [
             { name: 'Borussia Dortmund', years: '2011-2016' },
             { name: 'Manchester City', years: '2016-2023' },
             { name: 'FC Barcelone', years: '2023-2024' },
-            { name: 'Manchester City', years: '2024-25' },
+            { name: 'Manchester City', years: '2024-2025' },
             { name: 'Galatasaray SK', years: '2025-' }
         ]
     },
@@ -1962,7 +1985,7 @@ export const footballPlayers: Player[] = [
         id: 'f-155', name: 'Sadio Mané', birthDate: '1992-04-10', sport: 'football', category: 'active',
         clubs: [
             { name: 'FC Metz', years: '2011-2012' },
-            { name: 'Red Bull Salzbourg', years: '2012-2014' },
+            { name: 'RB Salzbourg', years: '2012-2014' },
             { name: 'Southampton FC', years: '2014-2016' },
             { name: 'Liverpool FC', years: '2016-2022' },
             { name: 'Bayern Munich', years: '2022-2023' },
@@ -2018,7 +2041,7 @@ export const footballPlayers: Player[] = [
             { name: 'Bellmare Hiratsuka', years: '1995-1998' },
             { name: 'AC Pérouse', years: '1998-2000' },
             { name: 'AS Rome', years: '2000-2001' },
-            { name: 'Parme AC', years: '2001-2004' },
+            { name: 'Parma AC', years: '2001-2004' },
             { name: 'Bologne FC', years: '2004' },
             { name: 'ACF Fiorentina', years: '2004-2006' },
             { name: 'Bolton Wanderers', years: '2005-2006' }
@@ -2044,7 +2067,7 @@ export const footballPlayers: Player[] = [
             { name: 'Juventus FC', years: '2000-2010' },
             { name: 'Hércules Alicante', years: '2010-2011' },
             { name: 'Baniyas SC', years: '2011' },
-            { name: 'CA River Plate', years: '2012-2014' },
+            { name: 'River Plate', years: '2012-2014' },
             { name: 'Newell\'s Old Boys', years: '2013-2014' },
             { name: 'FC Pune City', years: '2014' }
         ]
@@ -2088,7 +2111,7 @@ export const footballPlayers: Player[] = [
             { name: 'Chelsea FC', years: '2021-2024' },
             { name: 'Inter Milan', years: '2022-2023' },
             { name: 'AS Rome', years: '2023-2024' },
-            { name: 'SSC Naples', years: '2024-' }
+            { name: 'SSC Napoli', years: '2024-' }
         ]
     },
     {
@@ -2123,7 +2146,7 @@ export const footballPlayers: Player[] = [
             { name: 'FC Kaiserslautern', years: '1999-2004' },
             { name: 'Werder Brême', years: '2004-2007' },
             { name: 'Bayern Munich', years: '2007-2011' },
-            { name: 'Lazio Rome', years: '2011-2016' }
+            { name: 'SS Lazio', years: '2011-2016' }
         ]
     },
     {
@@ -2160,7 +2183,7 @@ export const footballPlayers: Player[] = [
         clubs: [
             { name: 'Danubio FC', years: '2005-2007' },
             { name: 'Palerme FC', years: '2007-2010' },
-            { name: 'SSC Naples', years: '2010-2013' },
+            { name: 'SSC Napoli', years: '2010-2013' },
             { name: 'Paris Saint-Germain', years: '2013-2020' },
             { name: 'Manchester United', years: '2020-2022' },
             { name: 'Valence CF', years: '2022-2023' },
@@ -2270,7 +2293,7 @@ export const footballPlayers: Player[] = [
             { name: 'Torino FC', years: '1995' },
             { name: 'Galatasaray SK', years: '1995-2000' },
             { name: 'Inter Milan', years: '2000-2001' },
-            { name: 'Parme AC', years: '2002' },
+            { name: 'Parma AC', years: '2002' },
             { name: 'Blackburn Rovers', years: '2002-2003' },
             { name: 'Galatasaray SK', years: '2003-2008' }
         ]
@@ -2327,7 +2350,7 @@ export const footballPlayers: Player[] = [
             { name: 'Botafogo FR', years: '1953-1965' },
             { name: 'SC Corinthians', years: '1966' },
             { name: 'Atlético Junior', years: '1968' },
-            { name: 'CR Flamengo', years: '1968-1969' },
+            { name: 'Flamengo', years: '1968-1969' },
             { name: 'Olaria AC', years: '1972' }
         ]
     },
@@ -2338,9 +2361,9 @@ export const footballPlayers: Player[] = [
         sport: 'football',
         category: 'historical',
         clubs: [
-            { name: 'CR Flamengo', years: '1971-1983' },
+            { name: 'Flamengo', years: '1971-1983' },
             { name: 'Udinese Calcio', years: '1983-1985' },
-            { name: 'CR Flamengo', years: '1985-1989' },
+            { name: 'Flamengo', years: '1985-1989' },
             { name: 'Kashima Antlers', years: '1991-1994' }
         ]
     },
@@ -2408,15 +2431,15 @@ export const footballPlayers: Player[] = [
     {
         id: 'f-189',
         name: 'Bebeto',
-        birthDate: '1962-02-16',
+        birthDate: '1964-02-16',
         sport: 'football',
         category: 'historical',
         clubs: [
             { name: 'Vitória SC', years: '1982' },
-            { name: 'CR Flamengo', years: '1983-1989' },
-            { name: 'CR Vasco da Gama', years: '1989-1992' },
+            { name: 'Flamengo', years: '1983-1989' },
+            { name: 'Vasco da Gama', years: '1989-1992' },
             { name: 'Deportivo La Corogne', years: '1992-1996' },
-            { name: 'CR Flamengo', years: '1996' },
+            { name: 'Flamengo', years: '1996' },
             { name: 'Séville FC', years: '1997' },
             { name: 'Vitória SC', years: '1997' },
             { name: 'Cruzeiro EC', years: '1997' },
@@ -2424,7 +2447,7 @@ export const footballPlayers: Player[] = [
             { name: 'Toros Neza', years: '1999' },
             { name: 'Kashima Antlers', years: '2000' },
             { name: 'Vitória SC', years: '2000' },
-            { name: 'CR Vasco da Gama', years: '2001' },
+            { name: 'Vasco da Gama', years: '2001' },
             { name: 'Al-Ittihad', years: '2002' }
         ]
     },
@@ -2433,12 +2456,12 @@ export const footballPlayers: Player[] = [
         name: 'Adriano',
         birthDate: '1982-02-17',
         sport: 'football',
-        category: 'active',
+        category: 'historical',
         clubs: [
             { name: 'Flamengo', years: '2000-2001' },
             { name: 'Inter Milan', years: '2001-2002' },
             { name: 'Fiorentina', years: '2002' },
-            { name: 'Parme AC', years: '2002-2004' },
+            { name: 'Parma AC', years: '2002-2004' },
             { name: 'Inter Milan', years: '2004-2009' },
             { name: 'São Paulo FC', years: '2008-2009' },
             { name: 'Flamengo', years: '2009-2010' },
@@ -2602,18 +2625,6 @@ export const footballPlayers: Player[] = [
             { name: 'Chelsea FC', years: '2001-2014' },
             { name: 'Manchester City', years: '2014-2015' },
             { name: 'New York City FC', years: '2015-2016' }
-        ]
-    },
-    {
-        id: 'f-201',
-        name: 'John Terry',
-        birthDate: '1980-12-07',
-        sport: 'football',
-        category: 'historical',
-        clubs: [
-            { name: 'Chelsea FC', years: '1998-2017' },
-            { name: 'Nottingham Forest', years: '2000' },
-            { name: 'Aston Villa', years: '2017-2018' }
         ]
     }
 
