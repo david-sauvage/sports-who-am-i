@@ -119,6 +119,78 @@
             "description_locked": "Deux archers dont les flèches tombent toujours dans le filet. Ensemble, ils ont changé la façon de jouer au basket.",
             "description_unlocked": "Stephen Curry et Klay Thompson ont formé l'un des duos les plus prolifiques de l'histoire, menant les Warriors à 4 titres NBA avec une adresse extérieure sans précédent."
         },
+        "cleveland_this_is_for_you": {
+            "name": "Cleveland, This is for you",
+            "description": "Trouvez LeBron James, Kyrie Irving et Kevin Love",
+            "description_locked": "Trouvez le trio légendaire qui a ramené le titre dans l'Ohio après avoir été mené 3-1.",
+            "description_unlocked": "Vous avez trouvé les héros des Cleveland Cavaliers de 2016, auteurs de la plus grande remontée de l'histoire des finales !"
+        },
+        "los_tres_amigos": {
+            "name": "Los Tres Amigos",
+            "description": "Trouvez LeBron James, Dwyane Wade et Chris Bosh",
+            "description_locked": "Trouvez le trio iconique qui a emmené ses talents à South Beach pour régner sur la NBA.",
+            "description_unlocked": "Vous avez trouvé le célèbre Big Three du Miami Heat, double champion NBA en 2012 et 2013 !"
+        },
+        "dream_team": {
+            "name": "Dream Team",
+            "description": "Trouvez Michael Jordan, Magic Johnson et Larry Bird",
+            "description_locked": "Trouvez les trois visages iconiques de l'équipe qui a ébloui le monde entier aux Jeux de Barcelone en 1992.",
+            "description_unlocked": "Vous avez trouvé les trois légendes incontestables de la Dream Team de 1992 : Jordan, Magic et Bird !"
+        },
+        "11_vs_100": {
+            "name": "11 vs 100",
+            "description": "Trouvez Bill Russell et Wilt Chamberlain",
+            "description_locked": "Trouvez les deux plus grands géants des années 60 : l'un a accumulé 11 bagues, l'autre a inscrit 100 points en un match.",
+            "description_unlocked": "Vous avez trouvé Bill Russell et Wilt Chamberlain, les deux légendes qui ont défini la première grande ère de domination en NBA !"
+        },
+        "lob_city": {
+            "name": "Lob City",
+            "description": "Trouvez Chris Paul, Blake Griffin et DeAndre Jordan",
+            "description_locked": "Trouvez le spectaculaire trio californien qui a transformé Los Angeles en une véritable usine à dunks.",
+            "description_unlocked": "Vous avez reconstitué 'Lob City', l'époque la plus excitante et aérienne de l'histoire des Clippers !"
+        },
+        "gregg_popovich": {
+            "name": "Gregg Popovich",
+            "description": "Trouvez Tim Duncan, Tony Parker et Manu Ginóbili",
+            "description_locked": "Trouvez le mythique Big Three des Spurs qui a dominé la ligue sous la tutelle de Coach Pop.",
+            "description_unlocked": "Vous avez trouvé le Big Three le plus victorieux de l'histoire, symbole des San Antonio Spurs et du basket collectif !"
+        },
+        "the_process": {
+            "name": "The Process",
+            "description": "Trouvez Joel Embiid et Ben Simmons",
+            "description_locked": "Faites confiance au processus de reconstruction et trouvez le duo polémique des 76ers de Philadelphie.",
+            "description_unlocked": "Ah, 'Trust the Process' ! Vous avez débloqué Joel Embiid et Ben Simmons, l'un des duos les plus clivants de l'ère moderne."
+        },
+        "eleven_rings": {
+            "name": "Eleven Rings",
+            "description": "Trouvez Phil Jackson, Michael Jordan et Kobe Bryant",
+            "description_locked": "Trouvez le mythique entraîneur aux 11 bagues et ses deux plus grands élèves.",
+            "description_unlocked": "Vous avez trouvé Phil Jackson, MJ et Kobe : les visages de l'excellence et de l'attaque en triangle !"
+        },
+        "the_last_dance": {
+            "name": "The Last Dance",
+            "description": "Trouvez Phil Jackson, Michael Jordan, Scottie Pippen et Dennis Rodman",
+            "description_locked": "Trouvez l'entraîneur et les trois figures majeures du légendaire triplé des Bulls (1996-1998).",
+            "description_unlocked": "C'est dans la boîte ! Vous avez réuni le casting complet de 'The Last Dance'."
+        },
+        "the_original_big_3": {
+            "name": "The Original Big 3",
+            "description": "Trouvez Larry Bird, Kevin McHale et Robert Parish",
+            "description_locked": "Trouvez le redoutable trio des Celtics qui a dominé l'Est dans les années 80.",
+            "description_unlocked": "Incroyable ! Vous avez retrouvé Bird, McHale et Parish, le Big 3 originel des Boston Celtics !"
+        },
+        "bad_boys": {
+            "name": "Bad Boys",
+            "description": "Trouvez Dennis Rodman, Joe Dumars et Isiah Thomas",
+            "description_locked": "Trouvez les trois figures de proue de l'équipe la plus rugueuse et redoutée des années 80.",
+            "description_unlocked": "Attention aux coups de coude ! Vous avez trouvé les célèbres Bad Boys de Détroit."
+        },
+        "showtime": {
+            "name": "Showtime",
+            "description": "Trouvez Kareem Abdul-Jabbar, Magic Johnson, Michael Cooper et Pat Riley",
+            "description_locked": "Trouvez les architectes de la dynastie la plus spectaculaire des Lakers dans les années 80.",
+            "description_unlocked": "Paillettes, stars et basket total ! Vous avez ramené le Showtime Laker à la vie."
+        },
         "eternal_rivals": {
             "name": "L'Éternelle Rivalité",
             "description": "Trouvez Lionel Messi et Cristiano Ronaldo",

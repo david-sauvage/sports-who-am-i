@@ -102,6 +102,110 @@ export const TROPHIES: Trophy[] = [
         check: createPlayerDiscoveryCheck([...Array.from({ length: 21 }, (_, i) => `b-${38 + i}`), 'b-34', 'b-24', 'b-19', 'b-18', 'b-16'], 10), // DPOY
     },
     {
+        id: 'splash_brothers',
+        icon: '💦',
+        category: 'silver',
+        sport: 'basketball',
+        isPlayerDiscovery: true,
+        check: createPlayerDiscoveryCheck(['b-31', 'b-59']), // Stephen Curry and Klay Thompson
+    },
+    {
+        id: 'cleveland_this_is_for_you',
+        icon: '🏆',
+        category: 'silver',
+        sport: 'basketball',
+        isPlayerDiscovery: true,
+        check: createPlayerDiscoveryCheck(['b-28', 'b-60', 'b-61']), // LeBron James, Kyrie Irving, Kevin Love
+    },
+    {
+        id: 'los_tres_amigos',
+        icon: '🏖️',
+        category: 'silver',
+        sport: 'basketball',
+        isPlayerDiscovery: true,
+        check: createPlayerDiscoveryCheck(['b-28', 'b-62', 'b-63']), // LeBron James, Dwyane Wade, Chris Bosh
+    },
+    {
+        id: 'dream_team',
+        icon: '🇺🇸',
+        category: 'silver',
+        sport: 'basketball',
+        isPlayerDiscovery: true,
+        check: createPlayerDiscoveryCheck(['b-14', 'b-15', 'b-16']), // Michael Jordan, Magic Johnson, Larry Bird
+    },
+    {
+        id: '11_vs_100',
+        icon: '💯',
+        category: 'silver',
+        sport: 'basketball',
+        isPlayerDiscovery: true,
+        check: createPlayerDiscoveryCheck(['b-3', 'b-4']), // Bill Russell, Wilt Chamberlain
+    },
+    {
+        id: 'lob_city',
+        icon: '✈️',
+        category: 'silver',
+        sport: 'basketball',
+        isPlayerDiscovery: true,
+        check: createPlayerDiscoveryCheck(['b-67', 'b-68', 'b-69']), // Chris Paul, Blake Griffin, DeAndre Jordan
+    },
+    {
+        id: 'gregg_popovich',
+        icon: '🍷',
+        category: 'silver',
+        sport: 'basketball',
+        isPlayerDiscovery: true,
+        check: createPlayerDiscoveryCheck(['b-23', 'b-64', 'b-65']), // Tim Duncan, Tony Parker, Manu Ginóbili
+    },
+    {
+        id: 'the_process',
+        icon: '⚙️',
+        category: 'silver',
+        sport: 'basketball',
+        isPlayerDiscovery: true,
+        check: createPlayerDiscoveryCheck(['b-36', 'b-66']), // Joel Embiid, Ben Simmons
+    },
+    {
+        id: 'eleven_rings',
+        icon: '💍',
+        category: 'silver',
+        sport: 'basketball',
+        isPlayerDiscovery: true,
+        check: createPlayerDiscoveryCheck(['b-70', 'b-16', 'b-27']), // Phil Jackson, Michael Jordan, Kobe Bryant
+    },
+    {
+        id: 'the_last_dance',
+        icon: '🎬',
+        category: 'silver',
+        sport: 'basketball',
+        isPlayerDiscovery: true,
+        check: createPlayerDiscoveryCheck(['b-70', 'b-16', 'b-71', 'b-42']), // Phil Jackson, Michael Jordan, Scottie Pippen, Dennis Rodman
+    },
+    {
+        id: 'the_original_big_3',
+        icon: '☘️',
+        category: 'silver',
+        sport: 'basketball',
+        isPlayerDiscovery: true,
+        check: createPlayerDiscoveryCheck(['b-14', 'b-72', 'b-73']), // Larry Bird, Kevin McHale, Robert Parish
+    },
+    {
+        id: 'bad_boys',
+        icon: '😈',
+        category: 'silver',
+        sport: 'basketball',
+        isPlayerDiscovery: true,
+        check: createPlayerDiscoveryCheck(['b-42', 'b-74', 'b-75']), // Dennis Rodman, Joe Dumars, Isiah Thomas
+    },
+    {
+        id: 'showtime',
+        icon: '✨',
+        category: 'silver',
+        sport: 'basketball',
+        isPlayerDiscovery: true,
+        check: createPlayerDiscoveryCheck(['b-8', 'b-15', 'b-41', 'b-76']), // Kareem Abdul-Jabbar, Magic Johnson, Michael Cooper, Pat Riley
+    },
+    {
         id: 'eternal_rivals',
         icon: '🐐',
         category: 'silver',

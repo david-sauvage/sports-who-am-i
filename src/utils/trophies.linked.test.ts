@@ -36,31 +36,698 @@ describe('Splash Brothers Trophy', () => {
     });
 
     it('should show progress if only Curry is found', () => {
-        const stats = { ...baseStats, foundPlayerIds: ['b-13'] };
+        const stats = { ...baseStats, foundPlayerIds: ['b-31'] };
         const result = splashBrothersTrophy!.check(stats);
         expect(result.unlocked).toBe(false);
         expect(result.progress).toBe(1);
     });
 
     it('should show progress if only Thompson is found', () => {
-        const stats = { ...baseStats, foundPlayerIds: ['b-60'] };
+        const stats = { ...baseStats, foundPlayerIds: ['b-59'] };
         const result = splashBrothersTrophy!.check(stats);
         expect(result.unlocked).toBe(false);
         expect(result.progress).toBe(1);
     });
 
     it('should be unlocked if both Curry and Thompson are found', () => {
-        const stats = { ...baseStats, foundPlayerIds: ['b-13', 'b-60'] };
+        const stats = { ...baseStats, foundPlayerIds: ['b-31', 'b-59'] };
         const result = splashBrothersTrophy!.check(stats);
         expect(result.unlocked).toBe(true);
         expect(result.progress).toBe(2);
     });
 
     it('should be unlocked if both are found among others', () => {
-        const stats = { ...baseStats, foundPlayerIds: ['f-1', 'b-13', 'b-1', 'b-60'] };
+        const stats = { ...baseStats, foundPlayerIds: ['f-1', 'b-31', 'b-1', 'b-59'] };
         const result = splashBrothersTrophy!.check(stats);
         expect(result.unlocked).toBe(true);
         expect(result.progress).toBe(2);
+    });
+});
+
+describe('Cleveland This is for you Trophy', () => {
+    const clevelandTrophy = TROPHIES.find(t => t.id === 'cleveland_this_is_for_you');
+
+    const baseStats: UserStatistics = {
+        gamesPlayed: 0,
+        totalQuestions: 0,
+        correctAnswers: 0,
+        incorrectAnswers: 0,
+        totalScore: 0,
+        foundPlayerIds: [],
+        detailed: {
+            football: {
+                active: { correct: 0, total: 0 },
+                historical: { correct: 0, total: 0 },
+            },
+            basketball: {
+                active: { correct: 0, total: 0 },
+                historical: { correct: 0, total: 0 },
+            },
+        },
+    };
+
+    it('should be defined', () => {
+        expect(clevelandTrophy).toBeDefined();
+    });
+
+    it('should not be unlocked if no players are found', () => {
+        const result = clevelandTrophy!.check(baseStats);
+        expect(result.unlocked).toBe(false);
+        expect(result.progress).toBe(0);
+        expect(result.goal).toBe(3);
+    });
+
+    it('should show progress if only LeBron is found', () => {
+        const stats = { ...baseStats, foundPlayerIds: ['b-28'] };
+        const result = clevelandTrophy!.check(stats);
+        expect(result.unlocked).toBe(false);
+        expect(result.progress).toBe(1);
+    });
+
+    it('should show progress if two are found', () => {
+        const stats = { ...baseStats, foundPlayerIds: ['b-28', 'b-60'] };
+        const result = clevelandTrophy!.check(stats);
+        expect(result.unlocked).toBe(false);
+        expect(result.progress).toBe(2);
+    });
+
+    it('should be unlocked if LeBron, Kyrie and Love are found', () => {
+        const stats = { ...baseStats, foundPlayerIds: ['b-28', 'b-60', 'b-61'] };
+        const result = clevelandTrophy!.check(stats);
+        expect(result.unlocked).toBe(true);
+        expect(result.progress).toBe(3);
+    });
+
+    it('should be unlocked if all three are found among others', () => {
+        const stats = { ...baseStats, foundPlayerIds: ['f-1', 'b-28', 'b-1', 'b-60', 'b-61'] };
+        const result = clevelandTrophy!.check(stats);
+        expect(result.unlocked).toBe(true);
+        expect(result.progress).toBe(3);
+    });
+});
+
+describe('Los Tres Amigos Trophy', () => {
+    const losTresAmigosTrophy = TROPHIES.find(t => t.id === 'los_tres_amigos');
+
+    const baseStats: UserStatistics = {
+        gamesPlayed: 0,
+        totalQuestions: 0,
+        correctAnswers: 0,
+        incorrectAnswers: 0,
+        totalScore: 0,
+        foundPlayerIds: [],
+        detailed: {
+            football: {
+                active: { correct: 0, total: 0 },
+                historical: { correct: 0, total: 0 },
+            },
+            basketball: {
+                active: { correct: 0, total: 0 },
+                historical: { correct: 0, total: 0 },
+            },
+        },
+    };
+
+    it('should be defined', () => {
+        expect(losTresAmigosTrophy).toBeDefined();
+    });
+
+    it('should not be unlocked if no players are found', () => {
+        const result = losTresAmigosTrophy!.check(baseStats);
+        expect(result.unlocked).toBe(false);
+        expect(result.progress).toBe(0);
+        expect(result.goal).toBe(3);
+    });
+
+    it('should show progress if only LeBron is found', () => {
+        const stats = { ...baseStats, foundPlayerIds: ['b-28'] };
+        const result = losTresAmigosTrophy!.check(stats);
+        expect(result.unlocked).toBe(false);
+        expect(result.progress).toBe(1);
+    });
+
+    it('should show progress if two are found', () => {
+        const stats = { ...baseStats, foundPlayerIds: ['b-28', 'b-62'] };
+        const result = losTresAmigosTrophy!.check(stats);
+        expect(result.unlocked).toBe(false);
+        expect(result.progress).toBe(2);
+    });
+
+    it('should be unlocked if LeBron, Wade and Bosh are found', () => {
+        const stats = { ...baseStats, foundPlayerIds: ['b-28', 'b-62', 'b-63'] };
+        const result = losTresAmigosTrophy!.check(stats);
+        expect(result.unlocked).toBe(true);
+        expect(result.progress).toBe(3);
+    });
+
+    it('should be unlocked if all three are found among others', () => {
+        const stats = { ...baseStats, foundPlayerIds: ['f-1', 'b-28', 'b-1', 'b-62', 'b-63'] };
+        const result = losTresAmigosTrophy!.check(stats);
+        expect(result.unlocked).toBe(true);
+        expect(result.progress).toBe(3);
+    });
+});
+
+describe('Dream Team Trophy', () => {
+    const dreamTeamTrophy = TROPHIES.find(t => t.id === 'dream_team');
+
+    const baseStats: UserStatistics = {
+        gamesPlayed: 0,
+        totalQuestions: 0,
+        correctAnswers: 0,
+        incorrectAnswers: 0,
+        totalScore: 0,
+        foundPlayerIds: [],
+        detailed: {
+            football: {
+                active: { correct: 0, total: 0 },
+                historical: { correct: 0, total: 0 },
+            },
+            basketball: {
+                active: { correct: 0, total: 0 },
+                historical: { correct: 0, total: 0 },
+            },
+        },
+    };
+
+    it('should be defined', () => {
+        expect(dreamTeamTrophy).toBeDefined();
+    });
+
+    it('should not be unlocked if no players are found', () => {
+        const result = dreamTeamTrophy!.check(baseStats);
+        expect(result.unlocked).toBe(false);
+        expect(result.progress).toBe(0);
+        expect(result.goal).toBe(3);
+    });
+
+    it('should show progress if only Jordan is found', () => {
+        const stats = { ...baseStats, foundPlayerIds: ['b-14'] };
+        const result = dreamTeamTrophy!.check(stats);
+        expect(result.unlocked).toBe(false);
+        expect(result.progress).toBe(1);
+    });
+
+    it('should show progress if two are found', () => {
+        const stats = { ...baseStats, foundPlayerIds: ['b-14', 'b-15'] };
+        const result = dreamTeamTrophy!.check(stats);
+        expect(result.unlocked).toBe(false);
+        expect(result.progress).toBe(2);
+    });
+
+    it('should be unlocked if Jordan, Magic and Bird are found', () => {
+        const stats = { ...baseStats, foundPlayerIds: ['b-14', 'b-15', 'b-16'] };
+        const result = dreamTeamTrophy!.check(stats);
+        expect(result.unlocked).toBe(true);
+        expect(result.progress).toBe(3);
+    });
+
+    it('should be unlocked if all three are found among others', () => {
+        const stats = { ...baseStats, foundPlayerIds: ['f-1', 'b-14', 'b-1', 'b-15', 'b-16'] };
+        const result = dreamTeamTrophy!.check(stats);
+        expect(result.unlocked).toBe(true);
+        expect(result.progress).toBe(3);
+    });
+});
+
+describe('11 vs 100 Trophy', () => {
+    const trophy = TROPHIES.find(t => t.id === '11_vs_100');
+
+    const baseStats: UserStatistics = {
+        gamesPlayed: 0,
+        totalQuestions: 0,
+        correctAnswers: 0,
+        incorrectAnswers: 0,
+        totalScore: 0,
+        foundPlayerIds: [],
+        detailed: {
+            football: {
+                active: { correct: 0, total: 0 },
+                historical: { correct: 0, total: 0 },
+            },
+            basketball: {
+                active: { correct: 0, total: 0 },
+                historical: { correct: 0, total: 0 },
+            },
+        },
+    };
+
+    it('should be defined', () => {
+        expect(trophy).toBeDefined();
+    });
+
+    it('should not be unlocked if no players are found', () => {
+        const result = trophy!.check(baseStats);
+        expect(result.unlocked).toBe(false);
+        expect(result.progress).toBe(0);
+        expect(result.goal).toBe(2);
+    });
+
+    it('should show progress if only one is found', () => {
+        const stats = { ...baseStats, foundPlayerIds: ['b-3'] };
+        const result = trophy!.check(stats);
+        expect(result.unlocked).toBe(false);
+        expect(result.progress).toBe(1);
+    });
+
+    it('should be unlocked if both are found', () => {
+        const stats = { ...baseStats, foundPlayerIds: ['b-3', 'b-4'] };
+        const result = trophy!.check(stats);
+        expect(result.unlocked).toBe(true);
+        expect(result.progress).toBe(2);
+    });
+});
+
+describe('Lob City Trophy', () => {
+    const trophy = TROPHIES.find(t => t.id === 'lob_city');
+
+    const baseStats: UserStatistics = {
+        gamesPlayed: 0,
+        totalQuestions: 0,
+        correctAnswers: 0,
+        incorrectAnswers: 0,
+        totalScore: 0,
+        foundPlayerIds: [],
+        detailed: {
+            football: {
+                active: { correct: 0, total: 0 },
+                historical: { correct: 0, total: 0 },
+            },
+            basketball: {
+                active: { correct: 0, total: 0 },
+                historical: { correct: 0, total: 0 },
+            },
+        },
+    };
+
+    it('should be defined', () => {
+        expect(trophy).toBeDefined();
+    });
+
+    it('should not be unlocked if no players are found', () => {
+        const result = trophy!.check(baseStats);
+        expect(result.unlocked).toBe(false);
+        expect(result.progress).toBe(0);
+        expect(result.goal).toBe(3);
+    });
+
+    it('should show progress if only one is found', () => {
+        const stats = { ...baseStats, foundPlayerIds: ['b-67'] };
+        const result = trophy!.check(stats);
+        expect(result.unlocked).toBe(false);
+        expect(result.progress).toBe(1);
+    });
+
+    it('should show progress if two are found', () => {
+        const stats = { ...baseStats, foundPlayerIds: ['b-68', 'b-69'] };
+        const result = trophy!.check(stats);
+        expect(result.unlocked).toBe(false);
+        expect(result.progress).toBe(2);
+    });
+
+    it('should be unlocked if all three are found', () => {
+        const stats = { ...baseStats, foundPlayerIds: ['b-67', 'b-68', 'b-69'] };
+        const result = trophy!.check(stats);
+        expect(result.unlocked).toBe(true);
+        expect(result.progress).toBe(3);
+    });
+});
+
+describe('Gregg Popovich Trophy', () => {
+    const trophy = TROPHIES.find(t => t.id === 'gregg_popovich');
+
+    const baseStats: UserStatistics = {
+        gamesPlayed: 0,
+        totalQuestions: 0,
+        correctAnswers: 0,
+        incorrectAnswers: 0,
+        totalScore: 0,
+        foundPlayerIds: [],
+        detailed: {
+            football: {
+                active: { correct: 0, total: 0 },
+                historical: { correct: 0, total: 0 },
+            },
+            basketball: {
+                active: { correct: 0, total: 0 },
+                historical: { correct: 0, total: 0 },
+            },
+        },
+    };
+
+    it('should be defined', () => {
+        expect(trophy).toBeDefined();
+    });
+
+    it('should not be unlocked if no players are found', () => {
+        const result = trophy!.check(baseStats);
+        expect(result.unlocked).toBe(false);
+        expect(result.progress).toBe(0);
+        expect(result.goal).toBe(3);
+    });
+
+    it('should show progress if only one is found', () => {
+        const stats = { ...baseStats, foundPlayerIds: ['b-23'] };
+        const result = trophy!.check(stats);
+        expect(result.unlocked).toBe(false);
+        expect(result.progress).toBe(1);
+    });
+
+    it('should show progress if two are found', () => {
+        const stats = { ...baseStats, foundPlayerIds: ['b-23', 'b-64'] };
+        const result = trophy!.check(stats);
+        expect(result.unlocked).toBe(false);
+        expect(result.progress).toBe(2);
+    });
+
+    it('should be unlocked if all three are found', () => {
+        const stats = { ...baseStats, foundPlayerIds: ['b-23', 'b-64', 'b-65'] };
+        const result = trophy!.check(stats);
+        expect(result.unlocked).toBe(true);
+        expect(result.progress).toBe(3);
+    });
+});
+
+describe('The Process Trophy', () => {
+    const trophy = TROPHIES.find(t => t.id === 'the_process');
+
+    const baseStats: UserStatistics = {
+        gamesPlayed: 0,
+        totalQuestions: 0,
+        correctAnswers: 0,
+        incorrectAnswers: 0,
+        totalScore: 0,
+        foundPlayerIds: [],
+        detailed: {
+            football: {
+                active: { correct: 0, total: 0 },
+                historical: { correct: 0, total: 0 },
+            },
+            basketball: {
+                active: { correct: 0, total: 0 },
+                historical: { correct: 0, total: 0 },
+            },
+        },
+    };
+
+    it('should be defined', () => {
+        expect(trophy).toBeDefined();
+    });
+
+    it('should not be unlocked if no players are found', () => {
+        const result = trophy!.check(baseStats);
+        expect(result.unlocked).toBe(false);
+        expect(result.progress).toBe(0);
+        expect(result.goal).toBe(2);
+    });
+
+    it('should show progress if only one is found', () => {
+        const stats = { ...baseStats, foundPlayerIds: ['b-36'] };
+        const result = trophy!.check(stats);
+        expect(result.unlocked).toBe(false);
+        expect(result.progress).toBe(1);
+    });
+
+    it('should be unlocked if both are found', () => {
+        const stats = { ...baseStats, foundPlayerIds: ['b-36', 'b-66'] };
+        const result = trophy!.check(stats);
+        expect(result.unlocked).toBe(true);
+        expect(result.progress).toBe(2);
+    });
+});
+
+describe('Eleven Rings Trophy', () => {
+    const trophy = TROPHIES.find(t => t.id === 'eleven_rings');
+
+    const baseStats: UserStatistics = {
+        gamesPlayed: 0,
+        totalQuestions: 0,
+        correctAnswers: 0,
+        incorrectAnswers: 0,
+        totalScore: 0,
+        foundPlayerIds: [],
+        detailed: {
+            football: {
+                active: { correct: 0, total: 0 },
+                historical: { correct: 0, total: 0 },
+            },
+            basketball: {
+                active: { correct: 0, total: 0 },
+                historical: { correct: 0, total: 0 },
+            },
+        },
+    };
+
+    it('should be defined', () => {
+        expect(trophy).toBeDefined();
+    });
+
+    it('should not be unlocked if no players are found', () => {
+        const result = trophy!.check(baseStats);
+        expect(result.unlocked).toBe(false);
+        expect(result.progress).toBe(0);
+        expect(result.goal).toBe(3);
+    });
+
+    it('should show progress if only one is found', () => {
+        const stats = { ...baseStats, foundPlayerIds: ['b-70'] };
+        const result = trophy!.check(stats);
+        expect(result.unlocked).toBe(false);
+        expect(result.progress).toBe(1);
+    });
+
+    it('should show progress if two are found', () => {
+        const stats = { ...baseStats, foundPlayerIds: ['b-70', 'b-16'] };
+        const result = trophy!.check(stats);
+        expect(result.unlocked).toBe(false);
+        expect(result.progress).toBe(2);
+    });
+
+    it('should be unlocked if all three are found', () => {
+        const stats = { ...baseStats, foundPlayerIds: ['b-70', 'b-16', 'b-27'] };
+        const result = trophy!.check(stats);
+        expect(result.unlocked).toBe(true);
+        expect(result.progress).toBe(3);
+    });
+});
+
+describe('The Last Dance Trophy', () => {
+    const trophy = TROPHIES.find(t => t.id === 'the_last_dance');
+
+    const baseStats: UserStatistics = {
+        gamesPlayed: 0,
+        totalQuestions: 0,
+        correctAnswers: 0,
+        incorrectAnswers: 0,
+        totalScore: 0,
+        foundPlayerIds: [],
+        detailed: {
+            football: {
+                active: { correct: 0, total: 0 },
+                historical: { correct: 0, total: 0 },
+            },
+            basketball: {
+                active: { correct: 0, total: 0 },
+                historical: { correct: 0, total: 0 },
+            },
+        },
+    };
+
+    it('should be defined', () => {
+        expect(trophy).toBeDefined();
+    });
+
+    it('should not be unlocked if no players are found', () => {
+        const result = trophy!.check(baseStats);
+        expect(result.unlocked).toBe(false);
+        expect(result.progress).toBe(0);
+        expect(result.goal).toBe(4);
+    });
+
+    it('should show progress if only one is found', () => {
+        const stats = { ...baseStats, foundPlayerIds: ['b-16'] };
+        const result = trophy!.check(stats);
+        expect(result.unlocked).toBe(false);
+        expect(result.progress).toBe(1);
+    });
+
+    it('should show progress if three are found', () => {
+        const stats = { ...baseStats, foundPlayerIds: ['b-70', 'b-16', 'b-71'] };
+        const result = trophy!.check(stats);
+        expect(result.unlocked).toBe(false);
+        expect(result.progress).toBe(3);
+    });
+
+    it('should be unlocked if all four are found', () => {
+        const stats = { ...baseStats, foundPlayerIds: ['b-70', 'b-16', 'b-71', 'b-42'] };
+        const result = trophy!.check(stats);
+        expect(result.unlocked).toBe(true);
+        expect(result.progress).toBe(4);
+    });
+});
+
+describe('The Original Big 3 Trophy', () => {
+    const trophy = TROPHIES.find(t => t.id === 'the_original_big_3');
+
+    const baseStats: UserStatistics = {
+        gamesPlayed: 0,
+        totalQuestions: 0,
+        correctAnswers: 0,
+        incorrectAnswers: 0,
+        totalScore: 0,
+        foundPlayerIds: [],
+        detailed: {
+            football: {
+                active: { correct: 0, total: 0 },
+                historical: { correct: 0, total: 0 },
+            },
+            basketball: {
+                active: { correct: 0, total: 0 },
+                historical: { correct: 0, total: 0 },
+            },
+        },
+    };
+
+    it('should be defined', () => {
+        expect(trophy).toBeDefined();
+    });
+
+    it('should not be unlocked if no players are found', () => {
+        const result = trophy!.check(baseStats);
+        expect(result.unlocked).toBe(false);
+        expect(result.progress).toBe(0);
+        expect(result.goal).toBe(3);
+    });
+
+    it('should show progress if only one is found', () => {
+        const stats = { ...baseStats, foundPlayerIds: ['b-14'] };
+        const result = trophy!.check(stats);
+        expect(result.unlocked).toBe(false);
+        expect(result.progress).toBe(1);
+    });
+
+    it('should show progress if two are found', () => {
+        const stats = { ...baseStats, foundPlayerIds: ['b-14', 'b-72'] };
+        const result = trophy!.check(stats);
+        expect(result.unlocked).toBe(false);
+        expect(result.progress).toBe(2);
+    });
+
+    it('should be unlocked if all three are found', () => {
+        const stats = { ...baseStats, foundPlayerIds: ['b-14', 'b-72', 'b-73'] };
+        const result = trophy!.check(stats);
+        expect(result.unlocked).toBe(true);
+        expect(result.progress).toBe(3);
+    });
+});
+
+describe('Bad Boys Trophy', () => {
+    const trophy = TROPHIES.find(t => t.id === 'bad_boys');
+
+    const baseStats: UserStatistics = {
+        gamesPlayed: 0,
+        totalQuestions: 0,
+        correctAnswers: 0,
+        incorrectAnswers: 0,
+        totalScore: 0,
+        foundPlayerIds: [],
+        detailed: {
+            football: {
+                active: { correct: 0, total: 0 },
+                historical: { correct: 0, total: 0 },
+            },
+            basketball: {
+                active: { correct: 0, total: 0 },
+                historical: { correct: 0, total: 0 },
+            },
+        },
+    };
+
+    it('should be defined', () => {
+        expect(trophy).toBeDefined();
+    });
+
+    it('should not be unlocked if no players are found', () => {
+        const result = trophy!.check(baseStats);
+        expect(result.unlocked).toBe(false);
+        expect(result.progress).toBe(0);
+        expect(result.goal).toBe(3);
+    });
+
+    it('should show progress if only one is found', () => {
+        const stats = { ...baseStats, foundPlayerIds: ['b-42'] };
+        const result = trophy!.check(stats);
+        expect(result.unlocked).toBe(false);
+        expect(result.progress).toBe(1);
+    });
+
+    it('should show progress if two are found', () => {
+        const stats = { ...baseStats, foundPlayerIds: ['b-42', 'b-74'] };
+        const result = trophy!.check(stats);
+        expect(result.unlocked).toBe(false);
+        expect(result.progress).toBe(2);
+    });
+
+    it('should be unlocked if all three are found', () => {
+        const stats = { ...baseStats, foundPlayerIds: ['b-42', 'b-74', 'b-75'] };
+        const result = trophy!.check(stats);
+        expect(result.unlocked).toBe(true);
+        expect(result.progress).toBe(3);
+    });
+});
+
+describe('Showtime Trophy', () => {
+    const trophy = TROPHIES.find(t => t.id === 'showtime');
+
+    const baseStats: UserStatistics = {
+        gamesPlayed: 0,
+        totalQuestions: 0,
+        correctAnswers: 0,
+        incorrectAnswers: 0,
+        totalScore: 0,
+        foundPlayerIds: [],
+        detailed: {
+            football: {
+                active: { correct: 0, total: 0 },
+                historical: { correct: 0, total: 0 },
+            },
+            basketball: {
+                active: { correct: 0, total: 0 },
+                historical: { correct: 0, total: 0 },
+            },
+        },
+    };
+
+    it('should be defined', () => {
+        expect(trophy).toBeDefined();
+    });
+
+    it('should not be unlocked if no players are found', () => {
+        const result = trophy!.check(baseStats);
+        expect(result.unlocked).toBe(false);
+        expect(result.progress).toBe(0);
+        expect(result.goal).toBe(4);
+    });
+
+    it('should show progress if only one is found', () => {
+        const stats = { ...baseStats, foundPlayerIds: ['b-8'] };
+        const result = trophy!.check(stats);
+        expect(result.unlocked).toBe(false);
+        expect(result.progress).toBe(1);
+    });
+
+    it('should show progress if three are found', () => {
+        const stats = { ...baseStats, foundPlayerIds: ['b-8', 'b-15', 'b-41'] };
+        const result = trophy!.check(stats);
+        expect(result.unlocked).toBe(false);
+        expect(result.progress).toBe(3);
+    });
+
+    it('should be unlocked if all four are found', () => {
+        const stats = { ...baseStats, foundPlayerIds: ['b-8', 'b-15', 'b-41', 'b-76'] };
+        const result = trophy!.check(stats);
+        expect(result.unlocked).toBe(true);
+        expect(result.progress).toBe(4);
     });
 });
 
