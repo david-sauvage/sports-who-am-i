@@ -215,6 +215,12 @@
             "description_locked": "Find these three former role players who evolved into some of the most brilliant and decorated head coaches in history.",
             "description_unlocked": "From the end of the bench to the top of the league! You found the ultimate clipboard masterminds."
         },
+        "we_the_north": {
+            "name": "We The North",
+            "description": "Find Kawhi Leonard, Marc Gasol, and Kyle Lowry",
+            "description_locked": "Find the main architects of the Canadian franchise's first and only NBA title.",
+            "description_unlocked": "Oh Canada! You found the heroes of Toronto's championship run."
+        },
         "eternal_rivals": {
             "name": "Eternal Rivals",
             "description": "Find both Lionel Messi and Cristiano Ronaldo",

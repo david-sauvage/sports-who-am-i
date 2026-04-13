@@ -215,6 +215,12 @@
             "description_locked": "Trouvez ces trois anciens joueurs de devoir devenus certains des entraîneurs les plus brillants et titrés de l'histoire.",
             "description_unlocked": "De l'ombre du banc aux sommets de la ligue ! Vous avez déniché les maîtres absolus de la tactique."
         },
+        "we_the_north": {
+            "name": "We The North",
+            "description": "Trouvez Kawhi Leonard, Marc Gasol et Kyle Lowry",
+            "description_locked": "Trouvez les artisans majeurs du premier et unique titre NBA de la franchise canadienne.",
+            "description_unlocked": "Oh Canada ! Vous avez trouvé les héros du titre de Toronto."
+        },
         "eternal_rivals": {
             "name": "L'Éternelle Rivalité",
             "description": "Trouvez Lionel Messi et Cristiano Ronaldo",

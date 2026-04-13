@@ -238,6 +238,14 @@ export const TROPHIES: Trophy[] = [
         check: createPlayerDiscoveryCheck(['b-127', 'b-121', 'b-70']), // Rick Carlisle, Steve Kerr, Phil Jackson
     },
     {
+        id: 'we_the_north',
+        icon: '🦖',
+        category: 'silver',
+        sport: 'basketball',
+        isPlayerDiscovery: true,
+        check: createPlayerDiscoveryCheck(['b-108', 'b-51', 'b-53']), // Kyle Lowry, Marc Gasol, Kawhi Leonard
+    },
+    {
         id: 'eternal_rivals',
         icon: '🐐',
         category: 'silver',

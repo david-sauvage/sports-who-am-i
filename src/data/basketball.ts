@@ -1938,6 +1938,44 @@ export const basketballPlayers: Player[] = [
             { "name": "Sacramento Kings", "years": "2017-2025" },
             { "name": "San Antonio Spurs", "years": "2025-" }
         ]
+    },
+    {
+        "id": "b-151",
+        "name": "Ricky Rubio",
+        "birthDate": "1990-10-21",
+        "sport": "basketball",
+        "category": "active",
+        "clubs": [
+            { "name": "Joventut Badalona", "years": "2005-2009" },
+            { "name": "FC Barcelona", "years": "2009-2011" },
+            { "name": "Minnesota Timberwolves", "years": "2011-2017" },
+            { "name": "Utah Jazz", "years": "2017-2019" },
+            { "name": "Phoenix Suns", "years": "2019-2020" },
+            { "name": "Minnesota Timberwolves", "years": "2020-2021" },
+            { "name": "Cleveland Cavaliers", "years": "2021-2023" },
+            { "name": "FC Barcelona", "years": "2024" },
+            { "name": "Joventut Badalona", "years": "2025-" }
+        ]
+    },
+    {
+        "id": "b-152",
+        "name": "Luis Scola",
+        "birthDate": "1980-04-30",
+        "sport": "basketball",
+        "category": "historical",
+        "clubs": [
+            { "name": "Ferro Carril Oeste", "years": "1995-1998" },
+            { "name": "Tau Cerámica", "years": "1998-2007" },
+            { "name": "Houston Rockets", "years": "2007-2012" },
+            { "name": "Phoenix Suns", "years": "2012-2013" },
+            { "name": "Indiana Pacers", "years": "2013-2015" },
+            { "name": "Toronto Raptors", "years": "2015-2016" },
+            { "name": "Brooklyn Nets", "years": "2016-2017" },
+            { "name": "Shanxi Brave Dragons", "years": "2017-2018" },
+            { "name": "Shanghai Sharks", "years": "2018-2019" },
+            { "name": "Olimpia Milano", "years": "2019-2020" },
+            { "name": "Varese", "years": "2020-2021" }
+        ]
     }
 
 ];

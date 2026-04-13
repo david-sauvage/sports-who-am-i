@@ -951,6 +951,61 @@ describe('Clipboard Masterminds Trophy', () => {
     });
 });
 
+describe('We The North Trophy', () => {
+    const trophy = TROPHIES.find(t => t.id === 'we_the_north');
+
+    const baseStats: UserStatistics = {
+        gamesPlayed: 0,
+        totalQuestions: 0,
+        correctAnswers: 0,
+        incorrectAnswers: 0,
+        totalScore: 0,
+        foundPlayerIds: [],
+        detailed: {
+            football: {
+                active: { correct: 0, total: 0 },
+                historical: { correct: 0, total: 0 },
+            },
+            basketball: {
+                active: { correct: 0, total: 0 },
+                historical: { correct: 0, total: 0 },
+            },
+        },
+    };
+
+    it('should be defined', () => {
+        expect(trophy).toBeDefined();
+    });
+
+    it('should not be unlocked if no players are found', () => {
+        const result = trophy!.check(baseStats);
+        expect(result.unlocked).toBe(false);
+        expect(result.progress).toBe(0);
+        expect(result.goal).toBe(3);
+    });
+
+    it('should show progress if only one is found', () => {
+        const stats = { ...baseStats, foundPlayerIds: ['b-108'] };
+        const result = trophy!.check(stats);
+        expect(result.unlocked).toBe(false);
+        expect(result.progress).toBe(1);
+    });
+
+    it('should show progress if two are found', () => {
+        const stats = { ...baseStats, foundPlayerIds: ['b-108', 'b-53'] };
+        const result = trophy!.check(stats);
+        expect(result.unlocked).toBe(false);
+        expect(result.progress).toBe(2);
+    });
+
+    it('should be unlocked if all three are found', () => {
+        const stats = { ...baseStats, foundPlayerIds: ['b-108', 'b-51', 'b-53'] };
+        const result = trophy!.check(stats);
+        expect(result.unlocked).toBe(true);
+        expect(result.progress).toBe(3);
+    });
+});
+
 describe('Eternal Rivals Trophy', () => {
     const eternalRivalsTrophy = TROPHIES.find(t => t.id === 'eternal_rivals');
 
