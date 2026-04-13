@@ -185,6 +185,30 @@
                 "description_locked": "Encuentra a los arquitectos de la dinastía más espectacular de los Lakers en los años 80.",
                 "description_unlocked": "¡Lentejuelas, estrellas y baloncesto total! Has devuelto a la vida el Showtime de los Lakers."
             },
+            "grit_and_grind": {
+                "name": "Grit and Grind",
+                "description": "Encuentra a Marc Gasol, Mike Conley y Zach Randolph",
+                "description_locked": "Encuentra a los pilares de este equipo duro y trabajador de Memphis en la década de 2010.",
+                "description_unlocked": "¡A cubierto! Has encontrado a los reyes del 'Grit and Grind' de Memphis."
+            },
+            "seven_seconds_or_less": {
+                "name": "7 Seconds or Less",
+                "description": "Encuentra a Steve Nash, Amar'e Stoudemire y Shawn Marion",
+                "description_locked": "Encuentra a los cohetes de Phoenix que revolucionaron el juego ofensivo en los años 2000.",
+                "description_unlocked": "¡Acelera! Has encontrado a los maestros del '7 Seconds or Less'."
+            },
+            "open_mic": {
+                "name": "Open Mic",
+                "description": "Encuentra a Charles Barkley, Shaquille O'Neal y Reggie Miller",
+                "description_locked": "Encuentra a tres leyendas de la cancha que se convirtieron en las voces más imprescindibles (y ruidosas) de la televisión estadounidense.",
+                "description_unlocked": "¡En el aire! Has encontrado a los tres jugadores de baloncesto que se convirtieron en los analistas de televisión más icónicos."
+            },
+            "clipboard_masterminds": {
+                "name": "Genios de la Pizarra",
+                "description": "Encuentra a Rick Carlisle, Steve Kerr y Phil Jackson",
+                "description_locked": "Encuentra a estos tres antiguos jugadores de rol que se convirtieron en algunos de los entrenadores más brillantes y laureados de la historia.",
+                "description_unlocked": "¡Del banquillo a la cima de la liga! Has encontrado a los maestros absolutos de la pizarra."
+            },
             "eternal_rivals": {
                 "name": "Eterna Rivalidad",
                 "description": "Encuentra tanto a Lionel Messi como a Cristiano Ronaldo",

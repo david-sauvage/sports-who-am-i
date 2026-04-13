@@ -191,6 +191,30 @@
             "description_locked": "Trouvez les architectes de la dynastie la plus spectaculaire des Lakers dans les années 80.",
             "description_unlocked": "Paillettes, stars et basket total ! Vous avez ramené le Showtime Laker à la vie."
         },
+        "grit_and_grind": {
+            "name": "Grit and Grind",
+            "description": "Trouvez Marc Gasol, Mike Conley et Zach Randolph",
+            "description_locked": "Trouvez les piliers de cette équipe rude et travailleuse de Memphis dans les années 2010.",
+            "description_unlocked": "Tous aux abris ! Vous avez trouvé les rois du 'Grit and Grind' de Memphis."
+        },
+        "seven_seconds_or_less": {
+            "name": "7 Seconds or Less",
+            "description": "Trouvez Steve Nash, Amar'e Stoudemire et Shawn Marion",
+            "description_locked": "Trouvez les fusées de Phoenix qui ont révolutionné le jeu offensif dans les années 2000.",
+            "description_unlocked": "Pied au plancher ! Vous avez retrouvé les maîtres du « 7 Seconds or Less »."
+        },
+        "open_mic": {
+            "name": "Open Mic",
+            "description": "Trouvez Charles Barkley, Shaquille O'Neal et Reggie Miller",
+            "description_locked": "Trouvez trois légendes des parquets devenues les voix les plus incontournables (et bruyantes) de la télévision américaine.",
+            "description_unlocked": "À l'antenne ! Vous avez trouvé les trois basketteurs devenus les consultants télé les plus emblématiques."
+        },
+        "clipboard_masterminds": {
+            "name": "Génies de la Plaquette",
+            "description": "Trouvez Rick Carlisle, Steve Kerr et Phil Jackson",
+            "description_locked": "Trouvez ces trois anciens joueurs de devoir devenus certains des entraîneurs les plus brillants et titrés de l'histoire.",
+            "description_unlocked": "De l'ombre du banc aux sommets de la ligue ! Vous avez déniché les maîtres absolus de la tactique."
+        },
         "eternal_rivals": {
             "name": "L'Éternelle Rivalité",
             "description": "Trouvez Lionel Messi et Cristiano Ronaldo",

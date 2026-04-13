@@ -206,6 +206,38 @@ export const TROPHIES: Trophy[] = [
         check: createPlayerDiscoveryCheck(['b-8', 'b-15', 'b-41', 'b-76']), // Kareem Abdul-Jabbar, Magic Johnson, Michael Cooper, Pat Riley
     },
     {
+        id: 'grit_and_grind',
+        icon: '🐻',
+        category: 'silver',
+        sport: 'basketball',
+        isPlayerDiscovery: true,
+        check: createPlayerDiscoveryCheck(['b-51', 'b-105', 'b-106']), // Marc Gasol, Mike Conley, Zach Randolph
+    },
+    {
+        id: 'seven_seconds_or_less',
+        icon: '⏱️',
+        category: 'silver',
+        sport: 'basketball',
+        isPlayerDiscovery: true,
+        check: createPlayerDiscoveryCheck(['b-25', 'b-107', 'b-109']), // Steve Nash, Amar'e Stoudemire, Shawn Marion
+    },
+    {
+        id: 'open_mic',
+        icon: '🎙️',
+        category: 'silver',
+        sport: 'basketball',
+        isPlayerDiscovery: true,
+        check: createPlayerDiscoveryCheck(['b-17', 'b-21', 'b-96']), // Charles Barkley, Shaquille O'Neal, Reggie Miller
+    },
+    {
+        id: 'clipboard_masterminds',
+        icon: '📋',
+        category: 'silver',
+        sport: 'basketball',
+        isPlayerDiscovery: true,
+        check: createPlayerDiscoveryCheck(['b-127', 'b-121', 'b-70']), // Rick Carlisle, Steve Kerr, Phil Jackson
+    },
+    {
         id: 'eternal_rivals',
         icon: '🐐',
         category: 'silver',

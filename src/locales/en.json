@@ -191,6 +191,30 @@
             "description_locked": "Find the architects of the most spectacular Lakers dynasty of the 80s.",
             "description_unlocked": "Glitter, stars, and total basketball! You brought Lakers Showtime back to life."
         },
+        "grit_and_grind": {
+            "name": "Grit and Grind",
+            "description": "Find Marc Gasol, Mike Conley, and Zach Randolph",
+            "description_locked": "Find the pillars of the tough and hard-working Memphis team of the 2010s.",
+            "description_unlocked": "Take cover! You found the kings of the Memphis 'Grit and Grind'."
+        },
+        "seven_seconds_or_less": {
+            "name": "7 Seconds or Less",
+            "description": "Find Steve Nash, Amar'e Stoudemire, and Shawn Marion",
+            "description_locked": "Find the Phoenix rockets that revolutionized offensive play in the 2000s.",
+            "description_unlocked": "Pedal to the metal! You found the masters of '7 Seconds or Less'."
+        },
+        "open_mic": {
+            "name": "Open Mic",
+            "description": "Find Charles Barkley, Shaquille O'Neal, and Reggie Miller",
+            "description_locked": "Find three hardwood legends who became the most unmissable (and loudest) voices on American television.",
+            "description_unlocked": "On air! You found the three basketball players who became the most iconic TV analysts."
+        },
+        "clipboard_masterminds": {
+            "name": "Clipboard Masterminds",
+            "description": "Find Rick Carlisle, Steve Kerr, and Phil Jackson",
+            "description_locked": "Find these three former role players who evolved into some of the most brilliant and decorated head coaches in history.",
+            "description_unlocked": "From the end of the bench to the top of the league! You found the ultimate clipboard masterminds."
+        },
         "eternal_rivals": {
             "name": "Eternal Rivals",
             "description": "Find both Lionel Messi and Cristiano Ronaldo",

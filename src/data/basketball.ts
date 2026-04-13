@@ -1312,6 +1312,632 @@ export const basketballPlayers: Player[] = [
             { "name": "Teamsystem Bologna", "years": "1997-1998" },
             { "name": "Orlando Magic", "years": "1999" }
         ]
+    },
+    {
+        "id": "b-104",
+        "name": "Pau Gasol",
+        "birthDate": "1980-07-06",
+        "sport": "basketball",
+        "category": "historical",
+        "clubs": [
+            { "name": "FC Barcelona", "years": "1998-2001" },
+            { "name": "Memphis Grizzlies", "years": "2001-2008" },
+            { "name": "Los Angeles Lakers", "years": "2008-2014" },
+            { "name": "Chicago Bulls", "years": "2014-2016" },
+            { "name": "San Antonio Spurs", "years": "2016-2019" },
+            { "name": "Milwaukee Bucks", "years": "2019" },
+            { "name": "FC Barcelona", "years": "2021" }
+        ]
+    },
+    {
+        "id": "b-105",
+        "name": "Mike Conley",
+        "birthDate": "1987-10-11",
+        "sport": "basketball",
+        "category": "active",
+        "clubs": [
+            { "name": "Memphis Grizzlies", "years": "2007-2019" },
+            { "name": "Utah Jazz", "years": "2019-2023" },
+            { "name": "Minnesota Timberwolves", "years": "2023-2026" }
+        ]
+    },
+    {
+        "id": "b-106",
+        "name": "Zach Randolph",
+        "birthDate": "1981-07-16",
+        "sport": "basketball",
+        "category": "historical",
+        "clubs": [
+            { "name": "Portland Trail Blazers", "years": "2001-2007" },
+            { "name": "New York Knicks", "years": "2007-2008" },
+            { "name": "Los Angeles Clippers", "years": "2008-2009" },
+            { "name": "Memphis Grizzlies", "years": "2009-2017" },
+            { "name": "Sacramento Kings", "years": "2017-2019" }
+        ]
+    },
+    {
+        "id": "b-107",
+        "name": "Amar'e Stoudemire",
+        "birthDate": "1982-11-16",
+        "sport": "basketball",
+        "category": "historical",
+        "clubs": [
+            { "name": "Phoenix Suns", "years": "2002-2010" },
+            { "name": "New York Knicks", "years": "2010-2015" },
+            { "name": "Dallas Mavericks", "years": "2015" },
+            { "name": "Miami Heat", "years": "2015-2016" },
+            { "name": "Hapoel Jerusalem", "years": "2016-2017" },
+            { "name": "Fujian Sturgeons", "years": "2019" },
+            { "name": "Maccabi Tel Aviv", "years": "2020" }
+        ]
+    },
+    {
+        "id": "b-108",
+        "name": "Kyle Lowry",
+        "birthDate": "1986-03-25",
+        "sport": "basketball",
+        "category": "active",
+        "clubs": [
+            { "name": "Memphis Grizzlies", "years": "2006-2009" },
+            { "name": "Houston Rockets", "years": "2009-2012" },
+            { "name": "Toronto Raptors", "years": "2012-2021" },
+            { "name": "Miami Heat", "years": "2021-2024" },
+            { "name": "Philadelphia 76ers", "years": "2024-" }
+        ]
+    },
+    {
+        "id": "b-109",
+        "name": "Shawn Marion",
+        "birthDate": "1978-05-07",
+        "sport": "basketball",
+        "category": "historical",
+        "clubs": [
+            { "name": "Phoenix Suns", "years": "1999-2008" },
+            { "name": "Miami Heat", "years": "2008-2009" },
+            { "name": "Toronto Raptors", "years": "2009" },
+            { "name": "Dallas Mavericks", "years": "2009-2014" },
+            { "name": "Cleveland Cavaliers", "years": "2014-2015" }
+        ]
+    },
+    {
+        "id": "b-110",
+        "name": "Vince Carter",
+        "birthDate": "1977-01-26",
+        "sport": "basketball",
+        "category": "historical",
+        "clubs": [
+            { "name": "Toronto Raptors", "years": "1998-2004" },
+            { "name": "New Jersey Nets", "years": "2004-2009" },
+            { "name": "Orlando Magic", "years": "2009-2010" },
+            { "name": "Phoenix Suns", "years": "2010-2011" },
+            { "name": "Dallas Mavericks", "years": "2011-2014" },
+            { "name": "Memphis Grizzlies", "years": "2014-2017" },
+            { "name": "Sacramento Kings", "years": "2017-2018" },
+            { "name": "Atlanta Hawks", "years": "2018-2020" }
+        ]
+    },
+    {
+        "id": "b-111",
+        "name": "Chris Webber",
+        "birthDate": "1973-03-01",
+        "sport": "basketball",
+        "category": "historical",
+        "clubs": [
+            { "name": "Golden State Warriors", "years": "1993-1994" },
+            { "name": "Washington Bullets", "years": "1994-1997" },
+            { "name": "Washington Wizards", "years": "1997-1998" },
+            { "name": "Sacramento Kings", "years": "1998-2005" },
+            { "name": "Philadelphia 76ers", "years": "2005-2007" },
+            { "name": "Detroit Pistons", "years": "2007" },
+            { "name": "Golden State Warriors", "years": "2008" }
+        ]
+    },
+    {
+        "id": "b-112",
+        "name": "Yao Ming",
+        "birthDate": "1980-09-12",
+        "sport": "basketball",
+        "category": "historical",
+        "clubs": [
+            { "name": "Shanghai Sharks", "years": "1997-2002" },
+            { "name": "Houston Rockets", "years": "2002-2011" }
+        ]
+    },
+    {
+        "id": "b-113",
+        "name": "Luka Dončić",
+        "birthDate": "1999-02-28",
+        "sport": "basketball",
+        "category": "active",
+        "clubs": [
+            { "name": "Real Madrid", "years": "2015-2018" },
+            { "name": "Dallas Mavericks", "years": "2018-2025" },
+            { "name": "Los Angeles Lakers", "years": "2025-" }
+        ]
+    },
+    {
+        "id": "b-114",
+        "name": "Jayson Tatum",
+        "birthDate": "1998-03-03",
+        "sport": "basketball",
+        "category": "active",
+        "clubs": [
+            { "name": "Boston Celtics", "years": "2017-" }
+        ]
+    },
+    {
+        "id": "b-115",
+        "name": "Victor Wembanyama",
+        "birthDate": "2004-01-04",
+        "sport": "basketball",
+        "category": "active",
+        "clubs": [
+            { "name": "Nanterre 92", "years": "2019-2021" },
+            { "name": "ASVEL", "years": "2021-2022" },
+            { "name": "Metropolitans 92", "years": "2022-2023" },
+            { "name": "San Antonio Spurs", "years": "2023-" }
+        ]
+    },
+    {
+        "id": "b-116",
+        "name": "Donovan Mitchell",
+        "birthDate": "1996-09-07",
+        "sport": "basketball",
+        "category": "active",
+        "clubs": [
+            { "name": "Utah Jazz", "years": "2017-2022" },
+            { "name": "Cleveland Cavaliers", "years": "2022-" }
+        ]
+    },
+    {
+        "id": "b-117",
+        "name": "Devin Booker",
+        "birthDate": "1996-10-30",
+        "sport": "basketball",
+        "category": "active",
+        "clubs": [
+            { "name": "Phoenix Suns", "years": "2015-" }
+        ]
+    },
+    {
+        "id": "b-118",
+        "name": "Robert Horry",
+        "birthDate": "1970-08-25",
+        "sport": "basketball",
+        "category": "historical",
+        "clubs": [
+            { "name": "Houston Rockets", "years": "1992-1996" },
+            { "name": "Phoenix Suns", "years": "1996-1997" },
+            { "name": "Los Angeles Lakers", "years": "1997-2003" },
+            { "name": "San Antonio Spurs", "years": "2003-2008" }
+        ]
+    },
+    {
+        "id": "b-119",
+        "name": "Jamal Crawford",
+        "birthDate": "1980-03-20",
+        "sport": "basketball",
+        "category": "historical",
+        "clubs": [
+            { "name": "Chicago Bulls", "years": "2000-2004" },
+            { "name": "New York Knicks", "years": "2004-2008" },
+            { "name": "Golden State Warriors", "years": "2008-2009" },
+            { "name": "Atlanta Hawks", "years": "2009-2011" },
+            { "name": "Portland Trail Blazers", "years": "2011-2012" },
+            { "name": "Los Angeles Clippers", "years": "2012-2017" },
+            { "name": "Minnesota Timberwolves", "years": "2017-2018" },
+            { "name": "Phoenix Suns", "years": "2018-2019" },
+            { "name": "Brooklyn Nets", "years": "2020" }
+        ]
+    },
+    {
+        "id": "b-120",
+        "name": "Andre Iguodala",
+        "birthDate": "1984-01-28",
+        "sport": "basketball",
+        "category": "historical",
+        "clubs": [
+            { "name": "Philadelphia 76ers", "years": "2004-2012" },
+            { "name": "Denver Nuggets", "years": "2012-2013" },
+            { "name": "Golden State Warriors", "years": "2013-2019" },
+            { "name": "Miami Heat", "years": "2020-2021" },
+            { "name": "Golden State Warriors", "years": "2021-2023" }
+        ]
+    },
+    {
+        "id": "b-121",
+        "name": "Steve Kerr",
+        "birthDate": "1965-09-27",
+        "sport": "basketball",
+        "category": "historical",
+        "clubs": [
+            { "name": "Phoenix Suns", "years": "1988-1989" },
+            { "name": "Cleveland Cavaliers", "years": "1989-1992" },
+            { "name": "Orlando Magic", "years": "1992-1993" },
+            { "name": "Chicago Bulls", "years": "1993-1998" },
+            { "name": "San Antonio Spurs", "years": "1999-2001" },
+            { "name": "Portland Trail Blazers", "years": "2001-2002" },
+            { "name": "San Antonio Spurs", "years": "2002-2003" }
+        ]
+    },
+    {
+        "id": "b-122",
+        "name": "Dražen Petrović",
+        "birthDate": "1964-10-22",
+        "sport": "basketball",
+        "category": "historical",
+        "clubs": [
+            { "name": "Šibenka", "years": "1979-1983" },
+            { "name": "Cibona Zagreb", "years": "1984-1988" },
+            { "name": "Real Madrid", "years": "1988-1989" },
+            { "name": "Portland Trail Blazers", "years": "1989-1991" },
+            { "name": "New Jersey Nets", "years": "1991-1993" }
+        ]
+    },
+    {
+        "id": "b-123",
+        "name": "Cade Cunningham",
+        "birthDate": "2001-09-25",
+        "sport": "basketball",
+        "category": "active",
+        "clubs": [
+            { "name": "Detroit Pistons", "years": "2021-" }
+        ]
+    },
+    {
+        "id": "b-124",
+        "name": "Jalen Brunson",
+        "birthDate": "1996-08-31",
+        "sport": "basketball",
+        "category": "active",
+        "clubs": [
+            { "name": "Dallas Mavericks", "years": "2018-2022" },
+            { "name": "New York Knicks", "years": "2022-" }
+        ]
+    },
+    {
+        "id": "b-125",
+        "name": "Tyrese Haliburton",
+        "birthDate": "2000-02-29",
+        "sport": "basketball",
+        "category": "active",
+        "clubs": [
+            { "name": "Sacramento Kings", "years": "2020-2022" },
+            { "name": "Indiana Pacers", "years": "2022-" }
+        ]
+    },
+    {
+        "id": "b-126",
+        "name": "Anthony Edwards",
+        "birthDate": "2001-08-05",
+        "sport": "basketball",
+        "category": "active",
+        "clubs": [
+            { "name": "Minnesota Timberwolves", "years": "2020-" }
+        ]
+    },
+    {
+        "id": "b-127",
+        "name": "Rick Carlisle",
+        "birthDate": "1959-10-27",
+        "sport": "basketball",
+        "category": "historical",
+        "clubs": [
+            { "name": "Boston Celtics", "years": "1984-1987" },
+            { "name": "New York Knicks", "years": "1987-1988" },
+            { "name": "New Jersey Nets", "years": "1989" }
+        ]
+    },
+    {
+        "id": "b-128",
+        "name": "Rudy Gobert",
+        "birthDate": "1992-06-26",
+        "sport": "basketball",
+        "category": "active",
+        "clubs": [
+            { "name": "Cholet Basket", "years": "2011-2013" },
+            { "name": "Utah Jazz", "years": "2013-2022" },
+            { "name": "Minnesota Timberwolves", "years": "2022-" }
+        ]
+    },
+    {
+        "id": "b-129",
+        "name": "Domantas Sabonis",
+        "birthDate": "1996-05-03",
+        "sport": "basketball",
+        "category": "active",
+        "clubs": [
+            { "name": "Unicaja Málaga", "years": "2012-2014" },
+            { "name": "Oklahoma City Thunder", "years": "2016-2017" },
+            { "name": "Indiana Pacers", "years": "2017-2022" },
+            { "name": "Sacramento Kings", "years": "2022-" }
+        ]
+    },
+    {
+        "id": "b-130",
+        "name": "Trae Young",
+        "birthDate": "1998-09-19",
+        "sport": "basketball",
+        "category": "active",
+        "clubs": [
+            { "name": "Atlanta Hawks", "years": "2018-2026" },
+            { "name": "Washington Wizards", "years": "2026-" }
+        ]
+    },
+    {
+        "id": "b-131",
+        "name": "Jaylen Brown",
+        "birthDate": "1996-10-24",
+        "sport": "basketball",
+        "category": "active",
+        "clubs": [
+            { "name": "Boston Celtics", "years": "2016-" }
+        ]
+    },
+    {
+        "id": "b-132",
+        "name": "Kristaps Porzingis",
+        "birthDate": "1995-08-02",
+        "sport": "basketball",
+        "category": "active",
+        "clubs": [
+            { "name": "Sevilla", "years": "2012-2015" },
+            { "name": "New York Knicks", "years": "2015-2019" },
+            { "name": "Dallas Mavericks", "years": "2019-2022" },
+            { "name": "Washington Wizards", "years": "2022-2023" },
+            { "name": "Boston Celtics", "years": "2023-2025" },
+            { "name": "Atlanta Hawks", "years": "2025-2026" },
+            { "name": "Golden State Warriors", "years": "2026-" }
+        ]
+    },
+    {
+        "id": "b-133",
+        "name": "Jimmy Butler",
+        "birthDate": "1989-09-14",
+        "sport": "basketball",
+        "category": "active",
+        "clubs": [
+            { "name": "Chicago Bulls", "years": "2011-2017" },
+            { "name": "Minnesota Timberwolves", "years": "2017-2018" },
+            { "name": "Philadelphia 76ers", "years": "2018-2019" },
+            { "name": "Miami Heat", "years": "2019-2025" },
+            { "name": "Golden State Warriors", "years": "2025-" }
+        ]
+    },
+    {
+        "id": "b-134",
+        "name": "Andrew Wiggins",
+        "birthDate": "1995-02-23",
+        "sport": "basketball",
+        "category": "active",
+        "clubs": [
+            { "name": "Minnesota Timberwolves", "years": "2014-2020" },
+            { "name": "Golden State Warriors", "years": "2020-2025" },
+            { "name": "Miami Heat", "years": "2025-" }
+        ]
+    },
+    {
+        "id": "b-135",
+        "name": "Pascal Siakam",
+        "birthDate": "1994-04-02",
+        "sport": "basketball",
+        "category": "active",
+        "clubs": [
+            { "name": "Toronto Raptors", "years": "2016-2024" },
+            { "name": "Indiana Pacers", "years": "2024-" }
+        ]
+    },
+    {
+        "id": "b-136",
+        "name": "Al Horford",
+        "birthDate": "1986-06-03",
+        "sport": "basketball",
+        "category": "active",
+        "clubs": [
+            { "name": "Atlanta Hawks", "years": "2007-2016" },
+            { "name": "Boston Celtics", "years": "2016-2019" },
+            { "name": "Philadelphia 76ers", "years": "2019-2020" },
+            { "name": "Oklahoma City Thunder", "years": "2020-2021" },
+            { "name": "Boston Celtics", "years": "2021-2025" },
+            { "name": "Golden State Warriors", "years": "2025-" }
+        ]
+    },
+    {
+        "id": "b-137",
+        "name": "Paul George",
+        "birthDate": "1990-05-02",
+        "sport": "basketball",
+        "category": "active",
+        "clubs": [
+            { "name": "Indiana Pacers", "years": "2010-2017" },
+            { "name": "Oklahoma City Thunder", "years": "2017-2019" },
+            { "name": "Los Angeles Clippers", "years": "2019-2024" },
+            { "name": "Philadelphia 76ers", "years": "2024-" }
+        ]
+    },
+    {
+        "id": "b-138",
+        "name": "DeMar DeRozan",
+        "birthDate": "1989-08-07",
+        "sport": "basketball",
+        "category": "active",
+        "clubs": [
+            { "name": "Toronto Raptors", "years": "2009-2018" },
+            { "name": "San Antonio Spurs", "years": "2018-2021" },
+            { "name": "Chicago Bulls", "years": "2021-2024" },
+            { "name": "Sacramento Kings", "years": "2024-" }
+        ]
+    },
+    {
+        "id": "b-139",
+        "name": "Rajon Rondo",
+        "birthDate": "1986-02-22",
+        "sport": "basketball",
+        "category": "historical",
+        "clubs": [
+            { "name": "Boston Celtics", "years": "2006-2014" },
+            { "name": "Dallas Mavericks", "years": "2014-2015" },
+            { "name": "Sacramento Kings", "years": "2015-2016" },
+            { "name": "Chicago Bulls", "years": "2016-2017" },
+            { "name": "New Orleans Pelicans", "years": "2017-2018" },
+            { "name": "Los Angeles Lakers", "years": "2018-2020" },
+            { "name": "Atlanta Hawks", "years": "2020-2021" },
+            { "name": "Los Angeles Clippers", "years": "2021" },
+            { "name": "Los Angeles Lakers", "years": "2021-2022" },
+            { "name": "Cleveland Cavaliers", "years": "2022" }
+        ]
+    },
+    {
+        "id": "b-140",
+        "name": "Jrue Holiday",
+        "birthDate": "1990-06-12",
+        "sport": "basketball",
+        "category": "active",
+        "clubs": [
+            { "name": "Philadelphia 76ers", "years": "2009-2013" },
+            { "name": "New Orleans Pelicans", "years": "2013-2020" },
+            { "name": "Milwaukee Bucks", "years": "2020-2023" },
+            { "name": "Boston Celtics", "years": "2023-2025" },
+            { "name": "Portland Trail Blazers", "years": "2025-" }
+        ]
+    },
+    {
+        "id": "b-141",
+        "name": "Muggsy Bogues",
+        "birthDate": "1965-01-09",
+        "sport": "basketball",
+        "category": "historical",
+        "clubs": [
+            { "name": "Washington Bullets", "years": "1987-1988" },
+            { "name": "Charlotte Hornets", "years": "1988-1997" },
+            { "name": "Golden State Warriors", "years": "1997-1999" },
+            { "name": "Toronto Raptors", "years": "1999-2001" }
+        ]
+    },
+    {
+        "id": "b-142",
+        "name": "Tracy McGrady",
+        "birthDate": "1979-05-24",
+        "sport": "basketball",
+        "category": "historical",
+        "clubs": [
+            { "name": "Toronto Raptors", "years": "1997-2000" },
+            { "name": "Orlando Magic", "years": "2000-2004" },
+            { "name": "Houston Rockets", "years": "2004-2010" },
+            { "name": "New York Knicks", "years": "2010" },
+            { "name": "Detroit Pistons", "years": "2010-2011" },
+            { "name": "Atlanta Hawks", "years": "2011-2012" },
+            { "name": "Qingdao Eagles", "years": "2012-2013" },
+            { "name": "San Antonio Spurs", "years": "2013" }
+        ]
+    },
+    {
+        "id": "b-143",
+        "name": "Grant Hill",
+        "birthDate": "1972-10-05",
+        "sport": "basketball",
+        "category": "historical",
+        "clubs": [
+            { "name": "Detroit Pistons", "years": "1994-2000" },
+            { "name": "Orlando Magic", "years": "2000-2007" },
+            { "name": "Phoenix Suns", "years": "2007-2012" },
+            { "name": "Los Angeles Clippers", "years": "2012-2013" }
+        ]
+    },
+    {
+        "id": "b-144",
+        "name": "Detlef Schrempf",
+        "birthDate": "1963-01-21",
+        "sport": "basketball",
+        "category": "historical",
+        "clubs": [
+            { "name": "Dallas Mavericks", "years": "1985-1989" },
+            { "name": "Indiana Pacers", "years": "1989-1993" },
+            { "name": "Seattle SuperSonics", "years": "1993-1999" },
+            { "name": "Portland Trail Blazers", "years": "1999-2001" }
+        ]
+    },
+    {
+        "id": "b-145",
+        "name": "Danny Green",
+        "birthDate": "1987-06-22",
+        "sport": "basketball",
+        "category": "historical",
+        "clubs": [
+            { "name": "Cleveland Cavaliers", "years": "2009-2010" },
+            { "name": "San Antonio Spurs", "years": "2010-2018" },
+            { "name": "Toronto Raptors", "years": "2018-2019" },
+            { "name": "Los Angeles Lakers", "years": "2019-2020" },
+            { "name": "Philadelphia 76ers", "years": "2020-2022" },
+            { "name": "Memphis Grizzlies", "years": "2022-2023" },
+            { "name": "Cleveland Cavaliers", "years": "2023" },
+            { "name": "Philadelphia 76ers", "years": "2023" }
+        ]
+    },
+    {
+        "id": "b-146",
+        "name": "Charles Oakley",
+        "birthDate": "1963-12-18",
+        "sport": "basketball",
+        "category": "historical",
+        "clubs": [
+            { "name": "Chicago Bulls", "years": "1985-1988" },
+            { "name": "New York Knicks", "years": "1988-1998" },
+            { "name": "Toronto Raptors", "years": "1998-2001" },
+            { "name": "Chicago Bulls", "years": "2001-2002" },
+            { "name": "Washington Wizards", "years": "2002-2003" },
+            { "name": "Houston Rockets", "years": "2004" }
+        ]
+    },
+    {
+        "id": "b-147",
+        "name": "Shawn Kemp",
+        "birthDate": "1969-11-26",
+        "sport": "basketball",
+        "category": "historical",
+        "clubs": [
+            { "name": "Seattle SuperSonics", "years": "1989-1997" },
+            { "name": "Cleveland Cavaliers", "years": "1997-2000" },
+            { "name": "Portland Trail Blazers", "years": "2000-2002" },
+            { "name": "Orlando Magic", "years": "2002-2003" }
+        ]
+    },
+    {
+        "id": "b-148",
+        "name": "Kyle Korver",
+        "birthDate": "1981-03-17",
+        "sport": "basketball",
+        "category": "historical",
+        "clubs": [
+            { "name": "Philadelphia 76ers", "years": "2003-2007" },
+            { "name": "Utah Jazz", "years": "2007-2010" },
+            { "name": "Chicago Bulls", "years": "2010-2012" },
+            { "name": "Atlanta Hawks", "years": "2012-2017" },
+            { "name": "Cleveland Cavaliers", "years": "2017-2018" },
+            { "name": "Utah Jazz", "years": "2018-2019" },
+            { "name": "Milwaukee Bucks", "years": "2019-2020" }
+        ]
+    },
+    {
+        "id": "b-149",
+        "name": "Tyrese Maxey",
+        "birthDate": "2000-11-04",
+        "sport": "basketball",
+        "category": "active",
+        "clubs": [
+            { "name": "Philadelphia 76ers", "years": "2020-" }
+        ]
+    },
+    {
+        "id": "b-150",
+        "name": "De'Aaron Fox",
+        "birthDate": "1997-12-20",
+        "sport": "basketball",
+        "category": "active",
+        "clubs": [
+            { "name": "Sacramento Kings", "years": "2017-2025" },
+            { "name": "San Antonio Spurs", "years": "2025-" }
+        ]
     }
 
 ];
