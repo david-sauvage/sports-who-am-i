@@ -104,7 +104,7 @@
         "mvp": {
             "name": "MVP",
             "description": "Find 10 MVP trophy winners",
-            "description_locked": "Gather ten chosen ones who have touched the Michael Jordan trophy, the supreme Grail of individual basketball.",
+            "description_locked": "Gather ten players crowned kings of an entire season, where only one can reign above all others.",
             "description_unlocked": "The MVP trophy rewards the best player of the year. You have found 10 of these legends."
         },
         "dpoy": {
@@ -122,85 +122,85 @@
         "cleveland_this_is_for_you": {
             "name": "Cleveland, This is for you",
             "description": "Find LeBron James, Kyrie Irving, and Kevin Love",
-            "description_locked": "Find the legendary trio that brought the title back to Ohio after being down 3-1 in the finals.",
+            "description_locked": "Three men accomplished what no one thought possible, overturning fate on the shores of Lake Erie.",
             "description_unlocked": "You found the heroes of the 2016 Cleveland Cavaliers, architects of the greatest comeback in NBA Finals history!"
         },
         "los_tres_amigos": {
             "name": "Los Tres Amigos",
             "description": "Find LeBron James, Dwyane Wade, and Chris Bosh",
-            "description_locked": "Find the iconic trio that took their talents to South Beach to rule the NBA.",
+            "description_locked": "Three friends reunited under the sun to build an empire. Their alliance shook the entire league.",
             "description_unlocked": "You found the famous Miami Heat Big Three, back-to-back NBA champions in 2012 and 2013!"
         },
         "dream_team": {
             "name": "Dream Team",
             "description": "Find Michael Jordan, Magic Johnson, and Larry Bird",
-            "description_locked": "Find the three iconic faces of the team that dazzled the whole world at the 1992 Barcelona Games.",
+            "description_locked": "Find three titans from the most dazzling team ever assembled, who captivated the world during one Olympic summer.",
             "description_unlocked": "You found the three undisputed legends of the 1992 Dream Team: Jordan, Magic, and Bird!"
         },
         "11_vs_100": {
             "name": "11 vs 100",
             "description": "Find Bill Russell and Wilt Chamberlain",
-            "description_locked": "Find the two greatest giants of the 60s: one collected 11 rings, the other scored 100 points in a single game.",
+            "description_locked": "Two colossi whom everything opposed — except greatness. Their duel forever branded an entire era.",
             "description_unlocked": "You found Bill Russell and Wilt Chamberlain, the two legends who defined the first great era of NBA dominance!"
         },
         "lob_city": {
             "name": "Lob City",
             "description": "Find Chris Paul, Blake Griffin, and DeAndre Jordan",
-            "description_locked": "Find the spectacular Californian trio that turned Los Angeles into a dunk factory.",
+            "description_locked": "Find three acrobats who turned every pass into an aerial spectacle, under the west coast sun.",
             "description_unlocked": "You found the founders of 'Lob City', the most exciting and high-flying era in Clippers history!"
         },
         "gregg_popovich": {
             "name": "Gregg Popovich",
             "description": "Find Tim Duncan, Tony Parker, and Manu Ginóbili",
-            "description_locked": "Find the legendary Spurs Big Three who dominated the league under Coach Pop's tutelage.",
+            "description_locked": "Find three soldiers of a Texan general, united by discipline and sacrifice for over a decade.",
             "description_unlocked": "You found the most victorious Big Three in history, symbol of the San Antonio Spurs and team basketball!"
         },
         "the_process": {
             "name": "The Process",
             "description": "Find Joel Embiid and Ben Simmons",
-            "description_locked": "Trust the rebuild and find the polarizing Philadelphia 76ers duo.",
+            "description_locked": "Trust the plan and find a duo as brilliant as it was cursed, a promise of a future that never came to be.",
             "description_unlocked": "Ah, 'Trust the Process'! You found Joel Embiid and Ben Simmons, one of the most polarizing duos in modern NBA history."
         },
         "eleven_rings": {
             "name": "Eleven Rings",
             "description": "Find Phil Jackson, Michael Jordan, and Kobe Bryant",
-            "description_locked": "Find the mythical coach with 11 rings and his two greatest students.",
+            "description_locked": "A Zen master and his two fiercest disciples. Together, they conquered everything between two coasts.",
             "description_unlocked": "You found Phil Jackson, MJ, and Kobe: the faces of triangle offense excellence!"
         },
         "the_last_dance": {
             "name": "The Last Dance",
             "description": "Find Phil Jackson, Michael Jordan, Scottie Pippen, and Dennis Rodman",
-            "description_locked": "Find the coach and the three core players of the legendary Bulls three-peat (1996-1998).",
+            "description_locked": "Find the four protagonists of a final waltz that left the whole world holding its breath.",
             "description_unlocked": "It's a wrap! You reunited the full cast of 'The Last Dance'."
         },
         "the_original_big_3": {
             "name": "The Original Big 3",
             "description": "Find Larry Bird, Kevin McHale, and Robert Parish",
-            "description_locked": "Find the formidable Celtics trio that dominated the East in the 80s.",
+            "description_locked": "Find three pillars of a green temple where the hardwood tells tales of a bygone era of glory.",
             "description_unlocked": "Incredible! You found Bird, McHale, and Parish, the original Big 3 of the Boston Celtics!"
         },
         "bad_boys": {
             "name": "Bad Boys",
             "description": "Find Dennis Rodman, Joe Dumars, and Isiah Thomas",
-            "description_locked": "Find the three figureheads of the roughest and most feared team of the 80s.",
+            "description_locked": "Find three magnificent brutes whose elbows made even the greatest tremble.",
             "description_unlocked": "Watch out for those elbows! You found the infamous Detroit Bad Boys."
         },
         "showtime": {
             "name": "Showtime",
             "description": "Find Kareem Abdul-Jabbar, Magic Johnson, Michael Cooper, and Pat Riley",
-            "description_locked": "Find the architects of the most spectacular Lakers dynasty of the 80s.",
+            "description_locked": "Find the architects of an era of glitter and no-look passes, when basketball became showbusiness.",
             "description_unlocked": "Glitter, stars, and total basketball! You brought Lakers Showtime back to life."
         },
         "grit_and_grind": {
             "name": "Grit and Grind",
             "description": "Find Marc Gasol, Mike Conley, and Zach Randolph",
-            "description_locked": "Find the pillars of the tough and hard-working Memphis team of the 2010s.",
+            "description_locked": "Find the pillars of a fortress built on courage and sweat, on the banks of the Mississippi.",
             "description_unlocked": "Take cover! You found the kings of the Memphis 'Grit and Grind'."
         },
         "seven_seconds_or_less": {
             "name": "7 Seconds or Less",
             "description": "Find Steve Nash, Amar'e Stoudemire, and Shawn Marion",
-            "description_locked": "Find the Phoenix rockets that revolutionized offensive play in the 2000s.",
+            "description_locked": "Find three desert comets who accelerated the game beyond any known limit.",
             "description_unlocked": "Pedal to the metal! You found the masters of '7 Seconds or Less'."
         },
         "open_mic": {
@@ -212,13 +212,13 @@
         "clipboard_masterminds": {
             "name": "Clipboard Masterminds",
             "description": "Find Rick Carlisle, Steve Kerr, and Phil Jackson",
-            "description_locked": "Find these three former role players who evolved into some of the most brilliant and decorated head coaches in history.",
+            "description_locked": "Find three strategists who traded their jerseys for suits, and whose genius shines from the sideline.",
             "description_unlocked": "From the end of the bench to the top of the league! You found the ultimate clipboard masterminds."
         },
         "we_the_north": {
             "name": "We The North",
             "description": "Find Kawhi Leonard, Marc Gasol, and Kyle Lowry",
-            "description_locked": "Find the main architects of the Canadian franchise's first and only NBA title.",
+            "description_locked": "Find three conquerors from the cold, whose claw mark echoed north of the border.",
             "description_unlocked": "Oh Canada! You found the heroes of Toronto's championship run."
         },
         "eternal_rivals": {
@@ -254,7 +254,7 @@
         "miracle_istanbul": {
             "name": "The Miracle of Istanbul",
             "description": "Find Steven Gerrard, Vladimír Šmicer, and Xabi Alonso",
-            "description_locked": "Three goals in six minutes to overturn the impossible. Find the authors of this resurrection.",
+            "description_locked": "Find the authors of a resurrection on Ottoman soil, when only a miracle could still save the night.",
             "description_unlocked": "You found the three heroes of Liverpool FC's crazy comeback against AC Milan in 2005."
         },
         "a_jamais_les_premiers": {
@@ -278,7 +278,7 @@
         "mourir_tranquille": {
             "name": "On peut mourir tranquille",
             "description": "Find Barthez, Blanc, Zidane, Deschamps, and Djorkaeff",
-            "description_locked": "Five heroes of a July night when an entire country roared as one on the Champs-Élysées.",
+            "description_locked": "Five heroes of a summer night when an entire nation became one, under a starlit sky.",
             "description_unlocked": "You found 5 of the greatest heroes of the 1998 World Cup winning French national team."
         },
         "seconde_etoile": {

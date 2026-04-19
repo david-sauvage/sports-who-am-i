@@ -98,7 +98,7 @@
             "mvp": {
                 "name": "MVP",
                 "description": "Encuentra 10 ganadores del trofeo MVP",
-                "description_locked": "Reúne a diez elegidos que hayan tocado el trofeo Michael Jordan, el Santo Grial supremo del baloncesto individual.",
+                "description_locked": "Reúne a diez elegidos coronados reyes de toda una temporada, donde solo uno puede reinar sobre todos los demás.",
                 "description_unlocked": "El trofeo MVP premia al mejor jugador del año. Has encontrado a 10 de estas leyendas."
             },
             "dpoy": {
@@ -116,85 +116,85 @@
             "cleveland_this_is_for_you": {
                 "name": "Cleveland, This is for you",
                 "description": "Encuentra a LeBron James, Kyrie Irving y Kevin Love",
-                "description_locked": "Encuentra al legendario trío que trajo el título a Ohio tras ir perdiendo 3-1 en las finales.",
+                "description_locked": "Tres hombres lograron lo que nadie creía posible, revirtiendo el destino a orillas del lago Erie.",
                 "description_unlocked": "¡Has encontrado a los héroes de los Cleveland Cavaliers de 2016, autores de la mayor remontada en la historia de las Finales de la NBA!"
             },
             "los_tres_amigos": {
                 "name": "Los Tres Amigos",
                 "description": "Encuentra a LeBron James, Dwyane Wade y Chris Bosh",
-                "description_locked": "Encuentra al icónico trío que llevó sus talentos a South Beach para reinar en la NBA.",
+                "description_locked": "Tres amigos reunidos bajo el sol para construir un imperio. Su alianza hizo temblar a toda la liga.",
                 "description_unlocked": "¡Has encontrado al famoso Big Three de los Miami Heat, bicampeones de la NBA en 2012 y 2013!"
             },
             "dream_team": {
                 "name": "Dream Team",
                 "description": "Encuentra a Michael Jordan, Magic Johnson y Larry Bird",
-                "description_locked": "Encuentra a las tres caras icónicas del equipo que deslumbró al mundo entero en los Juegos de Barcelona en 1992.",
+                "description_locked": "Encuentra a tres titanes del equipo más deslumbrante jamás reunido, que cautivó al mundo durante un verano olímpico.",
                 "description_unlocked": "¡Has encontrado a las tres leyendas indiscutibles del Dream Team de 1992: Jordan, Magic y Bird!"
             },
             "11_vs_100": {
                 "name": "11 vs 100",
                 "description": "Encuentra a Bill Russell y Wilt Chamberlain",
-                "description_locked": "Encuentra a los dos mayores gigantes de los 60: uno coleccionó 11 anillos, el otro anotó 100 puntos en un solo partido.",
+                "description_locked": "Dos colosos a los que todo oponía, excepto la grandeza. Su duelo marcó a fuego toda una época.",
                 "description_unlocked": "¡Has encontrado a Bill Russell y Wilt Chamberlain, las dos leyendas que definieron la primera gran era de dominio en la NBA!"
             },
             "lob_city": {
                 "name": "Lob City",
                 "description": "Encuentra a Chris Paul, Blake Griffin y DeAndre Jordan",
-                "description_locked": "Encuentra al espectacular trío californiano que transformó Los Ángeles en una verdadera fábrica de mates.",
+                "description_locked": "Encuentra a tres acróbatas que transformaron cada pase en un espectáculo aéreo, bajo el sol de la costa oeste.",
                 "description_unlocked": "¡Has encontrado a los fundadores de 'Lob City', la época más emocionante y aérea de la historia de los Clippers!"
             },
             "gregg_popovich": {
                 "name": "Gregg Popovich",
                 "description": "Encuentra a Tim Duncan, Tony Parker y Manu Ginóbili",
-                "description_locked": "Encuentra al legendario Big Three de los Spurs que dominó la liga bajo la tutela del Coach Pop.",
+                "description_locked": "Encuentra a tres soldados de un general tejano, unidos por la disciplina y el sacrificio durante más de una década.",
                 "description_unlocked": "¡Has encontrado al Big Three más victorioso de la historia, símbolo de los San Antonio Spurs y del baloncesto colectivo!"
             },
             "the_process": {
                 "name": "The Process",
                 "description": "Encuentra a Joel Embiid y Ben Simmons",
-                "description_locked": "Confía en la reconstrucción y encuentra al polémico dúo de los Philadelphia 76ers.",
+                "description_locked": "Confía en el plan y encuentra un dúo tan brillante como maldito, promesa de un futuro que nunca se cumplió.",
                 "description_unlocked": "¡Ah, 'Trust the Process'! Has encontrado a Joel Embiid y Ben Simmons, uno de los dúos más divisivos de la NBA moderna."
             },
             "eleven_rings": {
                 "name": "Eleven Rings",
                 "description": "Encuentra a Phil Jackson, Michael Jordan y Kobe Bryant",
-                "description_locked": "Encuentra al mítico entrenador de los 11 anillos y a sus dos mejores pupilos.",
+                "description_locked": "Un maestro zen y sus dos discípulos más feroces. Juntos, lo conquistaron todo entre dos costas.",
                 "description_unlocked": "¡Has encontrado a Phil Jackson, MJ y Kobe: los rostros de la excelencia en el triángulo ofensivo!"
             },
             "the_last_dance": {
                 "name": "The Last Dance",
                 "description": "Encuentra a Phil Jackson, Michael Jordan, Scottie Pippen y Dennis Rodman",
-                "description_locked": "Encuentra al entrenador y a las tres figuras principales del legendario triplete de los Bulls (1996-1998).",
+                "description_locked": "Encuentra a los cuatro protagonistas de un último baile que dejó al mundo entero conteniendo el aliento.",
                 "description_unlocked": "¡Corte! Has reunido al elenco completo de 'The Last Dance'."
             },
             "the_original_big_3": {
                 "name": "The Original Big 3",
                 "description": "Encuentra a Larry Bird, Kevin McHale y Robert Parish",
-                "description_locked": "Encuentra al temible trío de los Celtics que dominó el Este en los años 80.",
+                "description_locked": "Encuentra a tres pilares de un templo verde donde el parqué cuenta la gloria de una era pasada.",
                 "description_unlocked": "¡Increíble! Has encontrado a Bird, McHale y Parish, el Big 3 original de los Boston Celtics."
             },
             "bad_boys": {
                 "name": "Bad Boys",
                 "description": "Encuentra a Dennis Rodman, Joe Dumars y Isiah Thomas",
-                "description_locked": "Encuentra a los tres líderes del equipo más rudo y temido de los años 80.",
+                "description_locked": "Encuentra a tres brutos magníficos cuyos codos hacían temblar hasta a los más grandes.",
                 "description_unlocked": "¡Cuidado con los codos! Has encontrado a los infames Bad Boys de Detroit."
             },
             "showtime": {
                 "name": "Showtime",
                 "description": "Encuentra a Kareem Abdul-Jabbar, Magic Johnson, Michael Cooper y Pat Riley",
-                "description_locked": "Encuentra a los arquitectos de la dinastía más espectacular de los Lakers en los años 80.",
+                "description_locked": "Encuentra a los arquitectos de una era de lentejuelas y pases sin mirar, cuando el baloncesto se convirtió en espectáculo.",
                 "description_unlocked": "¡Lentejuelas, estrellas y baloncesto total! Has devuelto a la vida el Showtime de los Lakers."
             },
             "grit_and_grind": {
                 "name": "Grit and Grind",
                 "description": "Encuentra a Marc Gasol, Mike Conley y Zach Randolph",
-                "description_locked": "Encuentra a los pilares de este equipo duro y trabajador de Memphis en la década de 2010.",
+                "description_locked": "Encuentra a los pilares de una fortaleza construida sobre el coraje y el sudor, a orillas del Misisipi.",
                 "description_unlocked": "¡A cubierto! Has encontrado a los reyes del 'Grit and Grind' de Memphis."
             },
             "seven_seconds_or_less": {
                 "name": "7 Seconds or Less",
                 "description": "Encuentra a Steve Nash, Amar'e Stoudemire y Shawn Marion",
-                "description_locked": "Encuentra a los cohetes de Phoenix que revolucionaron el juego ofensivo en los años 2000.",
+                "description_locked": "Encuentra a tres cometas del desierto que aceleraron el juego más allá de cualquier límite conocido.",
                 "description_unlocked": "¡Acelera! Has encontrado a los maestros del '7 Seconds or Less'."
             },
             "open_mic": {
@@ -206,13 +206,13 @@
             "clipboard_masterminds": {
                 "name": "Genios de la Pizarra",
                 "description": "Encuentra a Rick Carlisle, Steve Kerr y Phil Jackson",
-                "description_locked": "Encuentra a estos tres antiguos jugadores de rol que se convirtieron en algunos de los entrenadores más brillantes y laureados de la historia.",
+                "description_locked": "Encuentra a tres estrategas que cambiaron la camiseta por el traje, y cuyo genio brilla desde el banquillo.",
                 "description_unlocked": "¡Del banquillo a la cima de la liga! Has encontrado a los maestros absolutos de la pizarra."
             },
             "we_the_north": {
                 "name": "We The North",
                 "description": "Encuentra a Kawhi Leonard, Marc Gasol y Kyle Lowry",
-                "description_locked": "Encuentra a los principales artífices del primer y único título de la NBA de la franquicia canadiense.",
+                "description_locked": "Encuentra a tres conquistadores llegados del frío, cuyo zarpazo resonó al norte de la frontera.",
                 "description_unlocked": "¡Oh Canadá! Has encontrado a los héroes del título de Toronto."
             },
             "eternal_rivals": {
@@ -248,7 +248,7 @@
             "miracle_istanbul": {
                 "name": "El milagro de Estambul",
                 "description": "Encuentra a Steven Gerrard, Vladimír Šmicer y Xabi Alonso",
-                "description_locked": "Tres goles en seis minutos para revertir lo imposible. Encuentra a los autores de esta resurrección.",
+                "description_locked": "Encuentra a los autores de una resurrección en tierra otomana, cuando solo un milagro podía aún salvar la noche.",
                 "description_unlocked": "Has encontrado a los tres héroes que marcaron para el Liverpool en la final de la Champions de 2005."
             },
             "a_jamais_les_premiers": {
@@ -272,7 +272,7 @@
             "mourir_tranquille": {
                 "name": "On puede morir tranquilo",
                 "description": "Encuentra a Barthez, Blanc, Zidane, Deschamps y Djorkaeff",
-                "description_locked": "Cinco héroes de una noche de julio en la que todo un país gritó al unísono en los Campos Elíseos.",
+                "description_locked": "Cinco héroes de una noche de verano en la que todo un pueblo se fundió en uno, bajo un cielo estrellado.",
                 "description_unlocked": "Has encontrado a 5 de los mayores héroes de la selección francesa campeona del mundo en 1998."
             },
             "seconde_etoile": {
