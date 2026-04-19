@@ -86,7 +86,7 @@ export const GameContainer = () => {
 
         return (
             <div className={styles.container}>
-                <div className={styles.endCard}>
+                <section className={styles.endCard} aria-label="Game Over">
                     <div className={styles.endIcon}>🎉</div>
                     <h1>{t('settings.gameOver')}</h1>
                     <div className={styles.totalScoreLabel}>
@@ -120,7 +120,7 @@ export const GameContainer = () => {
                     <button onClick={() => setView('settings')} className={styles.primaryButton}>
                         {t('settings.playAgain')}
                     </button>
-                </div>
+                </section>
             </div>
         );
     }
@@ -134,7 +134,7 @@ export const GameContainer = () => {
 
     return (
         <div className={containerClasses}>
-            <div className={styles.header}>
+            <header className={styles.header}>
                 <button onClick={() => setView('settings')} className={styles.backButton} title="Paramètres">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                         <circle cx="12" cy="12" r="3" />
@@ -150,9 +150,9 @@ export const GameContainer = () => {
                     currentQuestion={currentPlayerIndex + 1}
                     totalQuestions={gameSettings?.questionCount || 10}
                 />
-            </div>
+            </header>
 
-            <div key={currentPlayer.id} className={styles.cardWrapper}>
+            <article key={currentPlayer.id} className={styles.cardWrapper}>
                 {currentPlayer && (
                     <PlayerCard
                         player={currentPlayer}
@@ -164,7 +164,7 @@ export const GameContainer = () => {
                         nextLabel={t('common.next')}
                     />
                 )}
-            </div>
+            </article>
 
 
             <div className={styles.controls}>

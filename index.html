@@ -1,16 +1,70 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 
 <head>
   <meta charset="UTF-8" />
   <link rel="icon" href="https://fav.farm/🏆" />
+  <link rel="apple-touch-icon" href="https://fav.farm/🏆" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <meta name="theme-color" content="#eef2f7" />
-  <title>Who Am I? - Sports Quiz</title>
+
+  <!-- Primary Meta Tags -->
+  <title>Qui Suis-Je ? — Quiz Sportif Football & Basketball</title>
+  <meta name="description" content="Testez vos connaissances sportives ! Devinez des joueurs de football et basketball à partir d'indices sur leur carrière. Jouez seul ou défiez vos amis avec le challenge du jour." />
+  <meta name="keywords" content="quiz sportif, qui suis-je, football, basketball, deviner joueur, jeu sport, quiz football, quiz basketball, trivia sport" />
+  <meta name="author" content="Sports Who Am I" />
+  <link rel="canonical" href="https://sports-who-am-i.pages.dev/" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://sports-who-am-i.pages.dev/" />
+  <meta property="og:title" content="Qui Suis-Je ? — Quiz Sportif Football & Basketball" />
+  <meta property="og:description" content="Testez vos connaissances sportives ! Devinez des joueurs de football et basketball à partir d'indices sur leur carrière." />
+  <meta property="og:site_name" content="Qui Suis-Je ?" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:locale:alternate" content="en_GB" />
+  <meta property="og:locale:alternate" content="es_ES" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Qui Suis-Je ? — Quiz Sportif" />
+  <meta name="twitter:description" content="Testez vos connaissances sportives ! Devinez des joueurs de football et basketball à partir d'indices." />
+
+  <!-- Web App Manifest -->
+  <link rel="manifest" href="/manifest.json" />
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Qui Suis-Je ?",
+    "alternateName": "Who Am I? — Sports Quiz",
+    "description": "Quiz sportif interactif : devinez des joueurs de football et basketball à partir d'indices sur leur carrière, clubs et palmarès.",
+    "url": "https://sports-who-am-i.pages.dev/",
+    "applicationCategory": "GameApplication",
+    "genre": "Sports Trivia",
+    "inLanguage": ["fr", "en", "es"],
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "EUR"
+    },
+    "operatingSystem": "All",
+    "browserRequirements": "Requires JavaScript"
+  }
+  </script>
 </head>
 
 <body>
   <div id="root"></div>
+  <noscript>
+    <div style="text-align:center;padding:2rem;font-family:system-ui,sans-serif;">
+      <h1>Qui Suis-Je ? — Quiz Sportif</h1>
+      <p>Ce jeu nécessite JavaScript pour fonctionner. Veuillez activer JavaScript dans votre navigateur.</p>
+      <p>This game requires JavaScript to run. Please enable JavaScript in your browser.</p>
+    </div>
+  </noscript>
   <script type="module" src="/src/main.tsx"></script>
 </body>
 

@@ -69,7 +69,7 @@ const SettingsScreen: React.FC<SettingsScreenProps> = ({ onStart }) => {
     return (
         <div className={styles.container}>
             {/* Top Bar with Language and Stats */}
-            <div className={styles.topBar}>
+            <nav className={styles.topBar} aria-label="Navigation">
                 <button
                     className={styles.statsButton}
                     onClick={() => setShowStats(true)}
@@ -111,7 +111,7 @@ const SettingsScreen: React.FC<SettingsScreenProps> = ({ onStart }) => {
                         <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z" />
                     </svg>
                 </button>
-            </div>
+            </nav>
 
             {showStats && <StatsModal onClose={() => setShowStats(false)} />}
             {showTrophies && <TrophyModal onClose={() => setShowTrophies(false)} />}

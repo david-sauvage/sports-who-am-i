@@ -1,0 +1,12 @@
+{
+  "name": "Qui Suis-Je ? — Quiz Sportif",
+  "short_name": "Qui Suis-Je ?",
+  "description": "Quiz sportif interactif : devinez des joueurs de football et basketball à partir d'indices.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#eef2f7",
+  "theme_color": "#eef2f7",
+  "lang": "fr",
+  "categories": ["games", "sports"],
+  "icons": []
+}
