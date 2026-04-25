@@ -772,14 +772,14 @@ describe('Grit and Grind Trophy', () => {
     });
 
     it('should show progress if two are found', () => {
-        const stats = { ...baseStats, foundPlayerIds: ['b-51', 'b-105'] };
+        const stats = { ...baseStats, foundPlayerIds: ['b-51', 'b-99'] };
         const result = trophy!.check(stats);
         expect(result.unlocked).toBe(false);
         expect(result.progress).toBe(2);
     });
 
     it('should be unlocked if all three are found', () => {
-        const stats = { ...baseStats, foundPlayerIds: ['b-51', 'b-105', 'b-106'] };
+        const stats = { ...baseStats, foundPlayerIds: ['b-51', 'b-99', 'b-100'] };
         const result = trophy!.check(stats);
         expect(result.unlocked).toBe(true);
         expect(result.progress).toBe(3);
@@ -827,14 +827,14 @@ describe('7 Seconds or Less Trophy', () => {
     });
 
     it('should show progress if two are found', () => {
-        const stats = { ...baseStats, foundPlayerIds: ['b-25', 'b-107'] };
+        const stats = { ...baseStats, foundPlayerIds: ['b-25', 'b-101'] };
         const result = trophy!.check(stats);
         expect(result.unlocked).toBe(false);
         expect(result.progress).toBe(2);
     });
 
     it('should be unlocked if all three are found', () => {
-        const stats = { ...baseStats, foundPlayerIds: ['b-25', 'b-107', 'b-109'] };
+        const stats = { ...baseStats, foundPlayerIds: ['b-25', 'b-101', 'b-103'] };
         const result = trophy!.check(stats);
         expect(result.unlocked).toBe(true);
         expect(result.progress).toBe(3);
@@ -889,7 +889,7 @@ describe('Open Mic Trophy', () => {
     });
 
     it('should be unlocked if all three are found', () => {
-        const stats = { ...baseStats, foundPlayerIds: ['b-17', 'b-21', 'b-96'] };
+        const stats = { ...baseStats, foundPlayerIds: ['b-17', 'b-21', 'b-94'] };
         const result = trophy!.check(stats);
         expect(result.unlocked).toBe(true);
         expect(result.progress).toBe(3);
@@ -930,21 +930,21 @@ describe('Clipboard Masterminds Trophy', () => {
     });
 
     it('should show progress if only one is found', () => {
-        const stats = { ...baseStats, foundPlayerIds: ['b-127'] };
+        const stats = { ...baseStats, foundPlayerIds: ['b-121'] };
         const result = trophy!.check(stats);
         expect(result.unlocked).toBe(false);
         expect(result.progress).toBe(1);
     });
 
     it('should show progress if two are found', () => {
-        const stats = { ...baseStats, foundPlayerIds: ['b-127', 'b-121'] };
+        const stats = { ...baseStats, foundPlayerIds: ['b-121', 'b-115'] };
         const result = trophy!.check(stats);
         expect(result.unlocked).toBe(false);
         expect(result.progress).toBe(2);
     });
 
     it('should be unlocked if all three are found', () => {
-        const stats = { ...baseStats, foundPlayerIds: ['b-127', 'b-121', 'b-70'] };
+        const stats = { ...baseStats, foundPlayerIds: ['b-121', 'b-115', 'b-70'] };
         const result = trophy!.check(stats);
         expect(result.unlocked).toBe(true);
         expect(result.progress).toBe(3);
@@ -985,21 +985,21 @@ describe('We The North Trophy', () => {
     });
 
     it('should show progress if only one is found', () => {
-        const stats = { ...baseStats, foundPlayerIds: ['b-108'] };
+        const stats = { ...baseStats, foundPlayerIds: ['b-102'] };
         const result = trophy!.check(stats);
         expect(result.unlocked).toBe(false);
         expect(result.progress).toBe(1);
     });
 
     it('should show progress if two are found', () => {
-        const stats = { ...baseStats, foundPlayerIds: ['b-108', 'b-53'] };
+        const stats = { ...baseStats, foundPlayerIds: ['b-102', 'b-53'] };
         const result = trophy!.check(stats);
         expect(result.unlocked).toBe(false);
         expect(result.progress).toBe(2);
     });
 
     it('should be unlocked if all three are found', () => {
-        const stats = { ...baseStats, foundPlayerIds: ['b-108', 'b-51', 'b-53'] };
+        const stats = { ...baseStats, foundPlayerIds: ['b-102', 'b-51', 'b-53'] };
         const result = trophy!.check(stats);
         expect(result.unlocked).toBe(true);
         expect(result.progress).toBe(3);
@@ -2204,7 +2204,7 @@ describe('Bleu Blanc Rouge Trophy', () => {
     });
 
     it('should be unlocked if 5 are found', () => {
-        const stats = { ...baseStats, foundPlayerIds: ['b-64', 'b-55', 'b-128', 'b-153', 'b-154'] };
+        const stats = { ...baseStats, foundPlayerIds: ['b-64', 'b-55', 'b-122', 'b-147', 'b-148'] };
         const result = bleuBlancRougeTrophy!.check(stats);
         expect(result.unlocked).toBe(true);
         expect(result.progress).toBe(5);

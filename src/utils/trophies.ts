@@ -211,7 +211,7 @@ export const TROPHIES: Trophy[] = [
         category: 'silver',
         sport: 'basketball',
         isPlayerDiscovery: true,
-        check: createPlayerDiscoveryCheck(['b-51', 'b-105', 'b-106']), // Marc Gasol, Mike Conley, Zach Randolph
+        check: createPlayerDiscoveryCheck(['b-51', 'b-102', 'b-103']), // Marc Gasol, Mike Conley, Zach Randolph
     },
     {
         id: 'seven_seconds_or_less',
@@ -219,7 +219,7 @@ export const TROPHIES: Trophy[] = [
         category: 'silver',
         sport: 'basketball',
         isPlayerDiscovery: true,
-        check: createPlayerDiscoveryCheck(['b-25', 'b-107', 'b-109']), // Steve Nash, Amar'e Stoudemire, Shawn Marion
+        check: createPlayerDiscoveryCheck(['b-25', 'b-104', 'b-106']), // Steve Nash, Amar'e Stoudemire, Shawn Marion
     },
     {
         id: 'open_mic',
@@ -227,7 +227,7 @@ export const TROPHIES: Trophy[] = [
         category: 'silver',
         sport: 'basketball',
         isPlayerDiscovery: true,
-        check: createPlayerDiscoveryCheck(['b-17', 'b-21', 'b-96']), // Charles Barkley, Shaquille O'Neal, Reggie Miller
+        check: createPlayerDiscoveryCheck(['b-17', 'b-21', 'b-94']), // Charles Barkley, Shaquille O'Neal, Reggie Miller
     },
     {
         id: 'clipboard_masterminds',
@@ -235,7 +235,7 @@ export const TROPHIES: Trophy[] = [
         category: 'silver',
         sport: 'basketball',
         isPlayerDiscovery: true,
-        check: createPlayerDiscoveryCheck(['b-127', 'b-121', 'b-70']), // Rick Carlisle, Steve Kerr, Phil Jackson
+        check: createPlayerDiscoveryCheck(['b-124', 'b-118', 'b-70']), // Rick Carlisle, Steve Kerr, Phil Jackson
     },
     {
         id: 'we_the_north',
@@ -243,7 +243,7 @@ export const TROPHIES: Trophy[] = [
         category: 'silver',
         sport: 'basketball',
         isPlayerDiscovery: true,
-        check: createPlayerDiscoveryCheck(['b-108', 'b-51', 'b-53']), // Kyle Lowry, Marc Gasol, Kawhi Leonard
+        check: createPlayerDiscoveryCheck(['b-105', 'b-51', 'b-53']), // Kyle Lowry, Marc Gasol, Kawhi Leonard
     },
     {
         id: 'eternal_rivals',
@@ -435,6 +435,6 @@ export const TROPHIES: Trophy[] = [
         category: 'silver',
         sport: 'basketball',
         isPlayerDiscovery: true,
-        check: createPlayerDiscoveryCheck(['b-64', 'b-55', 'b-128', 'b-153', 'b-154']), // Parker, Gobert, Diaw, Fournier, Batum
+        check: createPlayerDiscoveryCheck(['b-64', 'b-55', 'b-125', 'b-150', 'b-151']), // Parker, Gobert, Diaw, Fournier, Batum
     },
 ];

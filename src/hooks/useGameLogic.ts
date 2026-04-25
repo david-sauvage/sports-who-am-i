@@ -109,21 +109,46 @@ export const useGameLogic = ({
             const normalizedName = normalizeText(currentPlayer.name);
             const nameParts = normalizedName.split(/\s+/);
 
-            // 1. Try full name match
-            const fullDistance = getLevenshteinDistance(normalizedName, normalizedGuess);
-            const fullTolerance = normalizedName.length < 5 ? 0 : 2;
-
-            if (fullDistance <= fullTolerance) {
+            const acceptGuess = () => {
                 setStatus('won');
                 setFeedback('correct');
                 setTotalScore(prev => prev + score);
                 setHistory(prev => [...prev, { player: currentPlayer, won: true, score }]);
                 recordAnswer(true, currentPlayer.sport, currentPlayer.category, score, currentPlayer.id);
                 stopTimer();
+            };
+
+            // 1. Try full name match
+            const fullDistance = getLevenshteinDistance(normalizedName, normalizedGuess);
+            const fullTolerance = normalizedName.length < 5 ? 0 : 2;
+
+            if (fullDistance <= fullTolerance) {
+                acceptGuess();
                 return true;
             }
 
-            // 2. Try matching any part of the name (e.g. just the last name)
+            // 2. Try matching contiguous multi-word sub-sequences of the name
+            // e.g. "van basten" matches "Marco Van Basten", "de bruyne" matches "Kevin De Bruyne"
+            // We skip sub-sequences starting at index 0 (first name only) to stay consistent
+            if (nameParts.length > 2) {
+                for (let start = 1; start < nameParts.length; start++) {
+                    for (let end = start + 1; end <= nameParts.length; end++) {
+                        const subSequence = nameParts.slice(start, end).join(' ');
+                        // Skip if identical to full name (already tested above)
+                        if (subSequence === normalizedName) continue;
+
+                        const subDistance = getLevenshteinDistance(subSequence, normalizedGuess);
+                        const subTolerance = subSequence.length < 5 ? 0 : 1;
+
+                        if (subDistance <= subTolerance) {
+                            acceptGuess();
+                            return true;
+                        }
+                    }
+                }
+            }
+
+            // 3. Try matching any single part of the name (e.g. just the last name)
             // If the name has multiple words, we skip the first word (likely the first name)
             const partsToMatch = nameParts.length > 1 ? nameParts.slice(1) : nameParts;
 
@@ -134,12 +159,7 @@ export const useGameLogic = ({
                 const partTolerance = part.length < 5 ? 0 : 1; // Stricter for parts
 
                 if (partDistance <= partTolerance) {
-                    setStatus('won');
-                    setFeedback('correct');
-                    setTotalScore(prev => prev + score);
-                    setHistory(prev => [...prev, { player: currentPlayer, won: true, score }]);
-                    recordAnswer(true, currentPlayer.sport, currentPlayer.category, score, currentPlayer.id);
-                    stopTimer();
+                    acceptGuess();
                     return true;
                 }
             }

@@ -81,7 +81,7 @@ export const basketballPlayers: Player[] = [
     },
     {
         "id": "b-8",
-        "name": "Kareem Abdul-Jabbar",
+        "name": "Kareem Abdul Jabbar",
         "birthDate": "1947-04-16",
         "sport": "basketball",
         "category": "historical",
@@ -379,7 +379,7 @@ export const basketballPlayers: Player[] = [
         "sport": "basketball",
         "category": "active",
         "clubs": [
-            { "name": "Golden State Warriors", "years": "2009-2026" }
+            { "name": "Golden State Warriors", "years": "2009-" }
         ]
     },
     {
@@ -447,7 +447,7 @@ export const basketballPlayers: Player[] = [
     },
     {
         "id": "b-37",
-        "name": "Shai Gilgeous-Alexander",
+        "name": "Shai Gilgeous Alexander",
         "birthDate": "1998-07-12",
         "sport": "basketball",
         "category": "active",
@@ -720,7 +720,7 @@ export const basketballPlayers: Player[] = [
         "category": "active",
         "clubs": [
             { "name": "Boston Celtics", "years": "2014-2023" },
-            { "name": "Memphis Grizzlies", "years": "2023-2026" },
+            { "name": "Memphis Grizzlies", "years": "2023-2025" },
             { "name": "Washington Wizards", "years": "2025" },
             { "name": "Los Angeles Lakers", "years": "2025-" }
         ]
@@ -1018,18 +1018,6 @@ export const basketballPlayers: Player[] = [
     },
     {
         "id": "b-80",
-        "name": "Charles Barkley",
-        "birthDate": "1963-02-20",
-        "sport": "basketball",
-        "category": "historical",
-        "clubs": [
-            { "name": "Philadelphia 76ers", "years": "1984-1992" },
-            { "name": "Phoenix Suns", "years": "1992-1996" },
-            { "name": "Houston Rockets", "years": "1996-2000" }
-        ]
-    },
-    {
-        "id": "b-81",
         "name": "Rick Barry",
         "birthDate": "1944-03-28",
         "sport": "basketball",
@@ -1044,7 +1032,7 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-82",
+        "id": "b-81",
         "name": "Elgin Baylor",
         "birthDate": "1934-09-16",
         "sport": "basketball",
@@ -1055,7 +1043,7 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-83",
+        "id": "b-82",
         "name": "Anthony Davis",
         "birthDate": "1993-03-11",
         "sport": "basketball",
@@ -1069,7 +1057,7 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-84",
+        "id": "b-83",
         "name": "Dave DeBusschere",
         "birthDate": "1940-10-16",
         "sport": "basketball",
@@ -1080,7 +1068,7 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-85",
+        "id": "b-84",
         "name": "Clyde Drexler",
         "birthDate": "1962-06-22",
         "sport": "basketball",
@@ -1091,7 +1079,7 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-86",
+        "id": "b-85",
         "name": "Patrick Ewing",
         "birthDate": "1962-08-05",
         "sport": "basketball",
@@ -1103,7 +1091,7 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-87",
+        "id": "b-86",
         "name": "Walt Frazier",
         "birthDate": "1945-03-29",
         "sport": "basketball",
@@ -1114,7 +1102,7 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-88",
+        "id": "b-87",
         "name": "George Gervin",
         "birthDate": "1952-04-27",
         "sport": "basketball",
@@ -1128,7 +1116,7 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-89",
+        "id": "b-88",
         "name": "Hal Greer",
         "birthDate": "1936-06-26",
         "sport": "basketball",
@@ -1139,7 +1127,7 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-90",
+        "id": "b-89",
         "name": "John Havlicek",
         "birthDate": "1940-04-08",
         "sport": "basketball",
@@ -1149,7 +1137,7 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-91",
+        "id": "b-90",
         "name": "Jason Kidd",
         "birthDate": "1973-03-23",
         "sport": "basketball",
@@ -1163,7 +1151,7 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-92",
+        "id": "b-91",
         "name": "Damian Lillard",
         "birthDate": "1990-07-15",
         "sport": "basketball",
@@ -1175,7 +1163,7 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-93",
+        "id": "b-92",
         "name": "Pete Maravich",
         "birthDate": "1947-06-22",
         "sport": "basketball",
@@ -1188,26 +1176,7 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-94",
-        "name": "Bob McAdoo",
-        "birthDate": "1951-09-25",
-        "sport": "basketball",
-        "category": "historical",
-        "clubs": [
-            { "name": "Buffalo Braves", "years": "1972-1976" },
-            { "name": "New York Knicks", "years": "1976-1979" },
-            { "name": "Boston Celtics", "years": "1979" },
-            { "name": "Detroit Pistons", "years": "1979-1981" },
-            { "name": "New Jersey Nets", "years": "1981" },
-            { "name": "Los Angeles Lakers", "years": "1981-1985" },
-            { "name": "Philadelphia 76ers", "years": "1986" },
-            { "name": "Olimpia Milano", "years": "1986-1990" },
-            { "name": "Filanto Forlì", "years": "1990-1992" },
-            { "name": "Teamsystem Fabriano", "years": "1992-1993" }
-        ]
-    },
-    {
-        "id": "b-95",
+        "id": "b-93",
         "name": "George Mikan",
         "birthDate": "1924-06-18",
         "sport": "basketball",
@@ -1219,7 +1188,7 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-96",
+        "id": "b-94",
         "name": "Reggie Miller",
         "birthDate": "1965-08-24",
         "sport": "basketball",
@@ -1229,7 +1198,7 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-97",
+        "id": "b-95",
         "name": "Earl Monroe",
         "birthDate": "1944-11-21",
         "sport": "basketball",
@@ -1240,7 +1209,7 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-98",
+        "id": "b-96",
         "name": "Paul Pierce",
         "birthDate": "1977-10-13",
         "sport": "basketball",
@@ -1253,7 +1222,7 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-99",
+        "id": "b-97",
         "name": "John Stockton",
         "birthDate": "1962-03-26",
         "sport": "basketball",
@@ -1263,7 +1232,7 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-100",
+        "id": "b-98",
         "name": "Nate Thurmond",
         "birthDate": "1941-07-25",
         "sport": "basketball",
@@ -1276,19 +1245,7 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-101",
-        "name": "Wes Unseld",
-        "birthDate": "1946-03-14",
-        "sport": "basketball",
-        "category": "historical",
-        "clubs": [
-            { "name": "Baltimore Bullets", "years": "1968-1973" },
-            { "name": "Capital Bullets", "years": "1973-1974" },
-            { "name": "Washington Bullets", "years": "1974-1981" }
-        ]
-    },
-    {
-        "id": "b-102",
+        "id": "b-99",
         "name": "Jerry West",
         "birthDate": "1938-05-28",
         "sport": "basketball",
@@ -1298,7 +1255,7 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-103",
+        "id": "b-100",
         "name": "Dominique Wilkins",
         "birthDate": "1960-01-12",
         "sport": "basketball",
@@ -1314,7 +1271,7 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-104",
+        "id": "b-101",
         "name": "Pau Gasol",
         "birthDate": "1980-07-06",
         "sport": "basketball",
@@ -1330,7 +1287,7 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-105",
+        "id": "b-102",
         "name": "Mike Conley",
         "birthDate": "1987-10-11",
         "sport": "basketball",
@@ -1338,11 +1295,11 @@ export const basketballPlayers: Player[] = [
         "clubs": [
             { "name": "Memphis Grizzlies", "years": "2007-2019" },
             { "name": "Utah Jazz", "years": "2019-2023" },
-            { "name": "Minnesota Timberwolves", "years": "2023-2026" }
+            { "name": "Minnesota Timberwolves", "years": "2023-" }
         ]
     },
     {
-        "id": "b-106",
+        "id": "b-103",
         "name": "Zach Randolph",
         "birthDate": "1981-07-16",
         "sport": "basketball",
@@ -1356,7 +1313,7 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-107",
+        "id": "b-104",
         "name": "Amar'e Stoudemire",
         "birthDate": "1982-11-16",
         "sport": "basketball",
@@ -1372,7 +1329,7 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-108",
+        "id": "b-105",
         "name": "Kyle Lowry",
         "birthDate": "1986-03-25",
         "sport": "basketball",
@@ -1386,7 +1343,7 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-109",
+        "id": "b-106",
         "name": "Shawn Marion",
         "birthDate": "1978-05-07",
         "sport": "basketball",
@@ -1400,7 +1357,7 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-110",
+        "id": "b-107",
         "name": "Vince Carter",
         "birthDate": "1977-01-26",
         "sport": "basketball",
@@ -1417,7 +1374,7 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-111",
+        "id": "b-108",
         "name": "Chris Webber",
         "birthDate": "1973-03-01",
         "sport": "basketball",
@@ -1433,7 +1390,7 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-112",
+        "id": "b-109",
         "name": "Yao Ming",
         "birthDate": "1980-09-12",
         "sport": "basketball",
@@ -1444,7 +1401,7 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-113",
+        "id": "b-110",
         "name": "Luka Dončić",
         "birthDate": "1999-02-28",
         "sport": "basketball",
@@ -1456,7 +1413,7 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-114",
+        "id": "b-111",
         "name": "Jayson Tatum",
         "birthDate": "1998-03-03",
         "sport": "basketball",
@@ -1466,7 +1423,7 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-115",
+        "id": "b-112",
         "name": "Victor Wembanyama",
         "birthDate": "2004-01-04",
         "sport": "basketball",
@@ -1479,7 +1436,7 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-116",
+        "id": "b-113",
         "name": "Donovan Mitchell",
         "birthDate": "1996-09-07",
         "sport": "basketball",
@@ -1490,7 +1447,7 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-117",
+        "id": "b-114",
         "name": "Devin Booker",
         "birthDate": "1996-10-30",
         "sport": "basketball",
@@ -1500,7 +1457,7 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-118",
+        "id": "b-115",
         "name": "Robert Horry",
         "birthDate": "1970-08-25",
         "sport": "basketball",
@@ -1513,7 +1470,7 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-119",
+        "id": "b-116",
         "name": "Jamal Crawford",
         "birthDate": "1980-03-20",
         "sport": "basketball",
@@ -1531,7 +1488,7 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-120",
+        "id": "b-117",
         "name": "Andre Iguodala",
         "birthDate": "1984-01-28",
         "sport": "basketball",
@@ -1545,7 +1502,7 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-121",
+        "id": "b-118",
         "name": "Steve Kerr",
         "birthDate": "1965-09-27",
         "sport": "basketball",
@@ -1561,7 +1518,7 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-122",
+        "id": "b-119",
         "name": "Dražen Petrović",
         "birthDate": "1964-10-22",
         "sport": "basketball",
@@ -1575,7 +1532,7 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-123",
+        "id": "b-120",
         "name": "Cade Cunningham",
         "birthDate": "2001-09-25",
         "sport": "basketball",
@@ -1585,7 +1542,7 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-124",
+        "id": "b-121",
         "name": "Jalen Brunson",
         "birthDate": "1996-08-31",
         "sport": "basketball",
@@ -1596,7 +1553,7 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-125",
+        "id": "b-122",
         "name": "Tyrese Haliburton",
         "birthDate": "2000-02-29",
         "sport": "basketball",
@@ -1607,7 +1564,7 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-126",
+        "id": "b-123",
         "name": "Anthony Edwards",
         "birthDate": "2001-08-05",
         "sport": "basketball",
@@ -1617,7 +1574,7 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-127",
+        "id": "b-124",
         "name": "Rick Carlisle",
         "birthDate": "1959-10-27",
         "sport": "basketball",
@@ -1629,7 +1586,7 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-128",
+        "id": "b-125",
         "name": "Boris Diaw",
         "birthDate": "1982-04-16",
         "sport": "basketball",
@@ -1646,7 +1603,7 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-129",
+        "id": "b-126",
         "name": "Domantas Sabonis",
         "birthDate": "1996-05-03",
         "sport": "basketball",
@@ -1659,7 +1616,7 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-130",
+        "id": "b-127",
         "name": "Trae Young",
         "birthDate": "1998-09-19",
         "sport": "basketball",
@@ -1670,7 +1627,7 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-131",
+        "id": "b-128",
         "name": "Jaylen Brown",
         "birthDate": "1996-10-24",
         "sport": "basketball",
@@ -1680,7 +1637,7 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-132",
+        "id": "b-129",
         "name": "Kristaps Porzingis",
         "birthDate": "1995-08-02",
         "sport": "basketball",
@@ -1696,7 +1653,7 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-133",
+        "id": "b-130",
         "name": "Jimmy Butler",
         "birthDate": "1989-09-14",
         "sport": "basketball",
@@ -1710,7 +1667,7 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-134",
+        "id": "b-131",
         "name": "Andrew Wiggins",
         "birthDate": "1995-02-23",
         "sport": "basketball",
@@ -1722,7 +1679,7 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-135",
+        "id": "b-132",
         "name": "Pascal Siakam",
         "birthDate": "1994-04-02",
         "sport": "basketball",
@@ -1733,7 +1690,7 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-136",
+        "id": "b-133",
         "name": "Al Horford",
         "birthDate": "1986-06-03",
         "sport": "basketball",
@@ -1748,7 +1705,7 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-137",
+        "id": "b-134",
         "name": "Paul George",
         "birthDate": "1990-05-02",
         "sport": "basketball",
@@ -1761,7 +1718,7 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-138",
+        "id": "b-135",
         "name": "DeMar DeRozan",
         "birthDate": "1989-08-07",
         "sport": "basketball",
@@ -1774,7 +1731,7 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-139",
+        "id": "b-136",
         "name": "Rajon Rondo",
         "birthDate": "1986-02-22",
         "sport": "basketball",
@@ -1793,7 +1750,7 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-140",
+        "id": "b-137",
         "name": "Jrue Holiday",
         "birthDate": "1990-06-12",
         "sport": "basketball",
@@ -1807,7 +1764,7 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-141",
+        "id": "b-138",
         "name": "Muggsy Bogues",
         "birthDate": "1965-01-09",
         "sport": "basketball",
@@ -1820,7 +1777,7 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-142",
+        "id": "b-139",
         "name": "Tracy McGrady",
         "birthDate": "1979-05-24",
         "sport": "basketball",
@@ -1837,7 +1794,7 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-143",
+        "id": "b-140",
         "name": "Grant Hill",
         "birthDate": "1972-10-05",
         "sport": "basketball",
@@ -1850,7 +1807,7 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-144",
+        "id": "b-141",
         "name": "Detlef Schrempf",
         "birthDate": "1963-01-21",
         "sport": "basketball",
@@ -1863,7 +1820,7 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-145",
+        "id": "b-142",
         "name": "Danny Green",
         "birthDate": "1987-06-22",
         "sport": "basketball",
@@ -1880,7 +1837,7 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-146",
+        "id": "b-143",
         "name": "Charles Oakley",
         "birthDate": "1963-12-18",
         "sport": "basketball",
@@ -1895,7 +1852,7 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-147",
+        "id": "b-144",
         "name": "Shawn Kemp",
         "birthDate": "1969-11-26",
         "sport": "basketball",
@@ -1908,7 +1865,7 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-148",
+        "id": "b-145",
         "name": "Kyle Korver",
         "birthDate": "1981-03-17",
         "sport": "basketball",
@@ -1924,7 +1881,7 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-149",
+        "id": "b-146",
         "name": "Tyrese Maxey",
         "birthDate": "2000-11-04",
         "sport": "basketball",
@@ -1934,7 +1891,7 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-150",
+        "id": "b-147",
         "name": "De'Aaron Fox",
         "birthDate": "1997-12-20",
         "sport": "basketball",
@@ -1945,7 +1902,7 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-151",
+        "id": "b-148",
         "name": "Ricky Rubio",
         "birthDate": "1990-10-21",
         "sport": "basketball",
@@ -1963,7 +1920,7 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-152",
+        "id": "b-149",
         "name": "Luis Scola",
         "birthDate": "1980-04-30",
         "sport": "basketball",
@@ -1983,7 +1940,7 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-153",
+        "id": "b-150",
         "name": "Evan Fournier",
         "birthDate": "1992-10-29",
         "sport": "basketball",
@@ -1995,11 +1952,12 @@ export const basketballPlayers: Player[] = [
             { "name": "Orlando Magic", "years": "2014-2021" },
             { "name": "Boston Celtics", "years": "2021" },
             { "name": "New York Knicks", "years": "2021-2024" },
-            { "name": "Detroit Pistons", "years": "2024" }
+            { "name": "Detroit Pistons", "years": "2024" },
+            { "name": "Olympiakós Piraeus", "years": "2024-" }
         ]
     },
     {
-        "id": "b-154",
+        "id": "b-151",
         "name": "Nicolas Batum",
         "birthDate": "1988-12-14",
         "sport": "basketball",
@@ -2015,7 +1973,7 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-155",
+        "id": "b-152",
         "name": "Kevin Johnson",
         "birthDate": "1966-03-04",
         "sport": "basketball",
@@ -2027,7 +1985,7 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-156",
+        "id": "b-153",
         "name": "Monta Ellis",
         "birthDate": "1985-10-26",
         "sport": "basketball",
@@ -2040,7 +1998,7 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-157",
+        "id": "b-154",
         "name": "Hedo Türkoğlu",
         "birthDate": "1979-03-19",
         "sport": "basketball",
@@ -2057,7 +2015,7 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-158",
+        "id": "b-155",
         "name": "Goran Dragić",
         "birthDate": "1986-05-06",
         "sport": "basketball",
@@ -2078,7 +2036,7 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-159",
+        "id": "b-156",
         "name": "Victor Oladipo",
         "birthDate": "1992-05-04",
         "sport": "basketball",
@@ -2092,7 +2050,7 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-160",
+        "id": "b-157",
         "name": "Julius Randle",
         "birthDate": "1994-11-29",
         "sport": "basketball",
@@ -2105,7 +2063,7 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-161",
+        "id": "b-158",
         "name": "Lauri Markkanen",
         "birthDate": "1997-05-22",
         "sport": "basketball",
@@ -2118,7 +2076,7 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-162",
+        "id": "b-159",
         "name": "Elton Brand",
         "birthDate": "1979-03-11",
         "sport": "basketball",
@@ -2133,7 +2091,7 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-163",
+        "id": "b-160",
         "name": "Brandon Roy",
         "birthDate": "1984-07-23",
         "sport": "basketball",
@@ -2144,7 +2102,7 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-164",
+        "id": "b-161",
         "name": "Tyreke Evans",
         "birthDate": "1989-09-19",
         "sport": "basketball",
@@ -2158,8 +2116,8 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-165",
-        "name": "Michael Carter-Williams",
+        "id": "b-162",
+        "name": "Michael Carter Williams",
         "birthDate": "1991-10-10",
         "sport": "basketball",
         "category": "historical",
@@ -2174,7 +2132,7 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-166",
+        "id": "b-163",
         "name": "Jordan Clarkson",
         "birthDate": "1992-06-07",
         "sport": "basketball",
@@ -2187,7 +2145,7 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-167",
+        "id": "b-164",
         "name": "Louis Williams",
         "birthDate": "1986-10-27",
         "sport": "basketball",
@@ -2203,8 +2161,8 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-168",
-        "name": "J. R. Smith",
+        "id": "b-165",
+        "name": "JR Smith",
         "birthDate": "1985-09-09",
         "sport": "basketball",
         "category": "historical",
@@ -2218,7 +2176,7 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-169",
+        "id": "b-166",
         "name": "Lamar Odom",
         "birthDate": "1979-11-06",
         "sport": "basketball",
@@ -2233,7 +2191,7 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-170",
+        "id": "b-167",
         "name": "Jason Terry",
         "birthDate": "1977-09-15",
         "sport": "basketball",
@@ -2248,7 +2206,7 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-171",
+        "id": "b-168",
         "name": "Leandro Barbosa",
         "birthDate": "1982-11-28",
         "sport": "basketball",
@@ -2270,7 +2228,7 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-172",
+        "id": "b-169",
         "name": "Toni Kukoč",
         "birthDate": "1968-09-30",
         "sport": "basketball",
@@ -2285,7 +2243,7 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-173",
+        "id": "b-170",
         "name": "Ish Smith",
         "birthDate": "1988-07-05",
         "sport": "basketball",
@@ -2310,7 +2268,7 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-174",
+        "id": "b-171",
         "name": "Dennis Schröder",
         "birthDate": "1993-09-13",
         "sport": "basketball",
@@ -2332,19 +2290,19 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-175",
+        "id": "b-172",
         "name": "Brandon Ingram",
         "birthDate": "1997-09-02",
         "sport": "basketball",
         "category": "active",
         "clubs": [
             { "name": "Los Angeles Lakers", "years": "2016-2019" },
-            { "name": "New Orleans Pelicans", "years": "2019-2026" },
+            { "name": "New Orleans Pelicans", "years": "2019-2025" },
             { "name": "Toronto Raptors", "years": "2025-" }
         ]
     },
     {
-        "id": "b-176",
+        "id": "b-173",
         "name": "Derrick White",
         "birthDate": "1994-07-02",
         "sport": "basketball",
@@ -2355,7 +2313,7 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-177",
+        "id": "b-174",
         "name": "Aaron Gordon",
         "birthDate": "1995-09-16",
         "sport": "basketball",
@@ -2366,7 +2324,7 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-178",
+        "id": "b-175",
         "name": "Tobias Harris",
         "birthDate": "1992-07-15",
         "sport": "basketball",
@@ -2381,7 +2339,7 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-179",
+        "id": "b-176",
         "name": "Jusuf Nurkić",
         "birthDate": "1994-08-23",
         "sport": "basketball",
@@ -2397,7 +2355,7 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-180",
+        "id": "b-177",
         "name": "Harrison Barnes",
         "birthDate": "1992-05-30",
         "sport": "basketball",
@@ -2410,7 +2368,7 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-181",
+        "id": "b-178",
         "name": "Brook Lopez",
         "birthDate": "1988-04-01",
         "sport": "basketball",
@@ -2424,7 +2382,7 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-182",
+        "id": "b-179",
         "name": "Bernard King",
         "birthDate": "1956-12-04",
         "sport": "basketball",
@@ -2439,7 +2397,7 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-183",
+        "id": "b-180",
         "name": "Bill Laimbeer",
         "birthDate": "1957-05-19",
         "sport": "basketball",
@@ -2451,7 +2409,7 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-184",
+        "id": "b-181",
         "name": "Adrian Dantley",
         "birthDate": "1955-02-28",
         "sport": "basketball",
@@ -2468,7 +2426,7 @@ export const basketballPlayers: Player[] = [
         ]
     },
     {
-        "id": "b-185",
+        "id": "b-182",
         "name": "World B. Free",
         "birthDate": "1953-12-09",
         "sport": "basketball",
