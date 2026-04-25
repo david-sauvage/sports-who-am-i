@@ -1179,7 +1179,7 @@ export const footballPlayers: Player[] = [
     },
     {
         id: 'f-81',
-        name: 'Raúl González',
+        name: 'Raúl',
         birthDate: '1977-06-27',
         sport: 'football',
         category: 'historical',
@@ -1242,7 +1242,7 @@ export const footballPlayers: Player[] = [
     },
     {
         id: 'f-86',
-        name: 'Xavi Hernández',
+        name: 'Xavi',
         birthDate: '1980-01-25',
         sport: 'football',
         category: 'historical',

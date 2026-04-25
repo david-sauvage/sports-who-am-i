@@ -2168,3 +2168,45 @@ describe('Carré Magique Trophy', () => {
         expect(result.progress).toBe(4);
     });
 });
+
+describe('Bleu Blanc Rouge Trophy', () => {
+    const bleuBlancRougeTrophy = TROPHIES.find(t => t.id === 'bleu_blanc_rouge');
+
+    const baseStats: UserStatistics = {
+        gamesPlayed: 0,
+        totalQuestions: 0,
+        correctAnswers: 0,
+        incorrectAnswers: 0,
+        totalScore: 0,
+        foundPlayerIds: [],
+        detailed: {
+            football: { active: { correct: 0, total: 0 }, historical: { correct: 0, total: 0 } },
+            basketball: { active: { correct: 0, total: 0 }, historical: { correct: 0, total: 0 } },
+        },
+    };
+
+    it('should be defined', () => {
+        expect(bleuBlancRougeTrophy).toBeDefined();
+    });
+
+    it('should not be unlocked if no players are found', () => {
+        const result = bleuBlancRougeTrophy!.check(baseStats);
+        expect(result.unlocked).toBe(false);
+        expect(result.progress).toBe(0);
+        expect(result.goal).toBe(5);
+    });
+
+    it('should show progress if 2 are found', () => {
+        const stats = { ...baseStats, foundPlayerIds: ['b-64', 'b-55'] };
+        const result = bleuBlancRougeTrophy!.check(stats);
+        expect(result.unlocked).toBe(false);
+        expect(result.progress).toBe(2);
+    });
+
+    it('should be unlocked if 5 are found', () => {
+        const stats = { ...baseStats, foundPlayerIds: ['b-64', 'b-55', 'b-128', 'b-153', 'b-154'] };
+        const result = bleuBlancRougeTrophy!.check(stats);
+        expect(result.unlocked).toBe(true);
+        expect(result.progress).toBe(5);
+    });
+});

@@ -358,6 +358,12 @@
             "description": "Trouvez Platini, Giresse, Tigana et Fernandez",
             "description_locked": "Quatre magiciens au centre du jeu, dont l'alchimie a dessiné un carré parfait dans le football français.",
             "description_unlocked": "Vous avez reconstitué le légendaire Carré Magique de l'équipe de France, victorieux de l'Euro 1984."
+        },
+        "bleu_blanc_rouge": {
+            "name": "Bleu Blanc Rouge",
+            "description": "Trouvez Tony Parker, Rudy Gobert, Boris Diaw, Evan Fournier et Nicolas Batum",
+            "description_locked": "Cinq étoiles nées sur le Vieux Continent qui ont traversé l'océan pour faire briller les couleurs de l'Hexagone sur les parquets américains.",
+            "description_unlocked": "Cocorico ! Vous avez réuni 5 des plus fiers représentants du basket français en NBA."
         }
     }
 }

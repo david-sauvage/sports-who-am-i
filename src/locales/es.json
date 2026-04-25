@@ -352,6 +352,12 @@
                 "description": "Encuentra a Platini, Giresse, Tigana y Fernandez",
                 "description_locked": "Cuatro magos en el corazón del juego, cuya alquimia dibujó un cuadrado perfecto en el fútbol francés.",
                 "description_unlocked": "Has reunido al mítico Cuadrado Mágico de la selección francesa, histórico de la Eurocopa de 1984."
+            },
+            "bleu_blanc_rouge": {
+                "name": "Bleu Blanc Rouge",
+                "description": "Encuentra a Tony Parker, Rudy Gobert, Boris Diaw, Evan Fournier y Nicolas Batum",
+                "description_locked": "Cinco estrellas nacidas en el Viejo Continente que cruzaron el océano para lucir los colores de su patria en las canchas americanas.",
+                "description_unlocked": "¡Cocorico! Has reunido a 5 de los más orgullosos representantes del baloncesto francés en la NBA."
             }
         }
     }

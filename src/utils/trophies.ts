@@ -429,4 +429,12 @@ export const TROPHIES: Trophy[] = [
         isPlayerDiscovery: true,
         check: createPlayerDiscoveryCheck(['f-26', 'f-110', 'f-111', 'f-112']), // Carré magique (Platini, Giresse, Tigana, Fernandez)
     },
+    {
+        id: 'bleu_blanc_rouge',
+        icon: '🐓',
+        category: 'silver',
+        sport: 'basketball',
+        isPlayerDiscovery: true,
+        check: createPlayerDiscoveryCheck(['b-64', 'b-55', 'b-128', 'b-153', 'b-154']), // Parker, Gobert, Diaw, Fournier, Batum
+    },
 ];

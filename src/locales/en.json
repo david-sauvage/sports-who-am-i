@@ -358,6 +358,12 @@
             "description": "Find Platini, Giresse, Tigana, and Fernandez",
             "description_locked": "Four magicians at the heart of the game, whose alchemy drew a perfect square in French football.",
             "description_unlocked": "You have reunited the legendary Magic Square of the French national team, winners of the 1984 Euro."
+        },
+        "bleu_blanc_rouge": {
+            "name": "Bleu Blanc Rouge",
+            "description": "Find Tony Parker, Rudy Gobert, Boris Diaw, Evan Fournier, and Nicolas Batum",
+            "description_locked": "Five stars born on the Old Continent who crossed the ocean to fly the colors of their homeland on American courts.",
+            "description_unlocked": "Cocorico! You brought together 5 of the proudest representatives of French basketball in the NBA."
         }
     }
 }
