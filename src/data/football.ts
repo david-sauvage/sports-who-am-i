@@ -1670,7 +1670,8 @@ export const footballPlayers: Player[] = [
         id: 'f-119', name: 'Gianluigi Donnarumma', birthDate: '1999-02-25', sport: 'football', category: 'active',
         clubs: [
             { name: 'AC Milan', years: '2015-2021' },
-            { name: 'Paris Saint-Germain', years: '2021-' }
+            { name: 'Paris Saint-Germain', years: '2021-2025' },
+            { name: 'Manchester City', years: '2025-' }
         ]
     },
     {
